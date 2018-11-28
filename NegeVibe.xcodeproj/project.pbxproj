@@ -13,6 +13,8 @@
 		8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */; };
 		8CEB9B3121AED0B2009B55FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3021AED0B2009B55FF /* Assets.xcassets */; };
 		8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3221AED0B2009B55FF /* LaunchScreen.storyboard */; };
+		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
+		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8CEB9B3021AED0B2009B55FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CEB9B3321AED0B2009B55FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CEB9B3521AED0B2009B55FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEvents.swift; sourceTree = "<group>"; };
+		8CEB9B4021AED118009B55FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
+				8CEB9B3F21AED100009B55FF /* Object */,
+				8CEB9B3B21AED0BD009B55FF /* DB */,
 				8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */,
 				8CEB9B2821AED0AF009B55FF /* ViewController.swift */,
 				8CEB9B2A21AED0AF009B55FF /* Main.storyboard */,
@@ -65,6 +71,30 @@
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
 			);
 			path = NegeVibe;
+			sourceTree = "<group>";
+		};
+		8CEB9B3B21AED0BD009B55FF /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				8CEB9B3C21AED0C9009B55FF /* Get */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		8CEB9B3C21AED0C9009B55FF /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */,
+			);
+			path = Get;
+			sourceTree = "<group>";
+		};
+		8CEB9B3F21AED100009B55FF /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				8CEB9B4021AED118009B55FF /* Event.swift */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +171,8 @@
 				8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
+				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
+				8CEB9B4121AED118009B55FF /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
