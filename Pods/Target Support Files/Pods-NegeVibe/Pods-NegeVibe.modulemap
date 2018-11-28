@@ -1,0 +1,6 @@
+framework module Pods_NegeVibe {
+  umbrella header "Pods-NegeVibe-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -33,5 +33,5 @@ func getEvents (completion: ((_ events: [Event])->Void)? = nil){
                 
             }
         }
-    }
+    }.resume()
 }
