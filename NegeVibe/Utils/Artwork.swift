@@ -35,7 +35,9 @@ class ArtworkView: MKAnnotationView {
         willSet {
             guard let artwork = newValue as? Artwork else {return}
             self.artwork = artwork
+
             canShowCallout = true
+            
             calloutOffset = CGPoint(x: -5, y: 5)
             
             
@@ -48,21 +50,22 @@ class ArtworkView: MKAnnotationView {
                 let urlImg = URL(string: imageBtn)
                 mapsButton.sd_setImage(with: urlImg, for: .normal)
             }
-            mapsButton.addTarget(self, action: #selector(moveToDetails(_:)), for: .touchUpInside)
+          //  mapsButton.addTarget(self, action: #selector(moveToDetails(_:)), for: .touchUpInside)
             leftCalloutAccessoryView = mapsButton
+            rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
     }
     weak var artwork: Artwork?
-    weak var delegate: ArtworkViewDelegate?
-    @objc private func moveToDetails(_ sender: UIButton?){
-        guard let artwork = artwork else {
-            print("error returning artwork! corrupted data")
-            return
-        }
-        delegate?.didSelectInfo(artwork)
-    }
+//    weak var delegate: ArtworkViewDelegate?
+//    @objc private func moveToDetails(_ sender: UIButton?){
+//        guard let artwork = artwork else {
+//            print("error returning artwork! corrupted data")
+//            return
+//        }
+//        delegate?.didSelectInfo(artwork)
+//
+//    }
 }
-
-protocol  ArtworkViewDelegate: class {
-    func didSelectInfo(_ artwork: Artwork)
-}
+//protocol  ArtworkViewDelegate: class {
+//    func didSelectInfo(_ artwork: Artwork)
+//}

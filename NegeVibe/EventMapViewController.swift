@@ -46,8 +46,10 @@ class EventMapViewController: UIViewController {
             let location = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
             //type of the event by symbol
             let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
+            
             //create artwork for the model event
             let indNegev = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
+            
 //            //adds the artwork to the map
             self.mapView.register(ArtworkView.self,
                              forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
@@ -78,16 +80,17 @@ class EventMapViewController: UIViewController {
 
 }
 
-extension EventMapViewController: ArtworkViewDelegate{
-    func didSelectInfo(_ artwork: Artwork) {
-        print("\(artwork.title) was selected!")
+extension EventMapViewController: MKMapViewDelegate {
+    // 1
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let artworkView = view as! ArtworkView
+        guard let artwork = artworkView.artwork else {
+            print("no artwork error")
+            return
+        }
+        print(artwork.title, " was clicked")
     }
-    
-    
-}
-
-//extension EventMapViewController: MKMapViewDelegate {
-//    // 1
 //    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 //        // 2
 //        guard let annotation = annotation as? Artwork else { return nil }
@@ -101,8 +104,8 @@ extension EventMapViewController: ArtworkViewDelegate{
 //            dequeuedView.annotation = annotation
 ////            dequeuedView.image = imageForArtwork
 //            view = dequeuedView
-//            
-//            
+//
+//
 //        } else {
 //            // 5
 //            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
@@ -112,4 +115,4 @@ extension EventMapViewController: ArtworkViewDelegate{
 //        }
 //        return view
 //    }
-//}
+}
