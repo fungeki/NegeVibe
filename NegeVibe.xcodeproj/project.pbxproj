@@ -73,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8C1ACD0F21B07BF500103D9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -94,16 +102,15 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
+				8C1ACD0F21B07BF500103D9E /* ViewControllers */,
 				8CEB9B4221AEDE27009B55FF /* Utils */,
 				8CEB9B3F21AED100009B55FF /* Object */,
 				8CEB9B3B21AED0BD009B55FF /* DB */,
-				8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */,
 				8CEB9B2821AED0AF009B55FF /* ViewController.swift */,
 				8CEB9B2A21AED0AF009B55FF /* Main.storyboard */,
 				8CEB9B3221AED0B2009B55FF /* LaunchScreen.storyboard */,
 				8CEB9B3521AED0B2009B55FF /* Info.plist */,
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
-				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 			);
 			path = NegeVibe;
 			sourceTree = "<group>";
@@ -137,6 +144,7 @@
 		8CEB9B4221AEDE27009B55FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */,
 				8CEB9B3021AED0B2009B55FF /* Assets.xcassets */,
 				8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */,
 				8C1ACD0D21B0414300103D9E /* Artwork.swift */,
