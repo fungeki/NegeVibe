@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import Contacts
 
 class EventMapViewController: UIViewController {
 
@@ -21,21 +22,38 @@ class EventMapViewController: UIViewController {
         //shifts type to hybrid
         mapView.mapType = .hybrid
         
+        //to show images
+        
+        
         //centers location
         centerMapOnLocation(location: initialLocation)
 
         //loading indicator
         JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
+        
+        //protocols to extension
+    //    mapView.delegate = self
+        
+        
+        
         //adding artwork
         getEvents { (events) in
             //close loading indicator
             JustHUD.shared.hide()
             //chosen event
             let model = events[0]
+            //event location on map
             let location = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
+            //type of the event by symbol
             let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
-            let indNegev = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location)
+            //create artwork for the model event
+            let indNegev = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
+//            //adds the artwork to the map
+            self.mapView.register(ArtworkView.self,
+                             forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+            //adds the annotation to the map
             self.mapView.addAnnotation(indNegev)
+            self.mapView.reloadInputViews()
         }
         
     }
@@ -59,3 +77,31 @@ class EventMapViewController: UIViewController {
     */
 
 }
+
+//extension EventMapViewController: MKMapViewDelegate {
+//    // 1
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        // 2
+//        guard let annotation = annotation as? Artwork else { return nil }
+//        // 3
+//        let identifier = "marker"
+//        var view: MKMarkerAnnotationView
+//  //      let imageForArtwork = Symbol(rawValue: annotation.discipline)?.getImage() ?? UIImage(named: "festival")!
+//        // 4
+//        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//            as? MKMarkerAnnotationView {
+//            dequeuedView.annotation = annotation
+////            dequeuedView.image = imageForArtwork
+//            view = dequeuedView
+//            
+//            
+//        } else {
+//            // 5
+//            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//            view.canShowCallout = true
+//            view.calloutOffset = CGPoint(x: -5, y: 5)
+//            view.leftCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//        }
+//        return view
+//    }
+//}
