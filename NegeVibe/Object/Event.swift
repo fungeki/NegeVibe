@@ -14,5 +14,13 @@ struct Event: Codable{
     var description: String
     var organizerid: Int
     var type: Int
+    var price: Int
+    var date: String
+    var datedescription: String
+    var longitude: Double
+    var latitude: Double
+    var locationname: String
     var status: Int
+    var images: [EventImage]
+    
 }

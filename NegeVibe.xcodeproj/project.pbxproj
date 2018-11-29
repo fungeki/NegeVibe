@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		56479C6616582B1F8F5EC795 /* Pods_NegeVibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */; };
+		8C1ACD0821B033FE00103D9E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0721B033FE00103D9E /* Images.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		1568CED266995431D624AB8E /* Pods-NegeVibe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEB9B4021AED118009B55FF /* Event.swift */,
+				8C1ACD0721B033FE00103D9E /* Images.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
