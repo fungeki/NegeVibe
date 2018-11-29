@@ -24,10 +24,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Event Map View Controller-->
         <scene sceneID="lF2-f1-MPz">
             <objects>
-                <viewController id="p4g-h5-hWC" sceneMemberID="viewController">
+                <viewController id="p4g-h5-hWC" customClass="EventMapViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wkG-GG-kRj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,6 +45,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="yjn-Vj-7nv" id="JPc-8s-El4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCR-zf-ttW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
