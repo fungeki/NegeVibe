@@ -78,6 +78,14 @@ class EventMapViewController: UIViewController {
 
 }
 
+extension EventMapViewController: ArtworkViewDelegate{
+    func didSelectInfo(_ artwork: Artwork) {
+        print("\(artwork.title) was selected!")
+    }
+    
+    
+}
+
 //extension EventMapViewController: MKMapViewDelegate {
 //    // 1
 //    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
