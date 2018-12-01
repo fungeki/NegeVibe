@@ -24,7 +24,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Map-->
+        <!--מפה-->
         <scene sceneID="lF2-f1-MPz">
             <objects>
                 <viewController id="p4g-h5-hWC" customClass="EventMapViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="מפה" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
                     <connections>
                         <outlet property="mapView" destination="yjn-Vj-7nv" id="JPc-8s-El4"/>
                     </connections>
@@ -70,6 +70,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="p4g-h5-hWC" kind="relationship" relationship="viewControllers" id="dOp-Fo-aYw"/>
+                        <segue destination="8Qe-rQ-0Qs" kind="relationship" relationship="viewControllers" id="3jT-SX-KMh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,10 +189,11 @@
             </objects>
             <point key="canvasLocation" x="3732" y="143"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--לאירועים-->
         <scene sceneID="ruv-aZ-RqX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Qe-rQ-0Qs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="לאירועים" image="list" id="k4X-W6-LPF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbc-Q9-M15">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -210,6 +212,7 @@
     <resources>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_shekel_icon" width="58" height="49"/>
+        <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
     </resources>
 </document>
