@@ -12,6 +12,8 @@ private let reuseIdentifier = "Cell"
 class EventCollectionViewController: UICollectionViewController{
     
 
+    @IBOutlet var eventCollectionView: UICollectionView!
+    
     
     let eventTitle = ["אינדינגב","פסטיבל האור","אקו ארט ערבה","רוכבים בהצדעה"]
     
