@@ -17,8 +17,8 @@ struct Event: Codable{
     var price: Int
     var date: String
     var datedescription: String
-    var longitude: Double
-    var latitude: Double
+    var locy: Double
+    var locx: Double
     var locationname: String
     var status: Int
     var images: [EventImage]

@@ -66,7 +66,7 @@ class ArtworkView: MKAnnotationView {
             }
           //  mapsButton.addTarget(self, action: #selector(moveToDetails(_:)), for: .touchUpInside)
             leftCalloutAccessoryView = mapsButton
-            rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//            rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
     }
     weak var artwork: Artwork?

@@ -16,11 +16,11 @@ class EventMapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     // set initial location in IndNegev
-    let initialLocation = CLLocation(latitude: 31.5251773, longitude: 34.5905993)
+    let initialLocation = CLLocation(latitude: 31.5227, longitude: 34.5956)
     override func viewDidLoad() {
         super.viewDidLoad()
         //shifts type to hybrid
-        mapView.mapType = .hybrid
+       // mapView.mapType = .hybrid
         
         //to show images
         
@@ -42,7 +42,7 @@ class EventMapViewController: UIViewController {
             JustHUD.shared.hide()
             for model in events{
                 //event location on map
-                let location = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
+                let location = CLLocationCoordinate2D(latitude: model.locx, longitude: model.locy)
                 //type of the event by symbol
                 let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
                 

@@ -11,11 +11,14 @@ import UIKit
 enum Symbol: String {
     case festival = "Festival"
     case musicFestival = "Music Festival"
+    case movieFestival = "Movies Festival"
     
     init?(withInt val: Int){
         switch val {
         case 0:
             self = .festival
+        case 3:
+            self = .movieFestival
         default:
             self = .musicFestival
         }
@@ -25,6 +28,8 @@ enum Symbol: String {
         switch self {
         case .festival:
             return UIImage(named: "festival")!
+        case .movieFestival:
+            return UIImage(named: "movie_festival")!
         default:
             return UIImage(named: "rock_festival")!
         }
