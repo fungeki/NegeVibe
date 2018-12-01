@@ -23,6 +23,7 @@
 		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
 		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
 		8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */; };
+		EE91AF8921B32B920084066B /* GlobalsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE91AF8821B32B920084066B /* GlobalsEvents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		8CEB9B4021AED118009B55FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHUD.swift; sourceTree = "<group>"; };
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
+		EE91AF8821B32B920084066B /* GlobalsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalsEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
+				EE91AF8721B32B570084066B /* Globals */,
 				8C1ACD0F21B07BF500103D9E /* ViewControllers */,
 				8CEB9B4221AEDE27009B55FF /* Utils */,
 				8CEB9B3F21AED100009B55FF /* Object */,
@@ -156,6 +159,14 @@
 				8C1ACD0D21B0414300103D9E /* Artwork.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EE91AF8721B32B570084066B /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				EE91AF8821B32B920084066B /* GlobalsEvents.swift */,
+			);
+			path = Globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE91AF8921B32B920084066B /* GlobalsEvents.swift in Sources */,
 				8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
