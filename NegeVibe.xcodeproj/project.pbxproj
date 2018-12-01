@@ -23,7 +23,37 @@
 		8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */; };
 		EE488CEC21B289D400DD097B /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE488CEB21B289D400DD097B /* EventCollectionViewCell.swift */; };
 		EE488CEE21B28A0200DD097B /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE488CED21B28A0200DD097B /* EventCollectionViewController.swift */; };
+		EE96002621B292D10069A618 /* SDWebImage in Resources */ = {isa = PBXBuildFile; fileRef = EE96001421B292D00069A618 /* SDWebImage */; };
+		EE96002721B292D10069A618 /* IQKeyboardManagerSwift in Resources */ = {isa = PBXBuildFile; fileRef = EE96001521B292D00069A618 /* IQKeyboardManagerSwift */; };
+		EE96002821B292D10069A618 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = EE96002221B292D10069A618 /* Manifest.lock */; };
+		EE96002921B292D10069A618 /* Target Support Files in Resources */ = {isa = PBXBuildFile; fileRef = EE96002321B292D10069A618 /* Target Support Files */; };
+		EE96002A21B292D10069A618 /* Headers in Resources */ = {isa = PBXBuildFile; fileRef = EE96002421B292D10069A618 /* Headers */; };
+		EE96002B21B292D10069A618 /* Local Podspecs in Resources */ = {isa = PBXBuildFile; fileRef = EE96002521B292D10069A618 /* Local Podspecs */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE96001C21B292D10069A618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE96001621B292D00069A618 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CBA935ED8C027C5AA0A2BFF41402818;
+			remoteInfo = IQKeyboardManagerSwift;
+		};
+		EE96001E21B292D10069A618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE96001621B292D00069A618 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08E4BF41C3FEB5424063D6D2700AF36E;
+			remoteInfo = "Pods-NegeVibe";
+		};
+		EE96002021B292D10069A618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE96001621B292D00069A618 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 73232DC639FEB266EB1ADEFBB9658B1F;
+			remoteInfo = SDWebImage;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1568CED266995431D624AB8E /* Pods-NegeVibe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +76,13 @@
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
 		EE488CEB21B289D400DD097B /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE488CED21B28A0200DD097B /* EventCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
+		EE96001421B292D00069A618 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SDWebImage; path = Pods/SDWebImage; sourceTree = "<group>"; };
+		EE96001521B292D00069A618 /* IQKeyboardManagerSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = IQKeyboardManagerSwift; path = Pods/IQKeyboardManagerSwift; sourceTree = "<group>"; };
+		EE96001621B292D00069A618 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		EE96002221B292D10069A618 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Manifest.lock; path = Pods/Manifest.lock; sourceTree = "<group>"; };
+		EE96002321B292D10069A618 /* Target Support Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Target Support Files"; path = "Pods/Target Support Files"; sourceTree = "<group>"; };
+		EE96002421B292D10069A618 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Headers; path = Pods/Headers; sourceTree = "<group>"; };
+		EE96002521B292D10069A618 /* Local Podspecs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Local Podspecs"; path = "Pods/Local Podspecs"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +100,13 @@
 		335453F0D9549C99855DC158 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				EE96002421B292D10069A618 /* Headers */,
+				EE96001521B292D00069A618 /* IQKeyboardManagerSwift */,
+				EE96002521B292D10069A618 /* Local Podspecs */,
+				EE96002221B292D10069A618 /* Manifest.lock */,
+				EE96001621B292D00069A618 /* Pods.xcodeproj */,
+				EE96001421B292D00069A618 /* SDWebImage */,
+				EE96002321B292D10069A618 /* Target Support Files */,
 				1568CED266995431D624AB8E /* Pods-NegeVibe.debug.xcconfig */,
 				E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */,
 			);
@@ -158,6 +202,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		EE96001721B292D00069A618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE96001D21B292D10069A618 /* IQKeyboardManagerSwift.framework */,
+				EE96001F21B292D10069A618 /* Pods_NegeVibe.framework */,
+				EE96002121B292D10069A618 /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +260,12 @@
 			mainGroup = 8CEB9B1A21AED0AF009B55FF;
 			productRefGroup = 8CEB9B2421AED0AF009B55FF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EE96001721B292D00069A618 /* Products */;
+					ProjectRef = EE96001621B292D00069A618 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8CEB9B2221AED0AF009B55FF /* NegeVibe */,
@@ -213,14 +273,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EE96001D21B292D10069A618 /* IQKeyboardManagerSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IQKeyboardManagerSwift.framework;
+			remoteRef = EE96001C21B292D10069A618 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE96001F21B292D10069A618 /* Pods_NegeVibe.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_NegeVibe.framework;
+			remoteRef = EE96001E21B292D10069A618 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE96002121B292D10069A618 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = EE96002021B292D10069A618 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		8CEB9B2121AED0AF009B55FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE96002721B292D10069A618 /* IQKeyboardManagerSwift in Resources */,
 				8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */,
 				8CEB9B3121AED0B2009B55FF /* Assets.xcassets in Resources */,
+				EE96002A21B292D10069A618 /* Headers in Resources */,
+				EE96002821B292D10069A618 /* Manifest.lock in Resources */,
+				EE96002621B292D10069A618 /* SDWebImage in Resources */,
 				8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */,
+				EE96002B21B292D10069A618 /* Local Podspecs in Resources */,
+				EE96002921B292D10069A618 /* Target Support Files in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

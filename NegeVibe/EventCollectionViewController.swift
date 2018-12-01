@@ -10,10 +10,37 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class EventCollectionViewController: UICollectionViewController {
+class EventCollectionViewController: UICollectionViewController{
+    
+    @IBOutlet var eventCollectionView: UICollectionView!
+    
+    let eventTitle = ["אינדינגב","פסטיבל האור","אקו ארט ערבה","רוכבים בהצדעה"]
+    
+    let eventImages: [UIImage] = [
+        UIImage(named: "indinegev")!,
+        UIImage(named: "pastivalHor")!,
+        UIImage(named: "hakoArtHarava")!,
+        UIImage(named: "rochvimBehatzdaha")!,
+        
+        
+    ]
+    
+    let eventDescription = ["אינדינגב הוא פסטיבל מוזיקה ואמנות עצמאית בנגב. הפסטיבל נערך לראשונה ב-2007 ",
+                            "מתנס תמר מקבל את חנוכה ביומיים של חגיגה לכלהמשפחה פסטיבל האור",
+                            "חוויה לכל המשפחה ברוח אומנות, יצירה, קהילה ואקולוגיה באווירה נעימה, חופשית ",
+                            "רוכבים בהצדעה – מסע אופנים למען פצועי ונכי צה’’ל . ההשתתפות כרוכה בתשלום מראש"
+        
+    ]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        layout.minimumInteritemSpacing = 5
+        layout.itemSize = CGSize(width: (self.collectionView.frame.size.width - 20)/2, height: self.collectionView.frame.size.height/3)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,13 +71,18 @@ class EventCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 6
+        return eventTitle.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "eventCollectionCell", for: indexPath) as! EventCollectionViewCell
     
         // Configure the cell
+        
+        cell.eventTitleUILabel.text = eventTitle[indexPath.item]
+        cell.eventImageUIImageView.image = eventImages[indexPath.item]
+        cell.eventDescriptionUILabel.text = eventDescription[indexPath.item]
+        cell.eventDescriptionUILabel.numberOfLines = 4
     
         return cell
     }
