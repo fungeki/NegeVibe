@@ -12,6 +12,8 @@
 		8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0921B0376800103D9E /* Symbology.swift */; };
 		8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */; };
 		8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0D21B0414300103D9E /* Artwork.swift */; };
+		8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */; };
+		8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
 		8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
 		8C1ACD0D21B0414300103D9E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
+		8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				8CEB9B3221AED0B2009B55FF /* LaunchScreen.storyboard */,
 				8CEB9B3521AED0B2009B55FF /* Info.plist */,
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
+				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
+				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
 			);
 			path = NegeVibe;
 			sourceTree = "<group>";
@@ -267,12 +273,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */,
+				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
+				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
 				8CEB9B4121AED118009B55FF /* Event.swift in Sources */,
 				8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */,
