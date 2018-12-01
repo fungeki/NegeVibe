@@ -16,7 +16,7 @@ class EventMapViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     // set initial location in IndNegev
-    let initialLocation = CLLocation(latitude: 31.2051119, longitude: 34.4533182)
+    let initialLocation = CLLocation(latitude: 31.5251773, longitude: 34.5905993)
     override func viewDidLoad() {
         super.viewDidLoad()
         //shifts type to hybrid
@@ -35,27 +35,36 @@ class EventMapViewController: UIViewController {
     //    mapView.delegate = self
         
         
-        
+        var eventData = [Artwork]()
         //adding artwork
         getEvents { (events) in
             //close loading indicator
             JustHUD.shared.hide()
-            //chosen event
-            let model = events[0]
-            //event location on map
-            let location = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
-            //type of the event by symbol
-            let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
-            
-            //create artwork for the model event
-            let indNegev = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
-            
-//            //adds the artwork to the map
-            self.mapView.register(ArtworkView.self,
-                             forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+            for model in events{
+                //event location on map
+                let location = CLLocationCoordinate2D(latitude: model.latitude, longitude: model.longitude)
+                //type of the event by symbol
+                let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
+                
+                //create artwork for the model event
+                let artwork = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
+                
+                
+                
+                eventData.append(artwork)
+                
+            }
+            print(eventData)
             //adds the annotation to the map
-            self.mapView.addAnnotation(indNegev)
-            self.mapView.reloadInputViews()
+            self.mapView.register(ArtworkView.self,
+                                  forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+            self.mapView.addAnnotations(eventData)
+            
+//            //chosen event
+//            let model = events[0]
+            //            //adds the artwork to the map
+           
+           // self.mapView.reloadInputViews()
         }
         
     }

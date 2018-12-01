@@ -10,11 +10,11 @@ import MapKit
 import SDWebImage
 
 class Artwork: NSObject, MKAnnotation {
-    let title: String?
-    let locationName: String
-    let discipline: String
-    let coordinate: CLLocationCoordinate2D
-    let logo: String?
+    var title: String?
+    var locationName: String
+    var discipline: String
+    var coordinate: CLLocationCoordinate2D
+    var logo: String?
     
     init(title: String, locationName: String, type discipline: String, coordinate: CLLocationCoordinate2D, logo: String?) {
         self.title = title
@@ -24,6 +24,20 @@ class Artwork: NSObject, MKAnnotation {
         self.logo = logo
         super.init()
     }
+    
+//    init?(with events: [Event]){
+//        for event in events{
+//            self.title = event.title
+//            self.locationName = event.locationname
+//            self.discipline = Symbol(withInt: event.type)!.rawValue
+//            self.locationName = event.locationname
+//            self.coordinate = CLLocationCoordinate2D(latitude: event.longitude, longitude: event.latitude)
+//            
+//            
+//        }
+        
+        
+//    }
     
     var subtitle: String? {
         return locationName
