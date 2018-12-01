@@ -12,6 +12,7 @@ private let reuseIdentifier = "Cell"
 class EventCollectionViewController: UICollectionViewController{
     
 
+    var arrEvent = [Event]()
     @IBOutlet var eventCollectionView: UICollectionView!
     
     
@@ -37,6 +38,13 @@ class EventCollectionViewController: UICollectionViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getEvents { (arrEvent) in
+            self.arrEvent = arrEvent
+             self.collectionView.reloadData()
+        }
+        
+       // self.collectionView.reloadData()
         
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
@@ -69,7 +77,9 @@ class EventCollectionViewController: UICollectionViewController{
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return eventTitle.count
+        
+//        return eventTitle.count
+           return arrEvent.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -77,11 +87,18 @@ class EventCollectionViewController: UICollectionViewController{
         
         // Configure the cell
         
-        cell.eventTitleUILabel.text = eventTitle[indexPath.item]
-        cell.eventImageUIImageView.image = eventImages[indexPath.item]
-        cell.eventDescriptionUILabel.text = eventDescription[indexPath.item]
+//        cell.eventTitleUILabel.text = eventTitle[indexPath.item]
+//        cell.eventImageUIImageView.image = eventImages[indexPath.item]
+//        cell.eventDescriptionUILabel.text = eventDescription[indexPath.item]
+//        cell.eventDescriptionUILabel.numberOfLines = 4
+        let negevEvent = arrEvent[indexPath.item]
+
+        cell.eventTitleUILabel.text = negevEvent.title
+        cell.eventDescriptionUILabel.text = negevEvent.description
         cell.eventDescriptionUILabel.numberOfLines = 4
-        
+        let url = URL(string: negevEvent.images[0].link)
+        cell.eventImageUIImageView.sd_setImage(with: url)
+        //cell.eventImageUIImageView.image = UIImage(named: negevEvent.images[0].link)
         return cell
     }
     
