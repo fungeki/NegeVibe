@@ -14,6 +14,7 @@
 		8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0D21B0414300103D9E /* Artwork.swift */; };
 		8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */; };
 		8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */; };
+		8C1ACD4221B4262B00103D9E /* PanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4121B4262B00103D9E /* PanViewController.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		8C1ACD0D21B0414300103D9E /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewController.swift; sourceTree = "<group>"; };
 		8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C1ACD4121B4262B00103D9E /* PanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanViewController.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
+				8C1ACD4121B4262B00103D9E /* PanViewController.swift */,
 			);
 			path = NegeVibe;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				EE91AF8921B32B920084066B /* GlobalsEvents.swift in Sources */,
 				8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */,
+				8C1ACD4221B4262B00103D9E /* PanViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */,

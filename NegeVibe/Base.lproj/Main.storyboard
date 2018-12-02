@@ -24,6 +24,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Pan View Controller-->
+        <scene sceneID="G3g-fz-txq">
+            <objects>
+                <viewController id="aOS-7q-7Cm" customClass="PanViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQh-8h-N0q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indinegev" translatesAutoresizingMaskIntoConstraints="NO" id="Vj6-uE-vIS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="pGe-QI-Usf"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpz-od-gdn">
+                                <rect key="frame" x="0.0" y="270" width="375" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kpz-od-gdn" firstAttribute="top" secondItem="Vj6-uE-vIS" secondAttribute="bottom" id="0TT-03-Sfi"/>
+                            <constraint firstItem="Vj6-uE-vIS" firstAttribute="leading" secondItem="McQ-lr-s1a" secondAttribute="leading" id="ALd-Yc-U6H"/>
+                            <constraint firstItem="kpz-od-gdn" firstAttribute="leading" secondItem="McQ-lr-s1a" secondAttribute="leading" id="KrR-I8-wUE"/>
+                            <constraint firstItem="McQ-lr-s1a" firstAttribute="trailing" secondItem="kpz-od-gdn" secondAttribute="trailing" id="mJF-vV-Stm"/>
+                            <constraint firstItem="Vj6-uE-vIS" firstAttribute="top" secondItem="McQ-lr-s1a" secondAttribute="top" id="mh0-dp-0e5"/>
+                            <constraint firstItem="McQ-lr-s1a" firstAttribute="bottom" secondItem="kpz-od-gdn" secondAttribute="bottom" id="nKR-Nx-oxa"/>
+                            <constraint firstItem="McQ-lr-s1a" firstAttribute="trailing" secondItem="Vj6-uE-vIS" secondAttribute="trailing" id="qjW-5r-aST"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="McQ-lr-s1a"/>
+                    </view>
+                    <connections>
+                        <outlet property="uiiview" destination="Vj6-uE-vIS" id="lIT-Gd-DOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0L-Sl-eUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="FDB-yu-k55"/>
+            </objects>
+            <point key="canvasLocation" x="354" y="741"/>
+        </scene>
         <!--מפה-->
         <scene sceneID="lF2-f1-MPz">
             <objects>
@@ -32,6 +72,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-9f-UCS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="36"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
+                                        <rect key="frame" x="309" y="8" width="50" height="20"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
+                                        <rect key="frame" x="16" y="8" width="285" height="20"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SMc-bf-leT" firstAttribute="leading" secondItem="WLW-9f-UCS" secondAttribute="leading" constant="16" id="0rc-w6-k7k"/>
+                                    <constraint firstAttribute="bottom" secondItem="hKI-4c-viA" secondAttribute="bottom" constant="8" id="9tS-JJ-mvC"/>
+                                    <constraint firstItem="hKI-4c-viA" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="top" constant="8" id="LSg-R3-aL4"/>
+                                    <constraint firstItem="SMc-bf-leT" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="top" constant="8" id="TBT-8d-4qs"/>
+                                    <constraint firstAttribute="trailing" secondItem="hKI-4c-viA" secondAttribute="trailing" constant="16" id="g7s-Je-nq1"/>
+                                    <constraint firstItem="hKI-4c-viA" firstAttribute="leading" secondItem="SMc-bf-leT" secondAttribute="trailing" constant="8" id="hUL-oI-q4h"/>
+                                    <constraint firstAttribute="bottom" secondItem="SMc-bf-leT" secondAttribute="bottom" constant="8" id="pfP-1b-Dy7"/>
+                                </constraints>
+                            </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Vj-7nv">
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <connections>
@@ -41,9 +105,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="WLW-9f-UCS" firstAttribute="top" secondItem="CTH-Ho-btF" secondAttribute="top" id="KTK-ew-gaS"/>
                             <constraint firstItem="yjn-Vj-7nv" firstAttribute="top" secondItem="CTH-Ho-btF" secondAttribute="top" id="MbV-xT-e9c"/>
+                            <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="WLW-9f-UCS" secondAttribute="trailing" id="Ofo-Tz-Mb8"/>
+                            <constraint firstItem="WLW-9f-UCS" firstAttribute="height" secondItem="CTH-Ho-btF" secondAttribute="height" multiplier="0.06" id="Oxa-Pp-bL8"/>
                             <constraint firstItem="yjn-Vj-7nv" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="Qse-zI-mWl"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="bottom" secondItem="yjn-Vj-7nv" secondAttribute="bottom" id="Ug8-Xs-fEO"/>
+                            <constraint firstItem="WLW-9f-UCS" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="pRg-Cm-itl"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="yjn-Vj-7nv" secondAttribute="trailing" id="uIh-CB-CqX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
@@ -55,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCR-zf-ttW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="913"/>
+            <point key="canvasLocation" x="1340" y="912.5937031484259"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yu0-aD-0Bh">
@@ -212,7 +280,9 @@
     <resources>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_shekel_icon" width="58" height="49"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>
