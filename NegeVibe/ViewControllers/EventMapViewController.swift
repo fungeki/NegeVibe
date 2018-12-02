@@ -14,59 +14,52 @@ class EventMapViewController: UIViewController {
 
     //map outlet
     @IBOutlet weak var mapView: MKMapView!
-    
+    //artworks to display
+    var eventData = [Artwork]()
     // set initial location in IndNegev
     let initialLocation = CLLocation(latitude: 31.5227, longitude: 34.5956)
     override func viewDidLoad() {
         super.viewDidLoad()
-        //shifts type to hybrid
-       // mapView.mapType = .hybrid
-        
-        //to show images
-        
-        
         //centers location
         centerMapOnLocation(location: initialLocation)
 
+        print(glb_events)
+        if glb_events.count == 0 {
         //loading indicator
         JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
-        
-        //protocols to extension
-    //    mapView.delegate = self
-        
-        
-        var eventData = [Artwork]()
+
         //adding artwork
         getEvents { (events) in
             //close loading indicator
             JustHUD.shared.hide()
-            for model in events{
-                //event location on map
-                let location = CLLocationCoordinate2D(latitude: model.locx, longitude: model.locy)
-                //type of the event by symbol
-                let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
-                
-                //create artwork for the model event
-                let artwork = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
-                
-                
-                
-                eventData.append(artwork)
-                
+            self.convertToArtworksAndDisplay(events: events)
+            glb_events = events
             }
-            print(eventData)
-            //adds the annotation to the map
-            self.mapView.register(ArtworkView.self,
-                                  forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-            self.mapView.addAnnotations(eventData)
+        } else {
             
-//            //chosen event
-//            let model = events[0]
-            //            //adds the artwork to the map
-           
-           // self.mapView.reloadInputViews()
+            convertToArtworksAndDisplay(events: glb_events)
         }
         
+    }
+    
+    func convertToArtworksAndDisplay(events: [Event]) {
+        for model in events{
+            //event location on map
+            let location = CLLocationCoordinate2D(latitude: model.locx, longitude: model.locy)
+            //type of the event by symbol
+            let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
+            
+            //create artwork for the model event
+            let artwork = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
+            
+            
+            
+            eventData.append(artwork)
+        }
+        //adds the annotation to the map
+        self.mapView.register(ArtworkView.self,
+                              forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        self.mapView.addAnnotations(self.eventData)
     }
     
     //sets region
@@ -88,7 +81,6 @@ class EventMapViewController: UIViewController {
     */
 
 }
-
 extension EventMapViewController: MKMapViewDelegate {
     // 1
     

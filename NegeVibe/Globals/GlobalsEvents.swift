@@ -9,3 +9,4 @@
 import Foundation
 
 
+var glb_events = [Event]()
