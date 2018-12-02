@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Symbol: String {
+enum Symbol: String, CustomStringConvertible {
     case festival = "Festival"
     case musicFestival = "Music Festival"
     case movieFestival = "Movies Festival"
@@ -33,5 +33,9 @@ enum Symbol: String {
         default:
             return UIImage(named: "rock_festival")!
         }
+    }
+    
+    var description: String{
+        return self.rawValue
     }
 }

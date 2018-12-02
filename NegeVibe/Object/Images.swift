@@ -8,9 +8,13 @@
 
 import Foundation
 
-struct EventImage: Codable {
+struct EventImage: Codable, CustomStringConvertible {
     var id: Int
     var title: String
     var link: String
     var status: Int
+    
+    var description: String{
+        return "\(title) image"
+    }
 }
