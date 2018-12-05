@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nWx-Sy-Jqf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQm-gu-y0q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -72,11 +72,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Vj-7nv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <connections>
+                                    <outlet property="delegate" destination="p4g-h5-hWC" id="BmY-U7-TpP"/>
+                                </connections>
+                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLW-9f-UCS">
                                 <rect key="frame" x="0.0" y="20" width="375" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
                                         <rect key="frame" x="309" y="8" width="50" height="20"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
+                                        </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
                                         <rect key="frame" x="16" y="8" width="285" height="20"/>
@@ -96,12 +106,6 @@
                                     <constraint firstAttribute="bottom" secondItem="SMc-bf-leT" secondAttribute="bottom" constant="8" id="pfP-1b-Dy7"/>
                                 </constraints>
                             </view>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Vj-7nv">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <connections>
-                                    <outlet property="delegate" destination="p4g-h5-hWC" id="BmY-U7-TpP"/>
-                                </connections>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -119,9 +123,17 @@
                     <tabBarItem key="tabBarItem" title="מפה" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
                     <connections>
                         <outlet property="mapView" destination="yjn-Vj-7nv" id="JPc-8s-El4"/>
+                        <outlet property="searchField" destination="SMc-bf-leT" id="9GN-71-4Gz"/>
+                        <outlet property="searchIcon" destination="hKI-4c-viA" id="ppW-mV-aIp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCR-zf-ttW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cNE-tx-k9t">
+                    <connections>
+                        <action selector="search:" destination="p4g-h5-hWC" id="XM9-Jt-jpu"/>
+                        <outlet property="delegate" destination="p4g-h5-hWC" id="1ou-10-Elj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1340" y="912.5937031484259"/>
         </scene>
@@ -279,7 +291,7 @@
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
             <objects>
-                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="ViewController" customModule="Event" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="ViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzx-JB-o1A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -406,15 +418,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="50" height="50"/>
+        <image name="calendar" width="37.5" height="37.5"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_shekel_icon" width="58" height="49"/>
-        <image name="indinegev" width="624" height="383"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
-        <image name="location" width="50" height="50"/>
+        <image name="location" width="37.5" height="37.5"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
-        <image name="tickets" width="50" height="50"/>
+        <image name="search" width="50" height="50"/>
+        <image name="tickets" width="37.5" height="37.5"/>
     </resources>
 </document>

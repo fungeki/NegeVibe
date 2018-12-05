@@ -12,6 +12,13 @@ import Contacts
 
 class EventMapViewController: UIViewController {
 
+    
+    let emptyFieldErrorMessage = "אנא הכנס/י שם אירוע בחיפוש"
+    let emptyFieldErrorTitle = "שדה חיפוש ריק"
+    let okMessage = "בסדר"
+    @IBOutlet weak var searchField: UITextField!
+    
+    @IBOutlet weak var searchIcon: UIImageView!
     //map outlet
     @IBOutlet weak var mapView: MKMapView!
     //artworks to display
@@ -22,7 +29,9 @@ class EventMapViewController: UIViewController {
         super.viewDidLoad()
         //centers location
         centerMapOnLocation(location: initialLocation)
-
+        
+        searchIcon.isUserInteractionEnabled = true
+        
 //        print(glb_events)
         if glb_events.count == 0 {
         //loading indicator
@@ -38,6 +47,25 @@ class EventMapViewController: UIViewController {
         } else {
             convertToArtworksAndDisplay(events: glb_events)
         }
+        
+    }
+    
+    
+    @IBAction func search(_ sender: UITapGestureRecognizer) {
+        
+        
+        if searchField.text?.count == 0 {
+            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
+        }
+        guard let searchTitle = searchField.text else{
+            return
+        }
+        if glb_events.contains(where: { $0.title.contains(searchTitle) }) && searchTitle.count > 2 {
+           print(glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element }))
+        } else {
+            print("1 does not exists in the array")
+        }
+        
         
     }
     
@@ -80,5 +108,8 @@ extension EventMapViewController: MKMapViewDelegate {
         }
         print(artwork.title, " was clicked")
     }
+    
+    
+    
     
 }
