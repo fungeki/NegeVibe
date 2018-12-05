@@ -13,9 +13,13 @@ import Contacts
 class EventMapViewController: UIViewController {
 
     
+    
     let emptyFieldErrorMessage = "אנא הכנס/י שם אירוע בחיפוש"
     let emptyFieldErrorTitle = "שדה חיפוש ריק"
     let okMessage = "בסדר"
+    
+    var vsc: [UIViewController]?
+
     @IBOutlet weak var searchField: UITextField!
     
     @IBOutlet weak var searchIcon: UIImageView!
@@ -29,7 +33,7 @@ class EventMapViewController: UIViewController {
         super.viewDidLoad()
         //centers location
         centerMapOnLocation(location: initialLocation)
-        
+        vsc = tabBarController?.viewControllers
         searchIcon.isUserInteractionEnabled = true
         
 //        print(glb_events)
@@ -52,7 +56,7 @@ class EventMapViewController: UIViewController {
     
     
     @IBAction func search(_ sender: UITapGestureRecognizer) {
-        
+       
         
         if searchField.text?.count == 0 {
             popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
