@@ -12,11 +12,17 @@ import Contacts
 
 class EventMapViewController: UIViewController {
 
+    var isDown = false
     
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var searchTableView: UITableView!
     
     let emptyFieldErrorMessage = "אנא הכנס/י שם אירוע בחיפוש"
     let emptyFieldErrorTitle = "שדה חיפוש ריק"
     let okMessage = "בסדר"
+    
+    var searchResult = [Event]()
     
     var vsc: [UIViewController]?
 
@@ -35,8 +41,9 @@ class EventMapViewController: UIViewController {
         centerMapOnLocation(location: initialLocation)
         vsc = tabBarController?.viewControllers
         searchIcon.isUserInteractionEnabled = true
+        searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
         
-//        print(glb_events)
+        //print(glb_events)
         if glb_events.count == 0 {
         //loading indicator
         JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
@@ -55,22 +62,41 @@ class EventMapViewController: UIViewController {
     }
     
     
-    @IBAction func search(_ sender: UITapGestureRecognizer) {
-       
-        
-        if searchField.text?.count == 0 {
-            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
-        }
+//    @IBAction func search(_ sender: UITapGestureRecognizer) {
+//
+//        guard let searchTitle = searchField.text else{
+//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
+//            return
+//        }
+//        if searchTitle.count == 0 {
+//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
+//        } else {
+//            self.searchResult = glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
+//            tableHeight.constant = CGFloat(searchResult.count * 50)
+//            searchTableView.reloadData()
+//
+//        }
+//
+////        if glb_events.contains(where: { $0.title.contains(searchTitle) }) && searchTitle.count > 2 {
+////
+////        } else {
+////            print("1 does not exists in the array")
+////        }
+//
+//    }
+    @IBAction func search(_ sender: UITextField) {
         guard let searchTitle = searchField.text else{
             return
         }
-        if glb_events.contains(where: { $0.title.contains(searchTitle) }) && searchTitle.count > 2 {
-           print(glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element }))
-        } else {
-            print("1 does not exists in the array")
+            self.searchResult = glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
+        tableHeight.constant = CGFloat(searchResult.count * 50)
+        searchTableView.reloadData()
+        if !isDown && searchTitle.count > 2 {
+            isDown = true
+            UIView.animate(withDuration: 0.3) {
+                self.searchTableView.transform = CGAffineTransform.identity
+            }
         }
-        
-        
     }
     
     func convertToArtworksAndDisplay(events: [Event]) {
@@ -110,10 +136,38 @@ extension EventMapViewController: MKMapViewDelegate {
             print("no artwork error")
             return
         }
-        print(artwork.title, " was clicked")
+        print(artwork.title!, " was clicked")
     }
     
     
     
+    
+}
+
+extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return searchResult.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! SearchResultTableViewCell
+        cell.searchTitleLabel.text = searchResult[indexPath.row].title
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedEvent = searchResult[indexPath.row]
+        let eventLoc = CLLocation(latitude: selectedEvent.locx, longitude: selectedEvent.locy)
+        UIView.animate(withDuration: 0.3) {
+            self.searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
+            self.tableHeight.constant = 0
+            self.centerMapOnLocation(location: eventLoc)
+            
+        }
+        mapView.selectAnnotation(eventData[indexPath.row], animated: true)
+        searchResult = [Event]()
+        isDown = false
+        
+    }
     
 }
