@@ -30,8 +30,6 @@ class CurrentLocation {
     }
 
     
-    
-    //creates and instance if one doesnt exist.
     private static var sharedInstance:CurrentLocation!
 
 

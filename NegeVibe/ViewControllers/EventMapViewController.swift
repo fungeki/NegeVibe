@@ -55,7 +55,7 @@ class EventMapViewController: UIViewController {
         searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
         
         //print(glb_events)
-        if glb_events.count == 0 {
+        if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
             //loading indicator
             JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
             
@@ -64,22 +64,24 @@ class EventMapViewController: UIViewController {
                 //close loading indicator
                 JustHUD.shared.hide()
                 self.convertToArtworksAndDisplay(events: events)
-                glb_events = events
+                EventsLibrary.getInstance().setEvents(events)
                 
             }
         } else {
-            convertToArtworksAndDisplay(events: glb_events)
+            convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
         }
         
         
     }
     func closeSearch(){
+        let goUpEffect = CGAffineTransform.init(translationX: 0, y: -150)
+        
         UIView.animate(withDuration: 0.3) {
-            self.searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
-            self.tableHeight.constant = 0
-            
+            self.searchTableView.transform = goUpEffect
+            self.searchTableView.alpha = 0
         }
         searchResult = [Event]()
+        searchTableView.reloadData()
         isDown = false
     }
     
@@ -88,13 +90,14 @@ class EventMapViewController: UIViewController {
         guard let searchTitle = searchField.text else{
             return
         }
-            self.searchResult = glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
+            self.searchResult = EventsLibrary.getInstance().getEvents().enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
         tableHeight.constant = CGFloat(searchResult.count * 50)
         searchTableView.reloadData()
         if !isDown && searchTitle.count > 2 {
             isDown = true
             UIView.animate(withDuration: 0.3) {
                 self.searchTableView.transform = CGAffineTransform.identity
+                self.searchTableView.alpha = 1
             }
         } else if isDown && searchTitle.count < 3{
             closeSearch()
@@ -110,8 +113,6 @@ class EventMapViewController: UIViewController {
             
             //create artwork for the model event
             let artwork = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
-            
-            
             
             eventData.append(artwork)
             

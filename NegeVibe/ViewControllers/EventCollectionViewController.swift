@@ -39,14 +39,14 @@ class EventCollectionViewController: UICollectionViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if glb_events.count == 0{
+        if EventsLibrary.getInstance().getNumberOfEvents() == 0{
         getEvents { (arrEvent) in
             self.arrEvent = arrEvent
-            glb_events = arrEvent
+            EventsLibrary.getInstance().setEvents(arrEvent)
              self.collectionView.reloadData()
             }
         } else {
-            self.arrEvent = glb_events
+            self.arrEvent = EventsLibrary.getInstance().getEvents()
         }
         
        // self.collectionView.reloadData()
