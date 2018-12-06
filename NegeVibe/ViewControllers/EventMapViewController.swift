@@ -96,6 +96,8 @@ class EventMapViewController: UIViewController {
             UIView.animate(withDuration: 0.3) {
                 self.searchTableView.transform = CGAffineTransform.identity
             }
+        } else if isDown{
+            
         }
     }
     
