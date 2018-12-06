@@ -69,9 +69,6 @@ class EventMapViewController: UIViewController {
             }
         } else {
             convertToArtworksAndDisplay(events: glb_events)
-            if CurrentLocation.getInstance().getWasChanged(){
-                
-            }
         }
         
         

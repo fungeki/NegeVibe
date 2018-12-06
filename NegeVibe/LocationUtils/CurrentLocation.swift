@@ -24,13 +24,18 @@ class CurrentLocation {
     private var wasChanged: Bool
     private var eventPlace = -1
     
-    //singleton snippet
+    
     private init (){
         wasChanged = false
     }
+
     
+    
+    //creates and instance if one doesnt exist.
     private static var sharedInstance:CurrentLocation!
-    
+
+
+    //creates and instance if one doesnt exist.
     static func getInstance()->CurrentLocation{
         if sharedInstance == nil{
             sharedInstance = CurrentLocation()
