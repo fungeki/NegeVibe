@@ -18,6 +18,7 @@
 		8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4321B7D03A00103D9E /* Popup.swift */; };
 		8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */; };
 		8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4921B7FAFE00103D9E /* PushPostDummy.swift */; };
+		8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4C21B9392200103D9E /* CurrentLocation.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		8C1ACD4321B7D03A00103D9E /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		8C1ACD4921B7FAFE00103D9E /* PushPostDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPostDummy.swift; sourceTree = "<group>"; };
+		8C1ACD4C21B9392200103D9E /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			path = Push;
 			sourceTree = "<group>";
 		};
+		8C1ACD4B21B938F700103D9E /* LocationUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ACD4C21B9392200103D9E /* CurrentLocation.swift */,
+			);
+			path = LocationUtils;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
+				8C1ACD4B21B938F700103D9E /* LocationUtils */,
 				8C1ACD4521B7F81D00103D9E /* TableViewCell */,
 				EE91AF8721B32B570084066B /* Globals */,
 				8C1ACD0F21B07BF500103D9E /* ViewControllers */,
@@ -323,6 +334,7 @@
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
+				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,

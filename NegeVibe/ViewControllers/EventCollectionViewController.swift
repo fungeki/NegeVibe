@@ -64,6 +64,8 @@ class EventCollectionViewController: UICollectionViewController{
         // Do any additional setup after loading the view.
     }
     
+    
+    
     /*
      // MARK: - Navigation
      // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -101,6 +103,8 @@ class EventCollectionViewController: UICollectionViewController{
         cell.eventTitleUILabel.text = negevEvent.title
         cell.eventDescriptionUILabel.text = negevEvent.description
         cell.eventDescriptionUILabel.numberOfLines = 4
+        cell.tabBar = self.tabBarController
+        cell.event = negevEvent
         let url = URL(string: negevEvent.images[0].link)
         cell.eventImageUIImageView.sd_setImage(with: url)
         //cell.eventImageUIImageView.image = UIImage(named: negevEvent.images[0].link)

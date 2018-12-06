@@ -34,56 +34,59 @@ class EventMapViewController: UIViewController {
     //artworks to display
     var eventData = [Artwork]()
     // set initial location in IndNegev
-    let initialLocation = CLLocation(latitude: 31.5227, longitude: 34.5956)
+    //var initialLocation = CLLocation(latitude: 31.5227, longitude: 34.5956)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        initialize()
+    }
+    
+    func initialize() {
         //centers location
-        centerMapOnLocation(location: initialLocation)
+        centerMapOnLocation(location: CurrentLocation.getInstance().getLocation())
         vsc = tabBarController?.viewControllers
         searchIcon.isUserInteractionEnabled = true
         searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
         
         //print(glb_events)
         if glb_events.count == 0 {
-        //loading indicator
-        JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
-
-        //adding artwork
-        getEvents { (events) in
-            //close loading indicator
-            JustHUD.shared.hide()
-            self.convertToArtworksAndDisplay(events: events)
-            glb_events = events
+            //loading indicator
+            JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
+            
+            //adding artwork
+            getEvents { (events) in
+                //close loading indicator
+                JustHUD.shared.hide()
+                self.convertToArtworksAndDisplay(events: events)
+                glb_events = events
+                
             }
         } else {
             convertToArtworksAndDisplay(events: glb_events)
+            if CurrentLocation.getInstance().getWasChanged(){
+                
+            }
         }
         
+        
+    }
+    func closeSearch(){
+        UIView.animate(withDuration: 0.3) {
+            self.searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
+            self.tableHeight.constant = 0
+            
+        }
+        searchResult = [Event]()
+        isDown = false
     }
     
-    
-//    @IBAction func search(_ sender: UITapGestureRecognizer) {
-//
-//        guard let searchTitle = searchField.text else{
-//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
-//            return
-//        }
-//        if searchTitle.count == 0 {
-//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
-//        } else {
-//            self.searchResult = glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
-//            tableHeight.constant = CGFloat(searchResult.count * 50)
-//            searchTableView.reloadData()
-//
-//        }
-//
-////        if glb_events.contains(where: { $0.title.contains(searchTitle) }) && searchTitle.count > 2 {
-////
-////        } else {
-////            print("1 does not exists in the array")
-////        }
-//
-//    }
+
     @IBAction func search(_ sender: UITextField) {
         guard let searchTitle = searchField.text else{
             return
@@ -96,8 +99,8 @@ class EventMapViewController: UIViewController {
             UIView.animate(withDuration: 0.3) {
                 self.searchTableView.transform = CGAffineTransform.identity
             }
-        } else if isDown{
-            
+        } else if isDown && searchTitle.count < 3{
+            closeSearch()
         }
     }
     
@@ -114,6 +117,8 @@ class EventMapViewController: UIViewController {
             
             
             eventData.append(artwork)
+            
+            
         }
         //adds the annotation to the map
         self.mapView.register(ArtworkView.self,
@@ -154,6 +159,7 @@ extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchCell") as! SearchResultTableViewCell
         cell.searchTitleLabel.text = searchResult[indexPath.row].title
+    
         return cell
     }
     
@@ -169,7 +175,30 @@ extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
         mapView.selectAnnotation(eventData[indexPath.row], animated: true)
         searchResult = [Event]()
         isDown = false
-        
+        CurrentLocation.getInstance().setLocation(event: selectedEvent)
+        self.view.endEditing(true)
     }
     
 }
+//    @IBAction func search(_ sender: UITapGestureRecognizer) {
+//
+//        guard let searchTitle = searchField.text else{
+//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
+//            return
+//        }
+//        if searchTitle.count == 0 {
+//            popAlert(title: emptyFieldErrorTitle, message: emptyFieldErrorMessage, okMessage:  okMessage,view: self)
+//        } else {
+//            self.searchResult = glb_events.enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
+//            tableHeight.constant = CGFloat(searchResult.count * 50)
+//            searchTableView.reloadData()
+//
+//        }
+//
+////        if glb_events.contains(where: { $0.title.contains(searchTitle) }) && searchTitle.count > 2 {
+////
+////        } else {
+////            print("1 does not exists in the array")
+////        }
+//
+//    }
