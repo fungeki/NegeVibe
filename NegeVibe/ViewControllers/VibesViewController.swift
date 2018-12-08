@@ -10,8 +10,8 @@ import UIKit
 
 class VibesViewController: UIViewController {
 
-    //timer for the effect:
-    var vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
+    var vibeItUpTimer: Timer?
+    var iterate = 1
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var vibesCollection: UICollectionView!
@@ -20,7 +20,7 @@ class VibesViewController: UIViewController {
         super.viewDidLoad()
         
         //height of the content
-        let collectionCellWidth = vibesCollection.contentSize.width / 3
+        let collectionCellWidth = vibesCollection.contentSize.width / 3 - 3
         //if the collection cells are not in the middle make them start in the middle
         vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4) / 2, 0)
 
@@ -28,14 +28,50 @@ class VibesViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        //timer for the effect:
+        vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
+    }
+    
+    
     @objc func bringToLife(){
-        let index = IndexPath(row: 1, section: 0)
+        //choose a random number between 0 and 12
+        let rand = Int.random(in: 0..<12)
+        
+        //assign a random index
+        let index = IndexPath(row: rand, section: 0)
         guard let cell = vibesCollection.cellForItem(at: index) else {
             return
         }
+        let vibesCell = cell as! VibesCollectionViewCell
+
+        //let effectRand = Int.random(in: 0..<)
+        resizeVibe(vibesCell)
+        
         
     }
     
+    func spinVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, animations: {
+            cell.transform = CGAffineTransform(rotationAngle: 180)
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
+        }
+    }
+    
+    func resizeVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, animations: {
+            cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
+        }
+    }
     
 //    override func viewWillAppear(_ animated: Bool) {
 //        super.viewWillAppear(true)
@@ -69,7 +105,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = self.view.frame.width
-        return CGSize(width: screenWidth / 3, height: screenWidth / 3)
+        return CGSize(width: screenWidth / 3 - 4, height: screenWidth / 3 - 4)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
@@ -80,7 +116,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 4
     }
     
 }

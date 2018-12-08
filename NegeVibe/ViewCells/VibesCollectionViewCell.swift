@@ -15,7 +15,7 @@ class VibesCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         vibeImage.layer.cornerRadius = 20
-        vibeImage.layer.borderColor = UIColor.blue.cgColor
-        vibeImage.layer.borderWidth = 1
+//        vibeImage.layer.borderColor = UIColor.blue.cgColor
+//        vibeImage.layer.borderWidth = 1
     }
 }
