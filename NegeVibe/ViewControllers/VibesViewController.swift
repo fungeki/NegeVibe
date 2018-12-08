@@ -11,8 +11,9 @@ import UIKit
 class VibesViewController: UIViewController {
     
     var vibeItUpTimer: Timer?
-    var iterate = 1
-    var cellSelector = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    let effectTime: TimeInterval = 0.4
+    //var iterate = 1
+   // var cellSelector = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var vibesCollection: UICollectionView!
@@ -38,16 +39,17 @@ class VibesViewController: UIViewController {
     
     
     @objc func bringToLife(){
-        let daFunk = cellSelector.shuffled()
+//        let daFunk = cellSelector.shuffled()
+//
+//        for i in 0..<iterate {
         
-        for i in 0..<iterate {
             
-            
-            let cellNum = daFunk[i]
+            //let cellNum = daFunk[i]
             //choose a random number between 0 and 12
             
             
             //assign a random index
+            let cellNum = Int.random(in: 0..<12)
             let index = IndexPath(row: cellNum, section: 0)
             guard let cell = vibesCollection.cellForItem(at: index) else {
                 return
@@ -58,7 +60,7 @@ class VibesViewController: UIViewController {
             
             
             
-            let rand = Int.random(in: 0..<6)
+            let rand = Int.random(in: 0..<8)
             
             
             
@@ -73,42 +75,68 @@ class VibesViewController: UIViewController {
                 springSizeReduce(vibesCell)
             case 4:
                 flickerVibe(vibesCell)
+            case 5:
+                revHalfTurnVibe(vibesCell)
+            case 6:
+                revFullTurnVibe(vibesCell)
             default:
                 resizeVibe(vibesCell)
             }
             
+//        }
+//        if iterate < 7 {
+//            iterate = iterate + 1
+//        }
+    }
+    
+    //rotate the cell counter clockwise
+    func revHalfTurnVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: effectTime, animations: {
+            cell.transform = CGAffineTransform(rotationAngle: -180)
+        }) { (true) in
+            UIView.animate(withDuration: self.effectTime, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
         }
-        if iterate < 7 {
-            iterate = iterate + 1
+    }
+    
+    //rotate the cell counter clockwise
+    func revFullTurnVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: effectTime, animations: {
+            cell.transform = CGAffineTransform(rotationAngle: -.pi)
+        }) { (true) in
+            UIView.animate(withDuration: self.effectTime, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
         }
     }
     //flicker
     func flickerVibe(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+        UIView.animate(withDuration: effectTime, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
             cell.alpha = 0.5
             
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.alpha = 1
             })
         }
     }
     //spring size to smaller cell
     func springSizeReduce(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+        UIView.animate(withDuration: effectTime, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
             cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.transform = CGAffineTransform.identity
             })
         }
     }
     //spring size to larger cell
     func springSizeEnlarge(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+        UIView.animate(withDuration: effectTime, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
             cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.transform = CGAffineTransform.identity
             })
         }
@@ -116,10 +144,10 @@ class VibesViewController: UIViewController {
     
     //spins in 1 direction
     func fullSpinVibe(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: effectTime, animations: {
             cell.transform = CGAffineTransform(rotationAngle: .pi)
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.transform = CGAffineTransform.identity
             })
         }
@@ -127,10 +155,10 @@ class VibesViewController: UIViewController {
     
     //spins half way and returns
     func halfSpinVibe(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: effectTime, animations: {
             cell.transform = CGAffineTransform(rotationAngle: 180)
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.transform = CGAffineTransform.identity
             })
         }
@@ -138,10 +166,10 @@ class VibesViewController: UIViewController {
     
     //gets bigger and then smaller
     func resizeVibe(_ cell: VibesCollectionViewCell){
-        UIView.animate(withDuration: 0.2, animations: {
+        UIView.animate(withDuration: effectTime, animations: {
             cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }) { (true) in
-            UIView.animate(withDuration: 0.2, animations: {
+            UIView.animate(withDuration: self.effectTime, animations: {
                 cell.transform = CGAffineTransform.identity
             })
         }
