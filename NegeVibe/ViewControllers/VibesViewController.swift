@@ -9,9 +9,10 @@
 import UIKit
 
 class VibesViewController: UIViewController {
-
+    
     var vibeItUpTimer: Timer?
     var iterate = 1
+    var cellSelector = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var vibesCollection: UICollectionView!
@@ -23,7 +24,7 @@ class VibesViewController: UIViewController {
         let collectionCellWidth = vibesCollection.contentSize.width / 3 - 3
         //if the collection cells are not in the middle make them start in the middle
         vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4) / 2, 0)
-
+        
         
         
         // Do any additional setup after loading the view.
@@ -37,23 +38,95 @@ class VibesViewController: UIViewController {
     
     
     @objc func bringToLife(){
-        //choose a random number between 0 and 12
-        let rand = Int.random(in: 0..<12)
+        let daFunk = cellSelector.shuffled()
         
-        //assign a random index
-        let index = IndexPath(row: rand, section: 0)
-        guard let cell = vibesCollection.cellForItem(at: index) else {
-            return
+        for i in 0..<iterate {
+            
+            
+            let cellNum = daFunk[i]
+            //choose a random number between 0 and 12
+            
+            
+            //assign a random index
+            let index = IndexPath(row: cellNum, section: 0)
+            guard let cell = vibesCollection.cellForItem(at: index) else {
+                return
+            }
+            
+            //casting to vibescollectionviewcell
+            let vibesCell = cell as! VibesCollectionViewCell
+            
+            
+            
+            let rand = Int.random(in: 0..<6)
+            
+            
+            
+            switch rand {
+            case 0:
+                fullSpinVibe(vibesCell)
+            case 1:
+                halfSpinVibe(vibesCell)
+            case 2:
+                springSizeEnlarge(vibesCell)
+            case 3:
+                springSizeReduce(vibesCell)
+            case 4:
+                flickerVibe(vibesCell)
+            default:
+                resizeVibe(vibesCell)
+            }
+            
         }
-        let vibesCell = cell as! VibesCollectionViewCell
-
-        //let effectRand = Int.random(in: 0..<)
-        resizeVibe(vibesCell)
-        
-        
+        if iterate < 7 {
+            iterate = iterate + 1
+        }
+    }
+    //flicker
+    func flickerVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+            cell.alpha = 0.5
+            
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.alpha = 1
+            })
+        }
+    }
+    //spring size to smaller cell
+    func springSizeReduce(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+            cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
+        }
+    }
+    //spring size to larger cell
+    func springSizeEnlarge(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.1, initialSpringVelocity: 5, options: .autoreverse, animations: {
+            cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
+        }
     }
     
-    func spinVibe(_ cell: VibesCollectionViewCell){
+    //spins in 1 direction
+    func fullSpinVibe(_ cell: VibesCollectionViewCell){
+        UIView.animate(withDuration: 0.2, animations: {
+            cell.transform = CGAffineTransform(rotationAngle: .pi)
+        }) { (true) in
+            UIView.animate(withDuration: 0.2, animations: {
+                cell.transform = CGAffineTransform.identity
+            })
+        }
+    }
+    
+    //spins half way and returns
+    func halfSpinVibe(_ cell: VibesCollectionViewCell){
         UIView.animate(withDuration: 0.2, animations: {
             cell.transform = CGAffineTransform(rotationAngle: 180)
         }) { (true) in
@@ -63,6 +136,7 @@ class VibesViewController: UIViewController {
         }
     }
     
+    //gets bigger and then smaller
     func resizeVibe(_ cell: VibesCollectionViewCell){
         UIView.animate(withDuration: 0.2, animations: {
             cell.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
@@ -73,23 +147,23 @@ class VibesViewController: UIViewController {
         }
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(true)
-//        let collectionHeight = self.view.safeAreaLayoutGuide.layoutFrame.size.height
-//        let collectionCellWidth = vibesCollection.contentSize.width / 3
-//        topConstraint.constant = (collectionHeight - collectionCellWidth * 4) / 2.0
-//        print("collection height: \(collectionHeight), collection width: \(collectionCellWidth), constraint: \(topConstraint.constant) ")
-//    }
+    //    override func viewWillAppear(_ animated: Bool) {
+    //        super.viewWillAppear(true)
+    //        let collectionHeight = self.view.safeAreaLayoutGuide.layoutFrame.size.height
+    //        let collectionCellWidth = vibesCollection.contentSize.width / 3
+    //        topConstraint.constant = (collectionHeight - collectionCellWidth * 4) / 2.0
+    //        print("collection height: \(collectionHeight), collection width: \(collectionCellWidth), constraint: \(topConstraint.constant) ")
+    //    }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
