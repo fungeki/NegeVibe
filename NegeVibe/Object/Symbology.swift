@@ -29,9 +29,9 @@ enum Symbol: String, CustomStringConvertible {
         case .festival:
             return UIImage(named: "festival")!
         case .movieFestival:
-            return UIImage(named: "movie_festival")!
+            return UIImage(named: "ic_inSperishin")!
         default:
-            return UIImage(named: "rock_festival")!
+            return UIImage(named: "ic_inDnegev")!
         }
     }
     
