@@ -35,7 +35,7 @@ class MLocationManager: NSObject {
     
     let geoCoder = CLGeocoder()
     
-    func address(location: CLLocation){
+    func address(location: CLLocation, completion: ((_ address: GeoAddress)->Void)? = nil){
         geoCoder.reverseGeocodeLocation(location) { (places, err) in
             if let err = err{
                 print(err.localizedDescription)
@@ -46,17 +46,19 @@ class MLocationManager: NSObject {
             }
             let street = place.postalAddress?.street ?? "no street"
             let city = place.postalAddress?.city ?? "no city"
-            let country = place.postalAddress?.country ?? "no country"
-            
+           // let country = place.postalAddress?.country ?? "no country"
+            let address = GeoAddress(address: street, city: city)
             DispatchQueue.main.async {
-                print(city, street, country)
+                if let completion = completion{
+                    completion(address)
+                }
             }
             
         }
         
     }
     
-    func geoCode(address: String){
+    func geoCode(address: String, completion: ((_ location: CLPlacemark)->Void)? = nil){
         geoCoder.geocodeAddressString(address) { (places, err) in
             if let err = err {
                 print(err.localizedDescription)
@@ -66,8 +68,11 @@ class MLocationManager: NSObject {
                 print("no address")
                 return
             }
+            
             DispatchQueue.main.async {
-                print(place.location?.coordinate ?? "")
+                if let completion = completion{
+                    completion(place)
+                }
             }
         }
     }
@@ -145,8 +150,6 @@ extension MLocationManager: CLLocationManagerDelegate{
     }
 }
 
-@objc
 protocol MLocationManagerDelegate {
     func location(_ location: CLLocation)
-    @objc optional func optProtocol()
 }
