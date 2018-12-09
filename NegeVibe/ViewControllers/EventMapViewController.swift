@@ -87,6 +87,17 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         
         
     }
+    
+    override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake{
+            guard let location = CLLocationManager().location else {
+                return
+            }
+            
+            let annotation = MoreAnnotationCreation(coordinate: location.coordinate, title: "pizza", subtitle: "meow")
+        }
+    }
+    
     func closeSearch(){
         let goUpEffect = CGAffineTransform.init(translationX: 0, y: -150)
         
@@ -162,6 +173,19 @@ extension EventMapViewController: MKMapViewDelegate {
         
     }
     
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//        if annotation is ArtworkView || annotation is MKUserLocation{
+//            return nil
+//        }
+//        let annot = mapView.dequeueReusableAnnotationView(withIdentifier: "pizza", for: annotation)
+//        if annot == nil{
+//            let pin = MKPinAnnotationView()
+//            pin.pinTintColor = UIColor.purple
+//            return pin
+//        }
+//        return annot
+//
+//    }
     
     
     

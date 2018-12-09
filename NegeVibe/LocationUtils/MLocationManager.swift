@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import Contacts
+
 
 class MLocationManager: NSObject {
     
@@ -30,6 +32,45 @@ class MLocationManager: NSObject {
     //delegate var,
     //use / notify the delegate,
     //register a viewcontroller as delegate
+    
+    let geoCoder = CLGeocoder()
+    
+    func address(location: CLLocation){
+        geoCoder.reverseGeocodeLocation(location) { (places, err) in
+            if let err = err{
+                print(err.localizedDescription)
+                return
+            }
+            guard let place = places?.first else {
+                return
+            }
+            let street = place.postalAddress?.street ?? "no street"
+            let city = place.postalAddress?.city ?? "no city"
+            let country = place.postalAddress?.country ?? "no country"
+            
+            DispatchQueue.main.async {
+                print(city, street, country)
+            }
+            
+        }
+        
+    }
+    
+    func geoCode(address: String){
+        geoCoder.geocodeAddressString(address) { (places, err) in
+            if let err = err {
+                print(err.localizedDescription)
+                return
+            }
+            guard let place = places?.first else {
+                print("no address")
+                return
+            }
+            DispatchQueue.main.async {
+                print(place.location?.coordinate ?? "")
+            }
+        }
+    }
     
     var hasAuthorization:Bool{
         var isAuthorized = locationEnabled()
@@ -104,8 +145,8 @@ extension MLocationManager: CLLocationManagerDelegate{
     }
 }
 
-
+@objc
 protocol MLocationManagerDelegate {
     func location(_ location: CLLocation)
-    
+    @objc optional func optProtocol()
 }
