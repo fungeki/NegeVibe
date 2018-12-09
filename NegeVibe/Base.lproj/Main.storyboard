@@ -165,7 +165,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1340" y="912.5937031484259"/>
+            <point key="canvasLocation" x="1361" y="1012"/>
         </scene>
         <!--מה הVibe שלך?-->
         <scene sceneID="YtL-ql-3om">
@@ -240,7 +240,20 @@
                     <view key="view" contentMode="scaleToFill" id="O3A-Bh-fJP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1e-pD-jLh">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="haS-Lx-fQL" firstAttribute="trailing" secondItem="d1e-pD-jLh" secondAttribute="trailing" constant="16" id="Jx6-Wj-29n"/>
+                            <constraint firstItem="d1e-pD-jLh" firstAttribute="top" secondItem="haS-Lx-fQL" secondAttribute="top" constant="16" id="MLo-KS-ioc"/>
+                            <constraint firstItem="d1e-pD-jLh" firstAttribute="leading" secondItem="haS-Lx-fQL" secondAttribute="leading" constant="16" id="Vtv-HC-A4g"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="haS-Lx-fQL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Location" image="icon_location" id="tkO-Az-fZG"/>

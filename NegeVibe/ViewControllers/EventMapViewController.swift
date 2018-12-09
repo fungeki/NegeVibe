@@ -8,9 +8,17 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 import Contacts
 
-class EventMapViewController: UIViewController {
+class EventMapViewController: UIViewController, MLocationManagerDelegate {
+    
+    
+    func location(_ location: CLLocation) {
+        //use location to show on map:
+        print(location.coordinate)
+    }
+    
 
     var isDown = false
     
@@ -43,7 +51,9 @@ class EventMapViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        MLocationManager.sharedInstance.demo()
+        print(MLocationManager.sharedInstance.hasAuthorization)
+        MLocationManager.sharedInstance.delegate = self
+        mapView.showsUserLocation = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -111,7 +121,7 @@ class EventMapViewController: UIViewController {
     func convertToArtworksAndDisplay(events: [Event]) {
         for model in events{
             //event location on map
-            let location = CLLocationCoordinate2D(latitude: model.locx, longitude: model.locy)
+            let location = CLLocationCoordinate2D(latitude: model.locy, longitude: model.locx)
             //type of the event by symbol
             let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
             
@@ -149,7 +159,7 @@ extension EventMapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        MLocationManager.sharedInstance.demo()
+        
     }
     
     
@@ -171,7 +181,7 @@ extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedEvent = searchResult[indexPath.row]
-        let eventLoc = CLLocation(latitude: selectedEvent.locx, longitude: selectedEvent.locy)
+        let eventLoc = CLLocation(latitude: selectedEvent.locy, longitude: selectedEvent.locx)
         UIView.animate(withDuration: 0.3) {
             self.searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
             self.tableHeight.constant = 0

@@ -16,7 +16,7 @@ class CurrentLocation {
     private var event: Event?
     private var currentLocation: CLLocation{
         if let event = event{
-            return CLLocation(latitude: event.locx, longitude: event.locy)
+            return CLLocation(latitude: event.locy, longitude: event.locx)
         } else {
           return CLLocation(latitude: 31.5227, longitude: 34.5956)
         }

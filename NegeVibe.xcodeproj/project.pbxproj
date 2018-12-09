@@ -54,6 +54,7 @@
 		8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C1ACD9721BD055200103D9E /* MLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLocationManager.swift; sourceTree = "<group>"; };
 		8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
+		8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationNav.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		8C1ACD4B21B938F700103D9E /* LocationUtils */ = {
 			isa = PBXGroup;
 			children = (
+				8C1ACD9721BD055200103D9E /* MLocationManager.swift */,
 				8C1ACD4C21B9392200103D9E /* CurrentLocation.swift */,
 			);
 			path = LocationUtils;
@@ -175,6 +177,7 @@
 				8CEB9B3521AED0B2009B55FF /* Info.plist */,
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
 				8C1ACD4121B4262B00103D9E /* PanViewController.swift */,
+				8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */,
 			);
 			path = NegeVibe;
 			sourceTree = "<group>";
@@ -215,7 +218,6 @@
 				8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */,
 				8C1ACD0D21B0414300103D9E /* Artwork.swift */,
 				8C1ACD4321B7D03A00103D9E /* Popup.swift */,
-				8C1ACD9721BD055200103D9E /* MLocationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
