@@ -58,7 +58,7 @@ enum Symbol: String, CustomStringConvertible {
         case .musicFestival:
             return UIImage(named: "pin_music_festival")!
         default:
-            return UIImage(named: "pin_rock_festival")!
+            return UIImage(named: "pin_other")!
         }
     }
     
