@@ -10,20 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
         <!--Pan View Controller-->
         <scene sceneID="G3g-fz-txq">
             <objects>
@@ -247,6 +233,22 @@
             </objects>
             <point key="canvasLocation" x="3175.1999999999998" y="1011.544227886057"/>
         </scene>
+        <!--Location-->
+        <scene sceneID="jxM-fq-WiQ">
+            <objects>
+                <viewController id="Odd-JR-OoF" customClass="MyLocationViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3A-Bh-fJP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="haS-Lx-fQL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Location" image="icon_location" id="tkO-Az-fZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1Q-03-EJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="-566"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yu0-aD-0Bh">
             <objects>
@@ -262,6 +264,7 @@
                         <segue destination="p4g-h5-hWC" kind="relationship" relationship="viewControllers" id="dOp-Fo-aYw"/>
                         <segue destination="1pP-de-SyY" kind="relationship" relationship="viewControllers" id="Mg4-BQ-GMa"/>
                         <segue destination="8Qe-rQ-0Qs" kind="relationship" relationship="viewControllers" id="iel-Yv-S5d"/>
+                        <segue destination="Odd-JR-OoF" kind="relationship" relationship="viewControllers" id="Hga-YL-GkO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -563,6 +566,7 @@
         <image name="ic_go_to_map" width="64" height="64"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_shekel_icon" width="58" height="49"/>
+        <image name="icon_location" width="22.5" height="22.5"/>
         <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
         <image name="location" width="37.5" height="37.5"/>

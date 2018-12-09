@@ -38,12 +38,16 @@ class EventMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        MLocationManager.sharedInstance.demo()
+    }
+
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         initialize()
     }
     
@@ -142,6 +146,10 @@ extension EventMapViewController: MKMapViewDelegate {
             return
         }
         print(artwork.title!, " was clicked")
+    }
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        MLocationManager.sharedInstance.demo()
     }
     
     

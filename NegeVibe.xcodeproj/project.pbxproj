@@ -22,6 +22,8 @@
 		8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD4F21B97D4400103D9E /* EventsLibrary.swift */; };
 		8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */; };
 		8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */; };
+		8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9721BD055200103D9E /* MLocationManager.swift */; };
+		8C1ACD9C21BD148500103D9E /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		8C1ACD4F21B97D4400103D9E /* EventsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLibrary.swift; sourceTree = "<group>"; };
 		8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesViewController.swift; sourceTree = "<group>"; };
 		8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesCollectionViewCell.swift; sourceTree = "<group>"; };
+		8C1ACD9721BD055200103D9E /* MLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLocationManager.swift; sourceTree = "<group>"; };
+		8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
+				8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */,
 				8C1ACD0D21B0414300103D9E /* Artwork.swift */,
 				8C1ACD4321B7D03A00103D9E /* Popup.swift */,
+				8C1ACD9721BD055200103D9E /* MLocationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
+				8C1ACD9C21BD148500103D9E /* MyLocationViewController.swift in Sources */,
 				8C1ACD4221B4262B00103D9E /* PanViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
@@ -342,6 +349,7 @@
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
+				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
