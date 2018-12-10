@@ -50,10 +50,6 @@ class ChatTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         messageTableView.register(UINib(nibName: "MessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
-        
-        
-        
-//        messageTableView.register(UINib(nibName: "", bundle: nil), forCellReuseIdentifier: "")//customMessageCell
         messageTableView.separatorStyle = .none
         cunfigurTableView()
     }
@@ -77,8 +73,7 @@ class ChatTableViewController: UIViewController, UITableViewDataSource, UITableV
 
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageViewCell
 
         // Configure the cell...
             
