@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		56479C6616582B1F8F5EC795 /* Pods_NegeVibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */; };
+		7C44EF5C21BEB19100B17C48 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF5B21BEB19100B17C48 /* ChatTableViewController.swift */; };
+		7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF5F21BEB3AD00B17C48 /* Message.swift */; };
+		7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */; };
 		8C1ACD0821B033FE00103D9E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0721B033FE00103D9E /* Images.swift */; };
 		8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0921B0376800103D9E /* Symbology.swift */; };
 		8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */; };
@@ -40,6 +43,10 @@
 /* Begin PBXFileReference section */
 		1568CED266995431D624AB8E /* Pods-NegeVibe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44EF5B21BEB19100B17C48 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		7C44EF5F21BEB3AD00B17C48 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageViewCell.swift; sourceTree = "<group>"; };
+		7C44EF6321BEB3E400B17C48 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
 		8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -102,12 +109,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C44EF6121BEB3BF00B17C48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C44EF5F21BEB3AD00B17C48 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8C1ACD0F21B07BF500103D9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */,
+				7C44EF6321BEB3E400B17C48 /* MessageCell.xib */,
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
+				7C44EF5B21BEB19100B17C48 /* ChatTableViewController.swift */,
 				8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */,
 			);
 			path = ViewControllers;
@@ -116,6 +134,7 @@
 		8C1ACD4521B7F81D00103D9E /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				7C44EF6121BEB3BF00B17C48 /* Model */,
 				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
 				8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */,
 				8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */,
@@ -351,15 +370,18 @@
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
+				7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */,
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
+				7C44EF5C21BEB19100B17C48 /* ChatTableViewController.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
+				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
