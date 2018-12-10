@@ -14,8 +14,8 @@ enum Symbol: String, CustomStringConvertible {
     case movieFestival = "Movies Festival"
     case rockFestival = "Rock Festival"
     case cityEvent = "City Event"
-    case religionEvent = "Religion Event"
-    case showsGeneral = "Shows General"
+    case kosherEvent = "Kosher Event"
+    case concertGeneral = "Shows General"
     case otherGeneral = "Other General"
     
     init?(withInt val: Int){
@@ -23,17 +23,17 @@ enum Symbol: String, CustomStringConvertible {
         case 0:
             self = .festival
         case 1:
-            self = .cityEvent
+            self = .rockFestival
         case 2:
-            self = .showsGeneral
+            self = .concertGeneral
         case 3:
             self = .movieFestival
         case 4:
             self = .otherGeneral
         case 5:
-            self = .religionEvent
+            self = .kosherEvent
         case 6:
-            self = .rockFestival
+            self = .cityEvent
         default:
             self = .musicFestival
         }
@@ -47,11 +47,11 @@ enum Symbol: String, CustomStringConvertible {
             return UIImage(named: "pin_movie_festival")!
         case .cityEvent:
             return UIImage(named: "pin_city_event")!
-        case .showsGeneral:
+        case .concertGeneral:
             return UIImage(named: "pin_shows")!
         case .otherGeneral:
             return UIImage(named: "pin_other")!
-        case .religionEvent:
+        case .kosherEvent:
             return UIImage(named: "pin_religion_event")!
         case .rockFestival:
             return UIImage(named: "pin_rock_festival")!
