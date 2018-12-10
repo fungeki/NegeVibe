@@ -45,7 +45,6 @@
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C44EF5F21BEB3AD00B17C48 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageViewCell.swift; sourceTree = "<group>"; };
-		7C44EF6321BEB3E400B17C48 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
@@ -121,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */,
-				7C44EF6321BEB3E400B17C48 /* MessageCell.xib */,
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
