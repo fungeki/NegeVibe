@@ -20,7 +20,8 @@ class VibesViewController: UIViewController {
     var vibes = UIImage(named: "placeholder")
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //timer for the effect:
+        vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
         
     }
     
@@ -32,8 +33,7 @@ class VibesViewController: UIViewController {
         vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4 + 4) / 2, 0)
         
         // Do any additional setup after loading the view.
-        //timer for the effect:
-        vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
+        
     }
     
     @objc func bringToLife(){
