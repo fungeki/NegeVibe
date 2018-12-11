@@ -15,6 +15,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     
     var bannerTimer: Timer?
     
+    //to set iterator to 0
     var timerIterator = 0
     
     @IBOutlet weak var bannerOverlayView: UIView!
@@ -97,15 +98,27 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
                     self.bannerOverlayView.transform = CGAffineTransform.identity
                 }) { (true) in
                     self.mockMsg()
-                    self.displayFeaturedBanners(self.featuredMsgs[0])
+                    self.bannerMessageAnimation()
                     self.bannerTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.bannerMessageAnimation), userInfo: nil, repeats: true)
                     
 
-                    self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
+                    //self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
                 }
             }
         } else {
             convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
+            if bannerTimer == nil{
+            UIView.animate(withDuration: 0.3, animations: {
+                self.bannerOverlayView.transform = CGAffineTransform.identity
+            }) { (true) in
+                self.mockMsg()
+                self.displayFeaturedBanners(self.featuredMsgs[0])
+                self.bannerTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.bannerMessageAnimation), userInfo: nil, repeats: true)
+                
+                
+                //self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
+                }
+            }
         }
         
         
@@ -261,16 +274,11 @@ extension EventMapViewController {
     }
     
     @objc func bannerMessageAnimation(){
-        timerIterator += 1
         
-        //resets iterator to prevent out of bound
-        if timerIterator == featuredMsgs.count{
-            timerIterator = 0
-        }
         
         //effect that moves the message, changes the body, returns the message
         UIView.animate(withDuration: 0.3,delay: 0, animations: {
-            self.bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: self.bannerFeaturedMessageBtn.frame.size.width, y: 0)
+            self.bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: 0, y: self.bannerFeaturedMessageBtn.frame.size.height)
         }) { (true) in
             self.displayFeaturedBanners(self.featuredMsgs[self.timerIterator])
             UIView.animate(withDuration: 0.3, delay: 1, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: [], animations: {
@@ -278,7 +286,12 @@ extension EventMapViewController {
             })
         }
         
+        timerIterator += 1
         
+        //resets iterator to prevent out of bound
+        if timerIterator == featuredMsgs.count{
+            timerIterator = 0
+        }
     }
     
     func displayFeaturedBanners(_ message: FeaturedMessage){

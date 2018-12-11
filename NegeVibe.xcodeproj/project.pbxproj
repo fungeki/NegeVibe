@@ -26,7 +26,6 @@
 		8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */; };
 		8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */; };
 		8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9721BD055200103D9E /* MLocationManager.swift */; };
-		8C1ACD9C21BD148500103D9E /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */; };
 		8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */; };
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
@@ -62,11 +61,11 @@
 		8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesViewController.swift; sourceTree = "<group>"; };
 		8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C1ACD9721BD055200103D9E /* MLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLocationManager.swift; sourceTree = "<group>"; };
-		8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationViewController.swift; sourceTree = "<group>"; };
 		8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationNav.gpx; sourceTree = "<group>"; };
 		8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
+		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,14 +109,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7C44EF6121BEB3BF00B17C48 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7C44EF5F21BEB3AD00B17C48 /* Message.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		8C1ACD0F21B07BF500103D9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +117,6 @@
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
 				7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */,
-				8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,7 +124,6 @@
 		8C1ACD4521B7F81D00103D9E /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				7C44EF6121BEB3BF00B17C48 /* Model */,
 				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
 				8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */,
 				8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */,
@@ -203,6 +192,7 @@
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
 				8C1ACD4121B4262B00103D9E /* PanViewController.swift */,
 				8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */,
+				8CE84BF021BFFA98006C8A93 /* sderot.gpx */,
 			);
 			path = NegeVibe;
 			sourceTree = "<group>";
@@ -229,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEB9B4021AED118009B55FF /* Event.swift */,
+				7C44EF5F21BEB3AD00B17C48 /* Message.swift */,
 				8C1ACD0721B033FE00103D9E /* Images.swift */,
 				8C1ACD0921B0376800103D9E /* Symbology.swift */,
 				8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */,
@@ -366,7 +357,6 @@
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
-				8C1ACD9C21BD148500103D9E /* MyLocationViewController.swift in Sources */,
 				8C1ACD4221B4262B00103D9E /* PanViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,

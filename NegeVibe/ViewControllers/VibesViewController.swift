@@ -21,22 +21,20 @@ class VibesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //height of the content
-        let collectionCellWidth = vibesCollection.contentSize.width / 3 - 3
-        //if the collection cells are not in the middle make them start in the middle
-        vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4) / 2, 0)
         
-        
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        //height of the content
+        let collectionCellWidth = vibesCollection.contentSize.width / 3.0 + 4
+        //if the collection cells are not in the middle make them start in the middle
+        vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4 + 4) / 2, 0)
+        
+        // Do any additional setup after loading the view.
         //timer for the effect:
         vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
     }
-    
     
     @objc func bringToLife(){
 //        let daFunk = cellSelector.shuffled()
