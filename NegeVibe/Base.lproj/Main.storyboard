@@ -132,6 +132,32 @@
                                     <constraint firstAttribute="bottom" secondItem="SMc-bf-leT" secondAttribute="bottom" constant="8" id="pfP-1b-Dy7"/>
                                 </constraints>
                             </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELh-gJ-w6J">
+                                <rect key="frame" x="0.0" y="568" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="טוען הודעות" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv9-gg-gEi">
+                                        <rect key="frame" x="314" y="0.0" width="61" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqn-uL-5qt">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <state key="normal" title="נא להמתין">
+                                            <color key="titleColor" red="1" green="0.72549019609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nqn-uL-5qt" firstAttribute="leading" secondItem="ELh-gJ-w6J" secondAttribute="leading" id="13z-qq-GDw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mv9-gg-gEi" secondAttribute="trailing" id="5Kl-Rm-7qo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nqn-uL-5qt" secondAttribute="trailing" id="6CF-NK-vFQ"/>
+                                    <constraint firstItem="Mv9-gg-gEi" firstAttribute="top" secondItem="ELh-gJ-w6J" secondAttribute="top" id="MQt-LC-rBn"/>
+                                    <constraint firstItem="Nqn-uL-5qt" firstAttribute="top" secondItem="ELh-gJ-w6J" secondAttribute="top" id="c8Y-zV-DYr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nqn-uL-5qt" secondAttribute="bottom" id="igh-HH-Iva"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -142,15 +168,22 @@
                             <constraint firstItem="WLW-9f-UCS" firstAttribute="height" secondItem="CTH-Ho-btF" secondAttribute="height" multiplier="0.06" id="Oxa-Pp-bL8"/>
                             <constraint firstItem="OmF-GL-lFI" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="bottom" id="PTA-Vf-UCK"/>
                             <constraint firstItem="yjn-Vj-7nv" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="Qse-zI-mWl"/>
+                            <constraint firstItem="ELh-gJ-w6J" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="Skl-Ag-W1a"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="bottom" secondItem="yjn-Vj-7nv" secondAttribute="bottom" id="Ug8-Xs-fEO"/>
+                            <constraint firstItem="ELh-gJ-w6J" firstAttribute="height" secondItem="wkG-GG-kRj" secondAttribute="height" multiplier="0.075" id="WZp-oR-kkf"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="OmF-GL-lFI" secondAttribute="trailing" id="jNN-ZF-wfO"/>
                             <constraint firstItem="WLW-9f-UCS" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="pRg-Cm-itl"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="yjn-Vj-7nv" secondAttribute="trailing" id="uIh-CB-CqX"/>
+                            <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="ELh-gJ-w6J" secondAttribute="trailing" id="ukA-Wm-4ft"/>
+                            <constraint firstItem="CTH-Ho-btF" firstAttribute="bottom" secondItem="ELh-gJ-w6J" secondAttribute="bottom" id="y2y-24-Uld"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="מפה" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
                     <connections>
+                        <outlet property="bannerEventNameLabel" destination="Mv9-gg-gEi" id="sBG-im-feb"/>
+                        <outlet property="bannerFeaturedMessageBtn" destination="Nqn-uL-5qt" id="HTf-JJ-hX7"/>
+                        <outlet property="bannerOverlayView" destination="ELh-gJ-w6J" id="yYX-Tm-6TX"/>
                         <outlet property="mapView" destination="yjn-Vj-7nv" id="JPc-8s-El4"/>
                         <outlet property="searchField" destination="SMc-bf-leT" id="9GN-71-4Gz"/>
                         <outlet property="searchIcon" destination="hKI-4c-viA" id="ppW-mV-aIp"/>

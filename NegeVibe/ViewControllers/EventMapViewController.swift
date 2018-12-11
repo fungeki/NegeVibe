@@ -13,12 +13,22 @@ import Contacts
 
 class EventMapViewController: UIViewController, MLocationManagerDelegate {
     
+    var bannerTimer: Timer?
+    
+    var timerIterator = 0
+    
+    @IBOutlet weak var bannerOverlayView: UIView!
+    
+    @IBOutlet weak var bannerEventNameLabel: UILabel!
+    
+    @IBOutlet weak var bannerFeaturedMessageBtn: UIButton!
     
     func location(_ location: CLLocation) {
         //use location to show on map:
         print(location.coordinate)
     }
     
+    var featuredMsgs:[FeaturedMessage] = []
 
     var isDown = false
     
@@ -46,7 +56,9 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let sizeTransform = CGAffineTransform(scaleX: 1, y: 0)
+        bannerOverlayView.transform = CGAffineTransform(translationX: 0, y: bannerOverlayView.frame.height).concatenating(sizeTransform)
+        bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: bannerOverlayView.frame.width, y: 0)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,6 +66,8 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         print(MLocationManager.sharedInstance.hasAuthorization)
         MLocationManager.sharedInstance.delegate = self
         mapView.showsUserLocation = true
+        
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -79,7 +93,16 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
                 JustHUD.shared.hide()
                 self.convertToArtworksAndDisplay(events: events)
                 EventsLibrary.getInstance().setEvents(events)
-                
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.bannerOverlayView.transform = CGAffineTransform.identity
+                }) { (true) in
+                    self.mockMsg()
+                    self.displayFeaturedBanners(self.featuredMsgs[0])
+                    self.bannerTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.bannerMessageAnimation), userInfo: nil, repeats: true)
+                    
+
+                    self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
+                }
             }
         } else {
             convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
@@ -87,6 +110,8 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         
         
     }
+    
+    
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake{
@@ -219,6 +244,47 @@ extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
         self.view.endEditing(true)
     }
     
+}
+
+extension EventMapViewController {
+    func mockMsg(){
+        let msg1 = FeaturedMessage(eventTitle: "אינדינגב", msgBody: "שיחה עם מיטב היוצרים, היום ב 19")
+        let msg2 = FeaturedMessage(eventTitle: "NegeVibe", msgBody: "בואו להכיר אותנו, אנחנו לא נושכים" )
+        let msg3 = FeaturedMessage(eventTitle: "האתר הרשמי", msgBody: "http://doodahackathon.herokuapp.com/" )
+        let msg4 = FeaturedMessage(eventTitle: "רן לוק", msgBody: "Lead Programmer & Server Side" )
+        let msg5 = FeaturedMessage(eventTitle: "דור צמח", msgBody: "Programmer & Lead Designer")
+        let msg6 = FeaturedMessage(eventTitle: "יבגניה קרייזמן", msgBody: "Amazing Programmer" )
+        let msg7 = FeaturedMessage(eventTitle: "אופיר אליאס", msgBody: "Talented Designer & Awesome Programmer" )
+        let msg8 = FeaturedMessage(eventTitle: "גיל דניאל", msgBody: "Entrepreneur" )
+        let msg9 = FeaturedMessage(eventTitle: "All other contributers", msgBody: "None of this would be possible without you!" )
+        featuredMsgs = [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9]
+    }
+    
+    @objc func bannerMessageAnimation(){
+        timerIterator += 1
+        
+        //resets iterator to prevent out of bound
+        if timerIterator == featuredMsgs.count{
+            timerIterator = 0
+        }
+        
+        //effect that moves the message, changes the body, returns the message
+        UIView.animate(withDuration: 0.3,delay: 0, animations: {
+            self.bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: self.bannerFeaturedMessageBtn.frame.size.width, y: 0)
+        }) { (true) in
+            self.displayFeaturedBanners(self.featuredMsgs[self.timerIterator])
+            UIView.animate(withDuration: 0.3, delay: 1, usingSpringWithDamping: 0.6, initialSpringVelocity: 10, options: [], animations: {
+                self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
+            })
+        }
+        
+        
+    }
+    
+    func displayFeaturedBanners(_ message: FeaturedMessage){
+        bannerEventNameLabel.text = message.eventTitle
+        bannerFeaturedMessageBtn.setTitle(message.msgBody, for: .normal)
+    }
 }
 //    @IBAction func search(_ sender: UITapGestureRecognizer) {
 //

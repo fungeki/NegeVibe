@@ -29,6 +29,7 @@
 		8C1ACD9C21BD148500103D9E /* MyLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9B21BD148500103D9E /* MyLocationViewController.swift */; };
 		8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */; };
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
+		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationNav.gpx; sourceTree = "<group>"; };
 		8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
+		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2821AED0AF009B55FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				8C1ACD0721B033FE00103D9E /* Images.swift */,
 				8C1ACD0921B0376800103D9E /* Symbology.swift */,
 				8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */,
+				8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
+				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
@@ -538,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ranuskin.shafa.project.NegeVibe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranuskin.project.NegeVibe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ranuskin.shafa.project.NegeVibe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranuskin.project.NegeVibe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
