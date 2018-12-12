@@ -76,10 +76,10 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="36"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="309" y="8" width="50" height="20"/>
+                                        <rect key="frame" x="334" y="8" width="25" height="20"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="285" height="20"/>
+                                        <rect key="frame" x="16" y="8" width="310" height="20"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -279,7 +279,7 @@
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
             <objects>
-                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="ViewController" customModule="Event" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="ViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hzx-JB-o1A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
