@@ -432,7 +432,7 @@
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
             <objects>
-                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="ViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Description of Event" id="nWx-Sy-Jqf" customClass="EventsDetailsViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ddq-ho-00D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -572,6 +572,9 @@
                                 <state key="normal" title="Tickets">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buyTickets:" destination="nWx-Sy-Jqf" eventType="touchUpInside" id="lYy-c8-zl8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -591,6 +594,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
+                    <connections>
+                        <outlet property="dateOfEvents" destination="LDh-KN-de8" id="ESL-TX-xec"/>
+                        <outlet property="describtionOfEvent" destination="RJq-nO-Csx" id="0vz-m1-gVD"/>
+                        <outlet property="describtionTitleLable" destination="Mzf-ac-geA" id="igs-pQ-4Or"/>
+                        <outlet property="eventImageView" destination="Sln-0x-V2C" id="Ues-Mr-mwc"/>
+                        <outlet property="locationOfEvent" destination="Qyb-bJ-3cM" id="qbd-Td-Ybc"/>
+                        <outlet property="nameOfEvents" destination="hO9-ug-ij1" id="OEs-4Q-9wm"/>
+                        <outlet property="priceOfEvent" destination="hZl-Gs-fD2" id="Xv2-WF-HAC"/>
+                        <outlet property="ticketsButton" destination="BTf-Sc-ETz" id="1zW-oK-VEZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdQ-rZ-ksT" sceneMemberID="firstResponder"/>
             </objects>

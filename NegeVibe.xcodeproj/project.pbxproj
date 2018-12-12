@@ -38,6 +38,7 @@
 		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
 		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
 		8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */; };
+		A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEvents.swift; sourceTree = "<group>"; };
 		8CEB9B4021AED118009B55FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHUD.swift; sourceTree = "<group>"; };
+		A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailsViewController.swift; sourceTree = "<group>"; };
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
 				7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */,
+				A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
 				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
+				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,
