@@ -21,10 +21,19 @@ class EventsDetailsViewController: UIViewController {
     @IBOutlet weak var ticketsButton: UIButton!
     
     
+    var fromMap = false
+    
     @IBAction func buyTickets(_ sender: UIButton) {
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if fromMap{
+            fromMap = !fromMap
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +54,7 @@ class EventsDetailsViewController: UIViewController {
                 
                 
             
+            }
         }
-        
-        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

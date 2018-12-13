@@ -205,11 +205,15 @@ extension EventMapViewController: MKMapViewDelegate {
             return
         }
         print(artwork.title!, " was clicked")
-    }
-    
-    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        
+        let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
+        //put the details
+        dt.fromMap = true
+        self.navigationController?.pushViewController(dt, animated: true)
         
     }
+    
+    
     
 //    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 //        if annotation is ArtworkView || annotation is MKUserLocation{
