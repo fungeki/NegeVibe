@@ -10,6 +10,7 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
+    @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var nameOfEvents: UILabel!
     @IBOutlet weak var dateOfEvents: UILabel!

@@ -472,6 +472,9 @@
                                             <constraint firstAttribute="trailing" secondItem="K4o-aH-SAL" secondAttribute="trailing" constant="16" id="r3F-ju-fbr"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="zjc-99-nEe"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="kTv-Kd-3To" appends="YES" id="pjs-AJ-5MT"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -510,6 +513,7 @@
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
                     <connections>
+                        <outlet property="contentWrapperView" destination="9xk-l8-4Lt" id="W2D-3M-XUo"/>
                         <outlet property="dateOfEvents" destination="LDh-KN-de8" id="ESL-TX-xec"/>
                         <outlet property="describtionOfEvent" destination="RJq-nO-Csx" id="0vz-m1-gVD"/>
                         <outlet property="describtionTitleLable" destination="Mzf-ac-geA" id="igs-pQ-4Or"/>
