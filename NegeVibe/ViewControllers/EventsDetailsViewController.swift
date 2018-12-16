@@ -25,7 +25,7 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        topWrapperConstraint.constant = eventImageView.bounds.height
+        topWrapperConstraint.constant = eventImageView.bounds.height + 8
         eventImageView.layer.zPosition = .greatestFiniteMagnitude
         
     }
@@ -71,14 +71,12 @@ class EventsDetailsViewController: UIViewController {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
         contentWrapperView.center.y = currentPoint + self.view.center.y
-        if lastPoint != 0 {
+        if lastPoint != 0{
             print(currentPoint - lastPoint)
             eventImageView.frame.size.height += currentPoint - lastPoint
         }
         
         lastPoint = currentPoint
-        
-        
         
     }
     
