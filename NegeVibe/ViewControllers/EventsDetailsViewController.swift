@@ -10,9 +10,8 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
-    @IBOutlet weak var topWrapperConstraint: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
-    @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var nameOfEvents: UILabel!
     @IBOutlet weak var dateOfEvents: UILabel!
@@ -25,8 +24,7 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        topWrapperConstraint.constant = eventImageView.bounds.height + 8
-        eventImageView.layer.zPosition = .greatestFiniteMagnitude
+        scrollView.layer.zPosition = .greatestFiniteMagnitude
         
     }
     var fromMap = false
@@ -70,7 +68,7 @@ class EventsDetailsViewController: UIViewController {
     @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
-        contentWrapperView.center.y = currentPoint + self.view.center.y
+        scrollView.center.y = currentPoint + self.view.center.y
         if lastPoint != 0{
             print(currentPoint - lastPoint)
             eventImageView.frame.size.height += currentPoint - lastPoint

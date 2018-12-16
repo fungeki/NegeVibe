@@ -105,14 +105,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
+                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="310" height="17"/>
+                                        <rect key="frame" x="16" y="8" width="285" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -379,11 +379,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-0x-V2C">
-                                <rect key="frame" x="0.0" y="20" width="375" height="167"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-xo-Q7C">
-                                <rect key="frame" x="0.0" y="201" width="375" height="421"/>
+                                <rect key="frame" x="0.0" y="167" width="375" height="455"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-l8-4Lt">
                                         <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
@@ -462,7 +459,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price of event" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZl-Gs-fD2">
-                                                                <rect key="frame" x="46" y="3" width="281" height="24.5"/>
+                                                                <rect key="frame" x="46" y="2.5" width="281" height="24.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -499,9 +496,6 @@
                                             <constraint firstAttribute="trailing" secondItem="K4o-aH-SAL" secondAttribute="trailing" constant="16" id="r3F-ju-fbr"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="zjc-99-nEe"/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="kTv-Kd-3To" appends="YES" id="pjs-AJ-5MT"/>
-                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -510,6 +504,9 @@
                                     <constraint firstItem="9xk-l8-4Lt" firstAttribute="leading" secondItem="2l9-xo-Q7C" secondAttribute="leading" id="kUH-rG-QOP"/>
                                     <constraint firstAttribute="trailing" secondItem="9xk-l8-4Lt" secondAttribute="trailing" id="sDj-F0-YbT"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="kTv-Kd-3To" id="GOU-nR-ZNx"/>
+                                </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-Sc-ETz">
                                 <rect key="frame" x="16" y="629" width="219" height="30"/>
@@ -521,6 +518,9 @@
                                     <action selector="buyTickets:" destination="nWx-Sy-Jqf" eventType="touchUpInside" id="lYy-c8-zl8"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-0x-V2C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="167"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -528,11 +528,11 @@
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" id="DOB-Ed-L7g"/>
                             <constraint firstAttribute="bottom" secondItem="2l9-xo-Q7C" secondAttribute="bottom" constant="45" id="G1o-bk-mjq"/>
                             <constraint firstItem="BTf-Sc-ETz" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" constant="16" id="RKd-DA-EaS"/>
+                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="Sln-0x-V2C" secondAttribute="bottom" constant="-20" id="ZAh-HO-IPy"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="bottom" secondItem="BTf-Sc-ETz" secondAttribute="bottom" constant="8" id="aHa-9S-lgo"/>
                             <constraint firstItem="Sln-0x-V2C" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="aez-Yw-LHk"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="2l9-xo-Q7C" secondAttribute="trailing" id="afP-vP-CHT"/>
                             <constraint firstItem="Sln-0x-V2C" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" multiplier="0.25" id="cnA-nC-SuT"/>
-                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="ddq-ho-00D" secondAttribute="top" constant="201" id="fcs-4C-D43"/>
                             <constraint firstItem="2l9-xo-Q7C" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" id="jys-pm-elB"/>
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="rlJ-jC-qIT"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="BTf-Sc-ETz" secondAttribute="trailing" constant="140" id="vYn-AT-tdR"/>
@@ -541,7 +541,6 @@
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
                     <connections>
-                        <outlet property="contentWrapperView" destination="9xk-l8-4Lt" id="W2D-3M-XUo"/>
                         <outlet property="dateOfEvents" destination="LDh-KN-de8" id="ESL-TX-xec"/>
                         <outlet property="describtionOfEvent" destination="RJq-nO-Csx" id="0vz-m1-gVD"/>
                         <outlet property="describtionTitleLable" destination="Mzf-ac-geA" id="igs-pQ-4Or"/>
@@ -550,8 +549,8 @@
                         <outlet property="locationOfEvent" destination="Qyb-bJ-3cM" id="qbd-Td-Ybc"/>
                         <outlet property="nameOfEvents" destination="hO9-ug-ij1" id="OEs-4Q-9wm"/>
                         <outlet property="priceOfEvent" destination="hZl-Gs-fD2" id="Xv2-WF-HAC"/>
+                        <outlet property="scrollView" destination="2l9-xo-Q7C" id="8mj-J1-qRN"/>
                         <outlet property="ticketsButton" destination="BTf-Sc-ETz" id="1zW-oK-VEZ"/>
-                        <outlet property="topWrapperConstraint" destination="fcs-4C-D43" id="WYH-4Q-yw1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdQ-rZ-ksT" sceneMemberID="firstResponder"/>
@@ -561,7 +560,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4617" y="143"/>
+            <point key="canvasLocation" x="4616.8000000000002" y="142.57871064467767"/>
         </scene>
         <!--Your Vibe 2-->
         <scene sceneID="y8N-fs-dF3">
@@ -622,14 +621,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="50" height="50"/>
-        <image name="indinegev" width="624" height="383"/>
+        <image name="calendar" width="37.5" height="37.5"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
-        <image name="location" width="50" height="50"/>
+        <image name="location" width="37.5" height="37.5"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
-        <image name="tickets" width="50" height="50"/>
+        <image name="search" width="50" height="50"/>
+        <image name="tickets" width="37.5" height="37.5"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
