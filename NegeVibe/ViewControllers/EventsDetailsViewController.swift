@@ -10,6 +10,8 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
+    @IBOutlet weak var topWrapperConstraint: NSLayoutConstraint!
+    @IBOutlet var fullView: UIView!
     @IBOutlet weak var contentWrapperView: UIView!
     @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var nameOfEvents: UILabel!
@@ -21,7 +23,12 @@ class EventsDetailsViewController: UIViewController {
     
     @IBOutlet weak var ticketsButton: UIButton!
     
-    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        topWrapperConstraint.constant = eventImageView.bounds.height
+        eventImageView.layer.zPosition = .greatestFiniteMagnitude
+        
+    }
     var fromMap = false
     
     @IBAction func buyTickets(_ sender: UIButton) {
@@ -58,4 +65,21 @@ class EventsDetailsViewController: UIViewController {
             }
         }
     }
+    
+    var lastPoint: CGFloat = 0
+    @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
+        let senderPointY = sender.location(in: self.view).y
+        let currentPoint = senderPointY - self.view.center.y
+        contentWrapperView.center.y = currentPoint + self.view.center.y
+        if lastPoint != 0 {
+            print(currentPoint - lastPoint)
+            eventImageView.frame.size.height += currentPoint - lastPoint
+        }
+        
+        lastPoint = currentPoint
+        
+        
+        
+    }
+    
 }
