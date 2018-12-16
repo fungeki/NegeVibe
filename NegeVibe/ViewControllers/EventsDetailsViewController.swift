@@ -11,8 +11,9 @@ import UIKit
 class EventsDetailsViewController: UIViewController {
 
     @IBOutlet weak var scrollViewTopConstraint: NSLayoutConstraint!
-    var scrollSize: CGFloat {
-        return scrollView.bounds.height
+
+    var startScrollPointY: CGFloat{
+        return scrollView.center.y
     }
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
@@ -72,16 +73,19 @@ class EventsDetailsViewController: UIViewController {
     @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
-        scrollViewTopConstraint.constant = 
+        let delta = currentPoint - lastPoint
+        //scrollViewTopConstraint.constant = 
         print(currentPoint)
-        if lastPoint != 0{
+        if lastPoint != 0 && startScrollPointY >= senderPointY{
             print(currentPoint - lastPoint)
-            eventImageView.frame.size.height += currentPoint - lastPoint
-            scrollView.frame.size.height = scrollView.bounds.height + currentPoint
+            eventImageView.frame.size.height += delta
+            scrollView.center.y += delta
         }
         
         lastPoint = currentPoint
-        
+        if sender.state == .ended {
+            lastPoint = 0
+        }
     }
     
 }
