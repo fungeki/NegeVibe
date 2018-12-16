@@ -28,6 +28,7 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        scrollViewTopConstraint.constant = eventImageView.bounds.height - 20
         scrollView.layer.cornerRadius = 20
         
     }
@@ -71,6 +72,7 @@ class EventsDetailsViewController: UIViewController {
     @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
+        scrollViewTopConstraint.constant = 
         print(currentPoint)
         if lastPoint != 0{
             print(currentPoint - lastPoint)
