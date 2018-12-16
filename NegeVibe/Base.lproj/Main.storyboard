@@ -105,14 +105,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
+                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="285" height="17"/>
+                                        <rect key="frame" x="16" y="8" width="310" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -264,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwJ-Ep-KBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3934" y="1012"/>
+            <point key="canvasLocation" x="3948" y="1012"/>
         </scene>
         <!--מתי יוצאים?-->
         <scene sceneID="MTl-kv-LRA">
@@ -343,6 +343,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmf-KX-i3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2994" y="143"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fmm-xd-WrH">
+            <objects>
+                <viewController id="yf6-lA-a6T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ro3-Hg-enO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ikk-dH-31g">
+                                <rect key="frame" x="16" y="20" width="359" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z5M-ZG-iLJ" firstAttribute="trailing" secondItem="ikk-dH-31g" secondAttribute="trailing" id="6bk-cp-2Hf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ikk-dH-31g" secondAttribute="bottom" id="XWq-gC-0ga"/>
+                            <constraint firstItem="ikk-dH-31g" firstAttribute="top" secondItem="ro3-Hg-enO" secondAttribute="topMargin" id="edo-bH-iAr"/>
+                            <constraint firstItem="ikk-dH-31g" firstAttribute="leading" secondItem="ro3-Hg-enO" secondAttribute="leadingMargin" id="wN3-Ym-NgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z5M-ZG-iLJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JdM-gm-vRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3767" y="143"/>
         </scene>
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
@@ -595,14 +622,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar" width="37.5" height="37.5"/>
-        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="calendar" width="50" height="50"/>
+        <image name="indinegev" width="624" height="383"/>
         <image name="list" width="25" height="25"/>
-        <image name="location" width="37.5" height="37.5"/>
+        <image name="location" width="50" height="50"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="50" height="50"/>
-        <image name="tickets" width="37.5" height="37.5"/>
+        <image name="search" width="25" height="25"/>
+        <image name="tickets" width="50" height="50"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
