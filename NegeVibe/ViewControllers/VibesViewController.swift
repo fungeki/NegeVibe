@@ -28,9 +28,12 @@ class VibesViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         //height of the content
-        let collectionCellWidth = vibesCollection.contentSize.width / 3.0 + 4
+       // let collectionCellWidth = vibesCollection.contentSize.width / 3.0 + 4
         //if the collection cells are not in the middle make them start in the middle
-        vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4 + 4) / 2, 0)
+//        vibesCollection.contentInset.top = max((vibesCollection.frame.height - collectionCellWidth * 4 + 4) / 2, 0)
+        vibesCollection.contentInset.left = 6
+        vibesCollection.contentInset.top = 6
+        vibesCollection.contentInset.right = 6
         
         // Do any additional setup after loading the view.
         
@@ -205,7 +208,8 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = self.view.frame.width
-        return CGSize(width: screenWidth / 3 - 4, height: screenWidth / 3 - 4)
+        let cellWidth = screenWidth / 2 - 10
+        return CGSize(width: cellWidth, height: cellWidth)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero

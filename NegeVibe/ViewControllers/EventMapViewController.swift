@@ -188,7 +188,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     }
     
     //sets region
-    let regionRadius: CLLocationDistance = 1300
+    let regionRadius: CLLocationDistance = 5000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                                   latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
