@@ -10,6 +10,11 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
+    @IBOutlet weak var scrollViewTopConstraint: NSLayoutConstraint!
+
+    var startScrollPointY: CGFloat{
+        return scrollView.center.y
+    }
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
     @IBOutlet weak var eventImageView: UIImageView!
@@ -24,14 +29,15 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        scrollViewTopConstraint.constant = eventImageView.bounds.height - 20
         scrollView.layer.cornerRadius = 20
+        
     }
     var fromMap = false
     
     @IBAction func buyTickets(_ sender: UIButton) {
         
     }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if fromMap{
@@ -67,15 +73,19 @@ class EventsDetailsViewController: UIViewController {
     @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
+        let delta = currentPoint - lastPoint
+        //scrollViewTopConstraint.constant = 
         print(currentPoint)
-        scrollView.center.y = currentPoint + self.view.center.y
-        if lastPoint != 0{
+        if lastPoint != 0 && startScrollPointY >= senderPointY{
             print(currentPoint - lastPoint)
-            eventImageView.frame.size.height += currentPoint - lastPoint
+            eventImageView.frame.size.height += delta
+            scrollView.center.y += delta
         }
         
         lastPoint = currentPoint
-        
+        if sender.state == .ended {
+            lastPoint = 0
+        }
     }
     
 }

@@ -17,16 +17,17 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         eventTableView.delegate = self
         eventTableView.dataSource = self
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 0
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell.init()
+    }
+
    
 
     
