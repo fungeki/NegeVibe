@@ -10,6 +10,9 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
+    var scrollSize: CGFloat {
+        return scrollView.bounds.height
+    }
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
     @IBOutlet weak var eventImageView: UIImageView!
@@ -25,13 +28,13 @@ class EventsDetailsViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         scrollView.layer.cornerRadius = 20
+        
     }
     var fromMap = false
     
     @IBAction func buyTickets(_ sender: UIButton) {
         
     }
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if fromMap{
@@ -68,10 +71,10 @@ class EventsDetailsViewController: UIViewController {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
         print(currentPoint)
-        scrollView.center.y = currentPoint + self.view.center.y
         if lastPoint != 0{
             print(currentPoint - lastPoint)
             eventImageView.frame.size.height += currentPoint - lastPoint
+            scrollView.frame.size.height = scrollView.bounds.height + currentPoint
         }
         
         lastPoint = currentPoint
