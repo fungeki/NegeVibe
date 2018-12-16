@@ -15,7 +15,6 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         eventTableView.delegate = self
         eventTableView.dataSource = self
         // Do any additional setup after loading the view.
@@ -29,6 +28,11 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         return UITableViewCell.init()
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+   
 
     
     
