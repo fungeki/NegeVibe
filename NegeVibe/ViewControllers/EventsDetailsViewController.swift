@@ -10,6 +10,7 @@ import UIKit
 
 class EventsDetailsViewController: UIViewController {
 
+    @IBOutlet weak var scrollViewTopConstraint: NSLayoutConstraint!
     var scrollSize: CGFloat {
         return scrollView.bounds.height
     }
