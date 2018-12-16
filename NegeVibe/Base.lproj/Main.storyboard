@@ -505,7 +505,7 @@
                                     <constraint firstAttribute="trailing" secondItem="9xk-l8-4Lt" secondAttribute="trailing" id="sDj-F0-YbT"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="delegate" destination="kTv-Kd-3To" id="GOU-nR-ZNx"/>
+                                    <outletCollection property="gestureRecognizers" destination="kTv-Kd-3To" appends="YES" id="7d8-2R-vj7"/>
                                 </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-Sc-ETz">
@@ -549,14 +549,14 @@
                         <outlet property="locationOfEvent" destination="Qyb-bJ-3cM" id="qbd-Td-Ybc"/>
                         <outlet property="nameOfEvents" destination="hO9-ug-ij1" id="OEs-4Q-9wm"/>
                         <outlet property="priceOfEvent" destination="hZl-Gs-fD2" id="Xv2-WF-HAC"/>
-                        <outlet property="scrollView" destination="2l9-xo-Q7C" id="8mj-J1-qRN"/>
+                        <outlet property="scrollView" destination="2l9-xo-Q7C" id="cQJ-Yr-iDj"/>
                         <outlet property="ticketsButton" destination="BTf-Sc-ETz" id="1zW-oK-VEZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdQ-rZ-ksT" sceneMemberID="firstResponder"/>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="kTv-Kd-3To">
                     <connections>
-                        <action selector="panWrapperView:" destination="nWx-Sy-Jqf" id="6Ju-gt-HbZ"/>
+                        <action selector="panWrapperView:" destination="nWx-Sy-Jqf" id="ex0-0Q-rMK"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
