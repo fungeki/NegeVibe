@@ -11,9 +11,13 @@ import UIKit
 class EventTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet weak var eventTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        eventTableView.delegate = self
+        eventTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
