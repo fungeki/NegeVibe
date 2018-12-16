@@ -24,8 +24,7 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        scrollView.layer.zPosition = .greatestFiniteMagnitude
-        
+        scrollView.layer.cornerRadius = 20
     }
     var fromMap = false
     
@@ -68,6 +67,7 @@ class EventsDetailsViewController: UIViewController {
     @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
         let senderPointY = sender.location(in: self.view).y
         let currentPoint = senderPointY - self.view.center.y
+        print(currentPoint)
         scrollView.center.y = currentPoint + self.view.center.y
         if lastPoint != 0{
             print(currentPoint - lastPoint)
