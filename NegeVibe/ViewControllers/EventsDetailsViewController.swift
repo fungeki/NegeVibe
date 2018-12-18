@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialFlexibleHeader
 
 class EventsDetailsViewController: UIViewController {
 
@@ -18,7 +19,6 @@ class EventsDetailsViewController: UIViewController {
     var startScrollPointY: CGFloat = 0
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
-    @IBOutlet weak var eventImageView: UIImageView!
     @IBOutlet weak var nameOfEvents: UILabel!
     @IBOutlet weak var describtionTitleLable: UILabel!
     @IBOutlet weak var describtionOfEvent: UITextView!
@@ -29,13 +29,27 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        scrollViewTopConstraint.constant = eventImageView.bounds.height - 20
+//        scrollViewTopConstraint.constant = eventImageView.bounds.height - 20
         scrollView.layer.cornerRadius = 20
         startScrollPointY = scrollView.center.y
          ticketsButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
         ticketsButton.layer.cornerRadius = ticketsButton.frame.size.height / 2
         
         
+    }
+    
+    let headerViewController = MDCFlexibleHeaderViewController()
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
+        addChild(headerViewController)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        addChild(headerViewController)
     }
     var fromMap = false
     
@@ -67,8 +81,27 @@ class EventsDetailsViewController: UIViewController {
             eventDateLabel.text = eventDisplay.datedescription
             locationLabel.text = eventDisplay.locationname
             describtionOfEvent.text = eventDisplay.description
+          //  let screenWidth = self.view.frame.width
+            let screenHeight = self.view.frame.height
             let imageURL = URL(string: eventDisplay.images[0].link)
-            eventImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
+            //headerViewController.headerView.minMaxHeightIncludesSafeArea = false
+            headerViewController.headerView.maximumHeight = screenHeight * 0.2
+            headerViewController.headerView.minimumHeight = 0
+            let imageView = UIImageView(image: UIImage(named: "placeholder"))
+            imageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
+           // eventImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
+            
+            
+            imageView.contentMode = .scaleAspectFit
+            imageView.clipsToBounds = true
+            headerViewController.view.frame = view.bounds
+            view.addSubview(headerViewController.view)
+            headerViewController.didMove(toParent: self)
+            headerViewController.headerView.trackingScrollView = scrollView
+            scrollView.delegate = headerViewController
+            imageView.frame = headerViewController.headerView.bounds
+            imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            headerViewController.headerView.contentView.insertSubview(imageView, at: 0)
         }
         // Do any additional setup after loading the view.
     }

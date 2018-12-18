@@ -50,7 +50,7 @@
             </objects>
             <point key="canvasLocation" x="352.80000000000001" y="740.7796101949026"/>
         </scene>
-        <!--Event Map View Controller-->
+        <!--מפה-->
         <scene sceneID="lF2-f1-MPz">
             <objects>
                 <viewController id="p4g-h5-hWC" customClass="EventMapViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,7 +179,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YwH-je-CL2"/>
+                    <navigationItem key="navigationItem" title="מפה" id="YwH-je-CL2"/>
                     <connections>
                         <outlet property="bannerEventNameLabel" destination="Mv9-gg-gEi" id="sBG-im-feb"/>
                         <outlet property="bannerFeaturedMessageBtn" destination="Nqn-uL-5qt" id="HTf-JJ-hX7"/>
@@ -382,11 +382,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-0x-V2C">
-                                <rect key="frame" x="0.0" y="20" width="375" height="167"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-xo-Q7C">
-                                <rect key="frame" x="0.0" y="167" width="375" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-l8-4Lt">
                                         <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
@@ -530,28 +527,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Sln-0x-V2C" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" id="019-Lm-A73"/>
+                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="ddq-ho-00D" secondAttribute="top" id="15b-FL-Hqy"/>
                             <constraint firstItem="IZG-cT-gcK" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="6sS-Ge-GnM"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="7Ot-j7-ic1"/>
                             <constraint firstItem="BTf-Sc-ETz" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" constant="36" id="9JR-2i-Ae9"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="leading" secondItem="IZG-cT-gcK" secondAttribute="trailing" constant="32" id="B4V-uU-rWF"/>
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" id="DOB-Ed-L7g"/>
-                            <constraint firstAttribute="bottom" secondItem="2l9-xo-Q7C" secondAttribute="bottom" constant="45" id="G1o-bk-mjq"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="Tui-XJ-JbZ" secondAttribute="trailing" constant="24" id="K6l-n1-BYC"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="bottom" secondItem="BTf-Sc-ETz" secondAttribute="bottom" constant="8" id="Xjc-bI-9gF"/>
-                            <constraint firstItem="Sln-0x-V2C" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="aez-Yw-LHk"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="2l9-xo-Q7C" secondAttribute="trailing" id="afP-vP-CHT"/>
                             <constraint firstItem="Tui-XJ-JbZ" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="ayI-Q6-eRG"/>
-                            <constraint firstItem="Sln-0x-V2C" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" multiplier="0.25" id="cnA-nC-SuT"/>
-                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="0kc-MP-U3l" secondAttribute="top" constant="147" id="ePl-2v-CFI"/>
                             <constraint firstItem="Tui-XJ-JbZ" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="fFx-X2-m5G"/>
                             <constraint firstItem="Tui-XJ-JbZ" firstAttribute="leading" secondItem="prP-3p-iK4" secondAttribute="trailing" constant="32" id="jc0-2Q-mgV"/>
                             <constraint firstItem="2l9-xo-Q7C" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" id="jys-pm-elB"/>
                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.07" id="o2d-mM-nWg"/>
                             <constraint firstItem="IZG-cT-gcK" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="pOm-Cd-Fub"/>
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="rlJ-jC-qIT"/>
-                            <constraint firstItem="Sln-0x-V2C" firstAttribute="top" secondItem="0kc-MP-U3l" secondAttribute="top" id="wv4-lH-UhL"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="xB3-Wf-eZF"/>
+                            <constraint firstItem="IZG-cT-gcK" firstAttribute="top" secondItem="2l9-xo-Q7C" secondAttribute="bottom" constant="8" id="yrQ-6d-CEb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
@@ -560,13 +553,11 @@
                         <outlet property="describtionOfEvent" destination="RJq-nO-Csx" id="0vz-m1-gVD"/>
                         <outlet property="describtionTitleLable" destination="Mzf-ac-geA" id="igs-pQ-4Or"/>
                         <outlet property="eventDateLabel" destination="RIP-Oi-Zrk" id="O4a-i6-Tb6"/>
-                        <outlet property="eventImageView" destination="Sln-0x-V2C" id="Ues-Mr-mwc"/>
                         <outlet property="fullView" destination="ddq-ho-00D" id="wl4-wT-dPX"/>
                         <outlet property="locationLabel" destination="wUQ-o6-ho0" id="kpD-XE-mA8"/>
                         <outlet property="nameOfEvents" destination="hO9-ug-ij1" id="OEs-4Q-9wm"/>
                         <outlet property="priceLabel" destination="1Pq-2I-Qzq" id="X83-X7-lRD"/>
                         <outlet property="scrollView" destination="2l9-xo-Q7C" id="cQJ-Yr-iDj"/>
-                        <outlet property="scrollViewTopConstraint" destination="ePl-2v-CFI" id="6gf-6f-JDW"/>
                         <outlet property="ticketsButton" destination="BTf-Sc-ETz" id="W8p-BO-EbD"/>
                     </connections>
                 </viewController>
