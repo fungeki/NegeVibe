@@ -15,13 +15,21 @@ class Artwork: NSObject, MKAnnotation {
     var discipline: String
     var coordinate: CLLocationCoordinate2D
     var logo: String?
+    var event: Event
     
-    init(title: String, locationName: String, type discipline: String, coordinate: CLLocationCoordinate2D, logo: String?) {
-        self.title = title
-        self.locationName = locationName
+    init(type discipline: String, coordinate: CLLocationCoordinate2D, logo: String?, event: Event) {
+//        self.title = title
+//        self.locationName = locationName
+//        self.discipline = discipline
+//        self.coordinate = coordinate
+//        self.logo = logo
+        self.event = event
+        self.title = event.title
+        self.locationName = event.locationname
         self.discipline = discipline
         self.coordinate = coordinate
         self.logo = logo
+
         super.init()
     }
     

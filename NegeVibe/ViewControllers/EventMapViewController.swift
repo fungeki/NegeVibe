@@ -175,7 +175,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
             let type = Symbol(withInt: model.type)?.rawValue ?? "unknown type"
             
             //create artwork for the model event
-            let artwork = Artwork(title: model.title, locationName: model.locationname, type: type, coordinate: location, logo: model.images[0].link)
+            let artwork = Artwork(type: type, coordinate: location, logo: model.images[0].link, event: model)
             
             eventData.append(artwork)
             
@@ -209,6 +209,7 @@ extension EventMapViewController: MKMapViewDelegate {
         let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
         //put the details
         dt.fromMap = true
+        dt.eventDisplay = artwork.event
         self.navigationController?.pushViewController(dt, animated: true)
         
     }

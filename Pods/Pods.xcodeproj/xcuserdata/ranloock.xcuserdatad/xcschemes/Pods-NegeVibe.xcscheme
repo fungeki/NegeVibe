@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03D92E94272FC31C2DFB8DD54B70319D"
+               BlueprintIdentifier = "29892A373E26A46918E081E01B90889C"
                BuildableName = "Pods_NegeVibe.framework"
                BlueprintName = "Pods-NegeVibe"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "03D92E94272FC31C2DFB8DD54B70319D"
+            BlueprintIdentifier = "29892A373E26A46918E081E01B90889C"
             BuildableName = "Pods_NegeVibe.framework"
             BlueprintName = "Pods-NegeVibe"
             ReferencedContainer = "container:Pods.xcodeproj">

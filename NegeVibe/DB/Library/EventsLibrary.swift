@@ -38,4 +38,13 @@ class EventsLibrary {
     func getEvents() -> [Event]{
         return events
     }
+    
+    func getEventById(_ id: Int) -> Event{
+        for model in events{
+            if model.id == id{
+                return model
+            }
+        }
+        return events[0]
+    }
 }

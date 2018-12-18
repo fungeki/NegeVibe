@@ -9,5 +9,6 @@ target 'NegeVibe' do
 
 pod 'IQKeyboardManagerSwift'
 pod 'SDWebImage'
+pod 'MaterialComponents/FlexibleHeader'
 
 end

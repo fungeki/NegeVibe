@@ -1,22 +1,35 @@
 PODS:
   - IQKeyboardManagerSwift (6.2.0)
+  - MaterialComponents/FlexibleHeader (72.2.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/UIMetrics
+    - MDFTextAccessibility
+  - MaterialComponents/private/Application (72.2.0)
+  - MaterialComponents/private/UIMetrics (72.2.0):
+    - MaterialComponents/private/Application
+  - MDFTextAccessibility (2.0.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - MaterialComponents/FlexibleHeader
   - SDWebImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - IQKeyboardManagerSwift
+    - MaterialComponents
+    - MDFTextAccessibility
     - SDWebImage
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  MaterialComponents: d1637df9976683348de8eabd10de0723ec81db3d
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 0469fe7d56a9967e99697fe61f4d27a17d5c374b
+PODFILE CHECKSUM: dcf37a4b8ca0c41ec423209e53ff36a35763b721
 
 COCOAPODS: 1.5.3
