@@ -43,7 +43,6 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
 
         cell.eventTitleLabel.text = negevEvent.title
         cell.locationEventLable.text = negevEvent.locationname
-        
         let dateInput = negevEvent.date
         let formater2 = DateFormatter()
         formater2.locale = Locale(identifier: "en_US_POSIX")
@@ -53,16 +52,15 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
             formater2.dateFormat = "d"
             let formattedStr = formater2.string(from: day)
             cell.dayLabel.text = formattedStr
-         
         }
-      
+    
         let formater = DateFormatter()
         formater.locale = Locale(identifier: "en_US_POSIX")
         formater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         if let month  = formater.date(from: dateInput){
             formater.locale = Locale(identifier: "he_IL")
             formater.dateFormat = "MMMM"
-            let formattedDate = formater2.string(from: month)
+            let formattedDate = formater.string(from: month)
             cell.monthLable.text = formattedDate
         }
         
@@ -70,10 +68,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.event = negevEvent
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
-        
-        
-        
-        
+  
         return cell
         
     }
