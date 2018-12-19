@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ic_map_gary.pdf",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ic_map_gary.pdf",
       "scale" : "2x"
     },
     {
