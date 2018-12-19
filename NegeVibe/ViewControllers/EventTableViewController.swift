@@ -10,28 +10,61 @@ import UIKit
 
 class EventTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var eventTableView: UITableView!
+    var arrEvent = [Event]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        eventTableView.delegate = self
-        eventTableView.dataSource = self
-        // Do any additional setup after loading the view.
+        
+    if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+         getEvents { (arrEvent) in self.arrEvent = arrEvent
+        EventsLibrary.getInstance().setEvents(arrEvent)
+         self.eventTableView.reloadData()
+        }
+         } else {
+         self.arrEvent = EventsLibrary.getInstance().getEvents()
+         }
+        
+        
+    }
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return arrEvent.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell.init()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath)  as! EventTableViewCell
+     
+        let negevEvent = arrEvent[indexPath.item]
+        cell.eventTitleLabel.text = negevEvent.title
+        cell.locationEventLable.text = negevEvent.locationname
+        cell.tabBar = self.tabBarController
+        cell.event = negevEvent
+        let url = URL(string: negevEvent.images[0].link)
+        cell.eventUIImageView.sd_setImage(with:url)
+       
+        
+        
+        return cell
+        
     }
-
-   
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        eventTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+//    func configureTableView(){
+//        eventTableView.rowHeight = UITableView.automaticDimension
+//        eventTableView.estimatedRowHeight = 100.0
+//    }
     
     
+    
+
+
 
     /*
     // MARK: - Navigation
@@ -44,3 +77,4 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     */
 
 }
+
