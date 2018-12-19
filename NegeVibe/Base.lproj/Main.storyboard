@@ -105,14 +105,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
+                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="310" height="17"/>
+                                        <rect key="frame" x="16" y="8" width="285" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -209,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iky-GN-gVW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSa-17-uYv">
                                     <size key="itemSize" width="90" height="95"/>
@@ -313,38 +313,42 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="hQm-gu-y0q" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yyj-aM-LBd">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="yyj-aM-LBd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ME6-OF-lc2" kind="relationship" relationship="viewControllers" id="E1X-Xr-f8y"/>
                         <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
+                        <segue destination="8Qe-rQ-0Qs" kind="relationship" relationship="viewControllers" id="7mX-Jq-5sl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2236" y="143.47826086956522"/>
         </scene>
-        <!--לאירועים-->
+        <!--Navigation Controller-->
         <scene sceneID="ruv-aZ-RqX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Qe-rQ-0Qs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="לאירועים" image="list" id="k4X-W6-LPF"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_list_gray" largeContentSizeImage="ic_list_gray" selectedImage="ic_list_color" id="k4X-W6-LPF">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbc-Q9-M15">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yf6-lA-a6T" kind="relationship" relationship="rootViewController" id="eLP-z7-wCE"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmf-KX-i3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2994" y="143"/>
         </scene>
-        <!--Event Table View Controller-->
+        <!--Item-->
         <scene sceneID="fmm-xd-WrH">
             <objects>
                 <viewController id="yf6-lA-a6T" customClass="EventTableViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
@@ -353,7 +357,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ikk-dH-31g">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="JTD-3P-JRn" customClass="EventTableViewCell" customModule="NegeVibe" customModuleProvider="target">
@@ -456,6 +460,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z5M-ZG-iLJ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="9E3-T4-tTb"/>
+                    <navigationItem key="navigationItem" id="WkJ-MC-RIA"/>
                     <connections>
                         <outlet property="eventTableView" destination="ikk-dH-31g" id="aeV-Sd-oqL"/>
                     </connections>
@@ -693,11 +699,13 @@
             </objects>
             <point key="canvasLocation" x="3156" y="1012"/>
         </scene>
-        <!--מפה-->
+        <!--Navigation Controller-->
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="מפה" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_map_gary" landscapeImage="map" largeContentSizeImage="map" selectedImage="ic_map_color" id="yhd-w5-a8R">
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -719,15 +727,18 @@
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
+        <image name="ic_list_color" width="95" height="68"/>
+        <image name="ic_list_gray" width="95" height="68"/>
+        <image name="ic_map_color" width="92" height="119"/>
+        <image name="ic_map_gary" width="92" height="119"/>
         <image name="ic_place" width="56" height="69"/>
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
-        <image name="indinegev" width="624" height="383"/>
-        <image name="list" width="25" height="25"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
