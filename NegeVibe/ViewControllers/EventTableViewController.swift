@@ -51,7 +51,12 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        eventTableView.deselectRow(at: indexPath, animated: true)
+        let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
+        //put the details
+        dt.fromMap = true
+        dt.eventDisplay = EventsLibrary.getInstance().getEvents()[indexPath.row]
+        self.navigationController?.pushViewController(dt, animated: true)
+        
     }
     
 //    func configureTableView(){
