@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yf6-lA-a6T">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQm-gu-y0q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -105,14 +105,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
+                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="310" height="17"/>
+                                        <rect key="frame" x="16" y="8" width="285" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhA-LM-FhJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6981.6000000000004" y="1041.2293853073463"/>
+            <point key="canvasLocation" x="7920.8000000000002" y="1041.2293853073463"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yu0-aD-0Bh">
@@ -322,6 +322,7 @@
                     <connections>
                         <segue destination="ME6-OF-lc2" kind="relationship" relationship="viewControllers" id="E1X-Xr-f8y"/>
                         <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
+                        <segue destination="wRJ-Zk-YTB" kind="relationship" relationship="viewControllers" id="xUF-fu-ofJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -344,7 +345,7 @@
             </objects>
             <point key="canvasLocation" x="2994" y="143"/>
         </scene>
-        <!--Event Table View Controller-->
+        <!--אירועים-->
         <scene sceneID="fmm-xd-WrH">
             <objects>
                 <viewController id="yf6-lA-a6T" customClass="EventTableViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
@@ -353,7 +354,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ikk-dH-31g">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" rowHeight="228" id="JTD-3P-JRn" customClass="EventTableViewCell" customModule="NegeVibe" customModuleProvider="target">
@@ -389,13 +390,13 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-If-ZYd">
-                                                    <rect key="frame" x="58" y="138" width="72" height="34.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-If-ZYd">
+                                                    <rect key="frame" x="52.5" y="141.5" width="83" height="37.5"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbw-Pm-WPk">
-                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="34.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="Qbw-Pm-WPk" secondAttribute="height" multiplier="7:8" id="bso-bO-lWt"/>
+                                                                <constraint firstAttribute="width" secondItem="Qbw-Pm-WPk" secondAttribute="height" multiplier="1:1" id="IV4-j3-sIu"/>
                                                             </constraints>
                                                             <state key="normal" image="ic_chat_empty_circle"/>
                                                             <connections>
@@ -403,16 +404,17 @@
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xST-gF-udc">
-                                                            <rect key="frame" x="42" y="0.0" width="30" height="34.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="xST-gF-udc" secondAttribute="height" multiplier="7:8" id="5cA-m7-sRE"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="45.5" y="0.0" width="37.5" height="37.5"/>
                                                             <state key="normal" image="ic_like_empty_circle"/>
                                                             <connections>
                                                                 <action selector="likeButton:" destination="JTD-3P-JRn" eventType="touchUpInside" id="AQS-jN-lM7"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="xST-gF-udc" firstAttribute="width" secondItem="Qbw-Pm-WPk" secondAttribute="width" id="9Xk-fs-NLn"/>
+                                                        <constraint firstItem="xST-gF-udc" firstAttribute="height" secondItem="Qbw-Pm-WPk" secondAttribute="height" id="AuG-39-FaN"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH3-iX-kqS">
                                                     <rect key="frame" x="31" y="188" width="279.5" height="17"/>
@@ -431,7 +433,8 @@
                                                 <constraint firstItem="XH3-iX-kqS" firstAttribute="leading" secondItem="HLq-5E-M0q" secondAttribute="leadingMargin" constant="16" id="SNH-E1-yT0"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="yA1-02-zeL" secondAttribute="trailing" constant="8" id="a2K-oe-ipk"/>
                                                 <constraint firstItem="4U3-8h-y9n" firstAttribute="top" secondItem="HLq-5E-M0q" secondAttribute="top" id="dYw-Em-78o"/>
-                                                <constraint firstItem="QCq-If-ZYd" firstAttribute="bottom" secondItem="4U3-8h-y9n" secondAttribute="bottom" multiplier="1.08" id="f18-nY-0wa"/>
+                                                <constraint firstItem="QCq-If-ZYd" firstAttribute="bottom" secondItem="4U3-8h-y9n" secondAttribute="bottom" multiplier="1.12" id="f18-nY-0wa"/>
+                                                <constraint firstItem="Qbw-Pm-WPk" firstAttribute="width" secondItem="HLq-5E-M0q" secondAttribute="width" multiplier="0.1" id="fSt-vU-Z59"/>
                                                 <constraint firstItem="yA1-02-zeL" firstAttribute="leading" secondItem="8FS-WB-UA2" secondAttribute="trailing" constant="8" id="gp0-bU-V1n"/>
                                                 <constraint firstItem="8FS-WB-UA2" firstAttribute="leading" secondItem="HLq-5E-M0q" secondAttribute="leadingMargin" constant="16" id="lrq-fk-yke"/>
                                                 <constraint firstItem="4U3-8h-y9n" firstAttribute="leading" secondItem="HLq-5E-M0q" secondAttribute="leading" id="xSu-Q0-OLO"/>
@@ -439,7 +442,6 @@
                                         </tableViewCellContentView>
                                         <constraints>
                                             <constraint firstItem="4U3-8h-y9n" firstAttribute="height" secondItem="JTD-3P-JRn" secondAttribute="height" multiplier="0.7" id="VJv-Zm-SVb"/>
-                                            <constraint firstItem="Qbw-Pm-WPk" firstAttribute="width" secondItem="JTD-3P-JRn" secondAttribute="width" multiplier="0.08" id="mht-Z1-Ino"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="dayLable" destination="Hxp-gD-4SX" id="1AT-IK-KQU"/>
@@ -465,14 +467,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z5M-ZG-iLJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mxc-Ga-d32"/>
+                    <navigationItem key="navigationItem" title="אירועים" id="Mxc-Ga-d32"/>
                     <connections>
                         <outlet property="eventTableView" destination="ikk-dH-31g" id="aeV-Sd-oqL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdM-gm-vRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4842" y="1012"/>
+            <point key="canvasLocation" x="5780" y="1011.544227886057"/>
         </scene>
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
@@ -682,7 +684,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vS-ij-uPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6042.3999999999996" y="1041.2293853073463"/>
+            <point key="canvasLocation" x="6981.6000000000004" y="1041.2293853073463"/>
         </scene>
         <!--Your Vibe-->
         <scene sceneID="Cni-Lt-XAJ">
@@ -722,6 +724,25 @@
             </objects>
             <point key="canvasLocation" x="1360.8" y="1011.544227886057"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="3D7-Qd-Phv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7Rg-YS-dKF"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YA-Yd-wam">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yf6-lA-a6T" kind="relationship" relationship="rootViewController" id="evJ-Va-5ZU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPk-j7-FnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4840.8000000000002" y="1011.544227886057"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ic_chat_empty" width="100" height="82"/>
@@ -733,11 +754,11 @@
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
-        <image name="indinegev" width="624" height="383"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
