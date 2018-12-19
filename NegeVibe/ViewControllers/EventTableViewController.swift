@@ -16,6 +16,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     eventTableView.rowHeight = self.view.frame.height * 0.25
     if EventsLibrary.getInstance().getNumberOfEvents() == 0{
          getEvents { (arrEvent) in self.arrEvent = arrEvent
@@ -25,7 +26,6 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
          } else {
          self.arrEvent = EventsLibrary.getInstance().getEvents()
          }
-        
         
     }
    
@@ -37,14 +37,42 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath)  as! EventTableViewCell
-     
+       
+        
         let negevEvent = arrEvent[indexPath.item]
+        
+   
+       
+        
+       /* let input = Date()
+        let formater = DateFormatter()
+        formater.dateFormat = "MMM"
+         let date  = formater.string(from:input)
+            cell.monthLable.text = "\(date)"
+        */
+
         cell.eventTitleLabel.text = negevEvent.title
         cell.locationEventLable.text = negevEvent.locationname
+        
+        let dateInput = negevEvent.date
+        let formater2 = DateFormatter()
+        formater2.dateFormat = "d"
+        if let day = formater2.date(from: dateInput){
+            cell.dayLabel.text = "\(day)"
+        }
+        let formater = DateFormatter()
+        formater.dateFormat = "MMM"
+        if let month  = formater.date(from: dateInput){
+        cell.monthLable.text = "\(month)"
+        }
+        
         cell.tabBar = self.tabBarController
         cell.event = negevEvent
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
+        
+        
+        
         
         return cell
         

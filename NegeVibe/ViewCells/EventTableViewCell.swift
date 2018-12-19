@@ -13,8 +13,8 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var eventUIImageView: UIImageView!
     @IBOutlet weak var locationEventLable: UILabel!
     @IBOutlet weak var eventTitleLabel: UILabel!
-    @IBOutlet weak var dayOfWeekLadel: UILabel!
-    @IBOutlet weak var dayLable: UILabel!
+    @IBOutlet weak var monthLable: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
     var event: Event?
     var tabBar: UITabBarController?
     

@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="150" id="zGY-SL-nWi"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="gFD-iO-g7u" customClass="SearchResultTableViewCell" customModule="NegeVibe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="gFD-iO-g7u" customClass="SearchResultTableViewCell" customModule="NegeVibe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gFD-iO-g7u" id="TSS-N8-5kW">
@@ -368,22 +368,22 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" text=" שם של אירוע" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FS-WB-UA2">
-                                                    <rect key="frame" x="31" y="167.5" width="279.5" height="20.5"/>
+                                                    <rect key="frame" x="31" y="167.5" width="280" height="20.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yA1-02-zeL">
-                                                    <rect key="frame" x="318.5" y="167.5" width="33.5" height="43"/>
+                                                    <rect key="frame" x="319" y="167.5" width="33" height="43"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="יום ה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KS-6c-10v">
-                                                            <rect key="frame" x="0.0" y="0.0" width="33.5" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ינואר" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KS-6c-10v">
+                                                            <rect key="frame" x="0.0" y="0.0" width="33" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxp-gD-4SX">
-                                                            <rect key="frame" x="0.0" y="22.5" width="33.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="22.5" width="33" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -417,7 +417,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XH3-iX-kqS">
-                                                    <rect key="frame" x="31" y="188" width="279.5" height="17"/>
+                                                    <rect key="frame" x="31" y="188" width="280" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.46303365499999999" green="0.45872805529999999" blue="0.4935637953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -444,11 +444,11 @@
                                             <constraint firstItem="4U3-8h-y9n" firstAttribute="height" secondItem="JTD-3P-JRn" secondAttribute="height" multiplier="0.7" id="VJv-Zm-SVb"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="dayLable" destination="Hxp-gD-4SX" id="1AT-IK-KQU"/>
-                                            <outlet property="dayOfWeekLadel" destination="8KS-6c-10v" id="Gdk-g0-JHh"/>
+                                            <outlet property="dayLabel" destination="Hxp-gD-4SX" id="1AT-IK-KQU"/>
                                             <outlet property="eventTitleLabel" destination="8FS-WB-UA2" id="sm4-07-YF9"/>
                                             <outlet property="eventUIImageView" destination="4U3-8h-y9n" id="3kp-lF-f2U"/>
                                             <outlet property="locationEventLable" destination="XH3-iX-kqS" id="y9x-Pv-8Ca"/>
+                                            <outlet property="monthLable" destination="8KS-6c-10v" id="Gdk-g0-JHh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -754,11 +754,11 @@
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
-        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="indinegev" width="624" height="383"/>
         <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="50" height="50"/>
+        <image name="search" width="25" height="25"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
