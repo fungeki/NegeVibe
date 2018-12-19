@@ -40,30 +40,30 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
        
         
         let negevEvent = arrEvent[indexPath.item]
-        
-   
-       
-        
-       /* let input = Date()
-        let formater = DateFormatter()
-        formater.dateFormat = "MMM"
-         let date  = formater.string(from:input)
-            cell.monthLable.text = "\(date)"
-        */
 
         cell.eventTitleLabel.text = negevEvent.title
         cell.locationEventLable.text = negevEvent.locationname
         
         let dateInput = negevEvent.date
         let formater2 = DateFormatter()
-        formater2.dateFormat = "d"
+        formater2.locale = Locale(identifier: "en_US_POSIX")
+        formater2.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         if let day = formater2.date(from: dateInput){
-            cell.dayLabel.text = "\(day)"
+            formater2.locale = Locale(identifier: "he_IL")
+            formater2.dateFormat = "d"
+            let formattedStr = formater2.string(from: day)
+            cell.dayLabel.text = formattedStr
+         
         }
+      
         let formater = DateFormatter()
-        formater.dateFormat = "MMM"
+        formater.locale = Locale(identifier: "en_US_POSIX")
+        formater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         if let month  = formater.date(from: dateInput){
-        cell.monthLable.text = "\(month)"
+            formater.locale = Locale(identifier: "he_IL")
+            formater.dateFormat = "MMMM"
+            let formattedDate = formater2.string(from: month)
+            cell.monthLable.text = formattedDate
         }
         
         cell.tabBar = self.tabBarController
