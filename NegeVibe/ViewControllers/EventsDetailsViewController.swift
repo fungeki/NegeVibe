@@ -94,6 +94,7 @@ class EventsDetailsViewController: UIViewController {
             
             imageView.contentMode = .scaleAspectFit
             imageView.clipsToBounds = true
+            imageView.backgroundColor = UIColor.white
             headerViewController.view.frame = view.bounds
             view.addSubview(headerViewController.view)
             headerViewController.didMove(toParent: self)

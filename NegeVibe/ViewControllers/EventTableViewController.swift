@@ -17,7 +17,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    eventTableView.rowHeight = self.view.frame.height * 0.25
+    eventTableView.rowHeight = self.view.frame.height / 3
     if EventsLibrary.getInstance().getNumberOfEvents() == 0{
          getEvents { (arrEvent) in self.arrEvent = arrEvent
         EventsLibrary.getInstance().setEvents(arrEvent)
@@ -68,6 +68,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.event = negevEvent
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
+        cell.selectionStyle = .none
   
         return cell
         
