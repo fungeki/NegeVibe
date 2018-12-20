@@ -2,7 +2,7 @@
 //  EventTableViewController.swift
 //  NegeVibe
 //
-//  Created by Rami Tzafon on 16.12.2018.
+//  Created by  on 16.12.2018.
 //  Copyright © 2018 test. All rights reserved.
 //
 
@@ -69,6 +69,15 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
         cell.selectionStyle = .none
+        let userDefaults = UserDefaults.standard
+        let eventIDStr = String(negevEvent.id)
+        let isEventLiked = userDefaults.bool(forKey: eventIDStr)
+       // print(isEventLiked)
+        if isEventLiked {
+            cell.likeBtn.setImage(UIImage(named: "ic_like_full"), for: .normal)
+            cell.isLiked = true
+        }
+        
   
         return cell
         

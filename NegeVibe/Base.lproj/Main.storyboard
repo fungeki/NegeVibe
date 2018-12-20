@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="150" id="zGY-SL-nWi"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="gFD-iO-g7u" customClass="SearchResultTableViewCell" customModule="NegeVibe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" id="gFD-iO-g7u" customClass="SearchResultTableViewCell" customModule="NegeVibe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gFD-iO-g7u" id="TSS-N8-5kW">
@@ -447,6 +447,7 @@
                                             <outlet property="dayLabel" destination="Hxp-gD-4SX" id="1AT-IK-KQU"/>
                                             <outlet property="eventTitleLabel" destination="8FS-WB-UA2" id="sm4-07-YF9"/>
                                             <outlet property="eventUIImageView" destination="4U3-8h-y9n" id="3kp-lF-f2U"/>
+                                            <outlet property="likeBtn" destination="xST-gF-udc" id="a4y-fp-wOO"/>
                                             <outlet property="locationEventLable" destination="XH3-iX-kqS" id="y9x-Pv-8Ca"/>
                                             <outlet property="monthLable" destination="8KS-6c-10v" id="Gdk-g0-JHh"/>
                                         </connections>
@@ -705,11 +706,11 @@
             </objects>
             <point key="canvasLocation" x="3156" y="1012"/>
         </scene>
-        <!--מפה-->
+        <!--Navigation Controller-->
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="מפה" image="map" landscapeImage="map" largeContentSizeImage="map" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_map_gary" landscapeImage="map" largeContentSizeImage="map" selectedImage="ic_map_color" id="yhd-w5-a8R"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -724,11 +725,11 @@
             </objects>
             <point key="canvasLocation" x="1360.8" y="1011.544227886057"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7Rg-YS-dKF"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_list_gray" selectedImage="ic_list_color" id="7Rg-YS-dKF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YA-Yd-wam">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -750,15 +751,19 @@
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
+        <image name="ic_list_color" width="95" height="68"/>
+        <image name="ic_list_gray" width="95" height="68"/>
+        <image name="ic_map_color" width="92" height="119"/>
+        <image name="ic_map_gary" width="92" height="119"/>
         <image name="ic_place" width="56" height="69"/>
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
-        <image name="indinegev" width="624" height="383"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
         <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
