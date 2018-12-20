@@ -30,6 +30,7 @@
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
+		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2921AED0AF009B55FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2821AED0AF009B55FF /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
+		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +255,7 @@
 				8C1ACD4321B7D03A00103D9E /* Popup.swift */,
 				8C7E560021CBA27000191307 /* Toast.swift */,
 				8C7E560221CBA33E00191307 /* RoundCorners.swift */,
+				8C7E560421CC02C300191307 /* Colors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1ACD0E21B0414300103D9E /* Artwork.swift in Sources */,
+				8C7E560521CC02C300191307 /* Colors.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */,

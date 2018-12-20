@@ -84,7 +84,7 @@ class EventsDetailsViewController: UIViewController {
           //  let screenWidth = self.view.frame.width
             let screenHeight = self.view.frame.height
             let imageURL = URL(string: eventDisplay.images[0].link)
-            //headerViewController.headerView.minMaxHeightIncludesSafeArea = false
+            headerViewController.headerView.minMaxHeightIncludesSafeArea = false
             headerViewController.headerView.maximumHeight = screenHeight * 0.2
             headerViewController.headerView.minimumHeight = 0
             let imageView = UIImageView(image: UIImage(named: "placeholder"))
@@ -94,8 +94,9 @@ class EventsDetailsViewController: UIViewController {
             
             imageView.contentMode = .scaleAspectFit
             imageView.clipsToBounds = true
-            imageView.backgroundColor = UIColor.white
+//            imageView.backgroundColor = getPrimaryColor()
             headerViewController.view.frame = view.bounds
+            headerViewController.view.backgroundColor = getPrimaryColor()
             view.addSubview(headerViewController.view)
             headerViewController.didMove(toParent: self)
             headerViewController.headerView.trackingScrollView = scrollView
