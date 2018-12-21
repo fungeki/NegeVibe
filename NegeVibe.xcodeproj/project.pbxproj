@@ -27,6 +27,9 @@
 		8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9721BD055200103D9E /* MLocationManager.swift */; };
 		8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */; };
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
+		8C54B54E21CCCDA90002CD08 /* ChatOfEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */; };
+		8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */; };
+		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
@@ -68,6 +71,9 @@
 		8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationNav.gpx; sourceTree = "<group>"; };
 		8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
+		8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOfEventViewController.swift; sourceTree = "<group>"; };
+		8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 				7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */,
 				A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */,
 				A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */,
+				8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -141,6 +148,8 @@
 				8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */,
 				A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */,
 				A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */,
+				8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */,
+				8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -381,7 +390,9 @@
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
+				8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
+				8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */,
 				7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */,
 				8C7E560121CBA27000191307 /* Toast.swift in Sources */,
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
@@ -389,6 +400,7 @@
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
+				8C54B54E21CCCDA90002CD08 /* ChatOfEventViewController.swift in Sources */,
 				8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,
