@@ -76,6 +76,7 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "פרטי אירוע"
         if let eventDisplay = eventDisplay {
             nameOfEvents.text = eventDisplay.title
             eventDateLabel.text = eventDisplay.datedescription

@@ -86,7 +86,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         //print(glb_events)
         if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
             //loading indicator
-            JustHUD.shared.showInView(view: self.view, withHeader: "Loading", andFooter: "Please Wait")
+            JustHUD.shared.showInView(view: self.view, withHeader: "רק דקה", andFooter: "מסיים לטעון")
             
             //adding artwork
             getEvents { (events) in
