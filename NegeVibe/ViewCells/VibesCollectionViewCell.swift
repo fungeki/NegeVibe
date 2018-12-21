@@ -11,6 +11,8 @@ import UIKit
 class VibesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var vibeImage: UIImageView!
+       
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,4 +20,6 @@ class VibesCollectionViewCell: UICollectionViewCell {
 //        vibeImage.layer.borderColor = UIColor.blue.cgColor
 //        vibeImage.layer.borderWidth = 1
     }
+    
+   
 }

@@ -18,10 +18,16 @@ class VibesViewController: UIViewController {
     @IBOutlet weak var topConstraint: NSLayoutConstraint!
     @IBOutlet weak var vibesCollection: UICollectionView!
     var vibes = UIImage(named: "placeholder")
+    let symbols = Symbol.allCases
+    //var allCases = [Symbol.allCases]
+   
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         //timer for the effect:
         vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
+        print()
+      
         
     }
     
@@ -197,12 +203,15 @@ class VibesViewController: UIViewController {
 
 extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
+        return symbols.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "vibesCell", for: indexPath) as! VibesCollectionViewCell
-        cell.vibeImage.image = vibes
+    
+        cell.vibeImage.image = UIImage(cgImage: symbols[indexPath.row].getImage() as! CGImage)
+        
+        
         return cell
     }
     
@@ -221,6 +230,10 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
     }
     
 }

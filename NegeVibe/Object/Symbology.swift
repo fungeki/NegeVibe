@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Symbol: String, CustomStringConvertible {
+enum Symbol: String, CustomStringConvertible, CaseIterable {
     case festival = "Festival"
     case musicFestival = "Music Festival"
     case movieFestival = "Movies Festival"
@@ -17,6 +17,7 @@ enum Symbol: String, CustomStringConvertible {
     case kosherEvent = "Kosher Event"
     case concertGeneral = "Shows General"
     case otherGeneral = "Other General"
+    
     
     init?(withInt val: Int){
         switch val {
@@ -38,6 +39,8 @@ enum Symbol: String, CustomStringConvertible {
             self = .musicFestival
         }
     }
+    
+    
     
     func getImage()->UIImage{
         switch self {
@@ -65,4 +68,29 @@ enum Symbol: String, CustomStringConvertible {
     var description: String{
         return self.rawValue
     }
+    
+    func getHebrewName() -> String {
+        switch self {
+        case .festival:
+            return "פסתיבל"
+        case .movieFestival:
+            return "פסתיבל הסרטים"
+        case .cityEvent:
+            return "אירוע בעיר"
+        case .concertGeneral:
+            return "קונצרט כללי"
+        case .otherGeneral:
+            return "אירוע כללי"
+        case .kosherEvent:
+            return "כשר"
+        case .rockFestival:
+            return "פסתיבל רוק"
+        case .musicFestival:
+            return "פסתיבל מוזיקה"
+        default:
+            return "אירוע"
+        }
+    }
 }
+
+
