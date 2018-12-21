@@ -12,6 +12,7 @@ class VibesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var vibeImage: UIImageView!
        
+    @IBOutlet weak var categoryNameLabel: UILabel!
     
     
     override func awakeFromNib() {

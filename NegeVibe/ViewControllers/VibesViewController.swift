@@ -214,8 +214,10 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "vibesCell", for: indexPath) as! VibesCollectionViewCell
     
-        cell.vibeImage.image = symbols[indexPath.row].getImage()
-        
+        let model = symbols[indexPath.row]
+        cell.vibeImage.image = model.getImage()
+        cell.layer.cornerRadius = 20
+        cell.categoryNameLabel.text = model.getHebrewName()
         return cell
     }
     
@@ -227,7 +229,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         //let contentHeightInset = CGFloat(symbols.count / 3) * (self.view.frame.width + 16) / 4
         let screenWidth  = self.view.frame.width
-        return UIEdgeInsets(top: screenWidth / 6, left: 16, bottom: 0, right: 16)
+        return UIEdgeInsets(top: screenWidth / 4, left: 16, bottom: 0, right: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

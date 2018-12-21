@@ -208,6 +208,7 @@
                                             <constraint firstItem="Zw0-qL-dMm" firstAttribute="leading" secondItem="bB7-T9-kDx" secondAttribute="leading" id="uOB-Oo-w8v"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="categoryNameLabel" destination="Zw0-qL-dMm" id="135-rG-xGg"/>
                                             <outlet property="vibeImage" destination="ZNy-Ob-8Al" id="Fvd-N6-6Hy"/>
                                         </connections>
                                     </collectionViewCell>
