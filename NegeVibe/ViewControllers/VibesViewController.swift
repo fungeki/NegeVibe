@@ -10,6 +10,7 @@ import UIKit
 
 class VibesViewController: UIViewController {
     
+    @IBOutlet weak var logo: UIImageView!
     var vibeItUpTimer: Timer?
     let effectTime: TimeInterval = 0.4
     //var iterate = 1
@@ -21,7 +22,11 @@ class VibesViewController: UIViewController {
     let symbols = Symbol.allCases
     //var allCases = [Symbol.allCases]
    
-   
+    override func viewDidLayoutSubviews() {
+        logo.layer.cornerRadius = -20
+        let screenwidth = self.view.frame.width
+        vibesCollection.roundCorners(corners: [.topLeft, .topRight], radius: screenwidth / 6)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         //timer for the effect:
@@ -209,27 +214,28 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "vibesCell", for: indexPath) as! VibesCollectionViewCell
     
-        cell.vibeImage.image = UIImage(cgImage: symbols[indexPath.row].getImage() as! CGImage)
-        
+        cell.vibeImage.image = symbols[indexPath.row].getImage()
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = self.view.frame.width
-        let cellWidth = screenWidth / 2 - 10
+        let cellWidth = screenWidth / 4 + 8
         return CGSize(width: cellWidth, height: cellWidth)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+        //let contentHeightInset = CGFloat(symbols.count / 3) * (self.view.frame.width + 16) / 4
+        let screenWidth  = self.view.frame.width
+        return UIEdgeInsets(top: screenWidth / 6, left: 16, bottom: 0, right: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 4
+        return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

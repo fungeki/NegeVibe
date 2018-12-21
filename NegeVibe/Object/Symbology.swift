@@ -72,23 +72,21 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
     func getHebrewName() -> String {
         switch self {
         case .festival:
-            return "פסתיבל"
+            return "פסטיבלים כללי"
         case .movieFestival:
-            return "פסתיבל הסרטים"
+            return "פסטיבלי סרטים"
         case .cityEvent:
             return "אירוע בעיר"
         case .concertGeneral:
-            return "קונצרט כללי"
+            return "הופעות כללי"
         case .otherGeneral:
-            return "אירוע כללי"
+            return "אירועים כללי"
         case .kosherEvent:
-            return "כשר"
+            return "אירועים כשרים"
         case .rockFestival:
-            return "פסתיבל רוק"
+            return "פסטיבלי רוק"
         case .musicFestival:
-            return "פסתיבל מוזיקה"
-        default:
-            return "אירוע"
+            return "פסטיבלי מוזיקה"
         }
     }
 }
