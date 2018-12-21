@@ -209,7 +209,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "vibesCell", for: indexPath) as! VibesCollectionViewCell
     
-        cell.vibeImage.image = UIImage(cgImage: symbols[indexPath.row].getImage() as! CGImage)
+        cell.vibeImage.image =  symbols[indexPath.row].getImage() 
         
         
         return cell
