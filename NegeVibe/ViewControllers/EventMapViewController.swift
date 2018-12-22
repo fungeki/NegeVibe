@@ -288,9 +288,9 @@ extension EventMapViewController {
         let msg4 = FeaturedMessage(eventTitle: "רן לוק", msgBody: "Lead Programmer & Server Side" )
         let msg5 = FeaturedMessage(eventTitle: "דור צמח", msgBody: "Programmer & Lead Designer")
         let msg6 = FeaturedMessage(eventTitle: "יבגניה קרייזמן", msgBody: "Amazing Programmer" )
-        let msg8 = FeaturedMessage(eventTitle: "גיל דניאל", msgBody: "Entrepreneur" )
+       
         let msg9 = FeaturedMessage(eventTitle: "All other contributers", msgBody: "None of this would be possible without you!" )
-        featuredMsgs = [msg1, msg2, msg3, msg4, msg5, msg6, msg8, msg9]
+        featuredMsgs = [msg1, msg2, msg3, msg4, msg5, msg6, msg9]
     }
     
     @objc func bannerMessageAnimation(){

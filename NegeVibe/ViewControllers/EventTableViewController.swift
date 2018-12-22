@@ -12,23 +12,39 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var eventTableView: UITableView!
     var arrEvent = [Event]()
-    
+    var willShowCategories = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     eventTableView.rowHeight = self.view.frame.height / 3
-    if EventsLibrary.getInstance().getNumberOfEvents() == 0{
-         getEvents { (arrEvent) in self.arrEvent = arrEvent
-        EventsLibrary.getInstance().setEvents(arrEvent)
-         self.eventTableView.reloadData()
-        }
-         } else {
-         self.arrEvent = EventsLibrary.getInstance().getEvents()
-         }
+    
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if !willShowCategories{
+        if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+            JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "מוריד אירועים")
+            getEvents { (arrEvent) in self.arrEvent = arrEvent
+                JustHUD.shared.hide()
+                EventsLibrary.getInstance().setEvents(arrEvent)
+                self.eventTableView.reloadData()
+            }
+        } else {
+            self.arrEvent = EventsLibrary.getInstance().getEvents()
+        }
+    }
+    }
    
+    @IBAction func openCategories(_ sender: UIBarButtonItem) {
+        let categoriesController = storyboard?.instantiateViewController(withIdentifier: "categories") as! VibesViewController
+        categoriesController.isModally = true
+        categoriesController.delegate = self
+        self.navigationController?.pushViewController(categoriesController, animated: true)
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return arrEvent.count
@@ -112,5 +128,14 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     */
 
+}
+extension EventTableViewController: VibesViewControllerDelegate{
+    func categoriesSelected(value: [Event]) {
+        arrEvent = value
+        willShowCategories = true
+        eventTableView.reloadData()
+    }
+    
+    
 }
 

@@ -506,7 +506,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z5M-ZG-iLJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="אירועים" id="Mxc-Ga-d32"/>
+                    <navigationItem key="navigationItem" title="אירועים" id="Mxc-Ga-d32">
+                        <barButtonItem key="rightBarButtonItem" image="categories" id="ka4-sQ-zfA">
+                            <connections>
+                                <action selector="openCategories:" destination="yf6-lA-a6T" id="2Aw-NW-wFw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eventTableView" destination="ikk-dH-31g" id="aeV-Sd-oqL"/>
                     </connections>
