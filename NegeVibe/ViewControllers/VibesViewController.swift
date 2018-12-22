@@ -16,7 +16,7 @@ class VibesViewController: UIViewController {
     //var iterate = 1
    // var cellSelector = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
-    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    var isModally = false
     @IBOutlet weak var vibesCollection: UICollectionView!
     var vibes = UIImage(named: "placeholder")
     let symbols = Symbol.allCases
@@ -26,6 +26,13 @@ class VibesViewController: UIViewController {
         logo.layer.cornerRadius = -20
         let screenwidth = self.view.frame.width
         vibesCollection.roundCorners(corners: [.topLeft, .topRight], radius: screenwidth / 6)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+       
+        if isModally{
+        self.navigationController?.popViewController(animated: true)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

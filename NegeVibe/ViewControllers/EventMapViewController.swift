@@ -124,6 +124,11 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         
     }
     
+    @IBAction func categoriesOpen(_ sender: UIButton) {
+        let categoriesController = storyboard?.instantiateViewController(withIdentifier: "categories") as! VibesViewController
+       categoriesController.isModally = true
+        self.navigationController?.pushViewController(categoriesController, animated: true)
+    }
     
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -132,7 +137,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
                 return
             }
             
-            let annotation = MoreAnnotationCreation(coordinate: location.coordinate, title: "pizza", subtitle: "meow")
+            _ = MoreAnnotationCreation(coordinate: location.coordinate, title: "pizza", subtitle: "meow")
         }
     }
     

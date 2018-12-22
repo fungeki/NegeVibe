@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NegeVibe/ViewControllers/EventMapViewController.swift"
-            timestampString = "567108115.409495"
+            timestampString = "567162539.731439"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "search(_:)"
             landmarkType = "7">
          </BreakpointContent>

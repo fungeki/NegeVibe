@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ME6-OF-lc2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQm-gu-y0q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -72,7 +72,7 @@
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="16" y="8" width="285" height="17"/>
+                                        <rect key="frame" x="65" y="8" width="236" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -80,13 +80,26 @@
                                             <action selector="search:" destination="p4g-h5-hWC" eventType="editingChanged" id="aor-sm-i1o"/>
                                         </connections>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGx-7U-iKE">
+                                        <rect key="frame" x="16" y="0.0" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kGx-7U-iKE" secondAttribute="height" multiplier="1:1" id="BCy-C0-GMM"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="categories"/>
+                                        <connections>
+                                            <action selector="categoriesOpen:" destination="p4g-h5-hWC" eventType="touchUpInside" id="GZl-6w-nbX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="SMc-bf-leT" firstAttribute="leading" secondItem="WLW-9f-UCS" secondAttribute="leading" constant="16" id="0rc-w6-k7k"/>
+                                    <constraint firstItem="SMc-bf-leT" firstAttribute="leading" secondItem="kGx-7U-iKE" secondAttribute="trailing" constant="16" id="3Qt-bJ-pHw"/>
                                     <constraint firstAttribute="bottom" secondItem="hKI-4c-viA" secondAttribute="bottom" constant="8" id="9tS-JJ-mvC"/>
+                                    <constraint firstItem="kGx-7U-iKE" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="top" id="IHQ-UN-i6a"/>
                                     <constraint firstItem="hKI-4c-viA" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="top" constant="8" id="LSg-R3-aL4"/>
                                     <constraint firstItem="SMc-bf-leT" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="top" constant="8" id="TBT-8d-4qs"/>
+                                    <constraint firstItem="kGx-7U-iKE" firstAttribute="leading" secondItem="WLW-9f-UCS" secondAttribute="leading" constant="16" id="aN9-or-ayZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="kGx-7U-iKE" secondAttribute="bottom" id="d5h-n5-BzQ"/>
                                     <constraint firstAttribute="trailing" secondItem="hKI-4c-viA" secondAttribute="trailing" constant="16" id="g7s-Je-nq1"/>
                                     <constraint firstItem="hKI-4c-viA" firstAttribute="leading" secondItem="SMc-bf-leT" secondAttribute="trailing" constant="8" id="hUL-oI-q4h"/>
                                     <constraint firstAttribute="bottom" secondItem="SMc-bf-leT" secondAttribute="bottom" constant="8" id="pfP-1b-Dy7"/>
@@ -158,18 +171,18 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2300" y="1011.544227886057"/>
+            <point key="canvasLocation" x="2300" y="1012"/>
         </scene>
         <!--מה הVibe שלך?-->
         <scene sceneID="YtL-ql-3om">
             <objects>
-                <viewController id="YiT-G2-e6r" customClass="VibesViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="categories" id="YiT-G2-e6r" customClass="VibesViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c8X-zB-dKZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iky-GN-gVW">
-                                <rect key="frame" x="0.0" y="197.5" width="375" height="469.5"/>
+                                <rect key="frame" x="0.0" y="153.5" width="375" height="513.5"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSa-17-uYv">
                                     <size key="itemSize" width="90" height="95"/>
@@ -219,7 +232,7 @@
                                 </connections>
                             </collectionView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_negevibe" translatesAutoresizingMaskIntoConstraints="NO" id="RTu-gn-t6U">
-                                <rect key="frame" x="16" y="64" width="343" height="133.5"/>
+                                <rect key="frame" x="16" y="20" width="343" height="133.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
@@ -244,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwJ-Ep-KBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3868" y="1011.544227886057"/>
+            <point key="canvasLocation" x="3932" y="143"/>
         </scene>
         <!--Chat Of Event View Controller-->
         <scene sceneID="gc8-cH-sNb">
@@ -348,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbb-NZ-7gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2141.5999999999999" y="142.57871064467767"/>
+            <point key="canvasLocation" x="2300" y="143"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yu0-aD-0Bh">
@@ -369,22 +382,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3175.1999999999998" y="143.47826086956522"/>
-        </scene>
-        <!--לאירועים-->
-        <scene sceneID="ruv-aZ-RqX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Qe-rQ-0Qs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="לאירועים" image="list" id="k4X-W6-LPF"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fbc-Q9-M15">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmf-KX-i3V" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3932" y="142.57871064467767"/>
         </scene>
         <!--אירועים-->
         <scene sceneID="fmm-xd-WrH">
@@ -516,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdM-gm-vRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5780" y="1011.544227886057"/>
+            <point key="canvasLocation" x="4700" y="1012"/>
         </scene>
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
@@ -707,26 +704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdQ-rZ-ksT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5556" y="142.57871064467767"/>
-        </scene>
-        <!--Your Vibe-->
-        <scene sceneID="Cni-Lt-XAJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ME6-OF-lc2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Vibe" image="vibe" id="60d-xO-BmL"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v1J-cg-Bbn">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="YiT-G2-e6r" kind="relationship" relationship="rootViewController" id="C3I-x8-0bn"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EN5-1T-XKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3156" y="1012"/>
+            <point key="canvasLocation" x="4700" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5wU-A6-adx">
@@ -745,7 +723,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQZ-v1-ZXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1360.8" y="1011.544227886057"/>
+            <point key="canvasLocation" x="1495" y="1012"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3D7-Qd-Phv">
@@ -764,10 +742,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPk-j7-FnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4840.8000000000002" y="1011.544227886057"/>
+            <point key="canvasLocation" x="3932" y="1012"/>
         </scene>
     </scenes>
     <resources>
+        <image name="categories" width="48" height="48"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_chat_empty_circle" width="128" height="128"/>
         <image name="ic_date" width="69" height="69"/>
@@ -783,9 +762,7 @@
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
         <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
-        <image name="list" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
         <image name="search" width="50" height="50"/>
-        <image name="vibe" width="24" height="24"/>
     </resources>
 </document>
