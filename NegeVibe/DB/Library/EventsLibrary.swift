@@ -47,4 +47,14 @@ class EventsLibrary {
         }
         return events[0]
     }
+    
+    func getEventByCategories(_ category: Int) -> [Event]{
+        var arr: [Event] = []
+        for model in events{
+            if model.type == category{
+                arr.append(model)
+            }
+        }
+        return arr
+    }
 }
