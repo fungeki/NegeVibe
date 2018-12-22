@@ -16,6 +16,8 @@ class VibesViewController: UIViewController {
     //var iterate = 1
    // var cellSelector = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
     
+    var delegate: VibesViewControllerDelegate?
+    
     var isModally = false
     @IBOutlet weak var vibesCollection: UICollectionView!
     var vibes = UIImage(named: "placeholder")
@@ -38,7 +40,7 @@ class VibesViewController: UIViewController {
         super.viewDidLoad()
         //timer for the effect:
         vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
-        print()
+        print(symbols)
       
         
     }
@@ -248,7 +250,15 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let delegate = delegate else {
+            print("no delegate")
+            return
+        }
         
+        let eventsSelect = EventsLibrary.getInstance().getEventByCategories(indexPath.item)
+        delegate.categoriesSelected(value: eventsSelect)
+        
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

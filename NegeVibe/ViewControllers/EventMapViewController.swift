@@ -15,6 +15,8 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     
     var bannerTimer: Timer?
     
+    var willChangeCategories = false
+    
     //to set iterator to 0
     var timerIterator = 0
     
@@ -60,6 +62,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         let sizeTransform = CGAffineTransform(scaleX: 1, y: 0)
         bannerOverlayView.transform = CGAffineTransform(translationX: 0, y: bannerOverlayView.frame.height).concatenating(sizeTransform)
         bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: bannerOverlayView.frame.width, y: 0)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -73,9 +76,16 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        initialize()
+        if !willChangeCategories{
+            initialize()
+        }
     }
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        willChangeCategories = false
+    }
     func initialize() {
         //centers location
         centerMapOnLocation(location: CurrentLocation.getInstance().getLocation())
@@ -127,6 +137,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     @IBAction func categoriesOpen(_ sender: UIButton) {
         let categoriesController = storyboard?.instantiateViewController(withIdentifier: "categories") as! VibesViewController
        categoriesController.isModally = true
+        categoriesController.delegate = self
         self.navigationController?.pushViewController(categoriesController, animated: true)
     }
     
@@ -277,10 +288,9 @@ extension EventMapViewController {
         let msg4 = FeaturedMessage(eventTitle: "רן לוק", msgBody: "Lead Programmer & Server Side" )
         let msg5 = FeaturedMessage(eventTitle: "דור צמח", msgBody: "Programmer & Lead Designer")
         let msg6 = FeaturedMessage(eventTitle: "יבגניה קרייזמן", msgBody: "Amazing Programmer" )
-        let msg7 = FeaturedMessage(eventTitle: "אופיר אליאס", msgBody: "Talented Designer & Awesome Programmer" )
         let msg8 = FeaturedMessage(eventTitle: "גיל דניאל", msgBody: "Entrepreneur" )
         let msg9 = FeaturedMessage(eventTitle: "All other contributers", msgBody: "None of this would be possible without you!" )
-        featuredMsgs = [msg1, msg2, msg3, msg4, msg5, msg6, msg7, msg8, msg9]
+        featuredMsgs = [msg1, msg2, msg3, msg4, msg5, msg6, msg8, msg9]
     }
     
     @objc func bannerMessageAnimation(){
@@ -308,6 +318,22 @@ extension EventMapViewController {
         bannerEventNameLabel.text = message.eventTitle
         bannerFeaturedMessageBtn.setTitle(message.msgBody, for: .normal)
     }
+}
+
+extension EventMapViewController: VibesViewControllerDelegate{
+    func categoriesSelected(value: [Event]) {
+        for annotation in mapView.annotations where annotation is Artwork {
+            mapView.removeAnnotation(annotation)
+        }
+        willChangeCategories = true
+        //mapView.removeAnnotations(eventData)
+        eventData = []
+        print(value)
+        convertToArtworksAndDisplay(events: value)
+        
+    }
+    
+    
 }
 //    @IBAction func search(_ sender: UITapGestureRecognizer) {
 //

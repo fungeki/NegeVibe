@@ -10,13 +10,15 @@ import UIKit
 
 enum Symbol: String, CustomStringConvertible, CaseIterable {
     case festival = "Festival"
-    case musicFestival = "Music Festival"
-    case movieFestival = "Movies Festival"
     case rockFestival = "Rock Festival"
-    case cityEvent = "City Event"
-    case kosherEvent = "Kosher Event"
     case concertGeneral = "Shows General"
+    case movieFestival = "Movies Festival"
     case otherGeneral = "Other General"
+    case kosherEvent = "Kosher Event"
+    case cityEvent = "City Event"
+    case musicFestival = "Music Festival"
+    
+    
     
     
     init?(withInt val: Int){
