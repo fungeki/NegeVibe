@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VarelaRound-Regular.ttf">
+            <string>VarelaRound-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--מפה-->
         <scene sceneID="lF2-f1-MPz">
@@ -199,13 +204,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNy-Ob-8Al">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="78"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="76.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm">
-                                                    <rect key="frame" x="0.0" y="78" width="90" height="17"/>
+                                                    <rect key="frame" x="0.0" y="76.5" width="90" height="18.5"/>
                                                     <color key="backgroundColor" red="0.0" green="0.27019614133561642" blue="0.77046767979452058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -560,8 +565,8 @@
                                                 <rect key="frame" x="329" y="147.5" width="30" height="30"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תאריך" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIP-Oi-Zrk">
-                                                <rect key="frame" x="16" y="60" width="297" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="16" y="60.5" width="297" height="20"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -716,7 +721,10 @@
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_map_gary" landscapeImage="map" largeContentSizeImage="map" selectedImage="ic_map_color" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                        <color key="badgeColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -735,7 +743,9 @@
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_list_gray" selectedImage="ic_list_color" id="7Rg-YS-dKF"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YA-Yd-wam">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -758,17 +768,16 @@
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
-        <image name="ic_list_color" width="95" height="68"/>
-        <image name="ic_list_gray" width="95" height="68"/>
         <image name="ic_logo_negevibe" width="1180" height="469"/>
-        <image name="ic_map_color" width="92" height="119"/>
-        <image name="ic_map_gary" width="92" height="119"/>
         <image name="ic_place" width="56" height="69"/>
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
+        <image name="icc_tb_list_orange" width="67.826087951660156" height="52.173912048339844"/>
+        <image name="icc_tb_list_white" width="67.826087951660156" height="52.173912048339844"/>
+        <image name="icc_tb_map_orange" width="65.454544067382812" height="65.454544067382812"/>
+        <image name="icc_tb_map_white" width="65.454544067382812" height="65.454544067382812"/>
         <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
-        <image name="map" width="25" height="25"/>
         <image name="search" width="50" height="50"/>
     </resources>
 </document>
