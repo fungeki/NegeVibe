@@ -103,7 +103,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
         //put the details
         dt.fromMap = true
-        dt.eventDisplay = EventsLibrary.getInstance().getEvents()[indexPath.row]
+        dt.eventDisplay = arrEvent[indexPath.row]
         self.navigationController?.pushViewController(dt, animated: true)
         
     }
