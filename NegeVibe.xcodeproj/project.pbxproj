@@ -189,7 +189,6 @@
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
-				EE1E1D1721CF820E00F80763 /* Font */,
 				8CEB9B2521AED0AF009B55FF /* NegeVibe */,
 				8CEB9B2421AED0AF009B55FF /* Products */,
 				335453F0D9549C99855DC158 /* Pods */,
@@ -208,6 +207,7 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
+				EE1E1D1721CF820E00F80763 /* Font */,
 				8C1ACD4B21B938F700103D9E /* LocationUtils */,
 				8C1ACD4521B7F81D00103D9E /* ViewCells */,
 				8C1ACD0F21B07BF500103D9E /* ViewControllers */,
