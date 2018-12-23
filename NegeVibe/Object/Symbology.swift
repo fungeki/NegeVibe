@@ -10,7 +10,7 @@ import UIKit
 
 enum Symbol: String, CustomStringConvertible, CaseIterable {
     case festival = "Festival"
-    case films = "Films"
+    case movie = "Movie"
     case music = "Music"
     case food = "Food"
     case generalEvents = "GeneralEvents"
@@ -27,7 +27,7 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
         case 0:
             self = .festival
         case 1:
-            self = .films
+            self = .movie
         case 2:
             self = .music
         case 3:
@@ -50,23 +50,23 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
     func getImage()->UIImage{
         switch self {
         case .festival:
-            return UIImage(named: "festival")!
-        case .food:
-            return UIImage(named: "pin_movie_festival")!
-        case .sport:
-            return UIImage(named: "pin_city_event")!
+            return UIImage(named: "icc_fastival")!
+        case .movie:
+            return UIImage(named: "icc_movie")!
         case .music:
-            return UIImage(named: "pin_shows")!
+            return UIImage(named: "icc_music")!
+        case .food:
+            return UIImage(named: "icc_food")!
         case .generalEvents:
-            return UIImage(named: "pin_other")!
+            return UIImage(named: "icc_event")!
         case .concerts:
-            return UIImage(named: "pin_religion_event")!
-        case .films:
-            return UIImage(named: "pin_rock_festival")!
+            return UIImage(named: "icc_shows")!
+        case .sport:
+            return UIImage(named: "icc_sport")!
         case .pubs:
-            return UIImage(named: "pin_music_festival")!
+            return UIImage(named: "icc_pub")!
         default:
-            return UIImage(named: "pin_other")!
+            return UIImage(named: "icc_party")!
         }
     }
     
@@ -78,7 +78,7 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
         switch self {
         case .festival:
             return "פסטיבלים"
-        case .films:
+        case .movie:
             return "סרטים"
         case .music:
             return "מוזיקה"
