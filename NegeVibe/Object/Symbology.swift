@@ -45,7 +45,28 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
         }
     }
     
-    
+    func getPin()->UIImage{
+        switch self {
+        case .festival:
+            return UIImage(named: "pin_movie_festival")!
+        case .movie:
+            return UIImage(named: "pin_movie_festival")!
+        case .music:
+            return UIImage(named: "pin_movie_festival")!
+        case .food:
+            return UIImage(named: "pin_movie_festival")!
+        case .generalEvents:
+            return UIImage(named: "pin_movie_festival")!
+        case .concerts:
+            return UIImage(named: "pin_movie_festival")!
+        case .sport:
+            return UIImage(named: "pin_movie_festival")!
+        case .pubs:
+            return UIImage(named: "pin_movie_festival")!
+        case .parties:
+            return UIImage(named: "pin_movie_festival")!
+        }
+    }
     
     func getImage()->UIImage{
         switch self {
