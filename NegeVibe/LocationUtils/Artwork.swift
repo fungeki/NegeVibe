@@ -63,7 +63,7 @@ class ArtworkView: MKAnnotationView {
             calloutOffset = CGPoint(x: -5, y: 5)
             
             
-            let imageForArtwork = Symbol(rawValue: artwork.discipline)?.getImage() ?? UIImage(named: "festival")!
+            let imageForArtwork = Symbol(rawValue: artwork.discipline)?.getPin() ?? UIImage(named: "festival")!
             image = imageForArtwork
             
             let mapsButton = UIButton(frame: CGRect(origin: CGPoint.zero,

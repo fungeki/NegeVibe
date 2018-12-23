@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="VarelaRound-Regular.ttf">
+            <string>VarelaRound-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--מפה-->
         <scene sceneID="lF2-f1-MPz">
@@ -65,14 +70,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
+                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="65" y="8" width="261" height="17"/>
+                                        <rect key="frame" x="65" y="8" width="236" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -183,7 +188,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iky-GN-gVW">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.59215686274509804" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSa-17-uYv">
                                     <size key="itemSize" width="90" height="95"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -199,29 +204,43 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNy-Ob-8Al">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="75"/>
+                                                    <rect key="frame" x="16" y="16" width="58" height="41"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm">
-                                                    <rect key="frame" x="0.0" y="75" width="90" height="20"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.27019614133561642" blue="0.77046767979452058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm" customClass="PaddingLabel" customModule="NegeVibe" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="73" width="90" height="22"/>
+                                                    <color key="backgroundColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="bottomInset">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.15914073586463928" green="0.2905648946762085" blue="0.7786639928817749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.15294117647058825" green="0.49019607843137253" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="Zw0-qL-dMm" firstAttribute="top" secondItem="ZNy-Ob-8Al" secondAttribute="bottom" id="bRJ-BL-Sh2"/>
-                                            <constraint firstItem="ZNy-Ob-8Al" firstAttribute="top" secondItem="bB7-T9-kDx" secondAttribute="top" id="fFh-tM-A4n"/>
+                                            <constraint firstItem="Zw0-qL-dMm" firstAttribute="top" secondItem="ZNy-Ob-8Al" secondAttribute="bottom" constant="16" id="bRJ-BL-Sh2"/>
+                                            <constraint firstItem="ZNy-Ob-8Al" firstAttribute="top" secondItem="bB7-T9-kDx" secondAttribute="top" constant="16" id="fFh-tM-A4n"/>
                                             <constraint firstAttribute="trailing" secondItem="Zw0-qL-dMm" secondAttribute="trailing" id="gFw-3D-2Vy"/>
                                             <constraint firstAttribute="bottom" secondItem="Zw0-qL-dMm" secondAttribute="bottom" id="mEd-oW-zQW"/>
-                                            <constraint firstItem="ZNy-Ob-8Al" firstAttribute="leading" secondItem="bB7-T9-kDx" secondAttribute="leading" id="mZd-Fb-exB"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZNy-Ob-8Al" secondAttribute="trailing" id="qdA-D2-err"/>
+                                            <constraint firstItem="ZNy-Ob-8Al" firstAttribute="leading" secondItem="bB7-T9-kDx" secondAttribute="leading" constant="16" id="mZd-Fb-exB"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZNy-Ob-8Al" secondAttribute="trailing" constant="16" id="qdA-D2-err"/>
                                             <constraint firstItem="Zw0-qL-dMm" firstAttribute="leading" secondItem="bB7-T9-kDx" secondAttribute="leading" id="uOB-Oo-w8v"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="categoryNameLabel" destination="Zw0-qL-dMm" id="135-rG-xGg"/>
+                                            <outlet property="categoryNameLabel" destination="Zw0-qL-dMm" id="qfF-ze-XDg"/>
                                             <outlet property="vibeImage" destination="ZNy-Ob-8Al" id="Fvd-N6-6Hy"/>
                                         </connections>
                                     </collectionViewCell>
@@ -235,17 +254,26 @@
                                 <rect key="frame" x="112.5" y="20" width="150" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_up" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-8B-z9o">
+                                <rect key="frame" x="0.0" y="100" width="375" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="P6B-Ew-A9t"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0hJ-Ip-7z5" firstAttribute="bottom" secondItem="iky-GN-gVW" secondAttribute="bottom" id="04f-UJ-sjy"/>
                             <constraint firstItem="RTu-gn-t6U" firstAttribute="width" secondItem="c8X-zB-dKZ" secondAttribute="width" multiplier="0.4" id="1It-kc-arJ"/>
+                            <constraint firstItem="0hJ-Ip-7z5" firstAttribute="trailing" secondItem="mfh-8B-z9o" secondAttribute="trailing" id="EKK-a2-GSA"/>
                             <constraint firstItem="iky-GN-gVW" firstAttribute="top" secondItem="RTu-gn-t6U" secondAttribute="bottom" constant="16" id="Q9R-Rf-ZiP"/>
+                            <constraint firstItem="mfh-8B-z9o" firstAttribute="leading" secondItem="0hJ-Ip-7z5" secondAttribute="leading" id="VT6-Ar-DXa"/>
                             <constraint firstItem="RTu-gn-t6U" firstAttribute="centerX" secondItem="c8X-zB-dKZ" secondAttribute="centerX" id="Zye-8Z-nvk"/>
                             <constraint firstItem="iky-GN-gVW" firstAttribute="leading" secondItem="0hJ-Ip-7z5" secondAttribute="leading" id="b7U-kS-Kia"/>
                             <constraint firstItem="RTu-gn-t6U" firstAttribute="top" secondItem="c8X-zB-dKZ" secondAttribute="topMargin" id="fGK-ct-FOE"/>
                             <constraint firstItem="0hJ-Ip-7z5" firstAttribute="trailing" secondItem="iky-GN-gVW" secondAttribute="trailing" id="fKn-xw-pCY"/>
                             <constraint firstItem="RTu-gn-t6U" firstAttribute="height" secondItem="c8X-zB-dKZ" secondAttribute="height" multiplier="0.12" id="hXx-h2-9n7"/>
+                            <constraint firstItem="iky-GN-gVW" firstAttribute="top" secondItem="mfh-8B-z9o" secondAttribute="bottom" id="ntp-QF-LWL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0hJ-Ip-7z5"/>
                     </view>
@@ -257,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwJ-Ep-KBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3932" y="143"/>
+            <point key="canvasLocation" x="3932" y="142.57871064467767"/>
         </scene>
         <!--Chat Of Event View Controller-->
         <scene sceneID="gc8-cH-sNb">
@@ -371,7 +399,6 @@
                     <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yyj-aM-LBd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -752,7 +779,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="categories" width="24" height="24"/>
+        <image name="background_up" width="750" height="61"/>
+        <image name="categories" width="48" height="48"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_chat_empty_circle" width="128" height="128"/>
         <image name="ic_date" width="69" height="69"/>
@@ -763,11 +791,11 @@
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
-        <image name="icc_tb_list_orange" width="49" height="37"/>
-        <image name="icc_tb_list_white" width="49" height="37"/>
-        <image name="icc_tb_map_orange" width="38" height="37"/>
-        <image name="icc_tb_map_white" width="38" height="37"/>
-        <image name="indinegev" width="624" height="383"/>
-        <image name="search" width="25" height="25"/>
+        <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
+        <image name="icc_tb_list_white" width="68.504852294921875" height="52.42718505859375"/>
+        <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
+        <image name="icc_tb_map_white" width="66.731704711914062" height="65.853660583496094"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>
