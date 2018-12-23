@@ -225,7 +225,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     
         let model = symbols[indexPath.row]
         cell.vibeImage.image = model.getImage()
-        cell.layer.cornerRadius = 20
+        cell.layer.cornerRadius = 10
         cell.categoryNameLabel.text = model.getHebrewName()
         return cell
     }
@@ -233,7 +233,7 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let screenWidth = self.view.frame.width
         let cellWidth = screenWidth / 4 + 8
-        return CGSize(width: cellWidth, height: cellWidth)
+        return CGSize(width: cellWidth, height: cellWidth * 1.2)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         //let contentHeightInset = CGFloat(symbols.count / 3) * (self.view.frame.width + 16) / 4

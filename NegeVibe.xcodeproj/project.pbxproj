@@ -48,6 +48,7 @@
 		A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */; };
 		A1CE220021C658A700DFE4B0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */; };
 		EE1E1D1921CF82AA00F80763 /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */; };
+		EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
 		EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
+		EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +267,7 @@
 				8C7E560021CBA27000191307 /* Toast.swift */,
 				8C7E560221CBA33E00191307 /* RoundCorners.swift */,
 				8C7E560421CC02C300191307 /* Colors.swift */,
+				EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,
 				A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */,
+				EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
