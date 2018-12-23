@@ -47,6 +47,7 @@
 		A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */; };
 		A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */; };
 		A1CE220021C658A700DFE4B0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */; };
+		EE1E1D1921CF82AA00F80763 /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
+		EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
+				EE1E1D1721CF820E00F80763 /* Font */,
 				8CEB9B2521AED0AF009B55FF /* NegeVibe */,
 				8CEB9B2421AED0AF009B55FF /* Products */,
 				335453F0D9549C99855DC158 /* Pods */,
@@ -266,6 +269,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		EE1E1D1721CF820E00F80763 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CE220021C658A700DFE4B0 /* EventTableViewCell.xib in Resources */,
+				EE1E1D1921CF82AA00F80763 /* VarelaRound-Regular.ttf in Resources */,
 				8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */,
 				8CEB9B3121AED0B2009B55FF /* Assets.xcassets in Resources */,
 				8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */,

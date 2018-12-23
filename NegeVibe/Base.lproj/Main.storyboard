@@ -183,7 +183,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iky-GN-gVW">
                                 <rect key="frame" x="0.0" y="153.5" width="375" height="513.5"/>
-                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSa-17-uYv">
                                     <size key="itemSize" width="90" height="95"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -203,14 +203,14 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm">
                                                     <rect key="frame" x="0.0" y="78" width="90" height="17"/>
-                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.27019614133561642" blue="0.77046767979452058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.15914073586463928" green="0.2905648946762085" blue="0.7786639928817749" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Zw0-qL-dMm" firstAttribute="top" secondItem="ZNy-Ob-8Al" secondAttribute="bottom" id="bRJ-BL-Sh2"/>
                                             <constraint firstItem="ZNy-Ob-8Al" firstAttribute="top" secondItem="bB7-T9-kDx" secondAttribute="top" id="fFh-tM-A4n"/>
