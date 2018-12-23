@@ -205,7 +205,7 @@
                                                     <rect key="frame" x="0.0" y="75" width="90" height="20"/>
                                                     <color key="backgroundColor" red="0.0" green="0.27019614133561642" blue="0.77046767979452058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -716,7 +716,7 @@
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_map_gary" landscapeImage="map" largeContentSizeImage="map" selectedImage="ic_map_color" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -735,7 +735,7 @@
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_list_gray" selectedImage="ic_list_color" id="7Rg-YS-dKF"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YA-Yd-wam">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -758,17 +758,16 @@
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
-        <image name="ic_list_color" width="95" height="68"/>
-        <image name="ic_list_gray" width="95" height="68"/>
         <image name="ic_logo_negevibe" width="1180" height="469"/>
-        <image name="ic_map_color" width="92" height="119"/>
-        <image name="ic_map_gary" width="92" height="119"/>
         <image name="ic_place" width="56" height="69"/>
         <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
+        <image name="icc_tb_list_orange" width="49" height="37"/>
+        <image name="icc_tb_list_white" width="49" height="37"/>
+        <image name="icc_tb_map_orange" width="38" height="37"/>
+        <image name="icc_tb_map_white" width="38" height="37"/>
         <image name="indinegev" width="624" height="383"/>
-        <image name="map" width="25" height="25"/>
         <image name="search" width="25" height="25"/>
     </resources>
 </document>
