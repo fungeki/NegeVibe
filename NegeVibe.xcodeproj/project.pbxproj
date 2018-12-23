@@ -207,7 +207,6 @@
 		8CEB9B2521AED0AF009B55FF /* NegeVibe */ = {
 			isa = PBXGroup;
 			children = (
-				EE1E1D1721CF820E00F80763 /* Font */,
 				8C1ACD4B21B938F700103D9E /* LocationUtils */,
 				8C1ACD4521B7F81D00103D9E /* ViewCells */,
 				8C1ACD0F21B07BF500103D9E /* ViewControllers */,
@@ -258,6 +257,7 @@
 		8CEB9B4221AEDE27009B55FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EE1E1D1721CF820E00F80763 /* Font */,
 				8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */,
 				8CEB9B3021AED0B2009B55FF /* Assets.xcassets */,
 				8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */,
