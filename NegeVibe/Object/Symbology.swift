@@ -10,13 +10,14 @@ import UIKit
 
 enum Symbol: String, CustomStringConvertible, CaseIterable {
     case festival = "Festival"
-    case rockFestival = "Rock Festival"
-    case concertGeneral = "Shows General"
-    case movieFestival = "Movies Festival"
-    case otherGeneral = "Other General"
-    case kosherEvent = "Kosher Event"
-    case cityEvent = "City Event"
-    case musicFestival = "Music Festival"
+    case films = "Films"
+    case music = "Music"
+    case food = "Food"
+    case generalEvents = "GeneralEvents"
+    case concerts = "Concerts"
+    case sport = "Sport"
+    case pubs = "Pubs"
+    case parties = "Parties"
     
     
     
@@ -26,19 +27,21 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
         case 0:
             self = .festival
         case 1:
-            self = .rockFestival
+            self = .films
         case 2:
-            self = .concertGeneral
+            self = .music
         case 3:
-            self = .movieFestival
+            self = .food
         case 4:
-            self = .otherGeneral
+            self = .generalEvents
         case 5:
-            self = .kosherEvent
+            self = .concerts
         case 6:
-            self = .cityEvent
+            self = .sport
+        case 7:
+            self = .parties
         default:
-            self = .musicFestival
+            self = .pubs
         }
     }
     
@@ -48,19 +51,19 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
         switch self {
         case .festival:
             return UIImage(named: "festival")!
-        case .movieFestival:
+        case .food:
             return UIImage(named: "pin_movie_festival")!
-        case .cityEvent:
+        case .sport:
             return UIImage(named: "pin_city_event")!
-        case .concertGeneral:
+        case .music:
             return UIImage(named: "pin_shows")!
-        case .otherGeneral:
+        case .generalEvents:
             return UIImage(named: "pin_other")!
-        case .kosherEvent:
+        case .concerts:
             return UIImage(named: "pin_religion_event")!
-        case .rockFestival:
+        case .films:
             return UIImage(named: "pin_rock_festival")!
-        case .musicFestival:
+        case .pubs:
             return UIImage(named: "pin_music_festival")!
         default:
             return UIImage(named: "pin_other")!
@@ -74,21 +77,23 @@ enum Symbol: String, CustomStringConvertible, CaseIterable {
     func getHebrewName() -> String {
         switch self {
         case .festival:
-            return "פסטיבלים כללי"
-        case .movieFestival:
-            return "פסטיבלי סרטים"
-        case .cityEvent:
-            return "אירוע בעיר"
-        case .concertGeneral:
-            return "הופעות כללי"
-        case .otherGeneral:
-            return "אירועים כללי"
-        case .kosherEvent:
-            return "אירועים כשרים"
-        case .rockFestival:
-            return "פסטיבלי רוק"
-        case .musicFestival:
-            return "פסטיבלי מוזיקה"
+            return "פסטיבלים"
+        case .films:
+            return "סרטים"
+        case .music:
+            return "מוזיקה"
+        case .food:
+            return "אוכל"
+        case .generalEvents:
+            return "אירועים"
+        case .concerts:
+            return "הופעות"
+        case .sport:
+            return "ספורט"
+        case .pubs:
+            return "פאב/בר"
+        case .parties:
+            return "מסיבות"
         }
     }
 }
