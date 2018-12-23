@@ -25,9 +25,9 @@ class VibesViewController: UIViewController {
     //var allCases = [Symbol.allCases]
    
     override func viewDidLayoutSubviews() {
-        logo.layer.cornerRadius = -20
-        let screenwidth = self.view.frame.width
-        vibesCollection.roundCorners(corners: [.topLeft, .topRight], radius: screenwidth / 6)
+     
+       // let screenwidth = self.view.frame.width
+      //  vibesCollection.roundCorners(corners: [.topLeft, .topRight], radius: screenwidth / 6)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -237,12 +237,12 @@ extension VibesViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         //let contentHeightInset = CGFloat(symbols.count / 3) * (self.view.frame.width + 16) / 4
-        let screenWidth  = self.view.frame.width
-        return UIEdgeInsets(top: screenWidth / 4, left: 16, bottom: 0, right: 16)
+       // let screenWidth  = self.view.frame.width
+        return UIEdgeInsets(top: 16, left: 16, bottom: 0, right: 16)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 16
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
