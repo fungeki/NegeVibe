@@ -12,12 +12,13 @@ class VibesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var vibeImage: UIImageView!
        
-    @IBOutlet weak var categoryNameLabel: UILabel!
-    
+    @IBOutlet weak var categoryNameLabel: PaddingLabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        vibeImage.layer.cornerRadius = 20
+      //  vibeImage.layer.cornerRadius = 10
+    
 //        vibeImage.layer.borderColor = UIColor.blue.cgColor
 //        vibeImage.layer.borderWidth = 1
     }
