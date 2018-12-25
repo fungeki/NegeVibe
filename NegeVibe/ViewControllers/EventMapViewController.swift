@@ -134,7 +134,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         
     }
     
-    @IBAction func categoriesOpen(_ sender: UIButton) {
+    @IBAction func categoriesOpen(_ sender: Any) {
         let categoriesController = storyboard?.instantiateViewController(withIdentifier: "categories") as! VibesViewController
        categoriesController.isModally = true
         categoriesController.delegate = self

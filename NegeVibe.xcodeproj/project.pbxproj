@@ -34,6 +34,7 @@
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
 		8C8B72B021CE41880090A2DA /* VibesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72AF21CE41880090A2DA /* VibesDelegate.swift */; };
+		8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8C8B72AF21CE41880090A2DA /* VibesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesDelegate.swift; sourceTree = "<group>"; };
+		8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +144,7 @@
 				A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */,
 				A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */,
 				8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */,
+				8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
+				8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C54B54E21CCCDA90002CD08 /* ChatOfEventViewController.swift in Sources */,
