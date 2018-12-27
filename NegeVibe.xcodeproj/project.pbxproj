@@ -42,7 +42,6 @@
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
 		8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */; };
-		8CEB9B3121AED0B2009B55FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3021AED0B2009B55FF /* Assets.xcassets */; };
 		8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3221AED0B2009B55FF /* LaunchScreen.storyboard */; };
 		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
 		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
@@ -50,6 +49,7 @@
 		A1921D5B21D5271F0059FF85 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5A21D5271F0059FF85 /* Ticket.swift */; };
 		A1921D5D21D529090059FF85 /* TypeOfTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5C21D529090059FF85 /* TypeOfTicket.swift */; };
 		A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5E21D535340059FF85 /* MyEventViewController.swift */; };
+		A1921D6121D5559C0059FF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1921D6021D5559B0059FF85 /* Assets.xcassets */; };
 		A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */; };
 		A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */; };
 		A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */; };
@@ -98,7 +98,6 @@
 		8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CEB9B2B21AED0AF009B55FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CEB9B2E21AED0AF009B55FF /* NegeVibe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NegeVibe.xcdatamodel; sourceTree = "<group>"; };
-		8CEB9B3021AED0B2009B55FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CEB9B3321AED0B2009B55FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CEB9B3521AED0B2009B55FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEvents.swift; sourceTree = "<group>"; };
@@ -107,6 +106,7 @@
 		A1921D5A21D5271F0059FF85 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		A1921D5C21D529090059FF85 /* TypeOfTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTicket.swift; sourceTree = "<group>"; };
 		A1921D5E21D535340059FF85 /* MyEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
+		A1921D6021D5559B0059FF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailsViewController.swift; sourceTree = "<group>"; };
 		A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 			children = (
 				EE1E1D1721CF820E00F80763 /* Font */,
 				8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */,
-				8CEB9B3021AED0B2009B55FF /* Assets.xcassets */,
+				A1921D6021D5559B0059FF85 /* Assets.xcassets */,
 				8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */,
 				8C1ACD4321B7D03A00103D9E /* Popup.swift */,
 				8C7E560021CBA27000191307 /* Toast.swift */,
@@ -364,8 +364,8 @@
 				A1CE220021C658A700DFE4B0 /* EventTableViewCell.xib in Resources */,
 				EE1E1D1921CF82AA00F80763 /* VarelaRound-Regular.ttf in Resources */,
 				8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */,
-				8CEB9B3121AED0B2009B55FF /* Assets.xcassets in Resources */,
 				8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */,
+				A1921D6121D5559C0059FF85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

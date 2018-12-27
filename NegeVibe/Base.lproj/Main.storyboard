@@ -698,7 +698,7 @@
                                 <rect key="frame" x="32" y="28" width="311" height="133.5"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Zgb-YH-tNI" appends="YES" id="V5R-V4-NVU"/>
+                                    <outletCollection property="gestureRecognizers" destination="zCp-Pt-2Ph" appends="YES" id="fR6-TJ-GPF"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מה עושים?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUP-En-Gfw">
@@ -793,11 +793,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l17-bG-5VG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Zgb-YH-tNI">
+                <tapGestureRecognizer id="zCp-Pt-2Ph">
                     <connections>
-                        <action selector="placeholderOfImage:" destination="W33-H3-lXj" id="NDd-Nf-B8T"/>
+                        <action selector="imagePlaceholder:" destination="W33-H3-lXj" id="hUN-XM-h3Y"/>
+                        <outlet property="delegate" destination="XCU-9T-G3S" id="lHd-tR-Qbl"/>
                     </connections>
-                </panGestureRecognizer>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6472.8000000000002" y="142.57871064467767"/>
         </scene>

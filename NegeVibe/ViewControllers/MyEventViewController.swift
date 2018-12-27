@@ -8,23 +8,47 @@
 
 import UIKit
 
-class MyEventViewController: UIViewController {
+class MyEventViewController: UIViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
-    
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var nameOfEventTextField: UITextField!
     @IBOutlet weak var eventDataPicker: UIDatePicker!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
-    @IBAction func placeholderOfImage(_ sender: UIPanGestureRecognizer) {
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        eventImage.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.imagePlaceholder(_:)))
+            eventImage.addGestureRecognizer(tap)
     }
     
+    @IBAction func imagePlaceholder(_ sender: UITapGestureRecognizer) {
+        let image = UIImagePickerController()
+        image.delegate = self
+        
+        image.sourceType = UIImagePickerController.SourceType.photoLibrary
+        self.present(image,animated: true){
+            
+        }
+    }
+    
+
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            eventImage.image = image
+        }else{
+            print("error")
+        }
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+ 
 
     /*
     // MARK: - Navigation
