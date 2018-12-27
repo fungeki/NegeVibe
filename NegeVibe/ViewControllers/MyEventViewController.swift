@@ -31,9 +31,17 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         
         let actionSheet =  UIAlertController(title: "בחירת תמונה", message: "ביחרו את המקור של התמונה", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "מצלמה", style: .default, handler: { (action) in
-            image.sourceType = .camera
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                image.sourceType = .camera
                 self.present(image, animated: true, completion: nil)
+            } else {
+                let alertController = UIAlertController.init(title: nil, message: "Device has no camera.", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction.init(title: "Woops", style: .default, handler: {(alert: UIAlertAction!) in
+                })
+                
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }))
         actionSheet.addAction(UIAlertAction(title: "ספריית תמונות", style: .default, handler: { (action) in
