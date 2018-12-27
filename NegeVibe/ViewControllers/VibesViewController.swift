@@ -41,6 +41,9 @@ class VibesViewController: UIViewController {
         //timer for the effect:
         vibeItUpTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(VibesViewController.bringToLife), userInfo: nil, repeats: true)
         print(symbols)
+        if let navBar = self.navigationController{
+            navBar.view.tintColor = UIColor.white
+        }
       
         
     }

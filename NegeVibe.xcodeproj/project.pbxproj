@@ -10,7 +10,6 @@
 		56479C6616582B1F8F5EC795 /* Pods_NegeVibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */; };
 		7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF5F21BEB3AD00B17C48 /* Message.swift */; };
 		7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */; };
-		7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */; };
 		8C1ACD0821B033FE00103D9E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0721B033FE00103D9E /* Images.swift */; };
 		8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0921B0376800103D9E /* Symbology.swift */; };
 		8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */; };
@@ -27,13 +26,18 @@
 		8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9721BD055200103D9E /* MLocationManager.swift */; };
 		8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */; };
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
-		8C54B54E21CCCDA90002CD08 /* ChatOfEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */; };
 		8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */; };
 		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
 		8C8B72B021CE41880090A2DA /* VibesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72AF21CE41880090A2DA /* VibesDelegate.swift */; };
+		8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */; };
+		8C8B72B421D399810090A2DA /* QRGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72B321D399810090A2DA /* QRGeneratorViewController.swift */; };
+		8C8B72B621D39B500090A2DA /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72B521D39B500090A2DA /* QRGenerator.swift */; };
+		8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72B721D4E0200090A2DA /* EventMenuTableViewCell.swift */; };
+		8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */; };
+		8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -56,7 +60,6 @@
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C44EF5F21BEB3AD00B17C48 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageViewCell.swift; sourceTree = "<group>"; };
-		7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
 		8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -74,13 +77,18 @@
 		8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationNav.gpx; sourceTree = "<group>"; };
 		8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
-		8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatOfEventViewController.swift; sourceTree = "<group>"; };
 		8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8C8B72AF21CE41880090A2DA /* VibesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesDelegate.swift; sourceTree = "<group>"; };
+		8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		8C8B72B321D399810090A2DA /* QRGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGeneratorViewController.swift; sourceTree = "<group>"; };
+		8C8B72B521D39B500090A2DA /* QRGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		8C8B72B721D4E0200090A2DA /* EventMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenuTableViewCell.swift; sourceTree = "<group>"; };
+		8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenuViewController.swift; sourceTree = "<group>"; };
+		8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenu.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,10 +146,11 @@
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
-				7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */,
 				A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */,
 				A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */,
-				8C54B54D21CCCDA90002CD08 /* ChatOfEventViewController.swift */,
+				8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */,
+				8C8B72B321D399810090A2DA /* QRGeneratorViewController.swift */,
+				8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */,
 				8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */,
 				8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */,
+				8C8B72B721D4E0200090A2DA /* EventMenuTableViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -239,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */,
+				8C8B72B521D39B500090A2DA /* QRGenerator.swift */,
 			);
 			path = Get;
 			sourceTree = "<group>";
@@ -252,6 +263,7 @@
 				8C1ACD0921B0376800103D9E /* Symbology.swift */,
 				8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */,
 				8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */,
+				8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -404,10 +416,11 @@
 				8C7E560521CC02C300191307 /* Colors.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
-				7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
+				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
+				8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */,
 				8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
 				8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */,
@@ -417,22 +430,25 @@
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
+				8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
-				8C54B54E21CCCDA90002CD08 /* ChatOfEventViewController.swift in Sources */,
 				8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */,
+				8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,
 				A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */,
 				EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
+				8C8B72B421D399810090A2DA /* QRGeneratorViewController.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
 				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
+				8C8B72B621D39B500090A2DA /* QRGenerator.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,
 				8CEB9B4121AED118009B55FF /* Event.swift in Sources */,
 				8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */,

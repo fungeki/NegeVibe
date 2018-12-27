@@ -9,5 +9,11 @@
 import UIKit
 
 func getPrimaryColor() -> UIColor{
-    return UIColor(displayP3Red: 238, green: 90, blue: 54, alpha: 1)
+    return UIColor(red: 238 / 255.0, green: 90 / 255.0, blue: 54 / 255.0, alpha: 1)
+    
 }
+
+func getBrightOrange() -> UIColor{
+    return UIColor(red: 243 / 255.0, green: 147 / 255.0, blue: 61 / 255.0, alpha: 1)
+}
+//UIColor(displayP3Red: 238, green: 90, blue: 54, alpha: 1)
