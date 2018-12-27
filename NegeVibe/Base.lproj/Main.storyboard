@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQm-gu-y0q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W33-H3-lXj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -693,13 +693,113 @@
                     <view key="view" contentMode="scaleToFill" id="0j8-aZ-txC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="XCU-9T-G3S" customClass="image">
+                                <rect key="frame" x="32" y="28" width="311" height="133.5"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Zgb-YH-tNI" appends="YES" id="V5R-V4-NVU"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מה עושים?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUP-En-Gfw">
+                                <rect key="frame" x="32" y="191.5" width="328" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="שם האירוע" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-oM-Ccd">
+                                <rect key="frame" x="32" y="226" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" מתי?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVg-Om-RXT">
+                                <rect key="frame" x="32" y="276" width="327" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="איפה?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr0-ef-yHA">
+                                <rect key="frame" x="16" y="450" width="343" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="ic_place" translatesAutoresizingMaskIntoConstraints="NO" id="bbE-KD-uT2">
+                                <rect key="frame" x="32" y="482.5" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תיאור" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbO-bk-En7">
+                                <rect key="frame" x="32" y="528.5" width="327" height="24.5"/>
+                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="ic_place" translatesAutoresizingMaskIntoConstraints="NO" id="MVF-NV-0Ud">
+                                <rect key="frame" x="32" y="561" width="327" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MXD-ZI-hfJ">
+                                <rect key="frame" x="24" y="309" width="327" height="133"/>
+                                <date key="date" timeIntervalSinceReferenceDate="567625311.02218699">
+                                    <!--2018-12-27 17:41:51 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Ge-oM-Ccd" firstAttribute="trailing" secondItem="0j8-aZ-txC" secondAttribute="trailingMargin" id="2Va-Tl-m2p"/>
+                            <constraint firstItem="XCU-9T-G3S" firstAttribute="top" secondItem="0j8-aZ-txC" secondAttribute="topMargin" constant="8" id="3i9-xp-bM1"/>
+                            <constraint firstItem="TUP-En-Gfw" firstAttribute="trailing" secondItem="0j8-aZ-txC" secondAttribute="trailingMargin" constant="1" id="Aju-Hs-KQ9"/>
+                            <constraint firstItem="LbO-bk-En7" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="Fn5-M9-Jzl"/>
+                            <constraint firstItem="MVF-NV-0Ud" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="Id6-Gl-ZvW"/>
+                            <constraint firstItem="aVg-Om-RXT" firstAttribute="top" secondItem="3Ge-oM-Ccd" secondAttribute="bottom" constant="20" id="Ij2-P0-BOG"/>
+                            <constraint firstItem="TUP-En-Gfw" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="LIo-p9-QL1"/>
+                            <constraint firstItem="MXD-ZI-hfJ" firstAttribute="top" secondItem="aVg-Om-RXT" secondAttribute="bottom" constant="8" id="O43-oD-4cc"/>
+                            <constraint firstItem="bbE-KD-uT2" firstAttribute="trailing" secondItem="0j8-aZ-txC" secondAttribute="trailingMargin" id="Oa9-95-XPY"/>
+                            <constraint firstItem="3Ge-oM-Ccd" firstAttribute="top" secondItem="TUP-En-Gfw" secondAttribute="bottom" constant="10" id="PTg-Nl-XDa"/>
+                            <constraint firstItem="bbE-KD-uT2" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="Rf2-ai-fE1"/>
+                            <constraint firstItem="MVF-NV-0Ud" firstAttribute="trailing" secondItem="0j8-aZ-txC" secondAttribute="trailingMargin" id="S3f-gB-2ED"/>
+                            <constraint firstItem="3Ge-oM-Ccd" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="Sdy-E4-w4T"/>
+                            <constraint firstItem="bbE-KD-uT2" firstAttribute="top" secondItem="Hr0-ef-yHA" secondAttribute="bottom" constant="8" id="WHe-Jn-lB2"/>
+                            <constraint firstItem="Hr0-ef-yHA" firstAttribute="top" secondItem="MXD-ZI-hfJ" secondAttribute="bottom" constant="8" id="Wvx-cM-Rgg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XCU-9T-G3S" secondAttribute="trailing" constant="16" id="Xs0-bd-OOF"/>
+                            <constraint firstItem="aVg-Om-RXT" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="b4i-9V-UKV"/>
+                            <constraint firstItem="XCU-9T-G3S" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leadingMargin" constant="16" id="dsE-y9-kYe"/>
+                            <constraint firstItem="LbO-bk-En7" firstAttribute="top" secondItem="bbE-KD-uT2" secondAttribute="bottom" constant="16" id="eJh-2D-uee"/>
+                            <constraint firstAttribute="trailing" secondItem="MXD-ZI-hfJ" secondAttribute="trailing" constant="24" id="f6C-1S-axo"/>
+                            <constraint firstItem="Hr0-ef-yHA" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leading" constant="16" id="hke-Na-R9V"/>
+                            <constraint firstItem="XCU-9T-G3S" firstAttribute="height" secondItem="0j8-aZ-txC" secondAttribute="height" multiplier="0.2" id="jEy-Sj-1jW"/>
+                            <constraint firstItem="MXD-ZI-hfJ" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leading" constant="24" id="jhW-JD-mXY"/>
+                            <constraint firstItem="TUP-En-Gfw" firstAttribute="top" secondItem="XCU-9T-G3S" secondAttribute="bottom" constant="30" id="mSt-ok-m9b"/>
+                            <constraint firstItem="LbO-bk-En7" firstAttribute="trailing" secondItem="0j8-aZ-txC" secondAttribute="trailingMargin" id="n7E-aG-zrq"/>
+                            <constraint firstAttribute="trailing" secondItem="Hr0-ef-yHA" secondAttribute="trailing" constant="16" id="sgy-cM-zit"/>
+                            <constraint firstItem="MVF-NV-0Ud" firstAttribute="top" secondItem="LbO-bk-En7" secondAttribute="bottom" constant="8" id="svY-IH-Ff9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aVg-Om-RXT" secondAttribute="trailing" id="ukC-i0-AmY"/>
+                            <constraint firstItem="MXD-ZI-hfJ" firstAttribute="height" secondItem="0j8-aZ-txC" secondAttribute="height" multiplier="0.2" id="wfK-9j-D5p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EpH-Jb-j3w"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextField" destination="MVF-NV-0Ud" id="1bZ-Ii-4ny"/>
+                        <outlet property="eventDataPicker" destination="MXD-ZI-hfJ" id="NCT-4b-dVl"/>
+                        <outlet property="eventImage" destination="XCU-9T-G3S" id="GwE-UL-PvG"/>
+                        <outlet property="locationTextField" destination="bbE-KD-uT2" id="ius-jz-zTq"/>
+                        <outlet property="nameOfEventTextField" destination="3Ge-oM-Ccd" id="ecz-06-QSS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l17-bG-5VG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Zgb-YH-tNI">
+                    <connections>
+                        <action selector="placeholderOfImage:" destination="W33-H3-lXj" id="NDd-Nf-B8T"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="6473" y="143"/>
+            <point key="canvasLocation" x="6472.8000000000002" y="142.57871064467767"/>
         </scene>
         <!--מפה-->
         <scene sceneID="5wU-A6-adx">
@@ -908,6 +1008,7 @@
         <image name="icc_tb_list_white" width="49" height="37"/>
         <image name="icc_tb_map_orange" width="38" height="37"/>
         <image name="icc_tb_map_white" width="38" height="37"/>
+        <image name="image_placeholder" width="500" height="500"/>
         <image name="indinegev" width="624" height="383"/>
         <image name="placeholder" width="300" height="168"/>
         <image name="search" width="25" height="25"/>

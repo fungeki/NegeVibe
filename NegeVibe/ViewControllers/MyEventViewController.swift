@@ -10,6 +10,15 @@ import UIKit
 
 class MyEventViewController: UIViewController {
 
+    
+    @IBOutlet weak var eventImage: UIImageView!
+    @IBOutlet weak var nameOfEventTextField: UITextField!
+    @IBOutlet weak var eventDataPicker: UIDatePicker!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    @IBAction func placeholderOfImage(_ sender: UIPanGestureRecognizer) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
