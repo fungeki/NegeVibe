@@ -768,13 +768,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hCE-OW-TBM">
-                                                    <rect key="frame" x="294" y="4" width="65" height="65"/>
+                                                    <rect key="frame" x="301.5" y="4" width="57.5" height="57.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="hCE-OW-TBM" secondAttribute="height" multiplier="1:1" id="ZWU-4f-Bqn"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם התפריט" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cob-YF-PZY">
-                                                    <rect key="frame" x="31" y="17" width="247" height="39"/>
+                                                    <rect key="frame" x="31" y="12.5" width="254.5" height="40.5"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                     <color key="textColor" red="0.16665583848953247" green="0.47270059585571289" blue="0.67787736654281616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -785,8 +785,8 @@
                                                 <constraint firstItem="hCE-OW-TBM" firstAttribute="leading" secondItem="cob-YF-PZY" secondAttribute="trailing" constant="16" id="Xdm-18-uCr"/>
                                                 <constraint firstAttribute="trailing" secondItem="hCE-OW-TBM" secondAttribute="trailing" constant="16" id="bKc-9r-thW"/>
                                                 <constraint firstItem="cob-YF-PZY" firstAttribute="leading" secondItem="8Rc-c9-QAY" secondAttribute="leadingMargin" constant="16" id="dKy-vj-7Bb"/>
-                                                <constraint firstItem="hCE-OW-TBM" firstAttribute="height" secondItem="8Rc-c9-QAY" secondAttribute="height" multiplier="0.9" id="rtz-Xj-hE7"/>
-                                                <constraint firstItem="cob-YF-PZY" firstAttribute="height" secondItem="hCE-OW-TBM" secondAttribute="height" multiplier="0.6" id="sCa-8F-Z7D"/>
+                                                <constraint firstItem="hCE-OW-TBM" firstAttribute="height" secondItem="8Rc-c9-QAY" secondAttribute="height" multiplier="0.8" id="rtz-Xj-hE7"/>
+                                                <constraint firstItem="cob-YF-PZY" firstAttribute="height" secondItem="hCE-OW-TBM" secondAttribute="height" multiplier="0.7" id="sCa-8F-Z7D"/>
                                                 <constraint firstItem="hCE-OW-TBM" firstAttribute="top" secondItem="8Rc-c9-QAY" secondAttribute="top" constant="4" id="sMZ-GM-PZZ"/>
                                             </constraints>
                                         </tableViewCellContentView>

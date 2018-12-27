@@ -17,11 +17,14 @@ class EventMenuViewController: UIViewController {
     var menu:[EventMenuItem] = EventMenu.shared().getMenu()
     override func viewDidLoad() {
         super.viewDidLoad()
-        menuTable.rowHeight = menuTable.frame.height / 5.0
+        
         // Do any additional setup after loading the view.
     }
-    
-
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        menuTable.rowHeight = menuTable.bounds.height / 4.5
+        menuTable.reloadData()
+    }
     /*
     // MARK: - Navigation
 
