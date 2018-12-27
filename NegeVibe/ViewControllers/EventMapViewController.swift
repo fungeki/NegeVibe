@@ -141,6 +141,11 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         self.navigationController?.pushViewController(categoriesController, animated: true)
     }
     
+//    @IBAction func openMenu(_ sender: Any) {
+//        let menuController = storyboard?.instantiateViewController(withIdentifier: "eventMenu") as! EventMenuViewController
+//    
+//        self.navigationController?.pushViewController(menuController, animated: true)
+//    }
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake{

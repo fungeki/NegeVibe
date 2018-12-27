@@ -19,10 +19,6 @@ class EventMenuViewController: UIViewController {
         super.viewDidLoad()
         menuTable.rowHeight = menuTable.frame.height / 5.0
         // Do any additional setup after loading the view.
-        if let navBar = self.navigationController{
-            self.navigationItem.title = "תפריט אירועים"
-            navBar.view.tintColor = UIColor.white
-        }
     }
     
 

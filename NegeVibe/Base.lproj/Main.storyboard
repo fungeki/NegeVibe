@@ -144,9 +144,6 @@
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
                     <navigationItem key="navigationItem" title="מפה" id="YwH-je-CL2">
-                        <barButtonItem key="leftBarButtonItem" image="categories" id="Vdq-qM-5kr">
-                            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image=" icc_nv_category" id="IWw-RW-Znd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -312,6 +309,7 @@
                     <connections>
                         <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
                         <segue destination="wRJ-Zk-YTB" kind="relationship" relationship="viewControllers" id="xUF-fu-ofJ"/>
+                        <segue destination="blZ-Fs-Oxe" kind="relationship" relationship="viewControllers" id="bPg-rF-Zy6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -442,12 +440,6 @@
                         <viewLayoutGuide key="safeArea" id="Z5M-ZG-iLJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="אירועים" id="Mxc-Ga-d32">
-                        <barButtonItem key="leftBarButtonItem" image="categories" id="dTP-h3-Xnt">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="openMenu:" destination="yf6-lA-a6T" id="vf1-II-W2Z"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image=" icc_nv_category" id="ka4-sQ-zfA">
                             <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -694,16 +686,16 @@
             </objects>
             <point key="canvasLocation" x="5639.1999999999998" y="142.57871064467767"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--מפה-->
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="מפה" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -722,16 +714,16 @@
             </objects>
             <point key="canvasLocation" x="1495" y="1012"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--רשימה-->
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF"/>
+                    <tabBarItem key="tabBarItem" title="רשימה" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YA-Yd-wam">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8YA-Yd-wam">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="24"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -750,7 +742,7 @@
             </objects>
             <point key="canvasLocation" x="3932" y="1012"/>
         </scene>
-        <!--Event Menu View Controller-->
+        <!--תפריט אירועים-->
         <scene sceneID="FfB-t8-mXa">
             <objects>
                 <viewController storyboardIdentifier="eventMenu" id="Olg-yT-Fde" customClass="EventMenuViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
@@ -759,13 +751,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_up" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-pK-mCI">
-                                <rect key="frame" x="0.0" y="484.5" width="375" height="16"/>
+                                <rect key="frame" x="0.0" y="435.5" width="375" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="hs2-qD-g57"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EeI-ig-5Tk">
-                                <rect key="frame" x="0.0" y="36" width="375" height="432.5"/>
+                                <rect key="frame" x="0.0" y="80" width="375" height="339.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="72" id="SGc-da-gJZ" customClass="EventMenuTableViewCell" customModule="NegeVibe" customModuleProvider="target">
@@ -810,7 +802,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Chq-Oo-2Vn">
-                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                <rect key="frame" x="0.0" y="451.5" width="375" height="166.5"/>
                                 <color key="backgroundColor" red="0.21400162580000001" green="0.59309792520000004" blue="0.84949058290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -830,13 +822,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OmH-mD-FDJ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="תפריט אירועים" id="Paw-eu-BJu"/>
                     <connections>
                         <outlet property="menuTable" destination="EeI-ig-5Tk" id="g9G-Wf-trg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6me-hz-WOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.8000000000002" y="1794.1529235382311"/>
+            <point key="canvasLocation" x="5052" y="-709.29535232383819"/>
         </scene>
         <!--Item-->
         <scene sceneID="PVA-W3-WZ3">
@@ -857,11 +850,34 @@
             </objects>
             <point key="canvasLocation" x="1447.2" y="139.880059970015"/>
         </scene>
+        <!--תפריט-->
+        <scene sceneID="gbS-fD-z1R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="blZ-Fs-Oxe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="תפריט" image=" icc_nv_category" id="w0g-Si-zfr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Cca-Fd-QXT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Olg-yT-Fde" kind="relationship" relationship="rootViewController" id="bN7-kl-wNB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lT-b3-GK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4112.8000000000002" y="-709.29535232383819"/>
+        </scene>
     </scenes>
     <resources>
         <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
         <image name="background_up" width="750" height="61"/>
-        <image name="categories" width="48" height="48"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>

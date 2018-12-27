@@ -44,10 +44,10 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         self.navigationController?.pushViewController(categoriesController, animated: true)
     }
     
-    @IBAction func openMenu(_ sender: Any) {
-        let menuController = storyboard?.instantiateViewController(withIdentifier: "eventMenu") as! EventMenuViewController
-        self.navigationController?.pushViewController(menuController, animated: true)
-    }
+//    @IBAction func openMenu(_ sender: Any) {
+//        let menuController = storyboard?.instantiateViewController(withIdentifier: "eventMenu") as! EventMenuViewController
+//        self.navigationController?.pushViewController(menuController, animated: true)
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
