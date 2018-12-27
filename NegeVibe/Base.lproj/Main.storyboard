@@ -145,6 +145,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="מפה" id="YwH-je-CL2">
                         <barButtonItem key="rightBarButtonItem" image="categories" id="IWw-RW-Znd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="categoriesOpen:" destination="p4g-h5-hWC" id="RWi-eq-Vxi"/>
                             </connections>
@@ -557,6 +558,46 @@
             </objects>
             <point key="canvasLocation" x="4700" y="1012"/>
         </scene>
+        <!--Generator View Controller-->
+        <scene sceneID="VpI-IF-ViI">
+            <objects>
+                <viewController id="rv9-Ar-SvD" customClass="QRGeneratorViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tjp-Gb-wT3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-i1-LKj">
+                                <rect key="frame" x="155.5" y="20" width="64" height="30"/>
+                                <state key="normal" title="Generate"/>
+                                <connections>
+                                    <action selector="GenerateQR:" destination="rv9-Ar-SvD" eventType="touchUpInside" id="e6N-sk-nz4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-aE-SiR">
+                                <rect key="frame" x="131.5" y="287.5" width="112.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BnZ-aE-SiR" secondAttribute="height" multiplier="1:1" id="pq4-Ty-p86"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bwn-i1-LKj" firstAttribute="top" secondItem="aW8-bd-8dR" secondAttribute="top" id="BMC-C9-dtk"/>
+                            <constraint firstItem="BnZ-aE-SiR" firstAttribute="centerX" secondItem="aW8-bd-8dR" secondAttribute="centerX" id="SGe-D8-MCJ"/>
+                            <constraint firstItem="bwn-i1-LKj" firstAttribute="centerX" secondItem="aW8-bd-8dR" secondAttribute="centerX" id="Tsy-GP-2n8"/>
+                            <constraint firstItem="BnZ-aE-SiR" firstAttribute="centerY" secondItem="aW8-bd-8dR" secondAttribute="centerY" id="XGk-0u-cyv"/>
+                            <constraint firstItem="BnZ-aE-SiR" firstAttribute="width" secondItem="tjp-Gb-wT3" secondAttribute="width" multiplier="0.3" id="qfJ-gA-BRi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aW8-bd-8dR"/>
+                    </view>
+                    <connections>
+                        <outlet property="QRImage" destination="BnZ-aE-SiR" id="EFY-KD-VPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vtG-Mu-cPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5682.3999999999996" y="1007.9460269865068"/>
+        </scene>
         <!--Description of Event-->
         <scene sceneID="3e5-xY-ODy">
             <objects>
@@ -757,6 +798,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -824,6 +869,7 @@
         <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
         <image name="icc_tb_map_white" width="66.731704711914062" height="65.853660583496094"/>
         <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="placeholder" width="300" height="168"/>
         <image name="search" width="50" height="50"/>
     </resources>
 </document>

@@ -1,19 +1,29 @@
 //
-//  ChatOfEventViewController.swift
+//  QRGeneratorViewController.swift
 //  NegeVibe
 //
-//  Created by Ran Loock on 21/12/2018.
+//  Created by Ran Loock on 26/12/2018.
 //  Copyright © 2018 test. All rights reserved.
 //
 
 import UIKit
 
-class ChatOfEventViewController: UIViewController {
+class QRGeneratorViewController: UIViewController {
 
+    @IBOutlet weak var QRImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        
+    }
+    
+    
+    @IBAction func GenerateQR(_ sender: UIButton) {
+        let url = QRGenerate(width: 300, height: 300)
+        
+        QRImage.sd_setImage(with: url, placeholderImage: UIImage(named: "placeholder"))
+        
     }
     
 
