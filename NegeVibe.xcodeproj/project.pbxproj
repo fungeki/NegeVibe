@@ -47,6 +47,9 @@
 		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
 		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
 		8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */; };
+		A1921D5B21D5271F0059FF85 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5A21D5271F0059FF85 /* Ticket.swift */; };
+		A1921D5D21D529090059FF85 /* TypeOfTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5C21D529090059FF85 /* TypeOfTicket.swift */; };
+		A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5E21D535340059FF85 /* MyEventViewController.swift */; };
 		A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */; };
 		A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */; };
 		A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */; };
@@ -101,6 +104,9 @@
 		8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEvents.swift; sourceTree = "<group>"; };
 		8CEB9B4021AED118009B55FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHUD.swift; sourceTree = "<group>"; };
+		A1921D5A21D5271F0059FF85 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		A1921D5C21D529090059FF85 /* TypeOfTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTicket.swift; sourceTree = "<group>"; };
+		A1921D5E21D535340059FF85 /* MyEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
 		A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDetailsViewController.swift; sourceTree = "<group>"; };
 		A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */,
 				8C8B72B321D399810090A2DA /* QRGeneratorViewController.swift */,
 				8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */,
+				A1921D5E21D535340059FF85 /* MyEventViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,6 +271,8 @@
 				8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */,
 				8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */,
 				8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */,
+				A1921D5A21D5271F0059FF85 /* Ticket.swift */,
+				A1921D5C21D529090059FF85 /* TypeOfTicket.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -425,6 +434,7 @@
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
 				8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */,
 				7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */,
+				A1921D5B21D5271F0059FF85 /* Ticket.swift in Sources */,
 				8C8B72B021CE41880090A2DA /* VibesDelegate.swift in Sources */,
 				8C7E560121CBA27000191307 /* Toast.swift in Sources */,
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
@@ -437,12 +447,14 @@
 				8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,
+				A1921D5D21D529090059FF85 /* TypeOfTicket.swift in Sources */,
 				A1CE21FF21C658A700DFE4B0 /* EventTableViewCell.swift in Sources */,
 				EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
 				8C8B72B421D399810090A2DA /* QRGeneratorViewController.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
+				A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */,
 				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
