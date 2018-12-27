@@ -17,6 +17,11 @@ class EventMenuTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    override func layoutSubviews() {
+        descriptionLabel.numberOfLines = 1
+        descriptionLabel.adjustsFontSizeToFitWidth = true
+        descriptionLabel.minimumScaleFactor = 0.1
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -23,7 +23,6 @@ class EventMenuViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         menuTable.rowHeight = menuTable.bounds.height / 4.5
-        menuTable.reloadData()
     }
     /*
     // MARK: - Navigation
@@ -47,6 +46,10 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         let model = menu[indexPath.row]
         cell.iconImage.image = model.icon
         cell.descriptionLabel.text = model.text
+        cell.layoutSubviews()
+        if indexPath.row == 3{
+            cell.descriptionLabel.textColor = getBrightOrange()
+        }
         return cell
     }
     
