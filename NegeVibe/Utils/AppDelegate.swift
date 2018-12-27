@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
-
         return true
     }
 

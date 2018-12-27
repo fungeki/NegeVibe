@@ -105,6 +105,9 @@ class EventsDetailsViewController: UIViewController {
             imageView.frame = headerViewController.headerView.bounds
             imageView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
             headerViewController.headerView.contentView.insertSubview(imageView, at: 0)
+            if let navBar = self.navigationController{
+                navBar.view.tintColor = UIColor.white
+            }
         }
         // Do any additional setup after loading the view.
     }

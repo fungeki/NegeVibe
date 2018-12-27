@@ -10,7 +10,6 @@
 		56479C6616582B1F8F5EC795 /* Pods_NegeVibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */; };
 		7C44EF6021BEB3AD00B17C48 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF5F21BEB3AD00B17C48 /* Message.swift */; };
 		7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */; };
-		7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */; };
 		8C1ACD0821B033FE00103D9E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0721B033FE00103D9E /* Images.swift */; };
 		8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0921B0376800103D9E /* Symbology.swift */; };
 		8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */; };
@@ -61,7 +60,6 @@
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C44EF5F21BEB3AD00B17C48 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageViewCell.swift; sourceTree = "<group>"; };
-		7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
 		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
 		8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
-				7C6DCD5021BEC46800881335 /* ChatTableViewController.swift */,
 				A1CE21F921C130D000DFE4B0 /* EventsDetailsViewController.swift */,
 				A1CE21FB21C64CC700DFE4B0 /* EventTableViewController.swift */,
 				8C8B72B121D216AF0090A2DA /* ScannerViewController.swift */,
@@ -419,7 +416,6 @@
 				8C7E560521CC02C300191307 /* Colors.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
-				7C6DCD5121BEC46800881335 /* ChatTableViewController.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
