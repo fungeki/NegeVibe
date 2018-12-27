@@ -70,14 +70,14 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="33"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-4c-viA">
-                                        <rect key="frame" x="334" y="8" width="25" height="17"/>
+                                        <rect key="frame" x="309" y="8" width="50" height="17"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="cNE-tx-k9t" appends="YES" id="QEM-km-ref"/>
                                         </connections>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" חיפוש..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SMc-bf-leT">
-                                        <rect key="frame" x="270" y="8" width="56" height="17"/>
+                                        <rect key="frame" x="245" y="8" width="56" height="17"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -197,10 +197,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNy-Ob-8Al">
-                                                    <rect key="frame" x="16" y="16" width="58" height="42"/>
+                                                    <rect key="frame" x="16" y="16" width="58" height="41"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm" customClass="PaddingLabel" customModule="NegeVibe" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="74" width="90" height="21"/>
+                                                    <rect key="frame" x="0.0" y="73" width="90" height="22"/>
                                                     <color key="backgroundColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -307,8 +307,8 @@
                         <color key="selectedImageTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
                         <segue destination="wRJ-Zk-YTB" kind="relationship" relationship="viewControllers" id="xUF-fu-ofJ"/>
+                        <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
                         <segue destination="blZ-Fs-Oxe" kind="relationship" relationship="viewControllers" id="bPg-rF-Zy6"/>
                     </connections>
                 </tabBarController>
@@ -744,7 +744,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MXD-ZI-hfJ">
-                                <rect key="frame" x="24" y="309" width="327" height="133"/>
+                                <rect key="frame" x="24" y="308.5" width="327" height="133.5"/>
                                 <date key="date" timeIntervalSinceReferenceDate="567625311.02218699">
                                     <!--2018-12-27 17:41:51 +0000-->
                                 </date>
@@ -992,7 +992,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" icc_nv_category" width="25" height="25"/>
+        <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
         <image name="background_up" width="750" height="61"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_date" width="69" height="69"/>
@@ -1005,13 +1005,13 @@
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
-        <image name="icc_tb_list_orange" width="49" height="37"/>
-        <image name="icc_tb_list_white" width="49" height="37"/>
-        <image name="icc_tb_map_orange" width="38" height="37"/>
-        <image name="icc_tb_map_white" width="38" height="37"/>
+        <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
+        <image name="icc_tb_list_white" width="68.504852294921875" height="52.42718505859375"/>
+        <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
+        <image name="icc_tb_map_white" width="66.731704711914062" height="65.853660583496094"/>
         <image name="image_placeholder" width="500" height="500"/>
-        <image name="indinegev" width="624" height="383"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="placeholder" width="300" height="168"/>
-        <image name="search" width="25" height="25"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>

@@ -29,10 +29,30 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         let image = UIImagePickerController()
         image.delegate = self
         
-        image.sourceType = UIImagePickerController.SourceType.photoLibrary
-        self.present(image,animated: true){
+        let actionSheet =  UIAlertController(title: "בחירת תמונה", message: "ביחרו את המקור של התמונה", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "מצלמה", style: .default, handler: { (action) in
+            image.sourceType = .camera
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                self.present(image, animated: true, completion: nil)
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "ספריית תמונות", style: .default, handler: { (action) in
+            image.sourceType = UIImagePickerController.SourceType.photoLibrary
+            image.allowsEditing = true
+            self.present(image,animated: true){
+                
+            }
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "קישור", style: .default, handler: { (action) in
+        }))
+        actionSheet.addAction(UIAlertAction(title: "ביטול", style: .cancel, handler: { (action) in
+        }))
+        
+        self.present(actionSheet, animated: true) {
             
         }
+
     }
     
 
