@@ -52,6 +52,15 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         }
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row{
+        case 0:
+        let ticketVC = self.storyboard?.instantiateViewController(withIdentifier: "ticketVC") as! TicketViewController
+        self.navigationController?.pushViewController(ticketVC, animated: true)
+        default:
+            return
+        }
+        
+    }
     
 }
