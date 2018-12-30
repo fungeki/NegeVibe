@@ -457,7 +457,6 @@
                     <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="yyj-aM-LBd">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -956,11 +955,13 @@
             </objects>
             <point key="canvasLocation" x="6472.8000000000002" y="142.57871064467767"/>
         </scene>
-        <!--מפה-->
+        <!--Navigation Controller-->
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="מפה" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="UZc-LC-ZWO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -984,11 +985,13 @@
             </objects>
             <point key="canvasLocation" x="1495" y="1012"/>
         </scene>
-        <!--רשימה-->
+        <!--Navigation Controller-->
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="רשימה" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF"/>
+                    <tabBarItem key="tabBarItem" title="" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="8YA-Yd-wam">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -1120,11 +1123,13 @@
             </objects>
             <point key="canvasLocation" x="1447.2" y="139.880059970015"/>
         </scene>
-        <!--תפריט-->
+        <!--Navigation Controller-->
         <scene sceneID="gbS-fD-z1R">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="blZ-Fs-Oxe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="תפריט" image="ic_menu" id="w0g-Si-zfr"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_menu" id="w0g-Si-zfr">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Cca-Fd-QXT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
