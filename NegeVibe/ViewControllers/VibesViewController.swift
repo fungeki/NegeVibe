@@ -25,7 +25,7 @@ class VibesViewController: UIViewController {
     //var allCases = [Symbol.allCases]
    
     override func viewDidLayoutSubviews() {
-     
+     vibesCollection.contentInset.top = max((vibesCollection.frame.height - vibesCollection.contentSize.height) / 2, 0)
        // let screenwidth = self.view.frame.width
       //  vibesCollection.roundCorners(corners: [.topLeft, .topRight], radius: screenwidth / 6)
     }

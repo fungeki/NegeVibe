@@ -93,11 +93,11 @@ class EventsDetailsViewController: UIViewController {
            // eventImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
             
             
-            imageView.contentMode = .scaleAspectFit
+            imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true
 //            imageView.backgroundColor = getPrimaryColor()
             headerViewController.view.frame = view.bounds
-            headerViewController.view.backgroundColor = getPrimaryColor()
+            headerViewController.view.backgroundColor = getBrightOrange()
             view.addSubview(headerViewController.view)
             headerViewController.didMove(toParent: self)
             headerViewController.headerView.trackingScrollView = scrollView
