@@ -15,6 +15,7 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var eventDataPicker: UIDatePicker!
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
+    var link:URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,30 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         }))
         
         actionSheet.addAction(UIAlertAction(title: "קישור", style: .default, handler: { (action) in
+            //link alert
+            let modelAlert = UIAlertController(title: "קישור", message: "תשים את הקישור לתמונה", preferredStyle: .alert)
+            modelAlert.addTextField(configurationHandler: { (UITextField) in
+               UITextField.placeholder = "קישור"
+                UITextField.textAlignment = .right
+            })
+            
+            //cancel
+            let cancelButton = UIAlertAction(title:"ביטול", style:  .cancel, handler: { (action) in
+                self.dismiss(animated: true, completion:nil)
+            })
+            modelAlert.addAction(cancelButton)
+           
+            
+            let allowButton = UIAlertAction(title: "אישור", style:   .default, handler: { (action) in
+                guard let str = modelAlert.textFields?[0].text else{return}
+                self.link = URL(string: str)
+                
+                self.eventImage.sd_setImage(with: self.link,placeholderImage:UIImage(named:"placeholder"))
+            })
+            //permission
+            modelAlert.addAction(allowButton)
+            self.present(modelAlert,animated: true,completion: nil)
+        
         }))
         actionSheet.addAction(UIAlertAction(title: "ביטול", style: .cancel, handler: { (action) in
         }))
