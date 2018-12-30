@@ -91,7 +91,7 @@ class EventsDetailsViewController: UIViewController {
             let imageView = UIImageView(image: UIImage(named: "placeholder"))
             imageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
            // eventImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
-            
+            priceLabel.text = "₪ ֻ\(eventDisplay.price)"
             
             imageView.contentMode = .scaleAspectFill
             imageView.clipsToBounds = true
