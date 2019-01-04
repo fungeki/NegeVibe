@@ -89,6 +89,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
         cell.selectionStyle = .none
+        cell.eventDescriptionLabel.text = negevEvent.description
         let userDefaults = UserDefaults.standard
         let eventIDStr = String(negevEvent.id)
         let isEventLiked = userDefaults.bool(forKey: eventIDStr)

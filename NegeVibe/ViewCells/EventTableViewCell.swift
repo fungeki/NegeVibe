@@ -10,6 +10,7 @@ import UIKit
 
 class EventTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var eventUIImageView: UIImageView!
     @IBOutlet weak var locationEventLable: UILabel!

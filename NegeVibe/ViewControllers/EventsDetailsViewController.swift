@@ -11,7 +11,6 @@ import MaterialComponents.MaterialFlexibleHeader
 
 class EventsDetailsViewController: UIViewController {
 
-    @IBOutlet weak var scrollViewTopConstraint: NSLayoutConstraint!
     
     var eventDisplay: Event?
 
