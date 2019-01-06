@@ -12,7 +12,8 @@ enum TypeOfTicket: String, CustomStringConvertible{
     case student = "Student"
     case pensioner = "Pensioner"
     case child = "Child"
-    case simple = "Simple"
+    case regular = "Regular"
+    case vip = "VIP"
     
     init?(withInt val: Int){
         switch val {
@@ -22,8 +23,10 @@ enum TypeOfTicket: String, CustomStringConvertible{
             self = .pensioner
         case 2:
             self = .child
+        case 4:
+            self = .vip
         default:
-            self = .simple
+            self = .regular
             
         }
     }
@@ -42,8 +45,10 @@ enum TypeOfTicket: String, CustomStringConvertible{
              return "גימלאי"
         case .child:
              return "ילדֿֿ"
-        case .simple:
+        case .regular:
              return "רגיל"
+        case .vip:
+            return "VIP"
         }
     }
     

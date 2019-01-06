@@ -225,7 +225,7 @@ extension EventMapViewController: MKMapViewDelegate {
             return
         }
         print(artwork.title!, " was clicked")
-        
+
         let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
         //put the details
         dt.fromMap = true
@@ -234,7 +234,31 @@ extension EventMapViewController: MKMapViewDelegate {
         
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(calloutTapped(sender:)))
+        view.addGestureRecognizer(tapGesture)
+    }
     
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+        view.removeGestureRecognizer(view.gestureRecognizers!.first!)
+    }
+    
+    @objc func calloutTapped(sender:UITapGestureRecognizer) {
+        let view = sender.view as! MKAnnotationView
+        let artworkView = view as! ArtworkView
+        guard let artwork = artworkView.artwork else {
+            print("no artwork error")
+            return
+        }
+        print(artwork.title!, " was clicked")
+        
+        let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
+        //put the details
+        dt.fromMap = true
+        dt.eventDisplay = artwork.event
+        self.navigationController?.pushViewController(dt, animated: true)
+        }
+    }
     
 //    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
 //        if annotation is ArtworkView || annotation is MKUserLocation{
@@ -252,7 +276,7 @@ extension EventMapViewController: MKMapViewDelegate {
     
     
     
-}
+
 
 extension EventMapViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

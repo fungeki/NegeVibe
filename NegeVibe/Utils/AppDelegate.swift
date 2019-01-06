@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 import CoreData
 import IQKeyboardManagerSwift
 
@@ -19,7 +21,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
-        
+        FirebaseApp.configure()
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainController = storyBoard.instantiateViewController(withIdentifier: "mainTabController") as! UITabBarController
+//        self.window?.rootViewController = mainController
+        if Auth.auth().currentUser != nil {
+            
+        } else {
+             Auth.auth().signInAnonymously() { (authResult, error) in
+            }
+        }
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
     }

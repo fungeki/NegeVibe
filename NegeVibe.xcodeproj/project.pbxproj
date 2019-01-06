@@ -39,6 +39,8 @@
 		8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */; };
 		8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */; };
 		8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */; };
+		8CA46F3321E1FA3E00A148F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */; };
+		8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3421E2102C00A148F2 /* SignInViewController.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -94,6 +96,8 @@
 		8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenuViewController.swift; sourceTree = "<group>"; };
 		8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenu.swift; sourceTree = "<group>"; };
 		8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CA46F3421E2102C00A148F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +165,7 @@
 				8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */,
 				A1921D5E21D535340059FF85 /* MyEventViewController.swift */,
 				8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */,
+				8CA46F3421E2102C00A148F2 /* SignInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				8CEB9B3B21AED0BD009B55FF /* DB */,
 				8CEB9B2A21AED0AF009B55FF /* Main.storyboard */,
 				8CEB9B3221AED0B2009B55FF /* LaunchScreen.storyboard */,
+				8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */,
 				8CEB9B3521AED0B2009B55FF /* Info.plist */,
 				8CEB9B2D21AED0AF009B55FF /* NegeVibe.xcdatamodeld */,
 				8C1ACD9D21BD3ED900103D9E /* LocationNav.gpx */,
@@ -369,6 +375,7 @@
 				8CEB9B3421AED0B2009B55FF /* LaunchScreen.storyboard in Resources */,
 				8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */,
 				A1921D6121D5559C0059FF85 /* Assets.xcassets in Resources */,
+				8CA46F3321E1FA3E00A148F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,17 +389,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -447,6 +460,7 @@
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */,
+				8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */,
 				8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */,
 				8C1ACD5421BAFB6300103D9E /* VibesCollectionViewCell.swift in Sources */,
 				8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */,

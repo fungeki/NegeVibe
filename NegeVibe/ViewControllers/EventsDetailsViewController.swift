@@ -85,18 +85,18 @@ class EventsDetailsViewController: UIViewController {
             let screenHeight = self.view.frame.height
             let imageURL = URL(string: eventDisplay.images[0].link)
             headerViewController.headerView.minMaxHeightIncludesSafeArea = false
-            headerViewController.headerView.maximumHeight = screenHeight * 0.2
+            headerViewController.headerView.maximumHeight = screenHeight * 0.3
             headerViewController.headerView.minimumHeight = 0
             let imageView = UIImageView(image: UIImage(named: "placeholder"))
             imageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
            // eventImageView.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
             priceLabel.text = "₪ ֻ\(eventDisplay.price)"
             
-            imageView.contentMode = .scaleAspectFill
+            imageView.contentMode = .scaleAspectFit
             imageView.clipsToBounds = true
 //            imageView.backgroundColor = getPrimaryColor()
             headerViewController.view.frame = view.bounds
-            headerViewController.view.backgroundColor = getBrightOrange()
+            headerViewController.view.backgroundColor = UIColor.white
             view.addSubview(headerViewController.view)
             headerViewController.didMove(toParent: self)
             headerViewController.headerView.trackingScrollView = scrollView

@@ -10,5 +10,7 @@ target 'NegeVibe' do
 pod 'IQKeyboardManagerSwift'
 pod 'SDWebImage'
 pod 'MaterialComponents/FlexibleHeader'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
 
 end
