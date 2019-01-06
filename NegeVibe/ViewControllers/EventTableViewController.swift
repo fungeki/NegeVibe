@@ -10,9 +10,11 @@ import UIKit
 
 class EventTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var eventTableView: UITableView!
     var arrEvent = [Event]()
     var willShowCategories = false
+    var wasSearched = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +91,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         let url = URL(string: negevEvent.images[0].link)
         cell.eventUIImageView.sd_setImage(with:url)
         cell.selectionStyle = .none
-        cell.eventDescriptionLabel.text = negevEvent.description
+        //cell.eventDescriptionLabel.text = negevEvent.description
         let userDefaults = UserDefaults.standard
         let eventIDStr = String(negevEvent.id)
         let isEventLiked = userDefaults.bool(forKey: eventIDStr)
@@ -103,6 +105,26 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
         
     }
+    
+    
+    @IBAction func search(_ sender: UITextField) {
+        guard let searchTitle = sender.text else{
+            return
+        }
+        if searchTitle.count < 3 {
+            if wasSearched{
+            arrEvent = EventsLibrary.getInstance().getEvents()
+                wasSearched = false
+                eventTableView.reloadData()
+            }
+            return
+        }
+        self.arrEvent = EventsLibrary.getInstance().getEvents().enumerated().filter({ $0.element.title.contains(searchTitle)  }).map({ $0.element })
+        eventTableView.reloadData()
+        wasSearched = true
+        print(arrEvent)
+    }
+
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dt = storyboard?.instantiateViewController(withIdentifier: "details") as! EventsDetailsViewController
@@ -132,6 +154,7 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
 extension EventTableViewController: VibesViewControllerDelegate{

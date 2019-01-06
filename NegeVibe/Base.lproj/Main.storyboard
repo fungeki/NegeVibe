@@ -23,12 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Vj-7nv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <connections>
-                                    <outlet property="delegate" destination="p4g-h5-hWC" id="BmY-U7-TpP"/>
-                                </connections>
-                            </mapView>
                             <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-GL-lFI">
                                 <rect key="frame" x="0.0" y="97" width="375" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -100,32 +94,12 @@
                                     <constraint firstAttribute="bottom" secondItem="SMc-bf-leT" secondAttribute="bottom" constant="8" id="pfP-1b-Dy7"/>
                                 </constraints>
                             </view>
-                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELh-gJ-w6J">
-                                <rect key="frame" x="0.0" y="568" width="375" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="טוען הודעות" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mv9-gg-gEi">
-                                        <rect key="frame" x="306" y="0.0" width="61" height="16"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqn-uL-5qt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                        <state key="normal" title="נא להמתין">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.72549019609999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Nqn-uL-5qt" firstAttribute="leading" secondItem="ELh-gJ-w6J" secondAttribute="leading" id="13z-qq-GDw"/>
-                                    <constraint firstAttribute="trailing" secondItem="Mv9-gg-gEi" secondAttribute="trailing" constant="8" id="5Kl-Rm-7qo"/>
-                                    <constraint firstAttribute="trailing" secondItem="Nqn-uL-5qt" secondAttribute="trailing" id="6CF-NK-vFQ"/>
-                                    <constraint firstItem="Mv9-gg-gEi" firstAttribute="top" secondItem="ELh-gJ-w6J" secondAttribute="top" id="MQt-LC-rBn"/>
-                                    <constraint firstItem="Nqn-uL-5qt" firstAttribute="top" secondItem="ELh-gJ-w6J" secondAttribute="top" id="c8Y-zV-DYr"/>
-                                    <constraint firstAttribute="bottom" secondItem="Nqn-uL-5qt" secondAttribute="bottom" id="igh-HH-Iva"/>
-                                </constraints>
-                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yjn-Vj-7nv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <outlet property="delegate" destination="p4g-h5-hWC" id="BmY-U7-TpP"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -136,14 +110,10 @@
                             <constraint firstItem="WLW-9f-UCS" firstAttribute="height" secondItem="CTH-Ho-btF" secondAttribute="height" multiplier="0.06" id="Oxa-Pp-bL8"/>
                             <constraint firstItem="OmF-GL-lFI" firstAttribute="top" secondItem="WLW-9f-UCS" secondAttribute="bottom" id="PTA-Vf-UCK"/>
                             <constraint firstItem="yjn-Vj-7nv" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="Qse-zI-mWl"/>
-                            <constraint firstItem="ELh-gJ-w6J" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="Skl-Ag-W1a"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="bottom" secondItem="yjn-Vj-7nv" secondAttribute="bottom" id="Ug8-Xs-fEO"/>
-                            <constraint firstItem="ELh-gJ-w6J" firstAttribute="height" secondItem="wkG-GG-kRj" secondAttribute="height" multiplier="0.075" id="WZp-oR-kkf"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="OmF-GL-lFI" secondAttribute="trailing" id="jNN-ZF-wfO"/>
                             <constraint firstItem="WLW-9f-UCS" firstAttribute="leading" secondItem="CTH-Ho-btF" secondAttribute="leading" id="pRg-Cm-itl"/>
                             <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="yjn-Vj-7nv" secondAttribute="trailing" id="uIh-CB-CqX"/>
-                            <constraint firstItem="CTH-Ho-btF" firstAttribute="trailing" secondItem="ELh-gJ-w6J" secondAttribute="trailing" id="ukA-Wm-4ft"/>
-                            <constraint firstItem="CTH-Ho-btF" firstAttribute="bottom" secondItem="ELh-gJ-w6J" secondAttribute="bottom" id="y2y-24-Uld"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CTH-Ho-btF"/>
                     </view>
@@ -156,9 +126,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="bannerEventNameLabel" destination="Mv9-gg-gEi" id="sBG-im-feb"/>
-                        <outlet property="bannerFeaturedMessageBtn" destination="Nqn-uL-5qt" id="HTf-JJ-hX7"/>
-                        <outlet property="bannerOverlayView" destination="ELh-gJ-w6J" id="yYX-Tm-6TX"/>
                         <outlet property="mapView" destination="yjn-Vj-7nv" id="JPc-8s-El4"/>
                         <outlet property="searchField" destination="SMc-bf-leT" id="9GN-71-4Gz"/>
                         <outlet property="searchIcon" destination="hKI-4c-viA" id="ppW-mV-aIp"/>
@@ -600,6 +567,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="search:" destination="yf6-lA-a6T" eventType="editingChanged" id="Law-B3-MBc"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -637,6 +607,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="eventTableView" destination="ikk-dH-31g" id="aeV-Sd-oqL"/>
+                        <outlet property="searchTextField" destination="P3p-H2-vui" id="R08-U1-kSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdM-gm-vRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -691,7 +662,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-xo-Q7C">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-xo-Q7C">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-l8-4Lt">
@@ -826,21 +797,12 @@
                                 </constraints>
                                 <state key="normal" image="ic_like_empty_icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZG-cT-gcK">
-                                <rect key="frame" x="197" y="625" width="30" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="IZG-cT-gcK" secondAttribute="height" multiplier="100:107" id="y1R-62-bkU"/>
-                                </constraints>
-                                <state key="normal" image="ic_podcasts"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="ddq-ho-00D" secondAttribute="top" id="15b-FL-Hqy"/>
-                            <constraint firstItem="IZG-cT-gcK" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="6sS-Ge-GnM"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="7Ot-j7-ic1"/>
                             <constraint firstItem="BTf-Sc-ETz" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" constant="36" id="9JR-2i-Ae9"/>
-                            <constraint firstItem="prP-3p-iK4" firstAttribute="leading" secondItem="IZG-cT-gcK" secondAttribute="trailing" constant="32" id="B4V-uU-rWF"/>
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" id="DOB-Ed-L7g"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="Tui-XJ-JbZ" secondAttribute="trailing" constant="24" id="K6l-n1-BYC"/>
                             <constraint firstItem="0kc-MP-U3l" firstAttribute="bottom" secondItem="BTf-Sc-ETz" secondAttribute="bottom" constant="8" id="Xjc-bI-9gF"/>
@@ -850,10 +812,8 @@
                             <constraint firstItem="Tui-XJ-JbZ" firstAttribute="leading" secondItem="prP-3p-iK4" secondAttribute="trailing" constant="32" id="jc0-2Q-mgV"/>
                             <constraint firstItem="2l9-xo-Q7C" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" id="jys-pm-elB"/>
                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.07" id="o2d-mM-nWg"/>
-                            <constraint firstItem="IZG-cT-gcK" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="pOm-Cd-Fub"/>
                             <constraint firstItem="9xk-l8-4Lt" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="rlJ-jC-qIT"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="xB3-Wf-eZF"/>
-                            <constraint firstItem="IZG-cT-gcK" firstAttribute="top" secondItem="2l9-xo-Q7C" secondAttribute="bottom" constant="8" id="yrQ-6d-CEb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
@@ -994,7 +954,7 @@
         <scene sceneID="5wU-A6-adx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRm-cj-rPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icc_tb_map_white" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R">
+                    <tabBarItem key="tabBarItem" title="" image="ic_br_map" selectedImage="icc_tb_map_orange" id="yhd-w5-a8R">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1024,7 +984,7 @@
         <scene sceneID="3D7-Qd-Phv">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wRJ-Zk-YTB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="icc_tb_list_white" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF">
+                    <tabBarItem key="tabBarItem" title="" image="ic_br_list" selectedImage="icc_tb_list_orange" id="7Rg-YS-dKF">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1130,7 +1090,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OmH-mD-FDJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="תפריט אירועים" id="Paw-eu-BJu"/>
+                    <navigationItem key="navigationItem" title="תפריט אירועים" id="Paw-eu-BJu">
+                        <barButtonItem key="backBarButtonItem" title="תפריט" id="S9N-9a-6Lx"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="menuTable" destination="EeI-ig-5Tk" id="g9G-Wf-trg"/>
                     </connections>
@@ -1162,7 +1124,7 @@
         <scene sceneID="gbS-fD-z1R">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="blZ-Fs-Oxe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_menu" id="w0g-Si-zfr">
+                    <tabBarItem key="tabBarItem" title="" image="ic_br_menu" id="w0g-Si-zfr">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -1188,22 +1150,21 @@
     <resources>
         <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
         <image name="background_up_plus" width="750" height="141"/>
+        <image name="ic_br_list" width="67.5" height="50.400001525878906"/>
+        <image name="ic_br_map" width="50" height="50"/>
+        <image name="ic_br_menu" width="65.853660583496094" height="49.170730590820312"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_logo_negevibe" width="1180" height="469"/>
-        <image name="ic_menu" width="53" height="39"/>
         <image name="ic_place" width="56" height="69"/>
-        <image name="ic_podcasts" width="100" height="107"/>
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_ticket" width="50" height="73"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
         <image name="ic_white_logo" width="288" height="114"/>
         <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
-        <image name="icc_tb_list_white" width="68.504852294921875" height="52.42718505859375"/>
         <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
-        <image name="icc_tb_map_white" width="66.731704711914062" height="65.853660583496094"/>
         <image name="image_placeholder" width="500" height="500"/>
         <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
         <image name="placeholder" width="300" height="168"/>
