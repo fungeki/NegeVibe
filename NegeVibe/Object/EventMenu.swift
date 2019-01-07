@@ -29,7 +29,7 @@ class EventMenu{
     private init() {
         let menu1 = EventMenuItem(text: "כרטיסים שהוזמנו", icon: UIImage(named: "ic_menu_tickets_order")!)
         let menu2 = EventMenuItem(text: "אירועים מועדפים", icon: UIImage(named: "ic_favorite_events")!)
-        let menu3 = EventMenuItem(text: "קורא קודר", icon: UIImage(named: "ic_barcode_reader")!)
+        let menu3 = EventMenuItem(text: "צ׳אטים", icon: UIImage(named: "ic_chat_empty_circle")!)
         let menu4 = EventMenuItem(text: "אירועים שלי", icon: UIImage(named: "ic_my_events")!)
         eventMenu.append(menu1)
         eventMenu.append(menu2)

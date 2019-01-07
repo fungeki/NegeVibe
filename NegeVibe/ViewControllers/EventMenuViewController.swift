@@ -12,7 +12,8 @@ import UIKit
 
 class EventMenuViewController: UIViewController {
 
- 
+    weak var actionToEnable : UIAlertAction?
+
     @IBOutlet weak var menuTable: UITableView!
     var menu:[EventMenuItem] = EventMenu.shared().getMenu()
     override func viewDidLoad() {
@@ -34,6 +35,49 @@ class EventMenuViewController: UIViewController {
     }
     */
 
+    func showAlert()
+    {
+        let titleStr = "שם משתמש/ת"
+        let messageStr = "אנא בחר/י שם משתמש/ת בכדי להמשיך"
+        
+        let alert = UIAlertController(title: titleStr, message: messageStr, preferredStyle: UIAlertController.Style.alert)
+        
+        let placeholderStr =  "לפחות 4 אותיות או מספרים"
+        
+        alert.addTextField(configurationHandler: {(textField: UITextField) in
+            textField.placeholder = placeholderStr
+            textField.textAlignment = .right
+            textField.font = UIFont(name: "VarelaRound-Regular", size: 14)
+            textField.addTarget(self, action: #selector(self.textChanged(_:)), for: .editingChanged)
+        })
+        
+        let cancel = UIAlertAction(title: "ביטול", style: UIAlertAction.Style.cancel, handler: { (_) -> Void in
+            
+        })
+        
+        let action = UIAlertAction(title: "אישור", style: UIAlertAction.Style.default, handler: { (_) -> Void in
+            let textfield = alert.textFields!.first!
+            print(textfield.text)
+            //Do what you want with the textfield!
+        })
+        
+        alert.addAction(cancel)
+        alert.addAction(action)
+        
+        self.actionToEnable = action
+        action.isEnabled = false
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func textChanged(_ sender:UITextField) {
+        var isLegal = true
+        let text = sender.text!
+        let characterset = CharacterSet(charactersIn: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 פםןוטארקףךלחיעכגדשץתצמנהבסז")
+        if text.rangeOfCharacter(from: characterset.inverted) != nil {
+            isLegal = false
+        }
+        self.actionToEnable?.isEnabled  = (text.count > 3 && isLegal)
+    }
 }
 extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,7 +91,7 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         cell.iconImage.image = model.icon
         cell.descriptionLabel.text = model.text
         cell.layoutSubviews()
-        if indexPath.row == 3{
+        if indexPath.row == 3 || indexPath.row == 2{
             cell.descriptionLabel.textColor = getBrightOrange()
         }
         return cell
@@ -57,6 +101,8 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         case 0:
         let ticketVC = self.storyboard?.instantiateViewController(withIdentifier: "ticketVC") as! TicketViewController
         self.navigationController?.pushViewController(ticketVC, animated: true)
+        case 2:
+            showAlert()
         case 3:
             let addEventVC = self.storyboard?.instantiateViewController(withIdentifier: "addEventVC") as! MyEventViewController
             self.navigationController?.pushViewController(addEventVC, animated: true)

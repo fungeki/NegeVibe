@@ -12,5 +12,6 @@ pod 'SDWebImage'
 pod 'MaterialComponents/FlexibleHeader'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
 end
