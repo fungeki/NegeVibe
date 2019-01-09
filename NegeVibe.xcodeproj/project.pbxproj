@@ -67,6 +67,8 @@
 		EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */; };
 		EE783B3121E5FABC004AF043 /* TicketsBookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */; };
 		EE783B3321E5FAE8004AF043 /* TicketsBookedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */; };
+		EEDB83BB21E64B1A00C17BAF /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB83BA21E64B1A00C17BAF /* ChatListViewController.swift */; };
+		EEDB83BD21E64B7B00C17BAF /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDB83BC21E64B7B00C17BAF /* ChatListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +138,8 @@
 		EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsBookedViewController.swift; sourceTree = "<group>"; };
 		EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsBookedTableViewCell.swift; sourceTree = "<group>"; };
+		EEDB83BA21E64B1A00C17BAF /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		EEDB83BC21E64B7B00C17BAF /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 				8CA46F3421E2102C00A148F2 /* SignInViewController.swift */,
 				8CA46F3621E34A8500A148F2 /* ChatViewController.swift */,
 				EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */,
+				EEDB83BA21E64B1A00C17BAF /* ChatListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		8C1ACD4521B7F81D00103D9E /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				EEDB83BC21E64B7B00C17BAF /* ChatListTableViewCell.swift */,
 				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
 				8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */,
 				8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */,
@@ -542,6 +548,7 @@
 				8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8C9DE3FD21E615AC00A92A5D /* UpdateUsername.swift in Sources */,
+				EEDB83BB21E64B1A00C17BAF /* ChatListViewController.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */,
 				8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */,
@@ -565,6 +572,7 @@
 				8C8B72B621D39B500090A2DA /* QRGenerator.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,
 				8CEB9B4121AED118009B55FF /* Event.swift in Sources */,
+				EEDB83BD21E64B7B00C17BAF /* ChatListTableViewCell.swift in Sources */,
 				8CA46F3721E34A8500A148F2 /* ChatViewController.swift in Sources */,
 				8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */,
 			);
