@@ -21,7 +21,11 @@ func getUserChatName(completion: @escaping ((_ userChatName: String?)->Void)){
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
                 let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                completion(dataDescription)
+                let data = document.data()
+                if let result = data?["chatName"] as? String{
+                    completion(result)
+                }
+                
                 
             } else {
                 completion(nil)
