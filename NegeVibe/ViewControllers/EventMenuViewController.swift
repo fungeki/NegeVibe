@@ -99,8 +99,8 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row{
         case 0:
-        let ticketVC = self.storyboard?.instantiateViewController(withIdentifier: "ticketVC") as! TicketViewController
-        self.navigationController?.pushViewController(ticketVC, animated: true)
+        let TicketsBookedVC = self.storyboard?.instantiateViewController(withIdentifier: "TicketsBookedVC") as! TicketsBookedViewController
+        self.navigationController?.pushViewController(TicketsBookedVC, animated: true)
         case 2:
             showAlert()
         case 3:

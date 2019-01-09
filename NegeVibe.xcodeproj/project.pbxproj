@@ -61,6 +61,8 @@
 		A1CE220021C658A700DFE4B0 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */; };
 		EE1E1D1921CF82AA00F80763 /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */; };
 		EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */; };
+		EE783B3121E5FABC004AF043 /* TicketsBookedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */; };
+		EE783B3321E5FAE8004AF043 /* TicketsBookedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,8 @@
 		E0DAF5D6A1FFEFF36AE6BC7F /* Pods-NegeVibe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.release.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.release.xcconfig"; sourceTree = "<group>"; };
 		EE1E1D1821CF82AA00F80763 /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
 		EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsBookedViewController.swift; sourceTree = "<group>"; };
+		EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsBookedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 				8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */,
 				8CA46F3421E2102C00A148F2 /* SignInViewController.swift */,
 				8CA46F3621E34A8500A148F2 /* ChatViewController.swift */,
+				EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */,
 				8C8B72B721D4E0200090A2DA /* EventMenuTableViewCell.swift */,
 				8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */,
+				EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -477,6 +483,7 @@
 				8CA46F3E21E3696400A148F2 /* ChatMessage.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
+				EE783B3321E5FAE8004AF043 /* TicketsBookedTableViewCell.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
@@ -506,6 +513,7 @@
 				EE1E1D1B21CF97EE00F80763 /* PaddingLabel.swift in Sources */,
 				8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */,
 				8C1ACD4D21B9392200103D9E /* CurrentLocation.swift in Sources */,
+				EE783B3121E5FABC004AF043 /* TicketsBookedViewController.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
 				A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */,
 				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,

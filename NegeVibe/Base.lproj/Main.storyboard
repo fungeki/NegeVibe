@@ -418,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vg9-3m-Db0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5681" y="-709"/>
+            <point key="canvasLocation" x="6620" y="-709.29535232383819"/>
         </scene>
         <!--mainTabController-->
         <scene sceneID="yu0-aD-0Bh">
@@ -1207,7 +1207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6me-hz-WOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4871" y="-709"/>
+            <point key="canvasLocation" x="5808.8000000000002" y="-709.29535232383819"/>
         </scene>
         <!--Item-->
         <scene sceneID="PVA-W3-WZ3">
@@ -1286,6 +1286,108 @@
             </objects>
             <point key="canvasLocation" x="2300" y="-709"/>
         </scene>
+        <!--Tickets Booked View Controller-->
+        <scene sceneID="vuk-Kv-GJ3">
+            <objects>
+                <viewController storyboardIdentifier="TicketsBookedVC" id="Xf0-l1-SMT" customClass="TicketsBookedViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I1P-Sl-vrq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vpY-jy-gBC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ticketsBookedCell" rowHeight="90" id="GGy-wY-NfM" customClass="TicketsBookedTableViewCell" customModule="NegeVibe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GGy-wY-NfM" id="O3g-ug-Ank">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_barcode_orange" translatesAutoresizingMaskIntoConstraints="NO" id="odf-Ik-OzX">
+                                                    <rect key="frame" x="310.5" y="27" width="33.5" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="odf-Ik-OzX" secondAttribute="height" multiplier="1:1" id="g9p-va-Q81"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdx-Pk-7fP">
+                                                    <rect key="frame" x="258" y="23" width="36.5" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="יום ה" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-Nl-Vcu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="36.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                            <color key="textColor" red="0.95294117649999999" green="0.57647058819999997" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYF-uT-Aqf">
+                                                            <rect key="frame" x="0.0" y="21.5" width="36.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="-14" translatesAutoresizingMaskIntoConstraints="NO" id="O0Q-xm-yek">
+                                                    <rect key="frame" x="128.5" y="16.5" width="105.5" height="59"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אינדינגב" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70c-9A-AOW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="105.5" height="36.5"/>
+                                                            <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="30"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אשקלון" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1U-qM-6Bh">
+                                                            <rect key="frame" x="61" y="22.5" width="44.5" height="36.5"/>
+                                                            <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Sdx-Pk-7fP" firstAttribute="leading" secondItem="O0Q-xm-yek" secondAttribute="trailing" constant="24" id="1oU-bM-7Bg"/>
+                                                <constraint firstItem="odf-Ik-OzX" firstAttribute="width" secondItem="O3g-ug-Ank" secondAttribute="width" multiplier="0.09" id="7Dj-ZU-mHB"/>
+                                                <constraint firstItem="Sdx-Pk-7fP" firstAttribute="centerY" secondItem="odf-Ik-OzX" secondAttribute="centerY" id="Kns-Rd-1th"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="odf-Ik-OzX" secondAttribute="trailing" constant="16" id="OUd-K8-svw"/>
+                                                <constraint firstItem="odf-Ik-OzX" firstAttribute="leading" secondItem="Sdx-Pk-7fP" secondAttribute="trailing" constant="16" id="f4Y-GY-Z6o"/>
+                                                <constraint firstItem="odf-Ik-OzX" firstAttribute="top" secondItem="O3g-ug-Ank" secondAttribute="topMargin" constant="16" id="hjn-fF-00O"/>
+                                                <constraint firstItem="O0Q-xm-yek" firstAttribute="centerY" secondItem="odf-Ik-OzX" secondAttribute="centerY" constant="2" id="kal-Iv-1lM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dayUILabel" destination="vYF-uT-Aqf" id="zqY-8Z-eaT"/>
+                                            <outlet property="eventTitleUILabel" destination="70c-9A-AOW" id="MCz-Bc-TfQ"/>
+                                            <outlet property="icBarcodeUIImageView" destination="odf-Ik-OzX" id="aXt-AJ-31b"/>
+                                            <outlet property="locationEventUILabel" destination="f1U-qM-6Bh" id="vyq-A4-N1A"/>
+                                            <outlet property="monthUILabel" destination="e7j-Nl-Vcu" id="80u-Ie-3o7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Xf0-l1-SMT" id="t09-Rk-HEq"/>
+                                    <outlet property="delegate" destination="Xf0-l1-SMT" id="t6I-N4-1fW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vpY-jy-gBC" firstAttribute="top" secondItem="qFK-Xs-xoh" secondAttribute="top" id="9kG-qx-Kpj"/>
+                            <constraint firstItem="vpY-jy-gBC" firstAttribute="bottom" secondItem="qFK-Xs-xoh" secondAttribute="bottom" id="e8S-5k-Cit"/>
+                            <constraint firstItem="vpY-jy-gBC" firstAttribute="trailing" secondItem="qFK-Xs-xoh" secondAttribute="trailing" id="mlK-EQ-j1b"/>
+                            <constraint firstItem="vpY-jy-gBC" firstAttribute="leading" secondItem="qFK-Xs-xoh" secondAttribute="leading" id="vNc-iz-mHU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qFK-Xs-xoh"/>
+                    </view>
+                    <connections>
+                        <outlet property="ticketsBookedTable" destination="vpY-jy-gBC" id="J18-yU-PWh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NL-t4-Yzw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4226" y="-709"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gbS-fD-z1R">
             <objects>
@@ -1310,13 +1412,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lT-b3-GK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4112.8000000000002" y="-709.29535232383819"/>
+            <point key="canvasLocation" x="5052" y="-709.29535232383819"/>
         </scene>
     </scenes>
     <resources>
         <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
         <image name="background_up_plus" width="750" height="141"/>
         <image name="carpool" width="253" height="258"/>
+        <image name="ic_barcode_orange" width="68" height="68"/>
         <image name="ic_br_list" width="67.5" height="50.400001525878906"/>
         <image name="ic_br_map" width="50" height="50"/>
         <image name="ic_br_menu" width="65.853660583496094" height="49.170730590820312"/>
