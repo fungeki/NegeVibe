@@ -9,16 +9,35 @@
 import UIKit
 
 class TicketsBookedViewController: UIViewController {
-    
+
     @IBOutlet weak var ticketsBookedTable: UITableView!
     var arrEvent = [Event]()
+    var willShowTickesBooked = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationItem.title = "כרטיסים שהוזמנו"
         
+        ticketsBookedTable.rowHeight = ticketsBookedTable.bounds.height / 8
+
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if !willShowTickesBooked{
+            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כרטיסים שהוזמנו")
+                getEvents { (arrEvent) in self.arrEvent = arrEvent
+                    JustHUD.shared.hide()
+                    EventsLibrary.getInstance().setEvents(arrEvent)
+                    self.ticketsBookedTable.reloadData()
+                }
+            } else {
+                self.arrEvent = EventsLibrary.getInstance().getEvents()
+            }
+        }
     }
     
     
@@ -67,11 +86,11 @@ extension TicketsBookedViewController: UITableViewDelegate, UITableViewDataSourc
         }
         
         return cell
-        
+
         
         
     }
-}
-
-
+    }
+    
+   
 
