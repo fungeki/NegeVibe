@@ -37,6 +37,8 @@
 		8C8B72BC21D4E0800090A2DA /* EventMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */; };
 		8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */; };
 		8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */; };
+		8C9DE3F721E5FE4700A92A5D /* SignedInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */; };
+		8C9DE3F921E5FEC400A92A5D /* AnonymousUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3F821E5FEC400A92A5D /* AnonymousUser.swift */; };
 		8CA46F3321E1FA3E00A148F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */; };
 		8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3421E2102C00A148F2 /* SignInViewController.swift */; };
 		8CA46F3721E34A8500A148F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3621E34A8500A148F2 /* ChatViewController.swift */; };
@@ -96,6 +98,8 @@
 		8C8B72BB21D4E0800090A2DA /* EventMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenuViewController.swift; sourceTree = "<group>"; };
 		8C8B72BD21D4E2C70090A2DA /* EventMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMenu.swift; sourceTree = "<group>"; };
 		8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInUser.swift; sourceTree = "<group>"; };
+		8C9DE3F821E5FEC400A92A5D /* AnonymousUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonymousUser.swift; sourceTree = "<group>"; };
 		8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CA46F3421E2102C00A148F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8CA46F3621E34A8500A148F2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,22 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		8C9DE3F521E5FE1F00A92A5D /* UserUtils */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */,
+			);
+			path = UserUtils;
+			sourceTree = "<group>";
+		};
+		8C9DE3FA21E5FECC00A92A5D /* UserTypes */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DE3F821E5FEC400A92A5D /* AnonymousUser.swift */,
+			);
+			path = UserTypes;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +279,7 @@
 		8CEB9B3B21AED0BD009B55FF /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DE3F521E5FE1F00A92A5D /* UserUtils */,
 				8C1ACD4E21B97D2000103D9E /* Library */,
 				8C1ACD4821B7FAED00103D9E /* Push */,
 				8CEB9B3C21AED0C9009B55FF /* Get */,
@@ -278,6 +299,7 @@
 		8CEB9B3F21AED100009B55FF /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DE3FA21E5FECC00A92A5D /* UserTypes */,
 				8CEB9B4021AED118009B55FF /* Event.swift */,
 				8C1ACD0721B033FE00103D9E /* Images.swift */,
 				8C1ACD0921B0376800103D9E /* Symbology.swift */,
@@ -478,6 +500,8 @@
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
+				8C9DE3F721E5FE4700A92A5D /* SignedInUser.swift in Sources */,
+				8C9DE3F921E5FEC400A92A5D /* AnonymousUser.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,

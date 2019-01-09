@@ -713,12 +713,12 @@
                                 <rect key="frame" x="16" y="625.5" width="293.5" height="33.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-zJ-ZsA">
-                                        <rect key="frame" x="16" y="0.0" width="30" height="33.5"/>
+                                        <rect key="frame" x="16" y="0.0" width="34" height="33.5"/>
                                         <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                         <state key="normal" title="שלח"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="כתוב/י הודעה..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-tc-Pcm">
-                                        <rect key="frame" x="62" y="0.0" width="215.5" height="33.5"/>
+                                        <rect key="frame" x="66" y="0.0" width="211.5" height="33.5"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
