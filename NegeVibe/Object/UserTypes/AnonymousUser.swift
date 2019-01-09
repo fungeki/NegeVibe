@@ -10,5 +10,5 @@ import Foundation
 
 struct AnonymousUser {
     var uid: String
-    var userName: String?
+    var chatName: String?
 }

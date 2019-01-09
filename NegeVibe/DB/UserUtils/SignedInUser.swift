@@ -16,7 +16,7 @@ class SignedInUser{
         DispatchQueue.main.async {
             let mUser = Auth.auth().currentUser
             if mUser != nil{
-                self.user = AnonymousUser(uid: mUser!.uid, userName: nil)
+                self.user = AnonymousUser(uid: mUser!.uid, chatName: nil)
                 print("user signed in, uuid: \(mUser!.uid)")
             } else {
                 Auth.auth().signInAnonymously { (res, err) in
@@ -24,7 +24,7 @@ class SignedInUser{
                         print("no uid")
                         return
                     }
-                    self.user = AnonymousUser(uid: uid, userName: nil)
+                    self.user = AnonymousUser(uid: uid, chatName: nil)
                 }
             }
         }
@@ -48,5 +48,9 @@ class SignedInUser{
         }
         completion(user)
         
+    }
+    
+    func hasChatName() -> Bool{
+        return false
     }
 }

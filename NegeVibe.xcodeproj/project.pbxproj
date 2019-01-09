@@ -27,6 +27,7 @@
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
 		8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */; };
 		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
+		8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
@@ -91,6 +92,7 @@
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
 		8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserChatName.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			children = (
 				8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */,
 				8C8B72B521D39B500090A2DA /* QRGenerator.swift */,
+				8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */,
 			);
 			path = Get;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				8C7E560521CC02C300191307 /* Colors.swift in Sources */,
 				8CA46F3E21E3696400A148F2 /* ChatMessage.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
+				8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				EE783B3321E5FAE8004AF043 /* TicketsBookedTableViewCell.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
