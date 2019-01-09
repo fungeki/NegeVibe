@@ -13,6 +13,7 @@ import Firebase
 func updateUsername(_ userName: String, completion: ((_ userName: String)->Void)? = nil){
     SignedInUser.getInstance().getUser { (user) in
         let db = Firestore.firestore()
+        
     }
     
 }
