@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //        let mainController = storyBoard.instantiateViewController(withIdentifier: "mainTabController") as! UITabBarController
 //        self.window?.rootViewController = mainController
-        
+        let firestoreDB = Firestore.firestore()
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
     }

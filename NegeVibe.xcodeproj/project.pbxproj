@@ -39,6 +39,7 @@
 		8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */; };
 		8C9DE3F721E5FE4700A92A5D /* SignedInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */; };
 		8C9DE3F921E5FEC400A92A5D /* AnonymousUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3F821E5FEC400A92A5D /* AnonymousUser.swift */; };
+		8C9DE3FD21E615AC00A92A5D /* UpdateUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */; };
 		8CA46F3321E1FA3E00A148F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */; };
 		8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3421E2102C00A148F2 /* SignInViewController.swift */; };
 		8CA46F3721E34A8500A148F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3621E34A8500A148F2 /* ChatViewController.swift */; };
@@ -102,6 +103,7 @@
 		8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInUser.swift; sourceTree = "<group>"; };
 		8C9DE3F821E5FEC400A92A5D /* AnonymousUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonymousUser.swift; sourceTree = "<group>"; };
+		8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUsername.swift; sourceTree = "<group>"; };
 		8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CA46F3421E2102C00A148F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8CA46F3621E34A8500A148F2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +246,14 @@
 			path = UserTypes;
 			sourceTree = "<group>";
 		};
+		8C9DE3FB21E6158900A92A5D /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +295,7 @@
 		8CEB9B3B21AED0BD009B55FF /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				8C9DE3FB21E6158900A92A5D /* Update */,
 				8C9DE3F521E5FE1F00A92A5D /* UserUtils */,
 				8C1ACD4E21B97D2000103D9E /* Library */,
 				8C1ACD4821B7FAED00103D9E /* Push */,
@@ -526,6 +537,7 @@
 				8CA46F3B21E3680D00A148F2 /* CarpoolMessage.swift in Sources */,
 				8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
+				8C9DE3FD21E615AC00A92A5D /* UpdateUsername.swift in Sources */,
 				8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */,
 				8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */,
 				8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */,

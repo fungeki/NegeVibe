@@ -13,19 +13,19 @@ class SignedInUser{
     private var user: AnonymousUser?
     
     private init (){
-        let mUser = Auth.auth().currentUser
-        if mUser != nil{
-            user = AnonymousUser(uid: mUser!.uid)
-        } else {
-            Auth.auth().signInAnonymously { (res, err) in
-                guard let uid = Auth.auth().currentUser?.uid else {
-                    print("no uid")
-                    return
+        DispatchQueue.main.async {
+            let mUser = Auth.auth().currentUser
+            if mUser != nil{
+                self.user = AnonymousUser(uid: mUser!.uid, userName: nil)
+                print("user signed in, uuid: \(mUser!.uid)")
+            } else {
+                Auth.auth().signInAnonymously { (res, err) in
+                    guard let uid = Auth.auth().currentUser?.uid else {
+                        print("no uid")
+                        return
+                    }
+                    self.user = AnonymousUser(uid: uid, userName: nil)
                 }
-                print(res)
-                print("successfully signed in")
-                print("uid: \(uid)")
-                self.user = AnonymousUser(uid: uid)
             }
         }
     }
@@ -42,7 +42,11 @@ class SignedInUser{
         return sharedInstance
     }
     
-    func getUser() -> AnonymousUser?{
-        return user
+    func getUser(completion: ((_ user: AnonymousUser?)->Void)? = nil){
+        guard let completion = completion else {
+            return
+        }
+        completion(user)
+        
     }
 }

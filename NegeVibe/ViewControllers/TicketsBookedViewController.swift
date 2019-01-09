@@ -9,7 +9,7 @@
 import UIKit
 
 class TicketsBookedViewController: UIViewController {
-
+    
     @IBOutlet weak var ticketsBookedTable: UITableView!
     var arrEvent = [Event]()
     override func viewDidLoad() {
@@ -17,22 +17,22 @@ class TicketsBookedViewController: UIViewController {
         
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationItem.title = "כרטיסים שהוזמנו"
-
+        
         // Do any additional setup after loading the view.
     }
     
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension TicketsBookedViewController: UITableViewDelegate, UITableViewDataSource{
@@ -41,7 +41,7 @@ extension TicketsBookedViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "ticketsBookedCell", for: indexPath) as! TicketsBookedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ticketsBookedCell", for: indexPath) as! TicketsBookedTableViewCell
         
         let ticketsBooked = arrEvent[indexPath.item]
         cell.eventTitleUILabel.text = ticketsBooked.title
@@ -67,11 +67,11 @@ extension TicketsBookedViewController: UITableViewDelegate, UITableViewDataSourc
         }
         
         return cell
+        
+        
+        
+    }
+}
 
-        
-        
-    }
-    }
-    
-   
+
 
