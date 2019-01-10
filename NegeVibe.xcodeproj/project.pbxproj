@@ -29,6 +29,7 @@
 		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
 		8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */; };
 		8C6B733E21E7855700D21D9D /* FavoritesUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */; };
+		8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B734221E7990F00D21D9D /* CreateANewUser.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
@@ -97,6 +98,7 @@
 		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserChatName.swift; sourceTree = "<group>"; };
 		8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUpdate.swift; sourceTree = "<group>"; };
+		8C6B734221E7990F00D21D9D /* CreateANewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateANewUser.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */,
+				8C6B734221E7990F00D21D9D /* CreateANewUser.swift */,
 			);
 			path = UserUtils;
 			sourceTree = "<group>";
@@ -537,6 +540,7 @@
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CA46F3921E355E500A148F2 /* CarpoolTableViewCell.swift in Sources */,
+				8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */,
 				8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */,
 				8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
