@@ -21,6 +21,7 @@ class SignedInUser{
                 getUserChatName(completion: { (str) in
                     self.user = AnonymousUser(uid: mUser!.uid, chatName: str)
                 })
+                
                 print("user signed in, uuid: \(mUser!.uid)")
             } else {
                 Auth.auth().signInAnonymously { (res, err) in
@@ -29,6 +30,7 @@ class SignedInUser{
                         return
                     }
                     self.user = AnonymousUser(uid: uid, chatName: nil)
+                    createUser()
                 }
             }
         }
