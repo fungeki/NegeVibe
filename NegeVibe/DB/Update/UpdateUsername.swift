@@ -17,8 +17,7 @@ func updateUsername(_ userName: String){
             return
         }
         let db = Firestore.firestore()
-        db.collection("users").document(uid).setData(["chatName" : userName], merge: true)
-        
+        db.collection("users").document(uid).updateData(["chatName" : userName])
         
     }
     

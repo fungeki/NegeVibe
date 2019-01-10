@@ -25,7 +25,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //        let mainController = storyBoard.instantiateViewController(withIdentifier: "mainTabController") as! UITabBarController
 //        self.window?.rootViewController = mainController
-        let firestoreDB = Firestore.firestore()
+        
+        if Auth.auth().currentUser == nil{
+            Auth.auth().signInAnonymously { (res, err) in
+                guard let uid = Auth.auth().currentUser?.uid else {
+                    print("login error")
+                    return
+                }
+                let db = Firestore.firestore().collection("users").document(uid)
+                let date = Date()
+                let formatter = DateFormatter()
+                formatter.dateFormat = "dd.MM.yyyy"
+                let result = formatter.string(from: date)
+                db.setData(["joined": result])
+
+            }
+        } else {
+            try! Auth.auth().signOut()
+        }
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
     }
