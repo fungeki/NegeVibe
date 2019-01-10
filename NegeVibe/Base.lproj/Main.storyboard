@@ -947,48 +947,81 @@
             <objects>
                 <viewController storyboardIdentifier="addEventVC" id="W33-H3-lXj" customClass="MyEventViewController" customModule="NegeVibe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0j8-aZ-txC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="שם האירוע" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ge-oM-Ccd">
-                                <rect key="frame" x="16" y="205.5" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="negeVibe_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="J74-Eh-6nZ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="133.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="negeVibe_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="J74-Eh-6nZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="136"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_chat_empty" translatesAutoresizingMaskIntoConstraints="NO" id="5zE-rN-ACN">
-                                <rect key="frame" x="316" y="261" width="43" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  בחר קטגוריה" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6f-wT-2Wv" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
-                                <rect key="frame" x="16" y="263" width="267" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fpo-qe-zf5">
+                                <rect key="frame" x="0.0" y="200" width="375" height="800"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pO3-FF-btE">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="שם האירוע" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-dl-sCf">
+                                                <rect key="frame" x="16" y="16" width="343" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_category_50" translatesAutoresizingMaskIntoConstraints="NO" id="t6E-ap-bXW">
+                                                <rect key="frame" x="333" y="62" width="26" height="32"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  בחר קטגוריה" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-dw-5A7" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="62" width="309" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="8b8-dw-5A7" firstAttribute="leading" secondItem="pO3-FF-btE" secondAttribute="leading" constant="16" id="Hvn-c6-Sja"/>
+                                            <constraint firstItem="t6E-ap-bXW" firstAttribute="height" secondItem="pO3-FF-btE" secondAttribute="height" multiplier="0.04" id="JNH-iB-qP5"/>
+                                            <constraint firstAttribute="trailing" secondItem="BDb-dl-sCf" secondAttribute="trailing" constant="16" id="Q2d-X7-HMY"/>
+                                            <constraint firstAttribute="trailing" secondItem="t6E-ap-bXW" secondAttribute="trailing" constant="16" id="T1D-BF-FAr"/>
+                                            <constraint firstItem="BDb-dl-sCf" firstAttribute="top" secondItem="pO3-FF-btE" secondAttribute="top" constant="16" id="d56-JY-Jdz"/>
+                                            <constraint firstItem="t6E-ap-bXW" firstAttribute="width" secondItem="pO3-FF-btE" secondAttribute="width" multiplier="0.07" id="e90-dC-mUR"/>
+                                            <constraint firstItem="t6E-ap-bXW" firstAttribute="leading" secondItem="8b8-dw-5A7" secondAttribute="trailing" constant="8" id="jlw-pS-ekk"/>
+                                            <constraint firstItem="8b8-dw-5A7" firstAttribute="top" secondItem="t6E-ap-bXW" secondAttribute="top" id="nOr-bN-GeH"/>
+                                            <constraint firstItem="8b8-dw-5A7" firstAttribute="top" secondItem="BDb-dl-sCf" secondAttribute="bottom" constant="16" id="oAy-sr-8dI"/>
+                                            <constraint firstItem="BDb-dl-sCf" firstAttribute="leading" secondItem="pO3-FF-btE" secondAttribute="leading" constant="16" id="oxw-sr-7N0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pO3-FF-btE" firstAttribute="width" secondItem="Fpo-qe-zf5" secondAttribute="width" id="5nF-Jt-m2Q"/>
+                                    <constraint firstItem="pO3-FF-btE" firstAttribute="leading" secondItem="Fpo-qe-zf5" secondAttribute="leading" id="bb7-4u-P7d"/>
+                                    <constraint firstAttribute="trailing" secondItem="pO3-FF-btE" secondAttribute="trailing" id="gkN-MX-zWi"/>
+                                    <constraint firstItem="pO3-FF-btE" firstAttribute="top" secondItem="Fpo-qe-zf5" secondAttribute="top" id="kTr-il-7mS"/>
+                                    <constraint firstAttribute="bottom" secondItem="pO3-FF-btE" secondAttribute="bottom" id="qGc-rR-Avm"/>
+                                    <constraint firstItem="pO3-FF-btE" firstAttribute="height" secondItem="Fpo-qe-zf5" secondAttribute="height" id="zqP-pL-6ex"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leading" id="CQx-9V-0CK"/>
-                            <constraint firstAttribute="trailing" secondItem="J74-Eh-6nZ" secondAttribute="trailing" id="K1R-lJ-Or1"/>
-                            <constraint firstItem="EpH-Jb-j3w" firstAttribute="trailing" secondItem="3Ge-oM-Ccd" secondAttribute="trailing" constant="16" id="QDY-yJ-Xhi"/>
-                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="width" secondItem="0j8-aZ-txC" secondAttribute="width" id="Unv-XX-Q8Z"/>
-                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="height" secondItem="0j8-aZ-txC" secondAttribute="height" multiplier="0.2" id="gWz-PP-vbg"/>
-                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="top" secondItem="EpH-Jb-j3w" secondAttribute="top" id="h4e-xr-H4e"/>
-                            <constraint firstItem="3Ge-oM-Ccd" firstAttribute="top" secondItem="J74-Eh-6nZ" secondAttribute="bottom" constant="8" id="olA-Oz-39B"/>
-                            <constraint firstItem="3Ge-oM-Ccd" firstAttribute="leading" secondItem="EpH-Jb-j3w" secondAttribute="leading" constant="16" id="qS9-Lh-QnO"/>
+                            <constraint firstItem="Fpo-qe-zf5" firstAttribute="top" secondItem="J74-Eh-6nZ" secondAttribute="bottom" id="6vY-uH-440"/>
+                            <constraint firstAttribute="trailing" secondItem="J74-Eh-6nZ" secondAttribute="trailing" id="CpD-h2-P0d"/>
+                            <constraint firstItem="Fpo-qe-zf5" firstAttribute="bottom" secondItem="EpH-Jb-j3w" secondAttribute="bottom" id="EQl-D2-7cp"/>
+                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="width" secondItem="0j8-aZ-txC" secondAttribute="width" id="Hn1-Zj-DsB"/>
+                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leading" id="LY0-yd-1qC"/>
+                            <constraint firstItem="Fpo-qe-zf5" firstAttribute="width" secondItem="0j8-aZ-txC" secondAttribute="width" id="Nys-4l-LOx"/>
+                            <constraint firstItem="Fpo-qe-zf5" firstAttribute="leading" secondItem="0j8-aZ-txC" secondAttribute="leading" id="VEg-EL-mTD"/>
+                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="height" secondItem="0j8-aZ-txC" secondAttribute="height" multiplier="0.2" id="aIa-KQ-buW"/>
+                            <constraint firstItem="J74-Eh-6nZ" firstAttribute="top" secondItem="0j8-aZ-txC" secondAttribute="top" id="iw0-gZ-bkm"/>
+                            <constraint firstAttribute="trailing" secondItem="Fpo-qe-zf5" secondAttribute="trailing" id="zbc-1n-SVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EpH-Jb-j3w"/>
                     </view>
                     <navigationItem key="navigationItem" id="hSB-zr-M5E"/>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
-                        <outlet property="categoryTextField" destination="o6f-wT-2Wv" id="07l-mW-UMI"/>
+                        <outlet property="categoryImageView" destination="t6E-ap-bXW" id="8D0-jw-8ZZ"/>
+                        <outlet property="categoryTextField" destination="8b8-dw-5A7" id="d8E-Ho-Qg3"/>
                         <outlet property="eventImage" destination="J74-Eh-6nZ" id="QJ5-G1-tTm"/>
-                        <outlet property="nameOfEventTextField" destination="3Ge-oM-Ccd" id="ecz-06-QSS"/>
+                        <outlet property="nameOfEventTextField" destination="BDb-dl-sCf" id="tBc-NZ-jAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l17-bG-5VG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -998,7 +1031,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="7216.8000000000002" y="139.880059970015"/>
+            <point key="canvasLocation" x="7216.8000000000002" y="139.43028485757122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5wU-A6-adx">
@@ -1446,6 +1479,7 @@
     </scenes>
     <resources>
         <image name=" icc_nv_category" width="25" height="25"/>
+        <image name="add_category_50" width="39" height="39"/>
         <image name="background_up_plus" width="750" height="141"/>
         <image name="carpool" width="253" height="258"/>
         <image name="ic_barcode_orange" width="68" height="68"/>

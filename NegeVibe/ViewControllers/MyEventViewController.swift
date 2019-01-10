@@ -12,9 +12,8 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
 
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var nameOfEventTextField: UITextField!
-  
     @IBOutlet weak var categoryTextField: DropDown!
-    
+    @IBOutlet weak var categoryImageView: UIImageView!
     
     var link:URL?
     
@@ -30,6 +29,7 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         categoryTextField.optionArray =
 ["מסיבות","פאב/בר","פסטיבלים","הופעות","אירועים","מוזיקה","אוכל","סרטים","ספורט"]
        
+        changeImage()
     }
     
     @IBAction func imagePlaceholder(_ sender: UITapGestureRecognizer) {
@@ -118,5 +118,14 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func changeImage(){
+        guard let text = categoryTextField.text, !text.isEmpty else {
+            return
+        }
+        categoryImageView.image = UIImage(named: "add_category_100")
+        
+        
+    }
 
 }
