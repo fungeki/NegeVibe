@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class EventTableViewCell: UITableViewCell {
 
     
@@ -37,6 +37,8 @@ class EventTableViewCell: UITableViewCell {
         let eventID = String(event.id)
         if !isLiked{
         userDefaults.setValue(true, forKey: eventID)
+        
+       // let likesRef = db.collection("favorites").document(uid).setData(<#T##documentData: [String : Any]##[String : Any]#>)
         showToast(message: "האירוע נוסף למועדפים", view: self.superview!, delay: 0.5, image: UIImage(named: "ic_like_full")!)
         likeBtn.setImage(UIImage(named: "ic_like_full"), for: .normal)
         } else {

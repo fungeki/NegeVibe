@@ -25,7 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //        let mainController = storyBoard.instantiateViewController(withIdentifier: "mainTabController") as! UITabBarController
 //        self.window?.rootViewController = mainController
-        let firestoreDB = Firestore.firestore()
+        if Auth.auth().currentUser != nil{
+            try! Auth.auth().signOut()
+        }
+        if Auth.auth().currentUser == nil{
+            Auth.auth().signInAnonymously { (res, err) in
+                createUser()
+            }
+        } else {
+        }
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
     }

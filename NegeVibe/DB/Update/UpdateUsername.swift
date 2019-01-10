@@ -10,9 +10,15 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-func updateUsername(_ userName: String, completion: ((_ userName: String)->Void)? = nil){
+func updateUsername(_ userName: String){
     SignedInUser.getInstance().getUser { (user) in
+        guard let uid = user?.uid else {
+            print("no user")
+            return
+        }
         let db = Firestore.firestore()
+        db.collection("users").document(uid).updateData(["chatName" : userName])
+        
     }
     
 }
