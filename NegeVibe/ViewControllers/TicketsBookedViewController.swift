@@ -9,7 +9,7 @@
 import UIKit
 
 class TicketsBookedViewController: UIViewController {
-
+    
     @IBOutlet weak var ticketsBookedTable: UITableView!
     var arrEvent = [Event]()
     var willShowTickesBooked = false
@@ -20,7 +20,7 @@ class TicketsBookedViewController: UIViewController {
         self.navigationItem.title = "כרטיסים שהוזמנו"
         
         ticketsBookedTable.rowHeight = ticketsBookedTable.bounds.height / 8
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -86,11 +86,16 @@ extension TicketsBookedViewController: UITableViewDelegate, UITableViewDataSourc
         }
         
         return cell
-
         
         
-    }
+        
     }
     
-   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ticketsVC = self.storyboard?.instantiateViewController(withIdentifier: "ticketVC") as! TicketViewController
+        self.navigationController?.pushViewController(ticketsVC, animated: true)
+    }
+}
+
+
 

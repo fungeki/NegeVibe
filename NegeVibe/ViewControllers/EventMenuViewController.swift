@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import Firebase
 
 
 
 class EventMenuViewController: UIViewController {
 
     weak var actionToEnable : UIAlertAction?
+    weak var db: Firestore?
 
     @IBOutlet weak var menuTable: UITableView!
     var menu:[EventMenuItem] = EventMenu.shared().getMenu()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        db = Firestore.firestore()
         // Do any additional setup after loading the view.
     }
     override func viewDidLayoutSubviews() {
@@ -57,7 +59,12 @@ class EventMenuViewController: UIViewController {
         
         let action = UIAlertAction(title: "אישור", style: UIAlertAction.Style.default, handler: { (_) -> Void in
             let textfield = alert.textFields!.first!
-            print(textfield.text)
+            guard let userName = textfield.text else {
+                print("error retrieving username")
+                return
+            }
+            
+            updateUsername(userName)
             //Do what you want with the textfield!
         })
         
@@ -102,7 +109,12 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         let TicketsBookedVC = self.storyboard?.instantiateViewController(withIdentifier: "TicketsBookedVC") as! TicketsBookedViewController
         self.navigationController?.pushViewController(TicketsBookedVC, animated: true)
         case 2:
-            showAlert()
+//            getUserChatName(completion: { (str) in
+//                print(str)
+//            })
+            if SignedInUser.getInstance().getChatName() == nil{
+                showAlert()
+            }
         case 3:
             let addEventVC = self.storyboard?.instantiateViewController(withIdentifier: "addEventVC") as! MyEventViewController
             self.navigationController?.pushViewController(addEventVC, animated: true)

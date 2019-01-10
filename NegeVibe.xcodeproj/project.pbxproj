@@ -27,6 +27,9 @@
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
 		8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */; };
 		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
+		8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */; };
+		8C6B733E21E7855700D21D9D /* FavoritesUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */; };
+		8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B734221E7990F00D21D9D /* CreateANewUser.swift */; };
 		8C7E560121CBA27000191307 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560021CBA27000191307 /* Toast.swift */; };
 		8C7E560321CBA33E00191307 /* RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560221CBA33E00191307 /* RoundCorners.swift */; };
 		8C7E560521CC02C300191307 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E560421CC02C300191307 /* Colors.swift */; };
@@ -94,6 +97,9 @@
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
 		8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserChatName.swift; sourceTree = "<group>"; };
+		8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUpdate.swift; sourceTree = "<group>"; };
+		8C6B734221E7990F00D21D9D /* CreateANewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateANewUser.swift; sourceTree = "<group>"; };
 		8C7E560021CBA27000191307 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		8C7E560221CBA33E00191307 /* RoundCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorners.swift; sourceTree = "<group>"; };
 		8C7E560421CC02C300191307 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -242,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9DE3F621E5FE4700A92A5D /* SignedInUser.swift */,
+				8C6B734221E7990F00D21D9D /* CreateANewUser.swift */,
 			);
 			path = UserUtils;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */,
+				8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */,
 			);
 			path = Update;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			children = (
 				8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */,
 				8C8B72B521D39B500090A2DA /* QRGenerator.swift */,
+				8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */,
 			);
 			path = Get;
 			sourceTree = "<group>";
@@ -524,6 +533,7 @@
 				8C7E560521CC02C300191307 /* Colors.swift in Sources */,
 				8CA46F3E21E3696400A148F2 /* ChatMessage.swift in Sources */,
 				A1CE21FC21C64CC700DFE4B0 /* EventTableViewController.swift in Sources */,
+				8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */,
 				8C1ACD4721B7F88100103D9E /* SearchResultTableViewCell.swift in Sources */,
 				EE783B3321E5FAE8004AF043 /* TicketsBookedTableViewCell.swift in Sources */,
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
@@ -533,6 +543,7 @@
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CA46F3921E355E500A148F2 /* CarpoolTableViewCell.swift in Sources */,
+				8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */,
 				8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */,
 				8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
@@ -541,6 +552,7 @@
 				8C8B72B021CE41880090A2DA /* VibesDelegate.swift in Sources */,
 				8C7E560121CBA27000191307 /* Toast.swift in Sources */,
 				8C1ACD4A21B7FAFE00103D9E /* PushPostDummy.swift in Sources */,
+				8C6B733E21E7855700D21D9D /* FavoritesUpdate.swift in Sources */,
 				8CEB9B2F21AED0AF009B55FF /* NegeVibe.xcdatamodeld in Sources */,
 				8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */,
 				8CA46F3B21E3680D00A148F2 /* CarpoolMessage.swift in Sources */,
