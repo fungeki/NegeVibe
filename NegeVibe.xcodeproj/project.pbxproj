@@ -57,6 +57,7 @@
 		8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */; };
 		8CEB9B4121AED118009B55FF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4021AED118009B55FF /* Event.swift */; };
 		8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */; };
+		A1632D1921E7817400699AE7 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1632D1821E7817400699AE7 /* DropDown.swift */; };
 		A1921D5B21D5271F0059FF85 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5A21D5271F0059FF85 /* Ticket.swift */; };
 		A1921D5D21D529090059FF85 /* TypeOfTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5C21D529090059FF85 /* TypeOfTicket.swift */; };
 		A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1921D5E21D535340059FF85 /* MyEventViewController.swift */; };
@@ -129,6 +130,7 @@
 		8CEB9B3D21AED0DF009B55FF /* GetEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEvents.swift; sourceTree = "<group>"; };
 		8CEB9B4021AED118009B55FF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		8CEB9B4321AEDE4B009B55FF /* JustHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustHUD.swift; sourceTree = "<group>"; };
+		A1632D1821E7817400699AE7 /* DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDown.swift; sourceTree = "<group>"; };
 		A1921D5A21D5271F0059FF85 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		A1921D5C21D529090059FF85 /* TypeOfTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTicket.swift; sourceTree = "<group>"; };
 		A1921D5E21D535340059FF85 /* MyEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEventViewController.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				8C7E560221CBA33E00191307 /* RoundCorners.swift */,
 				8C7E560421CC02C300191307 /* Colors.swift */,
 				EE1E1D1A21CF97EE00F80763 /* PaddingLabel.swift */,
+				A1632D1821E7817400699AE7 /* DropDown.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */,
 				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
+				A1632D1921E7817400699AE7 /* DropDown.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
 				8C8B72B621D39B500090A2DA /* QRGenerator.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,
@@ -730,7 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WCHPYRJBVA;
 				INFOPLIST_FILE = NegeVibe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,7 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WCHPYRJBVA;
 				INFOPLIST_FILE = NegeVibe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

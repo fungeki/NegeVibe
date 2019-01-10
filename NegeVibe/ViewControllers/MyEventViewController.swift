@@ -12,9 +12,10 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
 
     @IBOutlet weak var eventImage: UIImageView!
     @IBOutlet weak var nameOfEventTextField: UITextField!
-    @IBOutlet weak var eventDataPicker: UIDatePicker!
-    @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
+  
+    @IBOutlet weak var categoryTextField: DropDown!
+    
+    
     var link:URL?
     
     override func viewDidLoad() {
@@ -24,6 +25,11 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         eventImage.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.imagePlaceholder(_:)))
             eventImage.addGestureRecognizer(tap)
+        
+        //DropDawnlist
+        categoryTextField.optionArray =
+["מסיבות","פאב/בר","פסטיבלים","הופעות","אירועים","מוזיקה","אוכל","סרטים","ספורט"]
+       
     }
     
     @IBAction func imagePlaceholder(_ sender: UITapGestureRecognizer) {
