@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="huc-bE-Tvy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hQm-gu-y0q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1478,14 +1478,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" icc_nv_category" width="25" height="25"/>
+        <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
         <image name="add_category_50" width="39" height="39"/>
         <image name="background_up_plus" width="750" height="141"/>
         <image name="carpool" width="253" height="258"/>
         <image name="ic_barcode_orange" width="68" height="68"/>
-        <image name="ic_br_list" width="37" height="28"/>
-        <image name="ic_br_map" width="37" height="37"/>
-        <image name="ic_br_menu" width="37" height="28"/>
+        <image name="ic_br_list" width="67.5" height="50.400001525878906"/>
+        <image name="ic_br_map" width="50" height="50"/>
+        <image name="ic_br_menu" width="65.853660583496094" height="49.170730590820312"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
@@ -1496,10 +1496,10 @@
         <image name="ic_ticket" width="50" height="73"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
         <image name="ic_white_logo" width="288" height="114"/>
-        <image name="icc_tb_list_orange" width="49" height="37"/>
-        <image name="icc_tb_map_orange" width="38" height="37"/>
-        <image name="indinegev" width="624" height="383"/>
-        <image name="negeVibe_placeholder" width="240" height="65"/>
-        <image name="search" width="25" height="25"/>
+        <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
+        <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
+        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="negeVibe_placeholder" width="240" height="65.5"/>
+        <image name="search" width="50" height="50"/>
     </resources>
 </document>

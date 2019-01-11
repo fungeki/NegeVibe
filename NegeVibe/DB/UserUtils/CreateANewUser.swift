@@ -18,4 +18,5 @@ func createUser(){
     let now = Date()
     let dateString = formatter.string(from:now)
     db.collection("users").document(uid).setData(["joined": dateString])
+    SignedInUser.getInstance().getUser()
 }

@@ -11,14 +11,12 @@ import FirebaseAuth
 import Firebase
 
 func updateUsername(_ userName: String){
-    SignedInUser.getInstance().getUser { (user) in
-        guard let uid = user?.uid else {
-            print("no user")
-            return
-        }
-        let db = Firestore.firestore()
-        db.collection("users").document(uid).updateData(["chatName" : userName])
-        
+    guard let uid = SignedInUser.getInstance().getUID() else {
+        print("no user")
+        return
     }
-    
+    let db = Firestore.firestore()
+    db.collection("users").document(uid).updateData(["chatName" : userName])
 }
+    
+

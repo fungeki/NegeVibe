@@ -18,8 +18,9 @@ class SignedInUser{
         DispatchQueue.main.async {
             let mUser = Auth.auth().currentUser
             if mUser != nil{
+                self.user = AnonymousUser(uid: mUser!.uid, chatName: nil)
                 getUserChatName(completion: { (str) in
-                    self.user = AnonymousUser(uid: mUser!.uid, chatName: str)
+                    self.user?.chatName = str
                 })
                 
                 print("user signed in, uuid: \(mUser!.uid)")
