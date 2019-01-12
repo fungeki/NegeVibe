@@ -178,10 +178,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZNy-Ob-8Al">
-                                                    <rect key="frame" x="16" y="16" width="58" height="41"/>
+                                                    <rect key="frame" x="16" y="16" width="58" height="42"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="קטגוריה" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw0-qL-dMm" customClass="PaddingLabel" customModule="NegeVibe" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="73" width="90" height="22"/>
+                                                    <rect key="frame" x="0.0" y="74" width="90" height="21"/>
                                                     <color key="backgroundColor" red="0.1803921568627451" green="0.2627450980392157" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="מספר הזמנה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-Dm-bdt">
-                                <rect key="frame" x="247" y="36" width="112" height="24.5"/>
+                                <rect key="frame" x="258" y="36" width="101" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -294,70 +294,70 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="שם האירוע" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-Te-Uc1">
-                                <rect key="frame" x="265" y="121.5" width="94" height="24.5"/>
+                                <rect key="frame" x="273.5" y="121.5" width="85.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="פגישה חשובה עם חנן" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-6l-fqO">
-                                <rect key="frame" x="16" y="121.5" width="233" height="24.5"/>
+                                <rect key="frame" x="16" y="121.5" width="241.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="יום ראשון 30/12/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6g-af-rNx">
-                                <rect key="frame" x="16" y="162" width="343" height="19"/>
+                                <rect key="frame" x="16" y="161" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="מגדל התאומים 2, קומה e2, רמת גן" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-TJ-zNg">
-                                <rect key="frame" x="16" y="189" width="343" height="19"/>
+                                <rect key="frame" x="16" y="188" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="בעל הכרטיס" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWy-l0-cmG">
-                                <rect key="frame" x="250.5" y="224" width="108.5" height="24.5"/>
+                                <rect key="frame" x="263" y="223" width="96" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="Negevibe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-UB-n9o">
-                                <rect key="frame" x="16" y="224" width="218.5" height="24.5"/>
+                                <rect key="frame" x="16" y="223" width="231" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="סוג כרטיס" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5T-AY-Xxc">
-                                <rect key="frame" x="272" y="264.5" width="87" height="24.5"/>
+                                <rect key="frame" x="281" y="262.5" width="78" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="VIP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-yT-Vab">
-                                <rect key="frame" x="16" y="264.5" width="218.5" height="24.5"/>
+                                <rect key="frame" x="16" y="262.5" width="231" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="כמות" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0F-91-vMM">
-                                <rect key="frame" x="314" y="305" width="45" height="24.5"/>
+                                <rect key="frame" x="319.5" y="302" width="39.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-fK-1lm">
-                                <rect key="frame" x="16" y="305" width="218.5" height="24.5"/>
+                                <rect key="frame" x="16" y="302" width="231" height="23.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8z-CN-WjN">
-                                <rect key="frame" x="37.5" y="361.5" width="300" height="273.5"/>
+                                <rect key="frame" x="37.5" y="357.5" width="300" height="277.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-Lz-QQO">
-                                        <rect key="frame" x="16" y="16" width="268" height="241.5"/>
+                                        <rect key="frame" x="16" y="16" width="268" height="245.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -614,6 +614,21 @@
             </objects>
             <point key="canvasLocation" x="4871" y="1012"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8B3-Mj-yVt">
+            <objects>
+                <viewController id="yBW-2n-Nib" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uOp-Bl-XFu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DqP-5N-ezF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSm-gx-89T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5678" y="994"/>
+        </scene>
         <!--Chat View Controller-->
         <scene sceneID="E7V-8t-Sxp">
             <objects>
@@ -640,37 +655,37 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם משתמש" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z17-Mm-OG9">
-                                                    <rect key="frame" x="154.5" y="11" width="91.5" height="20"/>
+                                                    <rect key="frame" x="164" y="11" width="82" height="20"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מגיע מ:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti9-a4-viz">
-                                                    <rect key="frame" x="202" y="39" width="44" height="17"/>
+                                                    <rect key="frame" x="204.5" y="39" width="41.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsO-XO-zmQ">
-                                                    <rect key="frame" x="31" y="39" width="163" height="17"/>
+                                                    <rect key="frame" x="31" y="39" width="165.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מקומות פנויים:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y86-KV-43C">
-                                                    <rect key="frame" x="158.5" y="64" width="87.5" height="17"/>
+                                                    <rect key="frame" x="166" y="64" width="80" height="17"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מספר" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpc-h8-wHK">
-                                                    <rect key="frame" x="114.5" y="64" width="36" height="17"/>
+                                                    <rect key="frame" x="126.5" y="64" width="31.5" height="17"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="לבקשת הצטרפות, לחצו כאן" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUB-38-SXn">
-                                                    <rect key="frame" x="33.5" y="89" width="204.5" height="20"/>
+                                                    <rect key="frame" x="56" y="89" width="182" height="20"/>
                                                     <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                     <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -713,12 +728,12 @@
                                 <rect key="frame" x="16" y="625.5" width="293.5" height="33.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4D-zJ-ZsA">
-                                        <rect key="frame" x="16" y="0.0" width="34" height="33.5"/>
+                                        <rect key="frame" x="16" y="0.0" width="30" height="33.5"/>
                                         <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                         <state key="normal" title="שלח"/>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="כתוב/י הודעה..." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-tc-Pcm">
-                                        <rect key="frame" x="66" y="0.0" width="211.5" height="33.5"/>
+                                        <rect key="frame" x="62" y="0.0" width="215.5" height="33.5"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -770,55 +785,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-xo-Q7C">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="615"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9xk-l8-4Lt">
-                                        <rect key="frame" x="0.0" y="-8" width="375" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם אירוע" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO9-ug-ij1">
-                                                <rect key="frame" x="16" y="36" width="343" height="31.5"/>
+                                                <rect key="frame" x="16" y="36" width="343" height="32"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="27"/>
                                                 <color key="textColor" red="0.93475586175918579" green="0.35412514209747314" blue="0.20995119214057922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אודות" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-ac-geA">
-                                                <rect key="frame" x="17" y="213.5" width="342" height="30.5"/>
+                                                <rect key="frame" x="16" y="298.5" width="343" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                                 <color key="textColor" red="0.93475586175918579" green="0.35412514209747314" blue="0.20995119214057922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_date" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-hv-Gkx">
-                                                <rect key="frame" x="329" y="75.5" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_date_100" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-hv-Gkx">
+                                                <rect key="frame" x="329" y="130" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CTo-hv-Gkx" secondAttribute="height" multiplier="1:1" id="KGj-cc-1ep"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_place" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-fO-KCt">
-                                                <rect key="frame" x="329" y="121.5" width="30" height="30"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_street_100" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-fO-KCt">
+                                                <rect key="frame" x="329" y="191.5" width="30" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lLb-fO-KCt" secondAttribute="height" multiplier="40:49" id="nvj-lq-1IU"/>
+                                                </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ticket" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-Ej-Q9I">
-                                                <rect key="frame" x="329" y="167.5" width="30" height="30"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תאריך" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIP-Oi-Zrk">
-                                                <rect key="frame" x="16" y="80" width="297" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תיאור תאריך" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIP-Oi-Zrk">
+                                                <rect key="frame" x="16" y="158.5" width="305" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מחיר" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-2I-Qzq">
-                                                <rect key="frame" x="16" y="172" width="297" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="פירוט" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJq-nO-Csx">
-                                                <rect key="frame" x="16" y="252" width="343" height="407"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DP5-dn-6Kk">
-                                                <rect key="frame" x="24" y="35.5" width="26.5" height="32.5"/>
+                                                <rect key="frame" x="24" y="36" width="26.5" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="DP5-dn-6Kk" secondAttribute="height" multiplier="31:38" id="AYM-AB-s57"/>
                                                 </constraints>
@@ -827,57 +830,117 @@
                                                     <action selector="share:" destination="nWx-Sy-Jqf" eventType="touchUpInside" id="wsf-1c-mky"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-o6-ho0">
-                                                <rect key="frame" x="16" y="126" width="297" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תיאור מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-o6-ho0">
+                                                <rect key="frame" x="16" y="219.5" width="305" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תאריך" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiu-qb-LJx">
+                                                <rect key="frame" x="16" y="130" width="305" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_category_100" translatesAutoresizingMaskIntoConstraints="NO" id="Kdj-8A-LDP">
+                                                <rect key="frame" x="329" y="84" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Kdj-8A-LDP" secondAttribute="height" multiplier="1:1" id="9Fk-cU-khG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" text="קטגוריה" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWY-EX-5Gh">
+                                                <rect key="frame" x="16" y="89" width="221.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כתובת" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBt-Jg-9Bw">
+                                                <rect key="frame" x="16" y="191.5" width="305" height="20"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_price_tickes_100" translatesAutoresizingMaskIntoConstraints="NO" id="4hU-17-Ij0">
+                                                <rect key="frame" x="329" y="252.5" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="4hU-17-Ij0" secondAttribute="height" multiplier="1:1" id="gaz-GZ-7ee"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מחיר" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-2I-Qzq">
+                                                <rect key="frame" x="16" y="252.5" width="305" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="פרטי אירוע" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-eT-A94">
+                                                <rect key="frame" x="16" y="345.5" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="2" text="סוג אירוע: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-WW-63g">
+                                                <rect key="frame" x="245.5" y="89" width="75.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
+                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="RJq-nO-Csx" firstAttribute="top" secondItem="Mzf-ac-geA" secondAttribute="bottom" constant="8" id="1s7-Jh-d32"/>
-                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="top" secondItem="hO9-ug-ij1" secondAttribute="bottom" constant="8" id="2mg-9O-Dq5"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="35A-Fv-kmk"/>
-                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="leading" secondItem="RIP-Oi-Zrk" secondAttribute="trailing" constant="16" id="3oT-eV-z5P"/>
-                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="UiN-Ej-Q9I" secondAttribute="trailing" constant="16" id="5G6-vZ-k9Q"/>
-                                            <constraint firstItem="UiN-Ej-Q9I" firstAttribute="leading" secondItem="1Pq-2I-Qzq" secondAttribute="trailing" constant="16" id="78B-c1-aap"/>
-                                            <constraint firstItem="RJq-nO-Csx" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="8ai-2g-iMh"/>
+                                            <constraint firstItem="wUQ-o6-ho0" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="5JR-uj-TAz"/>
+                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="5m3-Re-t4S"/>
+                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="top" secondItem="RIP-Oi-Zrk" secondAttribute="bottom" constant="16" id="64b-8q-nGe"/>
+                                            <constraint firstItem="Mzf-ac-geA" firstAttribute="top" secondItem="4hU-17-Ij0" secondAttribute="bottom" constant="16" id="83u-Lw-aJC"/>
                                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="24" id="9mR-sb-Gdd"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="width" secondItem="lLb-fO-KCt" secondAttribute="height" multiplier="1:1" id="9tT-Zg-eOZ"/>
+                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="top" secondItem="wUQ-o6-ho0" secondAttribute="bottom" constant="16" id="9rX-1g-ZSu"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="hO9-ug-ij1" secondAttribute="trailing" constant="16" id="A5h-9Q-ozj"/>
-                                            <constraint firstItem="1Pq-2I-Qzq" firstAttribute="centerY" secondItem="UiN-Ej-Q9I" secondAttribute="centerY" id="A89-aT-Nuh"/>
+                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="BaW-OW-7q0"/>
+                                            <constraint firstItem="Tiu-qb-LJx" firstAttribute="leading" secondItem="9xk-l8-4Lt" secondAttribute="leading" constant="16" id="DvC-im-exe"/>
+                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="lLb-fO-KCt" secondAttribute="trailing" constant="16" id="Fh4-Ia-hVB"/>
+                                            <constraint firstItem="Tiu-qb-LJx" firstAttribute="top" secondItem="Kdj-8A-LDP" secondAttribute="bottom" constant="16" id="GBv-2U-B48"/>
+                                            <constraint firstItem="wUQ-o6-ho0" firstAttribute="trailing" secondItem="WBt-Jg-9Bw" secondAttribute="trailing" id="GSY-UP-8dG"/>
+                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="trailing" secondItem="Kdj-8A-LDP" secondAttribute="trailing" id="IGh-YR-kRu"/>
                                             <constraint firstItem="hO9-ug-ij1" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="JfH-Bo-VhB"/>
+                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="leading" secondItem="1Pq-2I-Qzq" secondAttribute="trailing" constant="8" id="KCu-iK-Pmv"/>
+                                            <constraint firstItem="1Pq-2I-Qzq" firstAttribute="top" secondItem="wUQ-o6-ho0" secondAttribute="bottom" constant="16" id="Kps-3u-LtM"/>
+                                            <constraint firstItem="RIP-Oi-Zrk" firstAttribute="trailing" secondItem="Tiu-qb-LJx" secondAttribute="trailing" id="M3v-3p-I7M"/>
+                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="NHd-W0-imB"/>
+                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="LoD-eT-A94" secondAttribute="trailing" constant="16" id="NWx-zc-JNF"/>
+                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="top" secondItem="hO9-ug-ij1" secondAttribute="bottom" constant="16" id="OUg-kZ-3in"/>
+                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="leading" secondItem="Tiu-qb-LJx" secondAttribute="trailing" constant="8" id="OdZ-zS-XVq"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="CTo-hv-Gkx" secondAttribute="trailing" constant="16" id="PVx-cU-vWv"/>
-                                            <constraint firstItem="RIP-Oi-Zrk" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="QkA-bt-gwp"/>
-                                            <constraint firstItem="RIP-Oi-Zrk" firstAttribute="centerY" secondItem="CTo-hv-Gkx" secondAttribute="centerY" id="Siq-4G-AVH"/>
-                                            <constraint firstItem="Mzf-ac-geA" firstAttribute="top" secondItem="UiN-Ej-Q9I" secondAttribute="bottom" constant="16" id="YJC-YZ-2eu"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="top" secondItem="CTo-hv-Gkx" secondAttribute="bottom" constant="16" id="ey7-LX-K3l"/>
-                                            <constraint firstItem="wUQ-o6-ho0" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="gEt-eI-i6y"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="leading" secondItem="wUQ-o6-ho0" secondAttribute="trailing" constant="16" id="gb5-j0-nBx"/>
-                                            <constraint firstItem="UiN-Ej-Q9I" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="ggb-Lj-mnC"/>
+                                            <constraint firstItem="dcl-WW-63g" firstAttribute="leading" secondItem="lWY-EX-5Gh" secondAttribute="trailing" constant="8" id="Qqh-EL-20n"/>
+                                            <constraint firstItem="WBt-Jg-9Bw" firstAttribute="top" secondItem="RIP-Oi-Zrk" secondAttribute="bottom" constant="16" id="QvI-qE-SFx"/>
+                                            <constraint firstItem="dcl-WW-63g" firstAttribute="centerY" secondItem="Kdj-8A-LDP" secondAttribute="centerY" id="T3w-eU-GM2"/>
+                                            <constraint firstItem="wUQ-o6-ho0" firstAttribute="top" secondItem="WBt-Jg-9Bw" secondAttribute="bottom" constant="8" id="TPL-3K-tVx"/>
+                                            <constraint firstItem="lWY-EX-5Gh" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="Vcv-2b-R0J"/>
+                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="Mzf-ac-geA" secondAttribute="trailing" constant="16" id="WGX-JU-IkQ"/>
+                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="leading" secondItem="dcl-WW-63g" secondAttribute="trailing" constant="8" id="Y89-9Z-MJy"/>
+                                            <constraint firstItem="WBt-Jg-9Bw" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="Yda-RR-OhU"/>
+                                            <constraint firstItem="RIP-Oi-Zrk" firstAttribute="top" secondItem="Tiu-qb-LJx" secondAttribute="bottom" constant="8" id="dfh-xs-B2Q"/>
+                                            <constraint firstItem="LoD-eT-A94" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="dhl-0w-X6S"/>
                                             <constraint firstItem="hO9-ug-ij1" firstAttribute="top" secondItem="zjc-99-nEe" secondAttribute="top" constant="16" id="hLZ-Ai-n8z"/>
-                                            <constraint firstItem="zjc-99-nEe" firstAttribute="bottom" secondItem="RJq-nO-Csx" secondAttribute="bottom" constant="8" id="hh6-18-qim"/>
                                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="centerY" secondItem="hO9-ug-ij1" secondAttribute="centerY" id="idF-NU-MBl"/>
-                                            <constraint firstItem="UiN-Ej-Q9I" firstAttribute="width" secondItem="UiN-Ej-Q9I" secondAttribute="height" multiplier="1:1" id="iq1-5b-JEN"/>
+                                            <constraint firstItem="lWY-EX-5Gh" firstAttribute="centerY" secondItem="dcl-WW-63g" secondAttribute="centerY" id="jTp-hH-gVc"/>
                                             <constraint firstItem="CTo-hv-Gkx" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="kMJ-I4-ldB"/>
-                                            <constraint firstItem="Mzf-ac-geA" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="17" id="pg7-An-M7N"/>
-                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="Mzf-ac-geA" secondAttribute="trailing" constant="16" id="qMS-sg-VFk"/>
-                                            <constraint firstItem="wUQ-o6-ho0" firstAttribute="centerY" secondItem="lLb-fO-KCt" secondAttribute="centerY" id="tj2-v8-n68"/>
-                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="RJq-nO-Csx" secondAttribute="trailing" constant="16" id="vRm-Of-llx"/>
-                                            <constraint firstItem="UiN-Ej-Q9I" firstAttribute="top" secondItem="lLb-fO-KCt" secondAttribute="bottom" constant="16" id="vvL-hn-u4X"/>
-                                            <constraint firstItem="1Pq-2I-Qzq" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="wfi-iL-JXQ"/>
-                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="lLb-fO-KCt" secondAttribute="trailing" constant="16" id="xGJ-H9-hnd"/>
+                                            <constraint firstAttribute="height" constant="1500" id="lvY-AZ-D4l"/>
+                                            <constraint firstItem="1Pq-2I-Qzq" firstAttribute="leading" secondItem="9xk-l8-4Lt" secondAttribute="leading" constant="16" id="n4M-zk-K5o"/>
+                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="top" secondItem="Tiu-qb-LJx" secondAttribute="top" id="nXt-7X-THr"/>
+                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="leading" secondItem="WBt-Jg-9Bw" secondAttribute="trailing" constant="8" id="phS-Ch-Ce6"/>
+                                            <constraint firstItem="LoD-eT-A94" firstAttribute="top" secondItem="Mzf-ac-geA" secondAttribute="bottom" constant="16" id="pn2-YG-8Ua"/>
+                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="4hU-17-Ij0" secondAttribute="trailing" constant="16" id="vwa-lE-evH"/>
+                                            <constraint firstItem="RIP-Oi-Zrk" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="yho-dd-4kG"/>
+                                            <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="Kdj-8A-LDP" secondAttribute="trailing" constant="16" id="zR9-lh-qZA"/>
+                                            <constraint firstItem="Mzf-ac-geA" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="zwb-N3-QMz"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="zjc-99-nEe"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="9xk-l8-4Lt" firstAttribute="top" secondItem="2l9-xo-Q7C" secondAttribute="top" constant="-8" id="5Gh-Nz-cE5"/>
-                                    <constraint firstAttribute="bottom" secondItem="9xk-l8-4Lt" secondAttribute="bottom" constant="-14" id="9qW-vc-4MM"/>
-                                    <constraint firstAttribute="height" constant="1000" id="dPt-1z-M2z"/>
-                                    <constraint firstItem="9xk-l8-4Lt" firstAttribute="leading" secondItem="2l9-xo-Q7C" secondAttribute="leading" id="kUH-rG-QOP"/>
-                                    <constraint firstAttribute="trailing" secondItem="9xk-l8-4Lt" secondAttribute="trailing" id="sDj-F0-YbT"/>
+                                    <constraint firstAttribute="bottom" secondItem="9xk-l8-4Lt" secondAttribute="bottom" constant="-885" id="05I-9M-lpJ"/>
+                                    <constraint firstItem="9xk-l8-4Lt" firstAttribute="top" secondItem="2l9-xo-Q7C" secondAttribute="top" id="7Pc-4c-Anz"/>
+                                    <constraint firstAttribute="trailing" secondItem="9xk-l8-4Lt" secondAttribute="trailing" id="NoZ-Dd-SAf"/>
+                                    <constraint firstItem="9xk-l8-4Lt" firstAttribute="leading" secondItem="2l9-xo-Q7C" secondAttribute="leading" id="XcP-C2-W41"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-Sc-ETz">
@@ -892,14 +955,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prP-3p-iK4">
-                                <rect key="frame" x="259" y="628.5" width="30" height="25"/>
+                                <rect key="frame" x="251" y="628.5" width="30" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="prP-3p-iK4" secondAttribute="height" multiplier="50:41" id="6J4-pL-lNs"/>
                                 </constraints>
                                 <state key="normal" image="ic_chat_empty"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tui-XJ-JbZ">
-                                <rect key="frame" x="321" y="626" width="30" height="30"/>
+                                <rect key="frame" x="313" y="626" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Tui-XJ-JbZ" secondAttribute="height" multiplier="1:1" id="qeo-QF-QJI"/>
                                 </constraints>
@@ -909,38 +972,39 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2l9-xo-Q7C" firstAttribute="top" secondItem="ddq-ho-00D" secondAttribute="top" id="15b-FL-Hqy"/>
-                            <constraint firstItem="prP-3p-iK4" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="7Ot-j7-ic1"/>
-                            <constraint firstItem="BTf-Sc-ETz" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" constant="36" id="9JR-2i-Ae9"/>
-                            <constraint firstItem="9xk-l8-4Lt" firstAttribute="height" secondItem="ddq-ho-00D" secondAttribute="height" id="DOB-Ed-L7g"/>
-                            <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="Tui-XJ-JbZ" secondAttribute="trailing" constant="24" id="K6l-n1-BYC"/>
-                            <constraint firstItem="0kc-MP-U3l" firstAttribute="bottom" secondItem="BTf-Sc-ETz" secondAttribute="bottom" constant="8" id="Xjc-bI-9gF"/>
-                            <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="2l9-xo-Q7C" secondAttribute="trailing" id="afP-vP-CHT"/>
-                            <constraint firstItem="Tui-XJ-JbZ" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="ayI-Q6-eRG"/>
+                            <constraint firstItem="Tui-XJ-JbZ" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="1Uc-nW-ji4"/>
+                            <constraint firstItem="0kc-MP-U3l" firstAttribute="trailing" secondItem="Tui-XJ-JbZ" secondAttribute="trailing" constant="32" id="1ov-zn-tDO"/>
+                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="trailing" secondItem="0kc-MP-U3l" secondAttribute="trailing" id="AIz-3f-Ygc"/>
+                            <constraint firstItem="prP-3p-iK4" firstAttribute="centerY" secondItem="BTf-Sc-ETz" secondAttribute="centerY" id="Bkj-BY-fKS"/>
+                            <constraint firstItem="9xk-l8-4Lt" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="DsB-DP-8Hh"/>
+                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="leading" secondItem="ddq-ho-00D" secondAttribute="leading" id="N9T-xZ-0KU"/>
+                            <constraint firstItem="BTf-Sc-ETz" firstAttribute="top" secondItem="2l9-xo-Q7C" secondAttribute="bottom" constant="8" id="T0r-Bs-lmZ"/>
                             <constraint firstItem="Tui-XJ-JbZ" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="fFx-X2-m5G"/>
-                            <constraint firstItem="Tui-XJ-JbZ" firstAttribute="leading" secondItem="prP-3p-iK4" secondAttribute="trailing" constant="32" id="jc0-2Q-mgV"/>
-                            <constraint firstItem="2l9-xo-Q7C" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" id="jys-pm-elB"/>
+                            <constraint firstItem="BTf-Sc-ETz" firstAttribute="leading" secondItem="0kc-MP-U3l" secondAttribute="leading" constant="36" id="myW-ez-x40"/>
                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.07" id="o2d-mM-nWg"/>
-                            <constraint firstItem="9xk-l8-4Lt" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" id="rlJ-jC-qIT"/>
+                            <constraint firstItem="Tui-XJ-JbZ" firstAttribute="leading" secondItem="prP-3p-iK4" secondAttribute="trailing" constant="32" id="oaC-D4-Sco"/>
+                            <constraint firstItem="0kc-MP-U3l" firstAttribute="bottom" secondItem="BTf-Sc-ETz" secondAttribute="bottom" constant="8" id="ttu-nm-0Ja"/>
                             <constraint firstItem="prP-3p-iK4" firstAttribute="width" secondItem="ddq-ho-00D" secondAttribute="width" multiplier="0.08" id="xB3-Wf-eZF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0kc-MP-U3l"/>
                     </view>
                     <connections>
-                        <outlet property="dateLabel" destination="Siq-4G-AVH" id="3uI-BN-5Cc"/>
-                        <outlet property="describtionOfEvent" destination="RJq-nO-Csx" id="0vz-m1-gVD"/>
+                        <outlet property="categoryLabel" destination="lWY-EX-5Gh" id="nlT-Ro-JnB"/>
+                        <outlet property="completeDescriptionLabel" destination="LoD-eT-A94" id="fzK-d8-2hb"/>
                         <outlet property="describtionTitleLable" destination="Mzf-ac-geA" id="igs-pQ-4Or"/>
                         <outlet property="eventDateLabel" destination="RIP-Oi-Zrk" id="O4a-i6-Tb6"/>
                         <outlet property="fullView" destination="ddq-ho-00D" id="wl4-wT-dPX"/>
                         <outlet property="locationLabel" destination="wUQ-o6-ho0" id="kpD-XE-mA8"/>
                         <outlet property="nameOfEvents" destination="hO9-ug-ij1" id="OEs-4Q-9wm"/>
                         <outlet property="priceLabel" destination="1Pq-2I-Qzq" id="X83-X7-lRD"/>
+                        <outlet property="scrollContentView" destination="9xk-l8-4Lt" id="OH2-Y3-uvi"/>
                         <outlet property="scrollView" destination="2l9-xo-Q7C" id="cQJ-Yr-iDj"/>
                         <outlet property="ticketsButton" destination="BTf-Sc-ETz" id="W8p-BO-EbD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BdQ-rZ-ksT" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5682" y="143"/>
+            <point key="canvasLocation" x="5677.6000000000004" y="142.57871064467767"/>
         </scene>
         <!--My Event View Controller-->
         <scene sceneID="zEv-GG-k0o">
@@ -1348,16 +1412,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sdx-Pk-7fP">
-                                                    <rect key="frame" x="273" y="23" width="36.5" height="42"/>
+                                                    <rect key="frame" x="275.5" y="23.5" width="34" height="41"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="יום ה" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7j-Nl-Vcu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="36.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="34" height="20"/>
                                                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                             <color key="textColor" red="0.95294117649999999" green="0.57647058819999997" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYF-uT-Aqf">
-                                                            <rect key="frame" x="0.0" y="21.5" width="36.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="21" width="34" height="20"/>
                                                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1365,16 +1429,16 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="O0Q-xm-yek">
-                                                    <rect key="frame" x="161" y="19.5" width="88" height="53"/>
+                                                    <rect key="frame" x="171" y="20.5" width="80.5" height="51"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אינדינגב" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70c-9A-AOW">
-                                                            <rect key="frame" x="0.0" y="0.0" width="88" height="30.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="80.5" height="29.5"/>
                                                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="25"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אשקלון" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1U-qM-6Bh">
-                                                            <rect key="frame" x="43.5" y="22.5" width="44.5" height="30.5"/>
+                                                            <rect key="frame" x="41.5" y="21.5" width="39" height="29.5"/>
                                                             <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="14"/>
                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -1479,7 +1543,11 @@
     </scenes>
     <resources>
         <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
+        <image name="add_category_100" width="39" height="39"/>
         <image name="add_category_50" width="39" height="39"/>
+        <image name="add_date_100" width="54" height="54"/>
+        <image name="add_price_tickes_100" width="51" height="51"/>
+        <image name="add_street_100" width="40" height="49"/>
         <image name="background_up_plus" width="750" height="141"/>
         <image name="carpool" width="253" height="258"/>
         <image name="ic_barcode_orange" width="68" height="68"/>
@@ -1491,9 +1559,7 @@
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
         <image name="ic_logo_negevibe" width="1180" height="469"/>
-        <image name="ic_place" width="56" height="69"/>
         <image name="ic_share_empty" width="62" height="76"/>
-        <image name="ic_ticket" width="50" height="73"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
         <image name="ic_white_logo" width="288" height="114"/>
         <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>

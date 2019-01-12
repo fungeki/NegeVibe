@@ -14,27 +14,23 @@ class EventsDetailsViewController: UIViewController {
     
     var eventDisplay: Event?
 
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var scrollContentView: UIView!
+    @IBOutlet weak var completeDescriptionLabel: UILabel!
     @IBOutlet weak var eventDateLabel: UILabel!
     var startScrollPointY: CGFloat = 0
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
     @IBOutlet weak var nameOfEvents: UILabel!
     @IBOutlet weak var describtionTitleLable: UILabel!
-    @IBOutlet weak var describtionOfEvent: UITextView!
-    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var ticketsButton: UIButton!
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-//        scrollViewTopConstraint.constant = eventImageView.bounds.height - 20
-        scrollView.layer.cornerRadius = 20
-        startScrollPointY = scrollView.center.y
-         ticketsButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+        ticketsButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
         ticketsButton.layer.cornerRadius = ticketsButton.frame.size.height / 2
-        
-        
     }
     
     let headerViewController = MDCFlexibleHeaderViewController()
@@ -80,7 +76,10 @@ class EventsDetailsViewController: UIViewController {
             nameOfEvents.text = eventDisplay.title
             eventDateLabel.text = eventDisplay.datedescription
             locationLabel.text = eventDisplay.locationname
-            describtionOfEvent.text = eventDisplay.description
+            let mType = Symbol.init(withInt: eventDisplay.type
+            )?.getHebrewName()
+            categoryLabel.text = mType
+            completeDescriptionLabel.text = eventDisplay.description
           //  let screenWidth = self.view.frame.width
             let screenHeight = self.view.frame.height
             let imageURL = URL(string: eventDisplay.images[0].link)
@@ -110,26 +109,5 @@ class EventsDetailsViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-    
-    
-//    var lastPoint: CGFloat = 0
-//    @IBAction func panWrapperView(_ sender: UIPanGestureRecognizer) {
-//        let senderPointY = sender.location(in: self.view).y
-//        let currentPoint = senderPointY - self.view.center.y
-//        let delta = currentPoint - lastPoint
-//        let totalDelta = scrollView.center.y - startScrollPointY
-//        print(totalDelta)
-//        
-//        //
-//        if lastPoint != 0 && (totalDelta <= 100 || delta < 0){
-//            eventImageView.frame.size.height += delta
-//            scrollView.center.y += delta
-//        }
-//        
-//        lastPoint = currentPoint
-//        if sender.state == .ended {
-//            lastPoint = 0
-//        }
-//    }
     
 }
