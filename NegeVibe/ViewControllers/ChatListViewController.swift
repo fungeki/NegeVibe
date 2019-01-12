@@ -10,11 +10,47 @@ import UIKit
 
 class ChatListViewController: UIViewController {
 
+    @IBOutlet weak var chatListUITableView: UITableView!
+    
+    var arrEvent = [Event]()
+    var willShowTickesBooked = false
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = getLightBlue()
+        self.navigationItem.title = "כל הצ'אטים"
+        
+        chatListUITableView.rowHeight = chatListUITableView.bounds.height / 8
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if !willShowTickesBooked{
+            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כל הצ'אטים")
+                getEvents { (arrEvent) in self.arrEvent = arrEvent
+                    JustHUD.shared.hide()
+                    EventsLibrary.getInstance().setEvents(arrEvent)
+                    self.chatListUITableView.reloadData()
+                }
+            } else {
+                self.arrEvent = EventsLibrary.getInstance().getEvents()
+            }
+        }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        //eventImageUIImageView
+        
+    }
+    
+  
+    
     
 
     /*
@@ -28,3 +64,37 @@ class ChatListViewController: UIViewController {
     */
 
 }
+
+extension ChatListViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return arrEvent.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "chatListCell", for: indexPath) as! ChatListTableViewCell
+        
+        let chatList = arrEvent[indexPath.item]
+        
+        cell.eventImageUIImageView.layer.cornerRadius = cell.eventImageUIImageView.frame.height / 2
+        cell.eventImageUIImageView.layer.masksToBounds = true
+        cell.eventImageUIImageView.clipsToBounds = true
+        
+        let url = URL(string: chatList.images[0].link)
+        cell.eventImageUIImageView.sd_setImage(with:url)
+        
+        cell.eventTitleUILabel.text = chatList.title
+        cell.lastMessageUILabel.text = "אכל את הכובע"
+        cell.messageTimeUILabel.text = "14:30"
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let ChatListVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatListVC") as! ChatListViewController
+        self.navigationController?.pushViewController(ChatListVC, animated: true)
+    }
+    
+    
+}
+
+

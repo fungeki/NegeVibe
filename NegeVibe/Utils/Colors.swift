@@ -16,4 +16,8 @@ func getPrimaryColor() -> UIColor{
 func getBrightOrange() -> UIColor{
     return UIColor(red: 243 / 255.0, green: 147 / 255.0, blue: 61 / 255.0, alpha: 1)
 }
+
+func getLightBlue() -> UIColor{
+    return UIColor(red: 0 / 255.0, green: 122 / 255.0, blue: 255 / 255.0, alpha: 1)
+}
 //UIColor(displayP3Red: 238, green: 90, blue: 54, alpha: 1)
