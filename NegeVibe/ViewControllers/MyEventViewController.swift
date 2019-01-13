@@ -28,12 +28,16 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var flatTextField: UITextField!
     @IBOutlet weak var priceImageView: UIImageView!
     @IBOutlet weak var priceTextField: UITextField!
-    @IBOutlet weak var freeTextField: UITextField!
     @IBOutlet weak var ticketTypeImageView: UIImageView!
     @IBOutlet weak var ticketTypeTextField: DropDown!
+    @IBOutlet weak var peopleCountTextField: UITextField!
+    @IBOutlet weak var peopleCountImageView: UIImageView!
+    
+    @IBOutlet weak var freeTicketButton: UIButton!
     
     var link:URL?
-  
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +45,7 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         eventImage.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.imagePlaceholder(_:)))
             eventImage.addGestureRecognizer(tap)
+        
         
         //DropDawnlist
         categoryTextField.optionArray = [Symbol.concerts.getHebrewName(),Symbol.festival.getHebrewName(),Symbol.food.getHebrewName(),Symbol.generalEvents.getHebrewName(),Symbol.movie.getHebrewName(),Symbol.music.getHebrewName(),Symbol.parties.getHebrewName(), Symbol.pubs.getHebrewName(),Symbol.sport.getHebrewName()]
@@ -125,7 +130,9 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         
     }
  
-
+    override func viewDidLayoutSubviews() {
+        freeTicketButton.layer.cornerRadius = freeTicketButton.bounds.height/2
+    }
     /*
     // MARK: - Navigation
 
