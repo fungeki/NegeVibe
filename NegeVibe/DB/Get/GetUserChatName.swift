@@ -18,8 +18,10 @@ func getUserChatName(completion: @escaping ((_ userChatName: String?)->Void)){
         
         let uid = user.uid
         let docRef = db.collection("users").document(uid)
+        
         docRef.getDocument { (document, error) in
             if let document = document, document.exists {
+                print(document.data().map(String.init(describing:)) ?? "nil")
               //  let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
                 let data = document.data()
                 if let result = data?["chatName"] as? String{

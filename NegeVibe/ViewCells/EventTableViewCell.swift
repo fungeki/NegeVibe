@@ -38,7 +38,6 @@ class EventTableViewCell: UITableViewCell {
         if !isLiked{
         userDefaults.setValue(true, forKey: eventID)
         
-       // let likesRef = db.collection("favorites").document(uid).setData(<#T##documentData: [String : Any]##[String : Any]#>)
         showToast(message: "האירוע נוסף למועדפים", view: self.superview!, delay: 0.5, image: UIImage(named: "ic_like_full")!)
         likeBtn.setImage(UIImage(named: "ic_like_full"), for: .normal)
         } else {
@@ -46,6 +45,9 @@ class EventTableViewCell: UITableViewCell {
             showToast(message: "האירוע נמחק מהמועדפים", view: self.superview!, delay: 0.5, image: UIImage(named: "ic_like_empty_circle")!)
             likeBtn.setImage(UIImage(named: "ic_like_empty_circle"), for: .normal)
         }
+        
+        
+        SignedInUser.getInstance().addFavorite(favorite: event.id)
     }
     
     @IBAction func chatButton(_ sender: UIButton) {
