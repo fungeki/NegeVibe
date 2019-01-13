@@ -14,6 +14,8 @@ class EventsDetailsViewController: UIViewController {
     
     var eventDisplay: Event?
 
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var dateFormattedLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var scrollContentView: UIView!
     @IBOutlet weak var completeDescriptionLabel: UILabel!
@@ -71,8 +73,29 @@ class EventsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         self.title = "פרטי אירוע"
         if let eventDisplay = eventDisplay {
+            let dateInput = eventDisplay.date
+            let formater = DateFormatter()
+            formater.locale = Locale(identifier: "en_US_POSIX")
+            formater.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            if let mDate = formater.date(from: dateInput){
+                formater.locale = Locale(identifier: "he_IL")
+                formater.dateFormat = "EEEE, MMM d, yyyy"
+                let formattedStr = formater.string(from: mDate)
+                dateFormattedLabel.text = formattedStr
+            }
+            //MLocationManager.sharedInstance.getAddressStr(longitude: eventDisplay.locx, latitude: eventDisplay.locy), completion: <#(String?) -> Void#>
+            MLocationManager.sharedInstance.getAddressStr(longitude: eventDisplay.locx, latitude: eventDisplay.locy) { (str) in
+                if let address = str{
+                    self.addressLabel.text = address
+                }else {
+                    self.addressLabel.text = "מחוץ לעיר"
+                }
+            }
             nameOfEvents.text = eventDisplay.title
             eventDateLabel.text = eventDisplay.datedescription
             locationLabel.text = eventDisplay.locationname

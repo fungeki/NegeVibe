@@ -57,6 +57,29 @@ class MLocationManager: NSObject {
         }
         
     }
+    func getAddressStr(longitude: Double, latitude: Double, completion: @escaping (_ address: String?)->Void){
+        let address = CLGeocoder.init()
+        address.reverseGeocodeLocation(CLLocation.init(latitude: latitude, longitude:longitude)) { (places, error) in
+            if error == nil{
+                if let place = places{
+                    //here you can get all the info by combining that you can make addres
+                    if let city = place[0].locality {
+                        if let address = place[0].name{
+                            let mAdd = "\(address), \(city)"
+                            completion(mAdd)
+                            return
+                        }
+                        
+                    }else {
+                        completion(nil)
+                        return
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
     
     func geoCode(address: String, completion: ((_ location: CLPlacemark)->Void)? = nil){
         geoCoder.geocodeAddressString(address) { (places, err) in
