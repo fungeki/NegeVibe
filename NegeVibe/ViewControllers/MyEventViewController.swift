@@ -19,10 +19,18 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var timeImageView: UIImageView!
     @IBOutlet weak var locationImageView: UIImageView!
-    @IBOutlet weak var adressTextField: UITextField!
+    @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     @IBOutlet weak var descriptionImageView: UIImageView!
+    @IBOutlet weak var appartmentImageView: UIImageView!
+    @IBOutlet weak var floorTextField: UITextField!
+    @IBOutlet weak var flatTextField: UITextField!
+    @IBOutlet weak var priceImageView: UIImageView!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var freeTextField: UITextField!
+    @IBOutlet weak var ticketTypeImageView: UIImageView!
+    @IBOutlet weak var ticketTypeTextField: DropDown!
     
     var link:URL?
   
@@ -35,9 +43,9 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
             eventImage.addGestureRecognizer(tap)
         
         //DropDawnlist
-        categoryTextField.optionArray =
-["מסיבות","פאב/בר","פסטיבלים","הופעות","אירועים","מוזיקה","אוכל","סרטים","ספורט"]
-       
+        categoryTextField.optionArray = [Symbol.concerts.getHebrewName(),Symbol.festival.getHebrewName(),Symbol.food.getHebrewName(),Symbol.generalEvents.getHebrewName(),Symbol.movie.getHebrewName(),Symbol.music.getHebrewName(),Symbol.parties.getHebrewName(), Symbol.pubs.getHebrewName(),Symbol.sport.getHebrewName()]
+      
+        ticketTypeTextField.optionArray = [TypeOfTicket.child.getHebrewName(),TypeOfTicket.pensioner.getHebrewName(), TypeOfTicket.regular.getHebrewName(),TypeOfTicket.student.getHebrewName(),TypeOfTicket.vip.getHebrewName()]
         changeImage()
     }
     
