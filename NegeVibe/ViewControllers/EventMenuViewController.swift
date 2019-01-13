@@ -109,15 +109,19 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         let TicketsBookedVC = self.storyboard?.instantiateViewController(withIdentifier: "TicketsBookedVC") as! TicketsBookedViewController
         self.navigationController?.pushViewController(TicketsBookedVC, animated: true)
         case 2:
-            let ChatListVC =
-            self.storyboard?.instantiateViewController(withIdentifier: "ChatListVC") as! ChatListViewController
-            self.navigationController?.pushViewController(ChatListVC, animated: true)
+            
 //            getUserChatName(completion: { (str) in
-//                print(str)
+//                let ChatListVC =
+//                    self.storyboard?.instantiateViewController(withIdentifier: "ChatListVC") as! ChatListViewController
+//                self.navigationController?.pushViewController(ChatListVC, animated: true)
 //            })
-//            if SignedInUser.getInstance().getChatName() == nil{
-//                showAlert()
-//            }
+            if SignedInUser.getInstance().getChatName() == nil{
+                showAlert()
+            } else {
+                let ChatListVC =
+                    self.storyboard?.instantiateViewController(withIdentifier: "ChatListVC") as! ChatListViewController
+                self.navigationController?.pushViewController(ChatListVC, animated: true)
+            }
             
             
         case 3:
