@@ -32,8 +32,8 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var ticketTypeTextField: DropDown!
     @IBOutlet weak var peopleCountTextField: UITextField!
     @IBOutlet weak var peopleCountImageView: UIImageView!
-    
     @IBOutlet weak var freeTicketButton: UIButton!
+    @IBOutlet weak var descriptionEventTextView: UITextField!
     
     var link:URL?
     
@@ -132,6 +132,24 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
  
     override func viewDidLayoutSubviews() {
         freeTicketButton.layer.cornerRadius = freeTicketButton.bounds.height/2
+        roundCorner(view: nameOfEventTextField)
+        roundCorner(view: dateTextField)
+        roundCorner(view: timeTextField)
+        roundCorner(view: locationTextField)
+        roundCorner(view: cityTextField)
+        roundCorner(view: descriptionTextField)
+        roundCorner(view: floorTextField)
+        roundCorner(view: flatTextField)
+        roundCorner(view: priceTextField)
+        roundCorner(view: peopleCountTextField)
+        roundCorner(view: descriptionTextField)
+        
+    }
+    
+    func roundCorner(view:UIView) {
+        view.layer.cornerRadius = view.frame.size.height / 2
+        view.layer.borderWidth = 2.0
+        view.layer.borderColor = UIColor.gray.cgColor
     }
     /*
     // MARK: - Navigation

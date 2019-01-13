@@ -1034,32 +1034,32 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_category_50" translatesAutoresizingMaskIntoConstraints="NO" id="t6E-ap-bXW">
                                                 <rect key="frame" x="319" y="68" width="30" height="26"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  בחר קטגוריה" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-dw-5A7" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  בחר קטגוריה" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8b8-dw-5A7" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
                                                 <rect key="frame" x="26" y="66" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_date_50" translatesAutoresizingMaskIntoConstraints="NO" id="GC9-kF-25Q">
-                                                <rect key="frame" x="319" y="118" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="112.5" width="30" height="26"/>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" תאריך" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fm4-PL-Dpt">
-                                                <rect key="frame" x="26" y="116" width="285" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" תאריך" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fm4-PL-Dpt">
+                                                <rect key="frame" x="26" y="116" width="285" height="19"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" זמן פעילות" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="h4t-9O-Jiz">
-                                                <rect key="frame" x="26" y="166" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="155" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_time_50" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-PK-I4G">
-                                                <rect key="frame" x="319" y="168" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="157" width="30" height="26"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" עיר / מושב" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-f7-iNp">
-                                                <rect key="frame" x="26" y="216" width="147" height="30"/>
+                                                <rect key="frame" x="26" y="205" width="147" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1071,19 +1071,19 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_street_50" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-iW-E22">
-                                                <rect key="frame" x="319" y="218" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="207" width="30" height="26"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_street_discription_50" translatesAutoresizingMaskIntoConstraints="NO" id="emU-B5-FFB">
-                                                <rect key="frame" x="319" y="268" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="257" width="30" height="26"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" תואר של המיקום" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jar-HS-Lgj">
-                                                <rect key="frame" x="26" y="266" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="255" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-AB-IeM">
-                                                <rect key="frame" x="26" y="316" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="305" width="285" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" דירה" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blr-kN-KES">
                                                         <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
@@ -1100,37 +1100,37 @@
                                                 </subviews>
                                             </stackView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_apartment_50" translatesAutoresizingMaskIntoConstraints="NO" id="0NT-FM-5Rg">
-                                                <rect key="frame" x="319" y="318" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="307" width="30" height="26"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_price_tickes_50" translatesAutoresizingMaskIntoConstraints="NO" id="WUx-56-0a5">
-                                                <rect key="frame" x="319" y="368" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="357" width="30" height="26"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_type_tickets_50" translatesAutoresizingMaskIntoConstraints="NO" id="R85-0y-BVk">
-                                                <rect key="frame" x="319" y="418" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="407" width="30" height="26"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" סוגי כרטיסים" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-R9-HKb" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
-                                                <rect key="frame" x="26" y="416" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="405" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" כמות אנשים מקסימלית" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYJ-yB-ZwP">
-                                                <rect key="frame" x="26" y="466" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="455" width="285" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_num_people_50" translatesAutoresizingMaskIntoConstraints="NO" id="mnP-p2-MUo">
-                                                <rect key="frame" x="319" y="468" width="30" height="26"/>
+                                                <rect key="frame" x="319" y="457" width="30" height="26"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" אודות האירוע" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMI-v7-BW0">
-                                                <rect key="frame" x="26" y="516" width="323" height="66"/>
+                                                <rect key="frame" x="26" y="505" width="323" height="66"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-f2-eOf">
-                                                <rect key="frame" x="26" y="366" width="285" height="30"/>
+                                                <rect key="frame" x="26" y="355" width="285" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-Ec-SCv">
                                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="30"/>
@@ -1266,6 +1266,7 @@
                         <outlet property="cityTextField" destination="KSu-f7-iNp" id="swa-Qn-us4"/>
                         <outlet property="dateImageView" destination="GC9-kF-25Q" id="soI-vW-1xD"/>
                         <outlet property="dateTextField" destination="Fm4-PL-Dpt" id="Ir7-6r-OhY"/>
+                        <outlet property="descriptionEventTextView" destination="yMI-v7-BW0" id="y34-sX-Tbu"/>
                         <outlet property="descriptionImageView" destination="emU-B5-FFB" id="zWv-fR-hhi"/>
                         <outlet property="descriptionTextField" destination="jar-HS-Lgj" id="54m-yc-BJs"/>
                         <outlet property="eventImage" destination="J74-Eh-6nZ" id="QJ5-G1-tTm"/>
