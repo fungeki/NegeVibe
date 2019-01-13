@@ -11,6 +11,7 @@ import FirebaseAuth
 import Firebase
 
 class SignedInUser{
+    let db = Firestore.firestore()
     private var user: AnonymousUser?
     private var favorites: [Int]?
     
@@ -64,5 +65,26 @@ class SignedInUser{
     }
     func getFavoritesCount() -> Int{
         return favorites?.count ?? 0
+    }
+    
+    func getUserFirebaseRef()->DocumentReference?{
+        guard let uid = user?.uid else {
+            print("failed, no user id")
+            return nil
+        }
+        let userRef = db.collection("users").document(uid)
+        return userRef
+    }
+    
+    func addFavorite(favorite: Int, completion: (()->Void)?=nil){
+        if favorites?.count == 0 {
+            FavoritesBuilder(favoriteID: favorite) {
+                if let completion = completion{
+                    completion()
+                }
+            }
+        } else {
+            
+        }
     }
 }

@@ -49,6 +49,7 @@
 		8CA46F3921E355E500A148F2 /* CarpoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */; };
 		8CA46F3B21E3680D00A148F2 /* CarpoolMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3A21E3680D00A148F2 /* CarpoolMessage.swift */; };
 		8CA46F3E21E3696400A148F2 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3D21E3696400A148F2 /* ChatMessage.swift */; };
+		8CE122C721EB7F1300FB6F1D /* FavoritesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122C621EB7F1300FB6F1D /* FavoritesBuilder.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -119,6 +120,7 @@
 		8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolTableViewCell.swift; sourceTree = "<group>"; };
 		8CA46F3A21E3680D00A148F2 /* CarpoolMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolMessage.swift; sourceTree = "<group>"; };
 		8CA46F3D21E3696400A148F2 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		8CE122C621EB7F1300FB6F1D /* FavoritesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesBuilder.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +272,14 @@
 			path = Update;
 			sourceTree = "<group>";
 		};
+		8CE122C321EB7EE600FB6F1D /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				8CE122C621EB7F1300FB6F1D /* FavoritesBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +321,7 @@
 		8CEB9B3B21AED0BD009B55FF /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				8CE122C321EB7EE600FB6F1D /* Builders */,
 				8C9DE3FB21E6158900A92A5D /* Update */,
 				8C9DE3F521E5FE1F00A92A5D /* UserUtils */,
 				8C1ACD4E21B97D2000103D9E /* Library */,
@@ -578,6 +589,7 @@
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */,
 				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
+				8CE122C721EB7F1300FB6F1D /* FavoritesBuilder.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				A1632D1921E7817400699AE7 /* DropDown.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
