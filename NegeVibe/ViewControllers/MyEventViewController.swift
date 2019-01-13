@@ -14,9 +14,18 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var nameOfEventTextField: UITextField!
     @IBOutlet weak var categoryTextField: DropDown!
     @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var dateImageView: UIImageView!
+    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var timeImageView: UIImageView!
+    @IBOutlet weak var locationImageView: UIImageView!
+    @IBOutlet weak var adressTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var descriptionImageView: UIImageView!
     
     var link:URL?
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         
