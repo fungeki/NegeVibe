@@ -10,19 +10,19 @@ import UIKit
 import Firebase
 
 func FavoritesBuilder(favoriteID id: Int,completion: (()->Void)?=nil){
-    guard let userRef = SignedInUser.getInstance().getUserFirebaseRef() else {
-        print("no valid user reference")
+    let db = Firestore.firestore()
+    guard let uid = SignedInUser.getInstance().getUID() else {
+        print("no user")
         return
     }
     let pushID = String(id)
-    
-//    userRef.collection("favorites").document(pushID).setData(["isFavorite": true]) { (err) in
-//        if let err = err {
-//            print("oops, must be \(err)")
-//            return
-//        }
-//        if let completion = completion{
-//            completion()
-//        }
-//    }
+    db.collection("favorites").document(uid).setData([pushID: true]) { (err) in
+        if let err = err {
+            print("oops, must be \(err)")
+            return
+        }
+        if let completion = completion{
+            completion()
+        }
+    }
 }
