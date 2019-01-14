@@ -92,8 +92,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         vsc = tabBarController?.viewControllers
         searchIcon.isUserInteractionEnabled = true
         searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
-        SignedInUser.getInstance().getUser { (user) in
-            if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
+        if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
                 //loading indicator
                 JustHUD.shared.showInView(view: self.view, withHeader: "רק דקה", andFooter: "מסיים לטעון")
                 
@@ -103,36 +102,11 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
                     JustHUD.shared.hide()
                     self.convertToArtworksAndDisplay(events: events)
                     EventsLibrary.getInstance().setEvents(events)
-                    //                UIView.animate(withDuration: 0.3, animations: {
-                    //                    self.bannerOverlayView.transform = CGAffineTransform.identity
-                    //                }) { (true) in
-                    //                    self.mockMsg()
-                    //                    self.bannerMessageAnimation()
-                    //                    self.bannerTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.bannerMessageAnimation), userInfo: nil, repeats: true)
-                    //
-                    //
-                    //                    //self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
                 }
             } else {
                 self.convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
-                //            if bannerTimer == nil{
-                //            UIView.animate(withDuration: 0.3, animations: {
-                //                self.bannerOverlayView.transform = CGAffineTransform.identity
-                //            }) { (true) in
-                //                self.mockMsg()
-                //                self.displayFeaturedBanners(self.featuredMsgs[0])
-                //                self.bannerTimer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(self.bannerMessageAnimation), userInfo: nil, repeats: true)
-                //
-                
-                //self.bannerFeaturedMessageBtn.transform = CGAffineTransform.identity
-                //                }
-                //            }
-            }
         }
         //print(glb_events)
-        
-        
-        
     }
     
     @IBAction func categoriesOpen(_ sender: Any) {
