@@ -14,9 +14,30 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var nameOfEventTextField: UITextField!
     @IBOutlet weak var categoryTextField: DropDown!
     @IBOutlet weak var categoryImageView: UIImageView!
+    @IBOutlet weak var dateImageView: UIImageView!
+    @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var timeTextField: UITextField!
+    @IBOutlet weak var timeImageView: UIImageView!
+    @IBOutlet weak var locationImageView: UIImageView!
+    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var descriptionImageView: UIImageView!
+    @IBOutlet weak var appartmentImageView: UIImageView!
+    @IBOutlet weak var floorTextField: UITextField!
+    @IBOutlet weak var flatTextField: UITextField!
+    @IBOutlet weak var priceImageView: UIImageView!
+    @IBOutlet weak var priceTextField: UITextField!
+    @IBOutlet weak var ticketTypeImageView: UIImageView!
+    @IBOutlet weak var ticketTypeTextField: DropDown!
+    @IBOutlet weak var peopleCountTextField: UITextField!
+    @IBOutlet weak var peopleCountImageView: UIImageView!
+    @IBOutlet weak var freeTicketButton: UIButton!
+    @IBOutlet weak var descriptionEventTextView: UITextField!
     
     var link:URL?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +46,11 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.imagePlaceholder(_:)))
             eventImage.addGestureRecognizer(tap)
         
+        
         //DropDawnlist
-        categoryTextField.optionArray =
-["מסיבות","פאב/בר","פסטיבלים","הופעות","אירועים","מוזיקה","אוכל","סרטים","ספורט"]
-       
+        categoryTextField.optionArray = [Symbol.concerts.getHebrewName(),Symbol.festival.getHebrewName(),Symbol.food.getHebrewName(),Symbol.generalEvents.getHebrewName(),Symbol.movie.getHebrewName(),Symbol.music.getHebrewName(),Symbol.parties.getHebrewName(), Symbol.pubs.getHebrewName(),Symbol.sport.getHebrewName()]
+      
+        ticketTypeTextField.optionArray = [TypeOfTicket.child.getHebrewName(),TypeOfTicket.pensioner.getHebrewName(), TypeOfTicket.regular.getHebrewName(),TypeOfTicket.student.getHebrewName(),TypeOfTicket.vip.getHebrewName()]
         changeImage()
     }
     
@@ -108,7 +130,31 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         
     }
  
-
+    override func viewDidLayoutSubviews() {
+        freeTicketButton.layer.cornerRadius = freeTicketButton.bounds.height/2
+        roundCorner(view: nameOfEventTextField)
+        roundCorner(view: dateTextField)
+        roundCorner(view: timeTextField)
+        roundCorner(view: locationTextField)
+        roundCorner(view: cityTextField)
+        roundCorner(view: descriptionTextField)
+        roundCorner(view: floorTextField)
+        roundCorner(view: flatTextField)
+        roundCorner(view: priceTextField)
+        roundCorner(view: peopleCountTextField)
+        roundCorner(view: descriptionEventTextView)
+        roundCorner(view: categoryTextField)
+        ticketTypeTextField.layer.cornerRadius = ticketTypeTextField.frame.size.height/2
+        ticketTypeTextField.layer.borderWidth = 2.0
+        ticketTypeTextField.layer.borderColor = UIColor.lightGray.cgColor
+        
+    }
+    
+    func roundCorner(view:UIView) {
+        view.layer.cornerRadius = view.frame.size.height / 2
+        view.layer.borderWidth = 2.0
+        view.layer.borderColor = UIColor.lightGray.cgColor
+    }
     /*
     // MARK: - Navigation
 
