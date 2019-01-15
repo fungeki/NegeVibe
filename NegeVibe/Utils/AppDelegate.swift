@@ -22,8 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
-
-        SignedInUser.getInstance().getUser()
+        
+//        self.window?.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier(PageNames.LOGIN_PAGE) as LoginPageViewController
+//        let rootTVC = self.window!.rootViewController as! UINavigationController
+//        rootTVC.pushViewController(mainTabController, animated: true)
+        
+        
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
     }

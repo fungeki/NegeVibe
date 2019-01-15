@@ -124,7 +124,7 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
             }
             
             
-        case 3:
+        case 4:
             let addEventVC = self.storyboard?.instantiateViewController(withIdentifier: "addEventVC") as! MyEventViewController
             self.navigationController?.pushViewController(addEventVC, animated: true)
         default:
