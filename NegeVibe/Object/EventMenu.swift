@@ -29,12 +29,14 @@ class EventMenu{
     private init() {
         let menu1 = EventMenuItem(text: "כרטיסים שהוזמנו", icon: UIImage(named: "ic_menu_tickets_order")!)
         let menu2 = EventMenuItem(text: "אירועים מועדפים", icon: UIImage(named: "ic_favorite_events")!)
-        let menu3 = EventMenuItem(text: "צ׳אטים", icon: UIImage(named: "ic_chat_empty_circle")!)
+        let menu3 = EventMenuItem(text: "צ׳אטים", icon: UIImage(named: "ic_messages")!)
         let menu4 = EventMenuItem(text: "אירועים שלי", icon: UIImage(named: "ic_my_events")!)
+        let menu5 = EventMenuItem(text: "קורא ברקוד", icon: UIImage(named: "ic_barcode_reader")!)
         eventMenu.append(menu1)
         eventMenu.append(menu2)
         eventMenu.append(menu3)
         eventMenu.append(menu4)
+        eventMenu.append(menu5)
     }
     
     func getMenu() -> [EventMenuItem] {

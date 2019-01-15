@@ -17,11 +17,16 @@ class SignedInUser{
     
     private init (){
         DispatchQueue.main.async {
+            
             let mUser = Auth.auth().currentUser
             if mUser != nil{
-                self.user = AnonymousUser(uid: mUser!.uid, chatName: nil)
+                let uid = mUser!.uid
+                self.user = AnonymousUser(uid: uid, chatName: nil)
                 getUserChatName(completion: { (str) in
                     self.user?.chatName = str
+                    getUserFavorites(uid: uid, completion: { (favorites) in
+                        self.favorites = favorites
+                    })
                 })
                 
                 print("user signed in, uuid: \(mUser!.uid)")
@@ -32,8 +37,7 @@ class SignedInUser{
                         return
                     }
                     self.user = AnonymousUser(uid: uid, chatName: nil)
-                    createUser()
-                }
+                    createUser()                }
             }
         }
     }
@@ -77,14 +81,19 @@ class SignedInUser{
     }
     
     func addFavorite(favorite: Int, completion: (()->Void)?=nil){
-        if favorites?.count == 0 {
+        if favorites?.count == 0 || favorites == nil{
             FavoritesBuilder(favoriteID: favorite) {
                 if let completion = completion{
+                    self.favorites = []
+                    self.favorites?.append(favorite)
                     completion()
                 }
             }
         } else {
-            
+            let favStatus = favorites!.contains(favorite) ? true : false
+            updateFavorites(uid: user!.uid, favoriteID: favorite, status: favStatus) {
+                print("meow")
+            }
         }
     }
 }
