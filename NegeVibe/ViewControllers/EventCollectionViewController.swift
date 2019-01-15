@@ -39,16 +39,22 @@ class EventCollectionViewController: UICollectionViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if EventsLibrary.getInstance().getNumberOfEvents() == 0{
-        getEvents { (arrEvent) in
-            self.arrEvent = arrEvent
-            EventsLibrary.getInstance().setEvents(arrEvent)
-             self.collectionView.reloadData()
-            }
-        } else {
-            self.arrEvent = EventsLibrary.getInstance().getEvents()
+//        if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+//
+//        getEvents { (arrEvent) in
+//            self.arrEvent = arrEvent
+//            EventsLibrary.getInstance().setEvents(arrEvent)
+//             self.collectionView.reloadData()
+//            }
+//
+//        } else {
+//            self.arrEvent = EventsLibrary.getInstance().getEvents()
+//        }
+
+        EventsLibrary.getInstance().getEvents { (events) in
+            self.arrEvent = events
+            self.collectionView.reloadData()
         }
-        
        // self.collectionView.reloadData()
         
         let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout

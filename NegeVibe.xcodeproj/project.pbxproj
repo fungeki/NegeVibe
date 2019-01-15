@@ -242,12 +242,12 @@
 			path = LocationUtils;
 			sourceTree = "<group>";
 		};
-		8C1ACD4E21B97D2000103D9E /* Library */ = {
+		8C1ACD4E21B97D2000103D9E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				8C1ACD4F21B97D4400103D9E /* EventsLibrary.swift */,
 			);
-			path = Library;
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		8C9DE3F521E5FE1F00A92A5D /* UserUtils */ = {
@@ -276,13 +276,13 @@
 			path = Update;
 			sourceTree = "<group>";
 		};
-		8CE122C321EB7EE600FB6F1D /* Builders */ = {
+		8CE122C321EB7EE600FB6F1D /* Constructors */ = {
 			isa = PBXGroup;
 			children = (
 				8CE122C621EB7F1300FB6F1D /* FavoritesBuilder.swift */,
 				8C6B734221E7990F00D21D9D /* CreateANewUser.swift */,
 			);
-			path = Builders;
+			path = Constructors;
 			sourceTree = "<group>";
 		};
 		8CEB9B1A21AED0AF009B55FF = {
@@ -326,10 +326,10 @@
 		8CEB9B3B21AED0BD009B55FF /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				8CE122C321EB7EE600FB6F1D /* Builders */,
+				8CE122C321EB7EE600FB6F1D /* Constructors */,
 				8C9DE3FB21E6158900A92A5D /* Update */,
 				8C9DE3F521E5FE1F00A92A5D /* UserUtils */,
-				8C1ACD4E21B97D2000103D9E /* Library */,
+				8C1ACD4E21B97D2000103D9E /* Libraries */,
 				8C1ACD4821B7FAED00103D9E /* Push */,
 				8CEB9B3C21AED0C9009B55FF /* Get */,
 			);

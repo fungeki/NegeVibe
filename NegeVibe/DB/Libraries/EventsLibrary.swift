@@ -35,8 +35,26 @@ class EventsLibrary {
         return events.count
     }
     
+    private func downloadEvents(completion: (()->Void)?=nil){
+        getEventsFromDB { (events) in
+            self.events = events
+            if let completion = completion {
+                completion()
+            }
+        }
+    }
     func getEvents() -> [Event]{
         return events
+    }
+    
+    func getEvents(completion: @escaping (_ events: [Event])->Void){
+        if events.count == 0 {
+            downloadEvents {
+                completion(self.events)
+            }
+        } else {
+            completion(self.events)
+        }
     }
     
     func getEventById(_ id: Int) -> Event{

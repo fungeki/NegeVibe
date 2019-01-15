@@ -31,15 +31,23 @@ class ChatListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if !willShowTickesBooked{
-            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
-                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כל הצ'אטים")
-                getEvents { (arrEvent) in self.arrEvent = arrEvent
-                    JustHUD.shared.hide()
-                    EventsLibrary.getInstance().setEvents(arrEvent)
-                    self.chatListUITableView.reloadData()
-                }
-            } else {
-                self.arrEvent = EventsLibrary.getInstance().getEvents()
+//            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
+//                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כל הצ'אטים")
+////                getEvents { (arrEvent) in self.arrEvent = arrEvent
+////                    JustHUD.shared.hide()
+////                    EventsLibrary.getInstance().setEvents(arrEvent)
+////                    self.chatListUITableView.reloadData()
+////                }
+//                EventsLibrary.getInstance().downloadEvents {
+//                    JustHUD.shared.hide()
+//                    self.chatListUITableView.reloadData()
+//                }
+//            } else {
+//                self.arrEvent = EventsLibrary.getInstance().getEvents()
+//            }
+            EventsLibrary.getInstance().getEvents { (events) in
+                self.arrEvent = events
+                self.chatListUITableView.reloadData()
             }
         }
     }

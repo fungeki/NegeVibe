@@ -27,15 +27,8 @@ class TicketsBookedViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if !willShowTickesBooked{
-            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
-                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כרטיסים שהוזמנו")
-                getEvents { (arrEvent) in self.arrEvent = arrEvent
-                    JustHUD.shared.hide()
-                    EventsLibrary.getInstance().setEvents(arrEvent)
-                    self.ticketsBookedTable.reloadData()
-                }
-            } else {
-                self.arrEvent = EventsLibrary.getInstance().getEvents()
+            EventsLibrary.getInstance().getEvents { (events) in
+                self.arrEvent = events
             }
         }
     }

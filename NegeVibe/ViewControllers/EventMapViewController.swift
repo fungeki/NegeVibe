@@ -59,7 +59,7 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sizeTransform = CGAffineTransform(scaleX: 1, y: 0)
+       // let sizeTransform = CGAffineTransform(scaleX: 1, y: 0)
 //        bannerOverlayView.transform = CGAffineTransform(translationX: 0, y: bannerOverlayView.frame.height).concatenating(sizeTransform)
 //        bannerFeaturedMessageBtn.transform = CGAffineTransform(translationX: bannerOverlayView.frame.width, y: 0)
         
@@ -92,19 +92,23 @@ class EventMapViewController: UIViewController, MLocationManagerDelegate {
         vsc = tabBarController?.viewControllers
         searchIcon.isUserInteractionEnabled = true
         searchTableView.transform = CGAffineTransform.init(translationX: 0, y: -150)
-        if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
-                //loading indicator
-                JustHUD.shared.showInView(view: self.view, withHeader: "רק דקה", andFooter: "מסיים לטעון")
-                
-                //adding artwork
-                getEvents { (events) in
-                    //close loading indicator
-                    JustHUD.shared.hide()
-                    self.convertToArtworksAndDisplay(events: events)
-                    EventsLibrary.getInstance().setEvents(events)
-                }
-            } else {
-                self.convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
+//        if EventsLibrary.getInstance().getNumberOfEvents() == 0 {
+//                //loading indicator
+//                JustHUD.shared.showInView(view: self.view, withHeader: "רק דקה", andFooter: "מסיים לטעון")
+//
+//                //adding artwork
+//                getEvents { (events) in
+//                    //close loading indicator
+//                    JustHUD.shared.hide()
+//                    self.convertToArtworksAndDisplay(events: events)
+//                    EventsLibrary.getInstance().setEvents(events)
+//                }
+//            } else {
+//                self.convertToArtworksAndDisplay(events: EventsLibrary.getInstance().getEvents())
+//        }
+        EventsLibrary.getInstance().getEvents { (events) in
+            JustHUD.shared.hide()
+            self.convertToArtworksAndDisplay(events: events)
         }
         //print(glb_events)
     }

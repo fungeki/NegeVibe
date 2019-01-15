@@ -26,18 +26,11 @@ class EventTableViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if !willShowCategories{
-        if EventsLibrary.getInstance().getNumberOfEvents() == 0{
-            JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "מוריד אירועים")
-            getEvents { (arrEvent) in self.arrEvent = arrEvent
-                JustHUD.shared.hide()
-                EventsLibrary.getInstance().setEvents(arrEvent)
-                self.eventTableView.reloadData()
+            EventsLibrary.getInstance().getEvents { (events) in
+                self.arrEvent = events
             }
-        } else {
-            self.arrEvent = EventsLibrary.getInstance().getEvents()
-        }
     }
-    }
+}
    
     @IBAction func openCategories(_ sender: UIBarButtonItem) {
         let categoriesController = storyboard?.instantiateViewController(withIdentifier: "categories") as! VibesViewController

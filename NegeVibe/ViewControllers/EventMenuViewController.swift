@@ -98,7 +98,7 @@ extension EventMenuViewController: UITableViewDelegate, UITableViewDataSource{
         cell.iconImage.image = model.icon
         cell.descriptionLabel.text = model.text
         cell.layoutSubviews()
-        if  indexPath.row == 3{
+        if  indexPath.row == 4{
             cell.descriptionLabel.textColor = getBrightOrange()
         }
         return cell
