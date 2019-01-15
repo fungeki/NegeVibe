@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialFlexibleHeader
 
 class MyEventViewController: UIViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
@@ -22,6 +23,11 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var locationTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
+    
+    
+     var startScrollPointY: CGFloat = 0
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var descriptionImageView: UIImageView!
     @IBOutlet weak var appartmentImageView: UIImageView!
     @IBOutlet weak var floorTextField: UITextField!
@@ -36,7 +42,9 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var descriptionEventTextView: UITextField!
     
     var link:URL?
-    
+    override func viewWillLayoutSubviews() {
+        let headerViewController = MDCFlexibleHeaderViewController()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +60,10 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
       
         ticketTypeTextField.optionArray = [TypeOfTicket.child.getHebrewName(),TypeOfTicket.pensioner.getHebrewName(), TypeOfTicket.regular.getHebrewName(),TypeOfTicket.student.getHebrewName(),TypeOfTicket.vip.getHebrewName()]
         changeImage()
+        
+//        headerViewController.headerView.trackingScrollView = scrollView
+//        scrollView.delegate = headerViewController
+        
     }
     
     @IBAction func imagePlaceholder(_ sender: UITapGestureRecognizer) {
