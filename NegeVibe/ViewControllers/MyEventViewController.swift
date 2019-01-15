@@ -144,15 +144,13 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         roundCorner(view: peopleCountTextField)
         roundCorner(view: descriptionEventTextView)
         roundCorner(view: categoryTextField)
-        ticketTypeTextField.layer.cornerRadius = ticketTypeTextField.frame.size.height/2
-        ticketTypeTextField.layer.borderWidth = 2.0
-        ticketTypeTextField.layer.borderColor = UIColor.lightGray.cgColor
+        roundCorner(view: ticketTypeTextField)
         
     }
     
     func roundCorner(view:UIView) {
         view.layer.cornerRadius = view.frame.size.height / 2
-        view.layer.borderWidth = 2.0
+        view.layer.borderWidth = 0.3
         view.layer.borderColor = UIColor.lightGray.cgColor
     }
     /*
