@@ -20,6 +20,8 @@ class EventsDetailsViewController: UIViewController {
     @IBOutlet weak var scrollContentView: UIView!
     @IBOutlet weak var completeDescriptionLabel: UILabel!
     @IBOutlet weak var eventDateLabel: UILabel!
+    
+    
     var startScrollPointY: CGFloat = 0
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet var fullView: UIView!
