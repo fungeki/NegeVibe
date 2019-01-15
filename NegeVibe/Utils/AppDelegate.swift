@@ -22,22 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         FirebaseApp.configure()
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let mainController = storyBoard.instantiateViewController(withIdentifier: "mainTabController") as! UITabBarController
-//        self.window?.rootViewController = mainController
-//
-//        if Auth.auth().currentUser != nil {
-//            try! Auth.auth().signOut()
-//        }
-//
-//        if Auth.auth().currentUser == nil{
-////            Auth.auth().signInAnonymously { (res, err) in
-////                createUser()
-////            }
-//            SignedInUser.getInstance().getUser()
-//        } else {
-//            SignedInUser.getInstance().getUser()
-//        }
+
         SignedInUser.getInstance().getUser()
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "VarelaRound-Regular", size: 15)!], for: UIControl.State.normal)
         return true
