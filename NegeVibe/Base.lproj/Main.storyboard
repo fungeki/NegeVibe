@@ -431,9 +431,9 @@
                         <color key="selectedImageTintColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="blZ-Fs-Oxe" kind="relationship" relationship="viewControllers" id="bPg-rF-Zy6"/>
                         <segue destination="qRm-cj-rPe" kind="relationship" relationship="viewControllers" id="bAA-M1-SGy"/>
                         <segue destination="wRJ-Zk-YTB" kind="relationship" relationship="viewControllers" id="xUF-fu-ofJ"/>
+                        <segue destination="blZ-Fs-Oxe" kind="relationship" relationship="viewControllers" id="bPg-rF-Zy6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0X-1l-rNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
