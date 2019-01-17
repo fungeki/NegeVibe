@@ -276,7 +276,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="מספר הזמנה" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsp-Dm-bdt">
-                                <rect key="frame" x="258" y="36" width="101" height="23.5"/>
+                                <rect key="frame" x="247" y="36" width="112" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -294,70 +294,70 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="שם האירוע" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1e-Te-Uc1">
-                                <rect key="frame" x="273.5" y="121.5" width="85.5" height="23.5"/>
+                                <rect key="frame" x="265" y="121.5" width="94" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="פגישה חשובה עם חנן" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCJ-6l-fqO">
-                                <rect key="frame" x="16" y="121.5" width="241.5" height="23.5"/>
+                                <rect key="frame" x="16" y="121.5" width="233" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalCompressionResistancePriority="1000" text="יום ראשון 30/12/2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6g-af-rNx">
-                                <rect key="frame" x="16" y="161" width="343" height="19"/>
+                                <rect key="frame" x="16" y="162" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalCompressionResistancePriority="1000" text="מגדל התאומים 2, קומה e2, רמת גן" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-TJ-zNg">
-                                <rect key="frame" x="16" y="188" width="343" height="19"/>
+                                <rect key="frame" x="16" y="189" width="343" height="19"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="בעל הכרטיס" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWy-l0-cmG">
-                                <rect key="frame" x="263" y="223" width="96" height="23.5"/>
+                                <rect key="frame" x="250.5" y="224" width="108.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="Negevibe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s9-UB-n9o">
-                                <rect key="frame" x="16" y="223" width="231" height="23.5"/>
+                                <rect key="frame" x="16" y="224" width="218.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="סוג כרטיס" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5T-AY-Xxc">
-                                <rect key="frame" x="281" y="262.5" width="78" height="23.5"/>
+                                <rect key="frame" x="272" y="264.5" width="87" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="VIP" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-yT-Vab">
-                                <rect key="frame" x="16" y="262.5" width="231" height="23.5"/>
+                                <rect key="frame" x="16" y="264.5" width="218.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="כמות" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0F-91-vMM">
-                                <rect key="frame" x="319.5" y="302" width="39.5" height="23.5"/>
+                                <rect key="frame" x="314" y="305" width="45" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" red="0.95178693530000003" green="0.5757434964" blue="0.23977765440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-fK-1lm">
-                                <rect key="frame" x="16" y="302" width="231" height="23.5"/>
+                                <rect key="frame" x="16" y="305" width="218.5" height="24.5"/>
                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" verticalHuggingPriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="s8z-CN-WjN">
-                                <rect key="frame" x="37.5" y="357.5" width="300" height="277.5"/>
+                                <rect key="frame" x="37.5" y="361.5" width="300" height="273.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dM-Lz-QQO">
-                                        <rect key="frame" x="16" y="16" width="268" height="245.5"/>
+                                        <rect key="frame" x="16" y="16" width="268" height="241.5"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -825,29 +825,29 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="שם אירוע" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hO9-ug-ij1">
                                                 <rect key="frame" x="16" y="36" width="343" height="33"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="27"/>
-                                                <color key="textColor" red="0.93475586175918579" green="0.35412514209747314" blue="0.20995119214057922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="אודות" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-ac-geA">
-                                                <rect key="frame" x="16" y="299.5" width="343" height="31"/>
+                                                <rect key="frame" x="16" y="292" width="343" height="31"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                                <color key="textColor" red="0.93475586175918579" green="0.35412514209747314" blue="0.20995119214057922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_date_100" translatesAutoresizingMaskIntoConstraints="NO" id="CTo-hv-Gkx">
-                                                <rect key="frame" x="329" y="131" width="30" height="30"/>
+                                                <rect key="frame" x="333" y="127.5" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="CTo-hv-Gkx" secondAttribute="height" multiplier="1:1" id="KGj-cc-1ep"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_street_100" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-fO-KCt">
-                                                <rect key="frame" x="329" y="192.5" width="30" height="37"/>
+                                                <rect key="frame" x="333" y="189" width="26" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="lLb-fO-KCt" secondAttribute="height" multiplier="40:49" id="nvj-lq-1IU"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תיאור תאריך" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIP-Oi-Zrk">
-                                                <rect key="frame" x="16" y="159.5" width="305" height="17"/>
+                                                <rect key="frame" x="16" y="156" width="307" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -863,83 +863,83 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תיאור מקום" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-o6-ho0">
-                                                <rect key="frame" x="16" y="220.5" width="305" height="17"/>
+                                                <rect key="frame" x="16" y="217" width="307" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תאריך" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tiu-qb-LJx">
-                                                <rect key="frame" x="16" y="131" width="305" height="20.5"/>
+                                                <rect key="frame" x="16" y="127.5" width="307" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
-                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_category_100" translatesAutoresizingMaskIntoConstraints="NO" id="Kdj-8A-LDP">
-                                                <rect key="frame" x="329" y="85" width="30" height="30"/>
+                                                <rect key="frame" x="333" y="85" width="26" height="26.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Kdj-8A-LDP" secondAttribute="height" multiplier="1:1" id="9Fk-cU-khG"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" text="קטגוריה" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWY-EX-5Gh">
-                                                <rect key="frame" x="16" y="90" width="221.5" height="20"/>
+                                                <rect key="frame" x="16" y="88" width="223.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="כתובת" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBt-Jg-9Bw">
-                                                <rect key="frame" x="16" y="192.5" width="305" height="20"/>
+                                                <rect key="frame" x="16" y="189" width="307" height="20"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
-                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_price_tickes_100" translatesAutoresizingMaskIntoConstraints="NO" id="4hU-17-Ij0">
-                                                <rect key="frame" x="329" y="253.5" width="30" height="30"/>
+                                                <rect key="frame" x="333" y="250" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="4hU-17-Ij0" secondAttribute="height" multiplier="1:1" id="gaz-GZ-7ee"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מחיר" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pq-2I-Qzq">
-                                                <rect key="frame" x="16" y="253.5" width="305" height="21"/>
+                                                <rect key="frame" x="16" y="250" width="307" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="פרטי אירוע" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LoD-eT-A94">
-                                                <rect key="frame" x="16" y="346.5" width="343" height="20.5"/>
+                                                <rect key="frame" x="16" y="339" width="343" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="2" text="סוג אירוע: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcl-WW-63g">
-                                                <rect key="frame" x="245.5" y="90" width="75.5" height="20"/>
+                                                <rect key="frame" x="247.5" y="88" width="75.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="17"/>
-                                                <color key="textColor" red="0.93475067619999996" green="0.35418450829999998" blue="0.2116356492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="wUQ-o6-ho0" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="5JR-uj-TAz"/>
-                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="5m3-Re-t4S"/>
+                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.07" id="5m3-Re-t4S"/>
                                             <constraint firstItem="lLb-fO-KCt" firstAttribute="top" secondItem="RIP-Oi-Zrk" secondAttribute="bottom" constant="16" id="64b-8q-nGe"/>
                                             <constraint firstItem="Mzf-ac-geA" firstAttribute="top" secondItem="4hU-17-Ij0" secondAttribute="bottom" constant="16" id="83u-Lw-aJC"/>
                                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="24" id="9mR-sb-Gdd"/>
                                             <constraint firstItem="4hU-17-Ij0" firstAttribute="top" secondItem="wUQ-o6-ho0" secondAttribute="bottom" constant="16" id="9rX-1g-ZSu"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="hO9-ug-ij1" secondAttribute="trailing" constant="16" id="A5h-9Q-ozj"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="BaW-OW-7q0"/>
+                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.07" id="BaW-OW-7q0"/>
                                             <constraint firstItem="Tiu-qb-LJx" firstAttribute="leading" secondItem="9xk-l8-4Lt" secondAttribute="leading" constant="16" id="DvC-im-exe"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="lLb-fO-KCt" secondAttribute="trailing" constant="16" id="Fh4-Ia-hVB"/>
                                             <constraint firstItem="Tiu-qb-LJx" firstAttribute="top" secondItem="Kdj-8A-LDP" secondAttribute="bottom" constant="16" id="GBv-2U-B48"/>
                                             <constraint firstItem="wUQ-o6-ho0" firstAttribute="trailing" secondItem="WBt-Jg-9Bw" secondAttribute="trailing" id="GSY-UP-8dG"/>
                                             <constraint firstItem="CTo-hv-Gkx" firstAttribute="trailing" secondItem="Kdj-8A-LDP" secondAttribute="trailing" id="IGh-YR-kRu"/>
                                             <constraint firstItem="hO9-ug-ij1" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="JfH-Bo-VhB"/>
-                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="leading" secondItem="1Pq-2I-Qzq" secondAttribute="trailing" constant="8" id="KCu-iK-Pmv"/>
+                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="leading" secondItem="1Pq-2I-Qzq" secondAttribute="trailing" constant="10" id="KCu-iK-Pmv"/>
                                             <constraint firstItem="1Pq-2I-Qzq" firstAttribute="top" secondItem="wUQ-o6-ho0" secondAttribute="bottom" constant="16" id="Kps-3u-LtM"/>
                                             <constraint firstItem="RIP-Oi-Zrk" firstAttribute="trailing" secondItem="Tiu-qb-LJx" secondAttribute="trailing" id="M3v-3p-I7M"/>
-                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="NHd-W0-imB"/>
+                                            <constraint firstItem="4hU-17-Ij0" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.07" id="NHd-W0-imB"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="LoD-eT-A94" secondAttribute="trailing" constant="16" id="NWx-zc-JNF"/>
                                             <constraint firstItem="Kdj-8A-LDP" firstAttribute="top" secondItem="hO9-ug-ij1" secondAttribute="bottom" constant="16" id="OUg-kZ-3in"/>
-                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="leading" secondItem="Tiu-qb-LJx" secondAttribute="trailing" constant="8" id="OdZ-zS-XVq"/>
+                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="leading" secondItem="Tiu-qb-LJx" secondAttribute="trailing" constant="10" id="OdZ-zS-XVq"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="CTo-hv-Gkx" secondAttribute="trailing" constant="16" id="PVx-cU-vWv"/>
                                             <constraint firstItem="dcl-WW-63g" firstAttribute="leading" secondItem="lWY-EX-5Gh" secondAttribute="trailing" constant="8" id="Qqh-EL-20n"/>
                                             <constraint firstItem="WBt-Jg-9Bw" firstAttribute="top" secondItem="RIP-Oi-Zrk" secondAttribute="bottom" constant="16" id="QvI-qE-SFx"/>
@@ -947,18 +947,18 @@
                                             <constraint firstItem="wUQ-o6-ho0" firstAttribute="top" secondItem="WBt-Jg-9Bw" secondAttribute="bottom" constant="8" id="TPL-3K-tVx"/>
                                             <constraint firstItem="lWY-EX-5Gh" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="Vcv-2b-R0J"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="Mzf-ac-geA" secondAttribute="trailing" constant="16" id="WGX-JU-IkQ"/>
-                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="leading" secondItem="dcl-WW-63g" secondAttribute="trailing" constant="8" id="Y89-9Z-MJy"/>
+                                            <constraint firstItem="Kdj-8A-LDP" firstAttribute="leading" secondItem="dcl-WW-63g" secondAttribute="trailing" constant="10" id="Y89-9Z-MJy"/>
                                             <constraint firstItem="WBt-Jg-9Bw" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="Yda-RR-OhU"/>
                                             <constraint firstItem="RIP-Oi-Zrk" firstAttribute="top" secondItem="Tiu-qb-LJx" secondAttribute="bottom" constant="8" id="dfh-xs-B2Q"/>
                                             <constraint firstItem="LoD-eT-A94" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="dhl-0w-X6S"/>
                                             <constraint firstItem="hO9-ug-ij1" firstAttribute="top" secondItem="zjc-99-nEe" secondAttribute="top" constant="16" id="hLZ-Ai-n8z"/>
                                             <constraint firstItem="DP5-dn-6Kk" firstAttribute="centerY" secondItem="hO9-ug-ij1" secondAttribute="centerY" id="idF-NU-MBl"/>
                                             <constraint firstItem="lWY-EX-5Gh" firstAttribute="centerY" secondItem="dcl-WW-63g" secondAttribute="centerY" id="jTp-hH-gVc"/>
-                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.08" id="kMJ-I4-ldB"/>
+                                            <constraint firstItem="CTo-hv-Gkx" firstAttribute="width" secondItem="9xk-l8-4Lt" secondAttribute="width" multiplier="0.07" id="kMJ-I4-ldB"/>
                                             <constraint firstAttribute="height" constant="1500" id="lvY-AZ-D4l"/>
                                             <constraint firstItem="1Pq-2I-Qzq" firstAttribute="leading" secondItem="9xk-l8-4Lt" secondAttribute="leading" constant="16" id="n4M-zk-K5o"/>
                                             <constraint firstItem="CTo-hv-Gkx" firstAttribute="top" secondItem="Tiu-qb-LJx" secondAttribute="top" id="nXt-7X-THr"/>
-                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="leading" secondItem="WBt-Jg-9Bw" secondAttribute="trailing" constant="8" id="phS-Ch-Ce6"/>
+                                            <constraint firstItem="lLb-fO-KCt" firstAttribute="leading" secondItem="WBt-Jg-9Bw" secondAttribute="trailing" constant="10" id="phS-Ch-Ce6"/>
                                             <constraint firstItem="LoD-eT-A94" firstAttribute="top" secondItem="Mzf-ac-geA" secondAttribute="bottom" constant="16" id="pn2-YG-8Ua"/>
                                             <constraint firstItem="zjc-99-nEe" firstAttribute="trailing" secondItem="4hU-17-Ij0" secondAttribute="trailing" constant="16" id="vwa-lE-evH"/>
                                             <constraint firstItem="RIP-Oi-Zrk" firstAttribute="leading" secondItem="zjc-99-nEe" secondAttribute="leading" constant="16" id="yho-dd-4kG"/>
@@ -977,7 +977,7 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-Sc-ETz">
                                 <rect key="frame" x="36" y="623" width="70" height="36"/>
-                                <color key="backgroundColor" red="0.93475586175918579" green="0.35412514209747314" blue="0.20995119214057922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.59215686270000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title=" כרטיסים">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1805,7 +1805,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
+        <image name=" icc_nv_category" width="25" height="25"/>
         <image name="add_apartment_50" width="51" height="47"/>
         <image name="add_category_100" width="39" height="39"/>
         <image name="add_category_50" width="39" height="39"/>
@@ -1822,9 +1822,9 @@
         <image name="background_up_plus" width="750" height="141"/>
         <image name="carpool" width="253" height="258"/>
         <image name="ic_barcode_orange" width="68" height="68"/>
-        <image name="ic_br_list" width="67.5" height="50.400001525878906"/>
-        <image name="ic_br_map" width="50" height="50"/>
-        <image name="ic_br_menu" width="65.853660583496094" height="49.170730590820312"/>
+        <image name="ic_br_list" width="37" height="28"/>
+        <image name="ic_br_map" width="37" height="37"/>
+        <image name="ic_br_menu" width="37" height="28"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_date" width="69" height="69"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
@@ -1833,10 +1833,10 @@
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
         <image name="ic_white_logo" width="288" height="114"/>
-        <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
-        <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
-        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="icc_tb_list_orange" width="49" height="37"/>
+        <image name="icc_tb_map_orange" width="38" height="37"/>
+        <image name="indinegev" width="624" height="383"/>
         <image name="negeVibe" width="711" height="186"/>
-        <image name="search" width="50" height="50"/>
+        <image name="search" width="25" height="25"/>
     </resources>
 </document>
