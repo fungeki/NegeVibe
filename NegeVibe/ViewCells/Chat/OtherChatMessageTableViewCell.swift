@@ -22,7 +22,7 @@ class OtherChatMessageTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        messageWrapperView.roundCorners(corners: [.topLeft, .topRight, .topLeft, .bottomRight], radius: 20)
+//        messageWrapperView.roundCorners(corners: [.topLeft, .topRight, .topLeft, .bottomRight], radius: 20)
     }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

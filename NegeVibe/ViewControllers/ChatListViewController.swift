@@ -19,17 +19,19 @@ class ChatListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.barTintColor = getLightBlue()
-        self.navigationItem.title = "כל הצ'אטים"
-        
+       
+        self.title = "צ׳אטים"
         chatListUITableView.rowHeight = chatListUITableView.bounds.height / 8
-
         // Do any additional setup after loading the view.
     }
-    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        self.navigationController?.navigationBar.barTintColor = getBrightOrange()
+//    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = getLightBlue()
         if !willShowTickesBooked{
 //            if EventsLibrary.getInstance().getNumberOfEvents() == 0{
 //                JustHUD.shared.showInView(view: self.view, withHeader: "רק רגע", andFooter: "כל הצ'אטים")
@@ -98,7 +100,7 @@ extension ChatListViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let ChatListVC = self.storyboard?.instantiateViewController(withIdentifier: "ChatListVC") as! ChatListViewController
+        let ChatListVC = self.storyboard?.instantiateViewController(withIdentifier: "chatForEvent") as! ChatViewController
         self.navigationController?.pushViewController(ChatListVC, animated: true)
     }
     
