@@ -2,7 +2,7 @@
 //  EventsDetailsViewController.swift
 //  NegeVibe
 //
-//  Created by Rami Tzafon on 12.12.2018.
+//  Created by  on 12.12.2018.
 //  Copyright © 2018 test. All rights reserved.
 //
 

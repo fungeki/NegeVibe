@@ -17,13 +17,16 @@ class TicketsBookedViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationItem.title = "כרטיסים שהוזמנו"
+
         
         ticketsBookedTable.rowHeight = ticketsBookedTable.bounds.height / 8
         
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if !willShowTickesBooked{

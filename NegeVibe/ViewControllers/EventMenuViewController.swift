@@ -37,6 +37,10 @@ class EventMenuViewController: UIViewController {
     }
     */
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.barTintColor = getBrightOrange()
+    }
     func showAlert()
     {
         let titleStr = "שם משתמש/ת"

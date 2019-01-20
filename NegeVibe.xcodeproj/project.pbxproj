@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		56479C6616582B1F8F5EC795 /* Pods_NegeVibe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */; };
-		7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */; };
 		8C1ACD0821B033FE00103D9E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0721B033FE00103D9E /* Images.swift */; };
 		8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0921B0376800103D9E /* Symbology.swift */; };
 		8C1ACD0C21B03A8B00103D9E /* EventMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */; };
@@ -26,7 +25,6 @@
 		8C1ACD9F21BD463B00103D9E /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */; };
 		8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */; };
 		8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */; };
-		8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */; };
 		8C6B733C21E63F9A00D21D9D /* GetUserChatName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */; };
 		8C6B733E21E7855700D21D9D /* FavoritesUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */; };
 		8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B734221E7990F00D21D9D /* CreateANewUser.swift */; };
@@ -45,7 +43,6 @@
 		8C9DE3FD21E615AC00A92A5D /* UpdateUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */; };
 		8CA46F3321E1FA3E00A148F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */; };
 		8CA46F3521E2102C00A148F2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3421E2102C00A148F2 /* SignInViewController.swift */; };
-		8CA46F3721E34A8500A148F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3621E34A8500A148F2 /* ChatViewController.swift */; };
 		8CA46F3921E355E500A148F2 /* CarpoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */; };
 		8CA46F3B21E3680D00A148F2 /* CarpoolMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3A21E3680D00A148F2 /* CarpoolMessage.swift */; };
 		8CA46F3E21E3696400A148F2 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA46F3D21E3696400A148F2 /* ChatMessage.swift */; };
@@ -53,6 +50,9 @@
 		8CE122CC21EBA2F000FB6F1D /* GetUserFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122CB21EBA2F000FB6F1D /* GetUserFavorites.swift */; };
 		8CE122D021EBAF3D00FB6F1D /* UpdateFavorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122CF21EBAF3D00FB6F1D /* UpdateFavorites.swift */; };
 		8CE122D221EE323B00FB6F1D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122D121EE323B00FB6F1D /* LoadingViewController.swift */; };
+		8CE122D421F1D3C900FB6F1D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122D321F1D3C900FB6F1D /* ChatViewController.swift */; };
+		8CE122D721F1DAF000FB6F1D /* ChatChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122D621F1DAF000FB6F1D /* ChatChannel.swift */; };
+		8CE122DC21F1E23200FB6F1D /* OtherChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE122DB21F1E23200FB6F1D /* OtherChatMessageTableViewCell.swift */; };
 		8CE84BEF21BFE79E006C8A93 /* FeaturedBanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */; };
 		8CEB9B2721AED0AF009B55FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2621AED0AF009B55FF /* AppDelegate.swift */; };
 		8CEB9B2C21AED0AF009B55FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CEB9B2A21AED0AF009B55FF /* Main.storyboard */; };
@@ -81,7 +81,6 @@
 /* Begin PBXFileReference section */
 		1568CED266995431D624AB8E /* Pods-NegeVibe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NegeVibe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NegeVibe/Pods-NegeVibe.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD9E03D247132BBB0F1369B /* Pods_NegeVibe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NegeVibe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageViewCell.swift; sourceTree = "<group>"; };
 		8C1ACD0721B033FE00103D9E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8C1ACD0921B0376800103D9E /* Symbology.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbology.swift; sourceTree = "<group>"; };
 		8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMapViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +99,6 @@
 		8C1ACD9E21BD463B00103D9E /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		8C1ACDA221BD5F3800103D9E /* GeoAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAddress.swift; sourceTree = "<group>"; };
 		8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMessageTableViewCell.swift; sourceTree = "<group>"; };
-		8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8C6B733B21E63F9A00D21D9D /* GetUserChatName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserChatName.swift; sourceTree = "<group>"; };
 		8C6B733D21E7855700D21D9D /* FavoritesUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUpdate.swift; sourceTree = "<group>"; };
 		8C6B734221E7990F00D21D9D /* CreateANewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateANewUser.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		8C9DE3FC21E615AC00A92A5D /* UpdateUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUsername.swift; sourceTree = "<group>"; };
 		8CA46F3221E1FA3E00A148F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CA46F3421E2102C00A148F2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		8CA46F3621E34A8500A148F2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolTableViewCell.swift; sourceTree = "<group>"; };
 		8CA46F3A21E3680D00A148F2 /* CarpoolMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarpoolMessage.swift; sourceTree = "<group>"; };
 		8CA46F3D21E3696400A148F2 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
@@ -127,6 +124,9 @@
 		8CE122CB21EBA2F000FB6F1D /* GetUserFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserFavorites.swift; sourceTree = "<group>"; };
 		8CE122CF21EBAF3D00FB6F1D /* UpdateFavorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateFavorites.swift; sourceTree = "<group>"; };
 		8CE122D121EE323B00FB6F1D /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		8CE122D321F1D3C900FB6F1D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8CE122D621F1DAF000FB6F1D /* ChatChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatChannel.swift; sourceTree = "<group>"; };
+		8CE122DB21F1E23200FB6F1D /* OtherChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		8CE84BEE21BFE79E006C8A93 /* FeaturedBanners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedBanners.swift; sourceTree = "<group>"; };
 		8CE84BF021BFFA98006C8A93 /* sderot.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sderot.gpx; sourceTree = "<group>"; };
 		8CEB9B2321AED0AF009B55FF /* NegeVibe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NegeVibe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,7 +188,6 @@
 		8C1ACD0F21B07BF500103D9E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7C44EF6221BEB3E400B17C48 /* CustomMessageViewCell.swift */,
 				8C1ACD0B21B03A8B00103D9E /* EventMapViewController.swift */,
 				8C1ACD1021B2BA2000103D9E /* EventCollectionViewController.swift */,
 				8C1ACD5121BAFB2400103D9E /* VibesViewController.swift */,
@@ -199,10 +198,10 @@
 				A1921D5E21D535340059FF85 /* MyEventViewController.swift */,
 				8C8B72BF21D65A3C0090A2DA /* TicketViewController.swift */,
 				8CA46F3421E2102C00A148F2 /* SignInViewController.swift */,
-				8CA46F3621E34A8500A148F2 /* ChatViewController.swift */,
 				EE783B3021E5FABC004AF043 /* TicketsBookedViewController.swift */,
 				EEDB83BA21E64B1A00C17BAF /* ChatListViewController.swift */,
 				8CE122D121EE323B00FB6F1D /* LoadingViewController.swift */,
+				8CE122D321F1D3C900FB6F1D /* ChatViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -210,14 +209,13 @@
 		8C1ACD4521B7F81D00103D9E /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				8CE122DA21F1E10F00FB6F1D /* Chat */,
 				EEDB83BC21E64B7B00C17BAF /* ChatListTableViewCell.swift */,
 				8C1ACD1221B2BA7000103D9E /* EventCollectionViewCell.swift */,
 				8C1ACD4621B7F88100103D9E /* SearchResultTableViewCell.swift */,
 				8C1ACD5321BAFB6300103D9E /* VibesCollectionViewCell.swift */,
 				A1CE21FD21C658A700DFE4B0 /* EventTableViewCell.swift */,
 				A1CE21FE21C658A700DFE4B0 /* EventTableViewCell.xib */,
-				8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */,
-				8C54B55121CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift */,
 				8C8B72B721D4E0200090A2DA /* EventMenuTableViewCell.swift */,
 				8CA46F3821E355E500A148F2 /* CarpoolTableViewCell.swift */,
 				EE783B3221E5FAE8004AF043 /* TicketsBookedTableViewCell.swift */,
@@ -288,6 +286,24 @@
 			path = Constructors;
 			sourceTree = "<group>";
 		};
+		8CE122D521F1DAA000FB6F1D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8CA46F3D21E3696400A148F2 /* ChatMessage.swift */,
+				8CE122D621F1DAF000FB6F1D /* ChatChannel.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		8CE122DA21F1E10F00FB6F1D /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8C54B54F21CCCDDA0002CD08 /* MyMessageTableViewCell.swift */,
+				8CE122DB21F1E23200FB6F1D /* OtherChatMessageTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		8CEB9B1A21AED0AF009B55FF = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +369,7 @@
 		8CEB9B3F21AED100009B55FF /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				8CE122D521F1DAA000FB6F1D /* Chat */,
 				8C9DE3FA21E5FECC00A92A5D /* UserTypes */,
 				8CEB9B4021AED118009B55FF /* Event.swift */,
 				8C1ACD0721B033FE00103D9E /* Images.swift */,
@@ -363,7 +380,6 @@
 				A1921D5A21D5271F0059FF85 /* Ticket.swift */,
 				A1921D5C21D529090059FF85 /* TypeOfTicket.swift */,
 				8CA46F3A21E3680D00A148F2 /* CarpoolMessage.swift */,
-				8CA46F3D21E3696400A148F2 /* ChatMessage.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -559,13 +575,13 @@
 				8C1ACD5221BAFB2400103D9E /* VibesViewController.swift in Sources */,
 				8C9DE3F721E5FE4700A92A5D /* SignedInUser.swift in Sources */,
 				8C9DE3F921E5FEC400A92A5D /* AnonymousUser.swift in Sources */,
+				8CE122DC21F1E23200FB6F1D /* OtherChatMessageTableViewCell.swift in Sources */,
 				8C1ACD1321B2BA7000103D9E /* EventCollectionViewCell.swift in Sources */,
 				8C8B72B821D4E0200090A2DA /* EventMenuTableViewCell.swift in Sources */,
 				8C1ACD0821B033FE00103D9E /* Images.swift in Sources */,
 				8CA46F3921E355E500A148F2 /* CarpoolTableViewCell.swift in Sources */,
 				8C6B734321E7990F00D21D9D /* CreateANewUser.swift in Sources */,
 				8C8B72BE21D4E2C70090A2DA /* EventMenu.swift in Sources */,
-				8C54B55221CCCDF00002CD08 /* OthersChatMessageTableViewCell.swift in Sources */,
 				8CEB9B4421AEDE4B009B55FF /* JustHUD.swift in Sources */,
 				8C54B55021CCCDDA0002CD08 /* MyMessageTableViewCell.swift in Sources */,
 				A1921D5B21D5271F0059FF85 /* Ticket.swift in Sources */,
@@ -579,6 +595,7 @@
 				8CA46F3B21E3680D00A148F2 /* CarpoolMessage.swift in Sources */,
 				8CE122CC21EBA2F000FB6F1D /* GetUserFavorites.swift in Sources */,
 				8C8B72B221D216AF0090A2DA /* ScannerViewController.swift in Sources */,
+				8CE122D421F1D3C900FB6F1D /* ChatViewController.swift in Sources */,
 				8C1ACDA321BD5F3800103D9E /* GeoAddress.swift in Sources */,
 				8C9DE3FD21E615AC00A92A5D /* UpdateUsername.swift in Sources */,
 				EEDB83BB21E64B1A00C17BAF /* ChatListViewController.swift in Sources */,
@@ -596,20 +613,19 @@
 				EE783B3121E5FABC004AF043 /* TicketsBookedViewController.swift in Sources */,
 				8C1ACD9821BD055200103D9E /* MLocationManager.swift in Sources */,
 				A1921D5F21D535340059FF85 /* MyEventViewController.swift in Sources */,
-				7C44EF6421BEB3E400B17C48 /* CustomMessageViewCell.swift in Sources */,
 				8C1ACD5021B97D4400103D9E /* EventsLibrary.swift in Sources */,
 				8C8B72C021D65A3C0090A2DA /* TicketViewController.swift in Sources */,
 				A1CE21FA21C130D000DFE4B0 /* EventsDetailsViewController.swift in Sources */,
 				8CE122C721EB7F1300FB6F1D /* FavoritesBuilder.swift in Sources */,
 				8C1ACD1121B2BA2100103D9E /* EventCollectionViewController.swift in Sources */,
 				8CE122D021EBAF3D00FB6F1D /* UpdateFavorites.swift in Sources */,
+				8CE122D721F1DAF000FB6F1D /* ChatChannel.swift in Sources */,
 				A1632D1921E7817400699AE7 /* DropDown.swift in Sources */,
 				8CEB9B3E21AED0DF009B55FF /* GetEvents.swift in Sources */,
 				8C8B72B621D39B500090A2DA /* QRGenerator.swift in Sources */,
 				8C1ACD4421B7D03A00103D9E /* Popup.swift in Sources */,
 				8CEB9B4121AED118009B55FF /* Event.swift in Sources */,
 				EEDB83BD21E64B7B00C17BAF /* ChatListTableViewCell.swift in Sources */,
-				8CA46F3721E34A8500A148F2 /* ChatViewController.swift in Sources */,
 				8C1ACD0A21B0376800103D9E /* Symbology.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
