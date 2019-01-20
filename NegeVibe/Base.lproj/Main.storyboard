@@ -1062,7 +1062,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_date_50" translatesAutoresizingMaskIntoConstraints="NO" id="GC9-kF-25Q">
-                                                <rect key="frame" x="322.5" y="100.5" width="22.5" height="43.5"/>
+                                                <rect key="frame" x="322.5" y="98.5" width="22.5" height="43.5"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" תאריך" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fm4-PL-Dpt">
                                                 <rect key="frame" x="29" y="107" width="285" height="30"/>
@@ -1079,10 +1079,10 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_time_50" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-PK-I4G">
-                                                <rect key="frame" x="322.5" y="144.5" width="22.5" height="43.5"/>
+                                                <rect key="frame" x="322.5" y="142.5" width="22.5" height="43.5"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tZ-xX-44N">
-                                                <rect key="frame" x="34" y="199" width="274.5" height="30"/>
+                                                <rect key="frame" x="34" y="197" width="274.5" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" עיר / מושב" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-f7-iNp">
                                                         <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
@@ -1104,13 +1104,13 @@
                                                 </constraints>
                                             </stackView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_street_50" translatesAutoresizingMaskIntoConstraints="NO" id="TRe-iW-E22">
-                                                <rect key="frame" x="322.5" y="192.5" width="22.5" height="43.5"/>
+                                                <rect key="frame" x="322.5" y="190.5" width="22.5" height="43.5"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="add_street_discription_50" translatesAutoresizingMaskIntoConstraints="NO" id="emU-B5-FFB">
                                                 <rect key="frame" x="326" y="234" width="22.5" height="43.5"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-AB-IeM">
-                                                <rect key="frame" x="34" y="297" width="274.5" height="30"/>
+                                                <rect key="frame" x="34" y="295" width="274.5" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" דירה" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="blr-kN-KES">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
@@ -1132,37 +1132,37 @@
                                                 </constraints>
                                             </stackView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_price_tickes_50" translatesAutoresizingMaskIntoConstraints="NO" id="WUx-56-0a5">
-                                                <rect key="frame" x="318.5" y="340" width="22.5" height="43.5"/>
+                                                <rect key="frame" x="318.5" y="338" width="22.5" height="43.5"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_type_tickets_50" translatesAutoresizingMaskIntoConstraints="NO" id="R85-0y-BVk">
-                                                <rect key="frame" x="318.5" y="389.5" width="22.5" height="43.5"/>
+                                                <rect key="frame" x="318.5" y="387.5" width="22.5" height="43.5"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    סוגי כרטיסים" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-R9-HKb" customClass="DropDown" customModule="NegeVibe" customModuleProvider="target">
-                                                <rect key="frame" x="34" y="397" width="274.5" height="29"/>
+                                                <rect key="frame" x="34" y="395" width="274.5" height="29"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   כמות אנשים מקסימלית" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYJ-yB-ZwP">
-                                                <rect key="frame" x="34" y="446" width="282" height="29"/>
+                                                <rect key="frame" x="34" y="444" width="282" height="29"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_num_people_50" translatesAutoresizingMaskIntoConstraints="NO" id="mnP-p2-MUo">
-                                                <rect key="frame" x="326" y="446" width="15" height="29"/>
+                                                <rect key="frame" x="326" y="444" width="15" height="29"/>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    אודות האירוע" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yMI-v7-BW0">
-                                                <rect key="frame" x="34" y="493" width="307" height="145"/>
+                                                <rect key="frame" x="34" y="491" width="307" height="145"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="VarelaRound-Regular" family="Varela Round" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-f2-eOf">
-                                                <rect key="frame" x="34" y="347" width="274.5" height="30"/>
+                                                <rect key="frame" x="34" y="345" width="274.5" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6z-Ec-SCv">
                                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
@@ -1262,7 +1262,7 @@
                                             <constraint firstAttribute="trailing" secondItem="GC9-kF-25Q" secondAttribute="trailing" constant="30" id="pEt-7N-hcr"/>
                                             <constraint firstItem="Fm4-PL-Dpt" firstAttribute="centerY" secondItem="GC9-kF-25Q" secondAttribute="centerY" id="pom-58-iot"/>
                                             <constraint firstItem="qWc-f2-eOf" firstAttribute="leading" secondItem="pO3-FF-btE" secondAttribute="leading" constant="34" id="pwr-Li-AM9"/>
-                                            <constraint firstItem="Fm4-PL-Dpt" firstAttribute="top" secondItem="8b8-dw-5A7" secondAttribute="bottom" constant="26" id="qVd-vW-UcQ"/>
+                                            <constraint firstItem="Fm4-PL-Dpt" firstAttribute="top" secondItem="8b8-dw-5A7" secondAttribute="bottom" constant="24" id="qVd-vW-UcQ"/>
                                             <constraint firstItem="jar-HS-Lgj" firstAttribute="leading" secondItem="pO3-FF-btE" secondAttribute="leading" constant="34" id="rPH-iI-7jG"/>
                                             <constraint firstItem="dQf-PK-I4G" firstAttribute="width" secondItem="pO3-FF-btE" secondAttribute="width" multiplier="0.06" id="rjg-5q-JvH"/>
                                             <constraint firstItem="TRe-iW-E22" firstAttribute="height" secondItem="pO3-FF-btE" secondAttribute="height" multiplier="0.03" id="s3G-qB-GQa"/>
@@ -1793,7 +1793,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" icc_nv_category" width="38.709678649902344" height="38.709678649902344"/>
+        <image name=" icc_nv_category" width="25" height="25"/>
         <image name="add_apartment_50" width="51" height="47"/>
         <image name="add_category_100" width="39" height="39"/>
         <image name="add_category_50" width="39" height="39"/>
@@ -1809,9 +1809,9 @@
         <image name="add_type_tickets_50" width="51" height="51"/>
         <image name="background_up_plus" width="750" height="141"/>
         <image name="ic_barcode_orange" width="68" height="68"/>
-        <image name="ic_br_list" width="67.5" height="50.400001525878906"/>
-        <image name="ic_br_map" width="50" height="50"/>
-        <image name="ic_br_menu" width="65.853660583496094" height="49.170730590820312"/>
+        <image name="ic_br_list" width="37" height="28"/>
+        <image name="ic_br_map" width="37" height="37"/>
+        <image name="ic_br_menu" width="37" height="28"/>
         <image name="ic_chat_empty" width="100" height="82"/>
         <image name="ic_like_empty_circle" width="128" height="128"/>
         <image name="ic_like_empty_icon" width="59" height="52"/>
@@ -1819,10 +1819,10 @@
         <image name="ic_share_empty" width="62" height="76"/>
         <image name="ic_tickets_orange" width="73" height="73"/>
         <image name="ic_white_logo" width="288" height="114"/>
-        <image name="icc_tb_list_orange" width="68.504852294921875" height="52.42718505859375"/>
-        <image name="icc_tb_map_orange" width="66.731704711914062" height="65.853660583496094"/>
-        <image name="indinegev" width="449.27999877929688" height="275.760009765625"/>
+        <image name="icc_tb_list_orange" width="49" height="37"/>
+        <image name="icc_tb_map_orange" width="38" height="37"/>
+        <image name="indinegev" width="624" height="383"/>
         <image name="negeVibe" width="711" height="186"/>
-        <image name="search" width="50" height="50"/>
+        <image name="search" width="25" height="25"/>
     </resources>
 </document>
