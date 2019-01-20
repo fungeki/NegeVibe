@@ -40,7 +40,8 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
     @IBOutlet weak var descriptionEventTextView: UITextField!
     
     var link:URL?
-  
+    let datePicker = UIDatePicker()
+    let timePicker = UIDatePicker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,10 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         changeImage()
         
         view.addSubview(scrollView)
+        
+        showDatePicker()
+        
+        showTimePicker()
     
         
     }
@@ -182,5 +187,67 @@ class MyEventViewController: UIViewController, UINavigationControllerDelegate,UI
         
         
     }
+    
+    @objc func donedatePicker(){
+        //For date formate
+        let format = DateFormatter()
+        format.dateFormat = "dd/MM/yyyy"
+        dateTextField.text = format.string(from: datePicker.date)
+        //dismiss date picker dialog
+        self.view.endEditing(true)
+    }
+    
+    @objc func cancelDatePicker(){
+        //cancel button dismiss datepicker dialog
+        self.view.endEditing(true)
+    }
+    
+    func showDatePicker(){
+        //Formate Date
+        datePicker.datePickerMode = .date
+        
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+    
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(donedatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+        
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        
+        dateTextField.inputAccessoryView = toolbar
+        dateTextField.inputView = datePicker
+        
+    }
+    
+    @objc func doneTimePicker(){
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm a"
+        timeTextField.text = formatter.string(from: datePicker.date)
+        //dismiss time picker dialog
+        self.view.endEditing(true)
+    }
+    
+    
+    func showTimePicker(){
+        //Formate Date
+        timePicker.datePickerMode = .time
+        
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneTimePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+        
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        
+        timeTextField.inputAccessoryView = toolbar
+        timeTextField.inputView = timePicker
+        
+    }
+    
 
 }
